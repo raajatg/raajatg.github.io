@@ -1,0 +1,1941 @@
+/*
+============================================================================================
+============================================================================================
+Site-Wide Formatting
+============================================================================================
+============================================================================================
+*/
+
+/*
+==============================================
+Color Formatting
+==============================================
+*/
+
+.blue {
+    background-color: #6F82D8;
+}
+
+.green {
+    background-color: #1FAD83;
+}
+
+.red {
+    background-color: #F87272;
+}
+
+.purple {
+    background-color: #B991ED;
+}
+
+.pink {
+    background-color: #F897E9;
+}
+
+.yellow {
+    background-color: #FDF187;
+}
+
+.lightBlue {
+    background-color: #E5EEFF;
+}
+
+.lightGreen {
+    background-color: #E7FEF2;
+}
+
+.lightPurple {
+    background-color: #EEE1FF;
+}
+
+.lightPink {
+    background-color: #FFE9FE;
+}
+
+.lightRed {
+    background-color: #FFE1DB;
+}
+
+.lightYellow {
+    background-color: #FFFBCC;
+}
+
+.lightBlueFilter {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(17%) saturate(802%) hue-rotate(190deg) brightness(105%) contrast(105%);
+}
+
+.lightGreenFilter {
+    filter: brightness(0) saturate(100%) invert(92%) sepia(27%) saturate(235%) hue-rotate(70deg) brightness(109%) contrast(99%);
+}
+
+.lightPurpleFilter {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(5%) saturate(1762%) hue-rotate(210deg) brightness(108%) contrast(105%);
+}
+
+.lightPinkFilter {
+    filter: brightness(0) saturate(100%) invert(77%) sepia(100%) saturate(154%) hue-rotate(215deg) brightness(104%) contrast(106%);
+}
+
+.lightRedFilter {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(13%) saturate(721%) hue-rotate(316deg) brightness(109%) contrast(101%);
+}
+
+.lightYellowFilter {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(76%) saturate(518%) hue-rotate(312deg) brightness(108%) contrast(103%);
+}
+
+/*
+==============================================
+Text Formatting
+==============================================
+*/
+
+/* 
+--------------------------
+Text Colors
+--------------------------
+*/
+
+.fontBlue {
+    color: #6F82D8;
+}
+
+.fontGreen {
+    color: #1FAD83;
+}
+
+.fontPurple {
+    color: #B991ED;
+}
+
+.fontPink {
+    color: #F897E9;
+}
+
+.fontRed {
+    color: #F87272;
+}
+
+.fontYellow {
+    color: #FDF187;
+}
+
+.darkBlueText {
+    color: #093478
+}
+
+.whiteText {
+    color: #fff;
+}
+
+.highlightBlue {
+    background: linear-gradient(0deg, #E5EEFF 40%, transparent 40%);
+}
+
+.highlightGreen {
+    background: linear-gradient(0deg, #E7FEF2 40%, transparent 40%);
+}
+
+.highlightPurple {
+    background: linear-gradient(0deg, #EEE1FF 40%, transparent 40%);
+}
+
+.highlightPink {
+    background: linear-gradient(0deg, #FFE9FE 40%, transparent 40%);
+}
+
+.highlightRed {
+    background: linear-gradient(0deg, #FFE1DB 40%, transparent 40%);
+}
+
+.highlightYellow {
+    background: linear-gradient(0deg, #FFFBCC 40%, transparent 40%);
+}
+
+
+/* 
+--------------------------
+Element-Level Changes
+--------------------------
+*/
+
+p {
+    font-family: "helvetica","sans-serif";
+    font-size: 1rem;
+}
+
+a {
+    color: #6F82D8;
+}
+
+a:hover {
+    color: #093478;
+    text-decoration: none;
+}
+
+/* 
+--------------------------
+Font Families / Features
+--------------------------
+*/
+
+.prototype {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    letter-spacing: 2px;
+}
+
+.metrophobic {
+    font-family: "Metrophobic", "helvetica","sans-serif";
+}
+
+.faded {
+    opacity: 0;
+}
+
+/* 
+--------------------------
+Quotes
+--------------------------
+*/
+
+.quote {
+    font-family: "Metrophobic", "helvetica","sans-serif";
+    color: #8995A0;
+    z-index: 5;
+}
+
+.quotation-start {
+    position: absolute;
+    z-index: -100;
+    top: -10%;
+    left:-10%;
+}
+
+.quotation-end {
+    position: absolute;
+    z-index: -100;
+    bottom:0%;
+    right:-10%;
+    transform: rotate(180deg);
+}
+
+/* 
+--------------------------
+Hover Words
+--------------------------
+*/
+
+.hoverWord {
+    transition: 1s;
+}
+
+.imageLink:hover {
+    
+    filter: brightness(0) saturate(100%) invert(11%) sepia(73%) saturate(3584%) hue-rotate(213deg) brightness(92%) contrast(93%);
+}
+
+/* 
+--------------------------
+Custom Text Types
+--------------------------
+*/
+
+.numbering {
+    padding-top: 10px;
+}
+
+.plainList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+}
+
+.name {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #093478;
+}
+
+.header-text {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #093478;
+    font-weight: bold;
+}
+
+.nav-text {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    color: #093478;
+}
+
+.typed-text {
+    font-family: "Metrophobic", "helvetica","sans-serif";
+    letter-spacing: 2px;
+    color: #093478;
+    font-weight: normal;
+}
+
+#biography > .typed-text {
+    color: #6F82D8;
+ }
+
+.tileTitle {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.tileSubtitle {
+    font-family: "helvetica","sans-serif";
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: black;
+}
+
+/* 
+--------------------------
+Responsive Changes (Fonts)
+--------------------------
+*/
+
+@media (max-width: 576px) {
+    .quotation-start {
+        left: -2% !important;
+    }
+    
+    .quotation-end {
+        right: -2% !important;
+    }
+}
+
+
+/*
+==============================================
+Media Formatting
+==============================================
+*/
+
+.width-80 {
+    width: 70%;
+    height: auto;
+}
+
+
+/*
+==============================================
+Page Structure Formatting
+==============================================
+*/
+
+body, html {
+    height: 100%;    
+    scroll-padding-top: 400px;
+}
+
+#solutionOverview, #finalDesign, #takeaways, #projectBackground, #personaAnalysis, #sketchingIteration1, #highFidelity, #motionAnimation, #finalThoughts, #bottomNav {
+    overflow-x:hidden;
+}
+
+.section {
+    padding-top: 70px;
+}
+
+.background {
+    z-index: -100;
+}
+
+.top {
+    z-index: 100;
+}
+
+
+.relative {
+    position: relative !important;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+/*
+==============================================
+Top Navigation Hamburger Formatting (https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/)
+==============================================
+*/
+
+.navbar-toggler {
+    padding: 0;
+}
+
+.animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    }
+    
+    .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    background: #093478;
+    }
+    
+    /* Icon 4 */
+    
+    .animated-icon3 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    }
+    
+    .animated-icon3 span:nth-child(2) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    }
+    
+    .animated-icon3 span:nth-child(3) {
+    top: 20px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    }
+    
+    .animated-icon3.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+    }
+    
+    .animated-icon3.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+    }
+    
+    .animated-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 8px;
+    }
+
+/*
+==============================================
+Top Navigation Additional Formatting
+==============================================
+*/
+    
+
+.mar-bot {
+    margin-bottom: auto;
+}
+
+.header {
+    background-color: white;
+}
+
+/*
+==============================================
+Circle Formatting
+==============================================
+*/
+
+/* 
+--------------------------
+Circle Sizes
+--------------------------
+*/
+.bigCircles {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.size2Circles {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: -20%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+@media (max-width: 576px) {
+    .size2Circles {
+        height: 65vw;
+        width: 65vw;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin-top: 0%;
+        z-index: -1;
+    }
+}
+
+.mediumCircles {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.iconCircles {
+    height: 8vw;
+    width: 8vw;
+    min-width: 90px;
+    max-width: 100px;
+    min-height: 90px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.iconCirclesWinding {
+    height: 6vw;
+    width: 6vw;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+}
+
+.numberCircles {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-text-stroke: 0.01px grey;
+}
+
+/* 
+--------------------------
+Home Page Circles
+--------------------------
+*/
+
+.leftBottomCircle {
+    z-index: -2;
+    overflow: hidden;
+}
+
+.leftTopCircle {
+    z-index: -1;
+    overflow: hidden;
+}
+
+.topCircle {
+    z-index: -3;
+    overflow: hidden;
+}
+
+.rightTopCircle {
+    z-index: -4;
+    overflow: hidden;
+}
+
+.rightBottomCircle {
+    z-index: -5;
+    overflow: hidden;
+}
+
+.bottomCircle {
+    z-index: -6;
+    overflow: hidden;
+}
+
+/* 
+--------------------------
+Takeaway Circles
+--------------------------
+*/
+.takeawayCircles {
+    position: absolute;
+    z-index: -100;
+    height: 90%;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+
+
+
+/*
+==============================================
+Heart Arrow Formatting
+==============================================
+*/
+
+.heartLeft {
+    transform: rotate(90deg);
+    position: absolute;
+    background-image: url(../Images/Universal/heart.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    right:-20%;
+    margin-right: 0;
+    top: 30%;
+    transition: 1s;
+}
+
+.heartRight {
+    transform: rotate(-90deg);
+    position: absolute;
+    background-image: url(../Images/Universal/heart.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    left:-20%;
+    margin-right: 0;
+    top: 30%;
+    transition: 1s;
+}
+
+.heartUp {
+    transform: rotate(180deg);
+    position: absolute;
+    background-image: url(../Images/Universal/heart.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 80%;
+    transition: 1s;
+}
+
+.heartDown {
+    transform: rotate(0deg);
+    position: absolute;
+    background-image: url(../Images/Universal/heart.svg);
+    background-position: center;
+    background-size: cover;
+    width: 20%;
+    max-width: 200px;
+    min-width: 50px;
+    padding-bottom: 20%;
+    left: -60%;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: -16vw;
+    z-index: 0;
+}
+
+@media (max-width: 576px) {
+    .heartDown {
+        transform: rotate(0deg);
+        position: absolute;
+        background-image: url(../Images/Universal/heart.svg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        max-width: 200px;
+        min-width: 50px;
+        padding-bottom: 20%;
+        left: -60%;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        top: -10vw;
+        z-index: 0;
+    }
+}
+
+/*
+============================================================================================
+============================================================================================
+HOME PAGE FORMATTING
+============================================================================================
+============================================================================================
+*/
+
+/*
+==============================================
+Cover Page
+==============================================
+*/
+
+#coverPage {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+==============================================
+Arrow to Portfolio
+==============================================
+*/
+
+.downArrow {
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    visibility: hidden;
+    text-align: center;
+}
+
+/*
+==============================================
+Portfolio Tiles
+==============================================
+*/
+
+#portfolioTiles {
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 
+--------------------------
+Portfolio Tile Images
+--------------------------
+*/
+
+#projectOne > .tileImage {
+    background-color: #E5EEFF;
+    padding-bottom: 50%;
+    background-image: url(../Images/Home/tileDancers.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+#projectTwo > .tileImage {
+    background-color: #FFFBCC;
+    padding-bottom: 50%;
+    background-image: url(../Images/Home/tileNews.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#projectThree > .tileImage {
+    background-color: #F2E5FF;
+    padding-bottom: 100%;
+    background-image: url(../Images/Home/tileDashboard.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 
+--------------------------
+Portfolio Tile Text
+--------------------------
+*/
+
+.tileTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+#projectThree > .tileTextContainer {
+    justify-content: flex-start;
+    padding-bottom: 25%;
+}
+
+#projectOne > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #EDF3FF 47%, #CDDDFF);
+    padding-right: 5vw;
+    background-size: 250%;
+}
+
+#projectTwo > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #FFF9B2 47%, #FFFBCE);
+    padding-left: 5vw;
+    background-size: 250%;
+}
+
+#projectThree > .tileTextContainer {
+    transition: 1s;
+    background: linear-gradient(to bottom, white 50%, white 50%, #E6CCFF);
+    background-size: 100% 250%;
+}
+
+.tileDescription {
+    z-index: 2;
+}
+
+.tileDescription > p {
+    margin-top: 1rem;
+}
+
+#projectOne, #projectTwo, #projectThree {
+    position: relative;
+    overflow: hidden;
+}
+
+/* 
+--------------------------
+Hovering Feature on Project Tiles
+--------------------------
+*/
+
+#projectOne:hover .heartLeft {
+    transform: rotate(0deg);
+    right: -110%;
+}
+
+#projectTwo:hover .heartRight {
+    transform: rotate(0deg);
+    left: -110%;
+}
+
+#projectThree:hover .heartUp {
+    transform: rotate(0deg);
+}
+
+#projectOne:hover .tileTextContainer {
+    background-position: -63%;
+}
+
+#projectTwo:hover .tileTextContainer {
+    background-position: 75%;
+}
+
+#projectThree:hover .tileTextContainer {
+    background-position: 0% -31% !important;
+}
+
+#projectOne:hover .tileTitle {
+    color: #093478;
+}
+
+#projectOne:hover .tileSubtitle {
+    color: #093478;
+}
+
+#projectTwo:hover .tileTitle {
+    color: #093478;
+}
+
+#projectTwo:hover .tileSubtitle {
+    color: #093478;
+}
+
+#projectThree:hover .tileTitle {
+    color: #093478;
+}
+
+#projectThree:hover .tileSubtitle {
+    color: #093478;
+}
+
+/* 
+--------------------------
+Adjustments to Tiles for MEDIUM SCREEN SIZE
+--------------------------
+*/
+
+@media (min-width: 576px) and (max-width: 768px) {
+    
+     /* Adjust Tile 3 to be stacked */
+    #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+
+    .heartUp {
+        transform: rotate(90deg);
+        z-index: 1;
+        width: 40%;
+        padding-bottom: 35%;
+        right:-20%;
+        margin-right: 0;
+        top: 30%;
+    }
+
+    #projectThree > .tileTextContainer {
+        align-items: center;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+     /* Cover tile with color feature */
+    #projectThree > .tileTextContainer {
+        background: linear-gradient(to right, white 47%, #F3E8FF 47%, #E6CCFF) !important;
+        padding-right: 5vw;
+        background-size: 250% !important;
+    }
+
+    #projectThree:hover .heartUp {
+        transform: rotate(0deg) !important;
+        right: -110% !important;
+        top: 30% !important;
+    }
+
+    #projectThree:hover .tileTextContainer {
+        background-position: -63% !important;
+    }
+}
+
+/* 
+--------------------------
+Adjustments to Tiles for SMALL SCREEN SIZE
+--------------------------
+*/
+
+@media (max-width: 576px) {
+    /* Change heart rotations */
+    .heartLeft, .heartRight, .heartUp {
+        transform: rotate(180deg);
+        width: 25%;
+        padding-bottom: 22%;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        top: 80%
+    }
+
+    #projectOne:hover .heartLeft {
+        transform: rotate(0deg) !important;
+        right: 0 !important;
+    }
+
+    #projectTwo:hover .heartRight {
+        transform: rotate(0deg) !important;
+        left: 0 !important;
+    }
+
+    #projectThree:hover .heartUp {
+        transform: rotate(0deg) !important;
+        top: 80% !important;
+    }
+
+    /* Cover tile with color feature */
+    #projectOne > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #EDF3FF 50%, #CDDDFF) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectTwo > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #FFFBCC 50%, #FFF9B2) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectThree > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectOne:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectTwo:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+}
+
+
+
+
+
+
+/*
+============================================================================================
+============================================================================================
+ABOUT ME PAGE FORMATTING
+============================================================================================
+============================================================================================
+*/
+
+
+/*
+==============================================
+Page Structuring
+==============================================
+*/
+
+#biography {
+    padding-left: calc(100vw/12);
+    margin-top: calc(100vw/10);
+}
+
+#introduction {
+    height: calc(5*(1.3rem + 0.6vw));
+}
+
+/*
+==============================================
+About Me Page Circles
+==============================================
+*/
+
+.meCircles {
+    overflow: hidden;
+}
+
+.meCircleOne {
+    z-index: 1;
+    overflow: hidden;
+    margin-right: -20%;
+    margin-top: -5%;
+}
+
+.meCircleTwo {
+    z-index: 2;
+    overflow: hidden;
+    margin-right: 10%;
+    margin-top: 20%;
+}
+
+.meCircleThree {
+    z-index: 3;
+    overflow: hidden;
+    margin-right: 30%;
+    margin-top: 50%;
+}
+
+.meCircleFour {
+    z-index: 4;
+    overflow: hidden;
+    margin-right: 38%;
+    margin-top: 85%;
+}
+
+.meCircleFive {
+    z-index: 5;
+    overflow: hidden;
+    margin-right: 30%;
+    margin-top: 130%;
+}
+
+.meCircleSix {
+    z-index: 101;
+    overflow: hidden;
+    margin-right: 15%;
+    margin-top: 170%;
+}
+
+.meCircleSeven {
+    z-index: 102;
+    overflow: hidden;
+    margin-right: -20%;
+    margin-top: 195%;
+}
+
+.meCircleEight {
+    z-index: 103;
+    overflow: hidden;
+    margin-right: -35%;
+    margin-top: 230%;
+}
+
+.meCircleNine {
+    z-index: 104;
+    overflow: hidden;
+    margin-right: -25%;
+    margin-top: 270%;
+}
+
+.meCircleTen {
+    z-index: 105;
+    overflow: hidden;
+    margin-right: -5%;
+    margin-top: 305%;
+}
+
+.meCircleEleven {
+    z-index: 106;
+    overflow: hidden;
+    margin-right: 20%;
+    margin-top: 335%;
+}
+
+.meCircleTwelve {
+    z-index: 107;
+    overflow: hidden;
+    margin-right: 35%;
+    margin-top: 370%;
+}
+
+.meCircleThirteen {
+    z-index: 108;
+    overflow: hidden;
+    margin-right: 20%;
+    margin-top: 400%;
+}
+
+.meCircleFourteen {
+    z-index: 109;
+    overflow: hidden;
+    margin-right: -5%;
+    margin-top: 430%;
+}
+
+/*
+==============================================
+Page Images (Pictures of Me)
+==============================================
+*/
+
+#bioImages {
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.profilePic {
+    z-index: 6;
+    width: 100%;
+    height: auto;
+    margin-right: -20%;
+    margin-top: calc(100vw/10);
+}
+
+.profilePicTwo {
+    z-index: 107;
+    position: absolute;
+    transform: scaleX(-1);
+    width: 115%;
+    height: auto;
+    margin-right: -20%;
+    margin-top: 270%;
+}
+
+/*
+==============================================
+Responsive Page Changes
+==============================================
+*/
+
+@media (max-width: 768px) {
+    .profilePic {
+        width: 40% !important;
+        justify-content: center !important;
+        margin-right: auto !important;
+        margin-left: auto;
+        z-index: 200;
+    }
+
+    #biography {
+        margin-top: calc(100vw/24) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    
+
+    .meCircleOne, .meCircleTwo, .meCircleThree, .meCircleFour, .meCircleFive, .meCircleSix {
+        margin-left: 32%;
+        margin-top: 30%;
+        width: 34vw;
+        height: 34vw;
+    }
+}
+
+/*
+============================================================================================
+============================================================================================
+PROJECT PAGES
+============================================================================================
+============================================================================================
+*/
+
+/*
+==============================================
+Dot Navigation Formatting (https://codepen.io/evleen13/pen/ZMzPOP)
+==============================================
+*/
+
+#dot-nav{    
+    right: 10px;
+	top: 40%;
+	height: 100px;
+    z-index: 999;
+}
+
+#dot-nav ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#dot-nav li {
+	position: relative;
+	background-color: #bdc3c7;
+	border:3px solid #bdc3c7;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	padding: 5px;
+	height: 10px;
+	margin: 10px 10px 0px 0px;
+	width: 10px;
+	vertical-align:bottom;
+}
+
+#dot-nav li.blueDot.active, #dot-nav li.blueDot:hover {
+	background-color: #6F82D8;
+}
+
+#dot-nav li.greenDot.active, #dot-nav li.greenDot:hover {
+	background-color: #1FAD83;
+}
+
+#dot-nav li.purpleDot.active, #dot-nav li.purpleDot:hover {
+	background-color: #B991ED;
+}
+
+#dot-nav li.pinkDot.active, #dot-nav li.pinkDot:hover {
+	background-color: #F897E9;
+}
+
+#dot-nav li.redDot.active, #dot-nav li.redDot:hover {
+	background-color: #F87272;
+}
+
+#dot-nav li.yellowDot.active, #dot-nav li.yellowDot:hover {
+	background-color: #FDF187;
+}
+
+
+#dot-nav a {
+	outline: 0;
+	vertical-align:top;
+	margin: 0px 0px 0px 25px;
+	position: relative;
+	top:-5px;
+}
+.awesome-tooltip + .tooltip > .tooltip-inner {
+    /*background-color: #8e44ad;*/ 
+    color: #f5f5f5; 
+    border: 1px solid #8e44ad; 
+}
+.awesome-tooltip + .tooltip.left > .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #8e44ad;
+}
+
+
+/*
+==============================================
+Page Header
+==============================================
+*/
+
+.projectHeader {
+    margin-top: calc(100vw/10);
+}
+
+.projectHeaderSummary {
+    margin-left: 5%;
+}
+
+.PP1headerPic {
+    width: 120%;
+    height: auto;
+    z-index: 100;
+    margin-left: -20%;
+    margin-top: -7%;
+}
+
+@media (max-width: 576px) {
+    .projectHeader {
+        overflow: hidden;
+    }
+
+    .projectHeaderSummary {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .PP1headerPic {
+        width: 100%;
+        height: auto;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 25%;
+    }
+}
+
+/*
+==============================================
+Slick Slideshow Implementation
+==============================================
+*/
+
+.solutionSlide {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4.5vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 576px) {
+    .solutionSlide {
+        padding-top: 50px !important;
+    }
+}
+
+.solutionSlidePic {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+/*
+==============================================
+Project Overview
+==============================================
+*/
+
+.solutionOverview {
+    margin-top: 10vw;
+    overflow: hidden;
+}
+
+.summaryGraphic {
+    padding-bottom: 18%;
+}
+
+@media (max-width: 576px) {
+    .summaryGraphic {
+        display: none;
+    }
+
+    .solutionOverview {
+        margin-bottom: 3rem;
+        overflow: hidden;
+    }
+}
+
+/* 
+--------------------------
+Summary Circles
+--------------------------
+*/
+
+.summaryCircle1 {
+    transform: translate(40%,-40%);
+}
+
+.summaryCircle2 {
+    transform: translate(70%,10%);
+}
+
+.summaryCircle3 {
+    transform: translate(-10%,0%);
+}
+
+#adidasModel {
+    width: 60%;
+    height: auto;
+    margin-left: 30%;
+    margin-top: -30%;
+}
+
+
+/*
+==============================================
+Final Design
+==============================================
+*/
+
+@media (min-width: 1300px) {
+    .finalDesign {
+        margin-top: -10%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .finalDesign {
+        margin-top: -20%;
+    }
+}
+
+/*
+==============================================
+Takeaways and Final Reflection
+==============================================
+*/
+
+.reflectionSection {
+    overflow: hidden;
+}
+
+/* 
+--------------------------
+Reflection Circle Positioning (Desktop)
+--------------------------
+*/
+
+.reflectionCircle1 {
+    transform: translate(40%,-10%);
+    z-index: -1;
+}
+
+.reflectionCircle2 {
+    transform: translate(70%,30%);
+    z-index: -1;
+}
+
+.reflectionCircle3 {
+    transform: translate(-10%,20%);
+    z-index: -1;
+}
+
+.reflectionCircle4 {
+    transform: translate(-40%,-10%);
+    z-index: -1;
+}
+
+.reflectionCircle5 {
+    transform: translate(-70%,30%);
+    z-index: -1;
+}
+
+.reflectionCircle6 {
+    transform: translate(10%,20%);
+    z-index: -1;
+}
+
+/* 
+--------------------------
+Reflection Circle Positioning (Mobile)
+--------------------------
+*/
+
+@media (max-width: 576px) {
+
+    .reflectionCircle1, .reflectionCircle2, .reflectionCircle3, .reflectionCircle4, .reflectionCircle5, .reflectionCircle6 {
+        height: 50vw !important;
+        width: 50vw !important;
+    }
+
+    .reflectionCircle1, .reflectionCircle4 {
+        transform: translate(0%,0%);
+    }
+    
+    .reflectionCircle2, .reflectionCircle5 {
+        transform: translate(30%,28%);
+    }
+    
+    .reflectionCircle3, .reflectionCircle6 {
+        transform: translate(-30%,20%);
+    }
+}
+
+/* 
+--------------------------
+Reflection Circle Media
+--------------------------
+*/
+
+.CircleContent {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.rightCirclePic {
+    width: 70%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.leftCirclePic {
+    width: 70%;
+    height: auto;
+}
+
+/*
+==============================================
+Project Process Timeline Formatting
+==============================================
+*/
+
+/* 
+--------------------------
+Icon Formatting
+--------------------------
+*/
+
+.icon {
+    height: 4vw;
+    width: 4vw;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 50px;
+    max-height: 50px;
+    align-self: center;
+}
+
+.iconCaption {
+    width: 8vw;
+    min-width: 90px;
+    max-width: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.iconWinding {
+    height: 4vw;
+    width: 4vw;
+    min-width: 40px;
+    min-height: 40px;
+    align-self: center;
+}
+
+.iconCaptionWinding {
+    width: 8vw;
+    min-width: 80px;
+    text-align: center;
+    background-color: white;
+    font-size: 14px;
+}
+
+.processWinding {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .processLong {
+        display: none;
+    }
+
+    .processWinding {
+        display: block;
+    }
+}
+
+/* 
+--------------------------
+Process Lines
+--------------------------
+*/
+
+.processLine {
+    display:block;
+    position: absolute;
+    width: 95%; 
+    border-top: 3px solid #000;
+    z-index: -1;
+    align-self: center;
+}
+
+.verticalProcessLine {
+    border-left: 3px solid black;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+}
+
+.processLine1 {
+    display:block;
+    position: absolute;
+    width: 90%; 
+    border-top: 3px solid #000;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    align-self: center;
+}
+
+.processLine2 {
+    display:block;
+    position: absolute;
+    width: 90%; 
+    border-top: 3px solid #000;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    align-self: center;
+}
+
+/*
+==============================================
+Bottom Navigation
+==============================================
+*/
+
+
+/* 
+--------------------------
+Section Structure
+--------------------------
+*/
+
+#bottomNav {
+    margin-top: 100px;
+    height: 380px;
+}
+
+.bottomNavContainer {
+    color: black;
+    height: 300px;
+}
+
+@media (max-width: 600px) {
+    #bottomNav {
+        margin-top: 100px;
+        height: 200px !important;
+    }
+    
+    .bottomNavContainer {
+        height: 200px !important;
+    }
+}
+
+/* 
+--------------------------
+Bottom Navigation Circles (Desktop)
+--------------------------
+*/
+
+.leftNavCircle {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: -180px;
+    z-index: -100 !important;
+    top: 0%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+    animation-name: pulsing;
+	-webkit-animation-name: pulsing;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+.rightNavCircle {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    right: -180px;
+    z-index: -100;
+    top: 0%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+    animation-name: pulsing;
+	-webkit-animation-name: pulsing;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+.backTopCircle {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+    animation-name: pulsing;
+	-webkit-animation-name: pulsing;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+/* 
+--------------------------
+Bottom Navigation Circles (Mobile)
+--------------------------
+*/
+
+@media (max-width: 600px) {
+    
+    
+    .leftNavCircle {
+        min-width: 200px !important;
+        min-height: 200px !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+       
+        left: -120px !important;
+        top: 0%;
+    }
+    
+    .rightNavCircle {
+        min-width: 200px !important;
+        min-height: 200px !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+       
+        right: -120px !important;
+        top: 0%;
+    }
+
+    .backTopCircle {
+        min-width: 75px !important;
+        min-height: 75px !important;
+        max-width: 75px !important;
+        max-height: 75px !important;
+    }
+}
+
+/* 
+--------------------------
+Bottom Navigation Circle Hover Triggers
+--------------------------
+*/
+
+.bottomNavContainer:hover .leftNavCircle {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+.bottomNavContainer:hover .rightNavCircle {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+.backTopCircle:hover {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+/* 
+--------------------------
+Bottom Navigation Circle Animations
+--------------------------
+*/
+
+@keyframes pulsing {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulsing {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
+}
+
+
+/* 
+--------------------------
+Bottom Navigation Pictures (Desktop)
+--------------------------
+*/
+
+.leftNavPic {
+    min-width: 200px;
+    max-width: 200px;
+    height: auto;
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 42%;
+    left: 0%;
+}
+
+.rightNavPic {
+    min-width: 200px;
+    max-width: 200px;
+    height: auto;
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 45%;
+    right: 0%;
+}
+
+/* 
+--------------------------
+Bottom Navigation Pictures (Mobile)
+--------------------------
+*/
+
+@media (max-width: 600px) {
+    .leftNavPic {
+        min-width: 80px !important;
+        max-width: 80px !important;
+        bottom: 42%;
+        left: 0%;
+    }
+    
+    .rightNavPic {
+        min-width: 80px !important;
+        max-width: 80px !important;
+        bottom: 42%;
+        right: 0%;
+    }
+}
+
+
+/* 
+--------------------------
+Bottom Navigtion Text (Desktop)
+--------------------------
+*/
+
+.bottomNavText {
+    padding-top: 175px;
+    z-index: 100 !important;
+}
+
+.backTopArrow {
+    min-width: 75px;
+    max-width: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+/* 
+--------------------------
+Bottom Navigtion Text (Mobile)
+--------------------------
+*/
+
+@media (max-width: 600px) {    
+    .bottomNavText {
+        padding-top: 123px !important;
+    }
+
+    .backTopText {
+        width: 100px !important;
+    }
+
+    .backTopArrow {
+        min-width: 55px !important;
+        max-width: 55px !important;
+        min-height: 55px !important;
+        max-height: 55px !important;
+    }
+
+}
+
+
