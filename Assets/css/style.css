@@ -128,6 +128,10 @@ Text Colors
     color: #fff;
 }
 
+.blackText {
+    color: #000;
+}
+
 .highlightBlue {
     background: linear-gradient(0deg, #E5EEFF 40%, transparent 40%);
 }
@@ -537,6 +541,13 @@ Circle Sizes
     left: 0;
     right: 0;
 }
+
+.triviaCircles {
+    width: 42vw;
+    height: 42vw;
+    border-radius: 500px;
+}
+
 
 .iconCircles {
     height: 8vw;
@@ -1040,6 +1051,14 @@ Page Structuring
     height: calc(5*(1.3rem + 0.6vw));
 }
 
+#bioImages {
+    overflow: hidden;
+}
+
+#triviaMobile {
+    display: none;
+}
+
 /*
 ==============================================
 About Me Page Circles
@@ -1049,6 +1068,18 @@ About Me Page Circles
 .meCircles {
     overflow: hidden;
 }
+
+.meCircleOne, .meCircleTwo, .meCircleThree, .meCircleFour, .meCircleFive, .meCircleSix, .meCircleSeven, .meCircleEight, .meCircleNine, .meCircleTen, .meCircleEleven, .meCircleTwelve, .meCircleThirteen, .meCircleFourteen {
+}
+
+.circleTrivia {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}   
 
 .meCircleOne {
     z-index: 1;
@@ -1088,7 +1119,7 @@ About Me Page Circles
 .meCircleSix {
     z-index: 101;
     overflow: hidden;
-    margin-right: 15%;
+    margin-right: 20%;
     margin-top: 170%;
 }
 
@@ -1150,6 +1181,121 @@ About Me Page Circles
 
 /*
 ==============================================
+About Me Page Circle Hover Responses
+==============================================
+*/
+@media (min-width: 768px) {
+    
+    /* 
+    --------------------------
+    Circle Two
+    --------------------------
+    */
+
+    .meCircleTwo:hover {
+        z-index: 500 !important;
+    }
+
+    .meCircleTwo::after {
+        content: "";
+        background-image: url('../Images/Me/trivia_WhyYouLikeIt.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.15;
+    }
+
+    .meCircleTwo:hover .circleTrivia {
+        visibility: visible !important;
+    }
+
+    /* 
+    --------------------------
+    Circle Three
+    --------------------------
+    */
+    
+    .meCircleThree:hover {
+        z-index: 500 !important;
+    }
+
+    .meCircleThree::after {
+        content: "";
+        background-image: url('../Images/Me/trivia_JackHarlow.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+    }
+
+    .meCircleThree:hover .circleTrivia {
+        visibility: visible !important;
+    }
+
+    /* 
+    --------------------------
+    Circle Four
+    --------------------------
+    */
+
+    .meCircleFour:hover {
+        z-index: 500 !important;
+    }
+
+    .meCircleFour::after {
+        content: "";
+        background-image: url('../Images/Me/trivia_Mandalorian.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+    }
+
+    .meCircleFour:hover .circleTrivia {
+        visibility: visible !important;
+    }
+
+    /* 
+    --------------------------
+    Circle Five
+    --------------------------
+    */
+
+    .meCircleFive:hover {
+        z-index: 500 !important;
+    }
+
+    .meCircleFive::after {
+        content: "";
+        background-image: url('../Images/Me/trivia_AmongUs.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+    }
+
+    .meCircleFive:hover .circleTrivia {
+        visibility: visible !important;
+    }
+    
+}
+
+/*
+==============================================
 Page Images (Pictures of Me)
 ==============================================
 */
@@ -1164,8 +1310,10 @@ Page Images (Pictures of Me)
     z-index: 6;
     width: 100%;
     height: auto;
-    margin-right: -20%;
+    margin-right: -15%;
     margin-top: calc(100vw/10);
+    clip-path: polygon(49% 0, 37% 24%, 10% 28%, 0 41%, 1% 63%, 7% 64%, 5% 77%, 7% 100%, 72% 100%, 100% 82%, 100% 30%, 73% 23%, 89% 5%, 79% 0);
+    -webkit-clip-path: polygon(49% 0, 37% 24%, 10% 28%, 0 41%, 1% 63%, 7% 64%, 5% 77%, 7% 100%, 72% 100%, 100% 82%, 100% 30%, 73% 23%, 89% 5%, 79% 0);
 }
 
 .profilePicTwo {
@@ -1199,13 +1347,76 @@ Responsive Page Changes
         margin-right: auto !important;
     }
 
-    
-
     .meCircleOne, .meCircleTwo, .meCircleThree, .meCircleFour, .meCircleFive, .meCircleSix {
         margin-left: 32%;
         margin-top: 30%;
         width: 34vw;
         height: 34vw;
+    }
+
+    #triviaMobile {
+        display: block !important;
+    }
+
+    .triviaCircles > p {
+        top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        align-self: center;
+    }
+
+    #triviaReading:after {
+        content: "";
+        background-image: url('../Images/Me/trivia_WhyYouLikeIt.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: -1.4%;
+        opacity: 0.15;
+        width: 42vw;
+        height: 42vw;
+        border-radius: 500px;
+    }
+
+    #triviaListening:after {
+        content: "";
+        background-image: url('../Images/Me/trivia_JackHarlow.jpg');
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        left: -1.4%;
+        opacity: 0.20;
+        width: 42vw;
+        height: 42vw;
+        border-radius: 500px;
+    }
+
+    #triviaWatching:after {
+        content: "";
+        background-image: url('../Images/Me/trivia_Mandalorian.jpeg');
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: -1.4%;
+        opacity: 0.15;
+        width: 42vw;
+        height: 42vw;
+        border-radius: 500px;
+    }
+
+    #triviaGaming:after {
+        content: "";
+        background-image: url('../Images/Me/trivia_AmongUs.jpg');
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: -1.4%;
+        opacity: 0.20;
+        width: 42vw;
+        height: 42vw;
+        border-radius: 500px;
     }
 }
 
