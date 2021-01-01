@@ -288,6 +288,14 @@ Custom Text Types
     color: #6F82D8;
  }
 
+.tileSupertitle {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    color: grey;
+    margin-bottom: -1rem;
+}
+
 .tileTitle {
     font-family: "PROTOTYPE", "helvetica","sans-serif";
     font-size: 1rem;
@@ -300,6 +308,20 @@ Custom Text Types
     font-size: 0.8rem;
     letter-spacing: 2px;
     color: black;
+}
+
+.tileTitleGreyed {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+.tileSubtitleGreyed {
+    font-family: "helvetica","sans-serif";
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: gray;
 }
 
 /* 
@@ -776,15 +798,43 @@ Portfolio Tile Images
 #projectOne > .tileImage {
     background-color: #E5EEFF;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileDancers.svg);
+    background-image: url(../Images/Home/tileJuju.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    
+}
+
+#projectTwo > .tileImage {
+    background-color: #FFFBCC;
+    padding-bottom: 50%;
+    background-image: url(../Images/Home/tileBlackBoxTheater.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+}
+
+#projectThree > .tileImage {
+    background-color: #EEE1FF;
+    padding-bottom: 100%;
+    background-image: url(../Images/Home/tileDashboard.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projectFour > .tileImage {
+    background-color: #FFE1DB;
+    padding-bottom: 50%;
+    background-image: url(../Images/Home/tileSpeakMind);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     
 }
 
-#projectTwo > .tileImage {
-    background-color: #FFFBCC;
+#projectFive > .tileImage {
+    background-color: #FFE9FE;
     padding-bottom: 50%;
     background-image: url(../Images/Home/tileNews.png);
     background-position: right;
@@ -792,13 +842,13 @@ Portfolio Tile Images
     background-size: contain;
 }
 
-#projectThree > .tileImage {
-    background-color: #F2E5FF;
+#projectSix > .tileImage {
+    background-color: #E7FEF2;
     padding-bottom: 100%;
-    background-image: url(../Images/Home/tileDashboard.svg);
+    background-image: url(../Images/Home/google-home-edit.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 70%;
 }
 
 /* 
@@ -815,6 +865,11 @@ Portfolio Tile Text
 }
 
 #projectThree > .tileTextContainer {
+    justify-content: flex-start;
+    padding-bottom: 25%;
+}
+
+#projectSix > .tileTextContainer {
     justify-content: flex-start;
     padding-bottom: 25%;
 }
@@ -837,6 +892,24 @@ Portfolio Tile Text
     background-size: 100% 250%;
 }
 
+#projectFour > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #FFE7E2 47%, #FFD5CC);
+    padding-right: 5vw;
+    background-size: 250%;
+}
+
+#projectFive > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #FFE0FE 47%, #FFE9FE);
+    padding-left: 5vw;
+    background-size: 250%;
+}
+
+#projectSix > .tileTextContainer {
+    transition: 1s;
+    background: linear-gradient(to bottom, white 50%, white 50%, #D8FDEA);
+    background-size: 100% 250%;
+}
+
 .tileDescription {
     z-index: 2;
 }
@@ -845,7 +918,7 @@ Portfolio Tile Text
     margin-top: 1rem;
 }
 
-#projectOne, #projectTwo, #projectThree {
+#projectOne, #projectTwo, #projectThree, #projectFour, #projectFive, #projectSix {
     position: relative;
     overflow: hidden;
 }
@@ -870,6 +943,21 @@ Hovering Feature on Project Tiles
     transform: rotate(0deg);
 }
 
+#projectFour:hover .heartLeft {
+    transform: rotate(0deg);
+    right: -110%;
+}
+
+#projectFive:hover .heartRight {
+    transform: rotate(0deg);
+    left: -110%;
+}
+
+#projectSix:hover .heartUp {
+    transform: rotate(0deg);
+}
+
+
 #projectOne:hover .tileTextContainer {
     background-position: -63%;
 }
@@ -881,6 +969,19 @@ Hovering Feature on Project Tiles
 #projectThree:hover .tileTextContainer {
     background-position: 0% -31% !important;
 }
+
+#projectFour:hover .tileTextContainer {
+    background-position: -63%;
+}
+
+#projectFive:hover .tileTextContainer {
+    background-position: 75%;
+}
+
+#projectSix:hover .tileTextContainer {
+    background-position: 0% -31% !important;
+}
+
 
 #projectOne:hover .tileTitle {
     color: #093478;
@@ -906,6 +1007,30 @@ Hovering Feature on Project Tiles
     color: #093478;
 }
 
+#projectFour:hover .tileTitle {
+    color: #093478;
+}
+
+#projectFour:hover .tileSubtitle {
+    color: #093478;
+}
+
+#projectFive:hover .tileTitle {
+    color: #093478;
+}
+
+#projectFive:hover .tileSubtitle {
+    color: #093478;
+}
+
+#projectSix:hover .tileTitle {
+    color: #093478;
+}
+
+#projectSix:hover .tileSubtitle {
+    color: #093478;
+}
+
 /* 
 --------------------------
 Adjustments to Tiles for MEDIUM SCREEN SIZE
@@ -914,8 +1039,12 @@ Adjustments to Tiles for MEDIUM SCREEN SIZE
 
 @media (min-width: 576px) and (max-width: 768px) {
     
-     /* Adjust Tile 3 to be stacked */
+     /* Adjust Tile 3 and 6 to be stacked */
     #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+
+    #projectSix > .tileImage {
         padding-bottom: 50% !important;
     }
 
@@ -935,6 +1064,12 @@ Adjustments to Tiles for MEDIUM SCREEN SIZE
         justify-content: center;
     }
 
+    #projectSix > .tileTextContainer {
+        align-items: center;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
      /* Cover tile with color feature */
     #projectThree > .tileTextContainer {
         background: linear-gradient(to right, white 47%, #F3E8FF 47%, #E6CCFF) !important;
@@ -949,6 +1084,22 @@ Adjustments to Tiles for MEDIUM SCREEN SIZE
     }
 
     #projectThree:hover .tileTextContainer {
+        background-position: -63% !important;
+    }
+
+    #projectSix > .tileTextContainer {
+        background: linear-gradient(to right, white 47%, #E1FDEF 47%, #D8FDEA) !important;
+        padding-right: 5vw;
+        background-size: 250% !important;
+    }
+
+    #projectSix:hover .heartUp {
+        transform: rotate(0deg) !important;
+        right: -110% !important;
+        top: 30% !important;
+    }
+
+    #projectSix:hover .tileTextContainer {
         background-position: -63% !important;
     }
 }
@@ -987,6 +1138,21 @@ Adjustments to Tiles for SMALL SCREEN SIZE
         top: 80% !important;
     }
 
+    #projectFour:hover .heartLeft {
+        transform: rotate(0deg) !important;
+        right: 0 !important;
+    }
+
+    #projectFive:hover .heartRight {
+        transform: rotate(0deg) !important;
+        left: 0 !important;
+    }
+
+    #projectSix:hover .heartUp {
+        transform: rotate(0deg) !important;
+        top: 80% !important;
+    }
+
     /* Cover tile with color feature */
     #projectOne > .tileTextContainer {
         transition: 1s;
@@ -1009,6 +1175,27 @@ Adjustments to Tiles for SMALL SCREEN SIZE
         padding-bottom: 2rem !important;
     }
 
+    #projectFour > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #FFE7E2 50%, #FFD5CC) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectFive > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #FFE0FE 50%, #FFE9FE) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectSix > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #E6FEF2 50%, #D8FDEA) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
     #projectOne:hover .tileTextContainer {
         background-position: 0% -60% !important;
     }
@@ -1017,7 +1204,23 @@ Adjustments to Tiles for SMALL SCREEN SIZE
         background-position: 0% -60% !important;
     }
 
+    #projectOne > .tileImage {
+        background-position: center;
+    }
+
     #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+
+    #projectFour:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectFive:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectSix > .tileImage {
         padding-bottom: 50% !important;
     }
 }
@@ -1373,7 +1576,7 @@ Responsive Page Changes
         background-size: cover;
         position: absolute;
         top: 0;
-        left: -1.4%;
+        left: -1.3%;
         opacity: 0.15;
         width: 42vw;
         height: 42vw;
@@ -1386,7 +1589,7 @@ Responsive Page Changes
         background-size: cover;
         position: absolute;
         bottom: 0;
-        left: -1.4%;
+        left: -1.3%;
         opacity: 0.20;
         width: 42vw;
         height: 42vw;
@@ -1399,7 +1602,7 @@ Responsive Page Changes
         background-size: cover;
         position: absolute;
         top: 0;
-        right: -1.4%;
+        right: -1.3%;
         opacity: 0.15;
         width: 42vw;
         height: 42vw;
@@ -1412,7 +1615,7 @@ Responsive Page Changes
         background-size: cover;
         position: absolute;
         bottom: 0;
-        right: -1.4%;
+        right: -1.3%;
         opacity: 0.20;
         width: 42vw;
         height: 42vw;
