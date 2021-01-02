@@ -817,7 +817,7 @@ Portfolio Tile Images
 #projectThree > .tileImage {
     background-color: #EEE1FF;
     padding-bottom: 100%;
-    background-image: url(../Images/Home/tileDashboard.svg);
+    background-image: url(../Images/Home/tileAdidasDashboard.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1639,7 +1639,7 @@ Dot Navigation Formatting (https://codepen.io/evleen13/pen/ZMzPOP)
 
 #dot-nav{    
     right: 10px;
-	top: 40%;
+	top: 20%;
 	height: 100px;
     z-index: 999;
 }
