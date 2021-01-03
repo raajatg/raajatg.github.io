@@ -722,7 +722,7 @@ PROJECT PAGE HEADER CIRCLE ANIMATIONS (DESKTOP)
             -webkit-transform: translate(0%,0%);
         }
         100% {
-            -webkit-transform: translate(-60%,25%);
+            -webkit-transform: translate(20%,25%);
         }
     }
     

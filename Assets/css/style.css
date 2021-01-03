@@ -33,7 +33,7 @@ Color Formatting
 }
 
 .yellow {
-    background-color: #FDF187;
+    background-color: hsl(54, 97%, 76%);
 }
 
 .lightBlue {
@@ -120,6 +120,10 @@ Text Colors
     color: #FDF187;
 }
 
+.fontGrey {
+   color: #636c74;
+}
+
 .darkBlueText {
     color: #093478
 }
@@ -156,6 +160,9 @@ Text Colors
     background: linear-gradient(0deg, #FFFBCC 40%, transparent 40%);
 }
 
+.lightTextBorder {
+    -webkit-text-stroke: 0.01px grey;
+}
 
 /* 
 --------------------------
@@ -272,6 +279,13 @@ Custom Text Types
     font-weight: bold;
 }
 
+.footerText {
+    font-family: "Metrophobic", "helvetica","sans-serif";
+    font-style: italic;
+    font-size: x-small;
+    margin: 0;
+}
+
 .nav-text {
     font-family: "PROTOTYPE", "helvetica","sans-serif";
     color: #093478;
@@ -322,6 +336,18 @@ Custom Text Types
     font-size: 0.8rem;
     letter-spacing: 2px;
     color: gray;
+}
+
+.textBorder {
+    
+    text-shadow: 1px 0 0 hsl(54, 97%, 40%), 
+                -1px 0 0 hsl(54, 97%, 40%), 
+                0 1px 0 hsl(54, 97%, 40%), 
+                0 -1px 0 hsl(54, 97%, 40%), 
+                0.5px 0.5px hsl(54, 97%, 40%), 
+                -0.5px -0.5px 0 hsl(54, 97%, 40%), 
+                0.5px -0.5px 0 hsl(54, 97%, 40%), 
+                -0.5px 0.5px 0 hsl(54, 97%, 40%);
 }
 
 /* 
@@ -388,6 +414,10 @@ body, html {
     scroll-padding-top: 400px;
 }
 
+#P2solutionOverview, #P2finalDesign, #P2takeaways, #P2projectBackground, #P2context, #P2adjacentOfferings, #P2tiesToTheater, #P2initialIdeas, #P2prototyping, #P2finalThoughts, #P2bottomNav {
+    overflow-x:hidden;
+}
+
 #P3solutionOverview, #P3finalDesign, #P3takeaways, #P3projectBackground, #P3personaAnalysis, #P3sketchingIteration1, #P3highFidelity, #P3motionAnimation, #P3finalThoughts, #P3bottomNav {
     overflow-x:hidden;
 }
@@ -414,6 +444,10 @@ body, html {
     margin-right: auto;
     left: 0;
     right: 0;
+}
+
+.footer {
+    margin: 40px;
 }
 
 /*
@@ -889,7 +923,7 @@ Portfolio Tile Images
     background-image: url(../Images/Home/tileAdidasDashboard.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #projectFour > .tileImage {
@@ -1792,7 +1826,15 @@ Page Header
     margin-left: 5%;
 }
 
-.PP1headerPic {
+.P2headerPic {
+    width: 80%;
+    height: auto;
+    z-index: 100;
+    margin-left: 0%;
+    margin-top: -7%;
+}
+
+.P3headerPic {
     width: 120%;
     height: auto;
     z-index: 100;
@@ -1810,13 +1852,24 @@ Page Header
         margin-top: 5%;
     }
 
-    .PP1headerPic {
+    .P2headerPic {
+        width: 80%;
+        height: auto;
+        z-index: 100;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    .P3headerPic {
         width: 100%;
         height: auto;
         z-index: 100;
-        left: 0;
-        right: 0;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         margin-top: 15%;
         margin-bottom: 25%;
     }
@@ -1893,11 +1946,18 @@ Summary Circles
     transform: translate(-10%,0%);
 }
 
-#adidasModel {
+#P3adidasModel {
     width: 60%;
     height: auto;
     margin-left: 30%;
     margin-top: -30%;
+}
+
+#P2dancer {
+    width: 70%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: -45%;
 }
 
 

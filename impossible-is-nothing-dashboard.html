@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>"Impossible is Nothing" Dashboard</title>
+        <link rel="icon" href="Assets/Images/Universal/circlesIcon.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="Assets/Libraries/Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Assets/css/animations.css">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="Assets/Libraries/Bootstrap/js/bootstrap.js"></script>
+        
+        <script src="Assets/js/core.js"></script>
+        <script src="Assets/js/main.js"></script>
+    </head>
+    <body>
+        <!--Dot Navigation-->
+        <div id="dot-nav" class="position-fixed">
+            <ul>
+                <li class="awesome-tooltip blueDot" title="Solution Overview"><a href="#P3solutionOverview"></a></li>
+                <li class="awesome-tooltip blueDot" title="Final Design"><a href="#P3finalDesign"></a></li>
+                <li class="awesome-tooltip blueDot" title="Takeaways and Reflection"><a href="#P3takeaways"></a></li>
+                <li class="awesome-tooltip greenDot" title="Project Background"><a href="#P3projectBackground"></a></li>
+                <li class="awesome-tooltip purpleDot" title="Persona Analysis"><a href="#P3personaAnalysis"></a></li>
+                <li class="awesome-tooltip pinkDot" title="Sketching a First Iteration"><a href="#P3sketchingIteration1"></a></li>
+                <li class="awesome-tooltip redDot" title="Moving to High Fidelity"><a href="#P3highFidelity"></a></li>
+                <li class="awesome-tooltip yellowDot" title="Motion & Animation"><a href="#P3motionAnimation"></a></li>
+                <li class="awesome-tooltip blueDot" title="Results & Final Thoughts"><a href="#P3finalThoughts"></a></li>
+            </ul>
+        </div>
+
+        <!--Navbar-->
+        <nav class="navbar fixed-top header mar-bot">
+        
+            <!-- Navbar brand -->
+            <a class="navbar-brand name" href="index.html">RAAJAT GUPTA</a>
+                <!-- Collapsible content -->
+                <div class="collapse ml-auto" id="navbarSupportedContent22">
+        
+                    <!-- Links -->
+                    <ul class="navbar-nav flex-row ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link header-text px-2" href="about.html">ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-text px-2" href="https://drive.google.com/file/d/1r0b4M6qJ3EzEkZkw6zHYJf-X4mWIlBOm/view" target="_blank">CV</a>
+                    </li>
+                    </ul>
+                    <!-- Links -->
+                
+                </div>
+                <!-- Collapsible content -->
+            <!-- Collapse button -->
+            <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+            aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon3"><span></span><span></span><span></span></div>
+            </button>  
+        </nav>
+        <!--/.Navbar-->
+        
+        <div class="vh-100 container-fluid projectContainer text-left pt-4">
+            
+            <!--Project Page Header-->
+                <div id="P3projectHeader" class="row projectHeader">
+                    <div class="projectHeaderPic align-self-center col-sm-5">
+                        <div class="size2Circles PPcircleTwo lightRed"></div>
+                        <div class="size2Circles PPcircleThree lightYellow"></div>
+                        <div class="size2Circles PPcircleOne lightBlue"></div>
+                        <img class="P3headerPic fadeCustom" src="Assets/Images/Home/tileAdidasDashboard.png" alt="Header picture of Adidas dashboard">
+                    </div>
+                    
+                    <div class="projectHeaderSummary col-sm-5 order-md-1 pt-2">
+                        <h2 class="prototype">The "Impossible is Nothing" Dashboard</h2>
+                        <p class="prototype fontPurple subtitle">October 2020 - November 2020</p>
+                        <h5 class="metrophobic">
+                            I designed a conceptual dashboard that reconciled the diverse perspectives of Adidas’ fashion designers, product managers, and executives so they could align on the insights that mattered in building shoes that were profitable, stylish, and desirable.
+                        </h5>
+                        <h4>
+                            <a href="https://youtu.be/iC43wJq4gT0" target="_blank">
+                                <button type="button" class="btn btn-purple mt-3 metrophobic p-3">Dashboard Demo Video</button>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+        <!--Solution Overview -->
+            <section id="P3solutionOverview" class="section solutionOverview">
+                <div class="row ">
+                    <div class="col-sm-5 offset-sm-1 mb-4">
+                        <h4 class="prototype"><span class="highlightBlue">Project Overview</span></h4>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">Context & User Problem</span></h5>
+                        <p>
+                            Adidas has long been considered a leader in the design of footwear, but with increasing team scale and competing priorities, the organization has struggled to develop a cohesive view of what its shoes of the future should look like. As part of a class project, our team sought to understand how we could unite the distinct perspectives and skillsets of product teams to better complement one another.
+                        </p>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">Solution</span></h5>
+                        <p>
+                            The “Impossible is Nothing” dashboard creates common ground and understanding between three key personas as they seek to improve the performance of Adidas’s fashion sneakers segment. It does so by identifying the key goals and commonalities that these personas have, and using those as an anchor point to provide a multi-dimensional lens on shoe performance and prototypes.
+                        </p>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">Outcomes</span></h5>
+                        <p>
+                            We presented this final dashboard prototype to a group of panelists impersonating the three distinct personas - fashion designer, product manager, and global executive. All panelists appreciated the dashboard’s emphasis on displaying actionable data that was still diverse enough to inform each team member’s focus in the shoe design process. With our dashboard, teams could finally empathize with the perspectives of their peers.
+                        </p>
+                    </div>
+                    <div class="col-sm-5 offset-sm-1">
+                        <div class="row">
+                            <div class="col-5">
+                                <h5 class="prototype"><span class="highlightBlue">My Role</span></h5>
+                                    <p class="mt-2 mb-0">Project Management</p>
+                                    <p class="mt-2 mb-0">Design Strategy</p>
+                                    <p class="mt-2 mb-0">Data Visualization</p>
+                                    <p class="mt-2 mb-0">User Data Analysis</p>
+                                    <p class="mt-2 mb-0">Animation Prototyping</p>
+                            </div>
+                            <div class="col-5">
+                                <h5 class="prototype"><span class="highlightBlue">Tools</span></h5>
+                                <p class="mt-2 mb-0">Figma</p>
+                                <p class="mt-2 mb-0">Protopie</p>
+                            </div>
+                            <div class="col-5 mt-4">
+                                <h5 class="prototype"><span class="highlightBlue hoverWord" data-words="Collaborators|Friends">Collaborators</span></h5>
+                                <a href="https://www.linkedin.com/in/amyzhuang/" target="_blank"><p class="mt-2 mb-0">Amy Zhuang</p></a>
+                                <a href="https://www.linkedin.com/in/sarahjiachen/" target="_blank"><p class="mt-2 mb-0">Sarah Chen</p></a>
+                                <a href="https://www.linkedin.com/in/serena-wang-a5ab44179/" target="_blank"><p class="mt-2 mb-0">Serena Wang</p></a>
+                                <a href="https://www.linkedin.com/in/miramookerjee/" target="_blank"><p class="mt-2 mb-0">Mira Mookerjee</p></a>
+                            </div>
+                        </div>
+                        <div class="col-12 summaryGraphic">
+                            <div class="size2Circles mt-1 summaryCircle1 lightRed"></div>
+                            <div class="size2Circles mt-1 summaryCircle2 lightYellow"></div>
+                            <div class="size2Circles mt-1 summaryCircle3 lightBlue"></div>
+                            <img id="P3adidasModel" src="Assets/Images/Project_Dashboard/adidasModel.png" alt="picture of woman wearing Adidas clothes">
+                            <p class="darkBlueText text-right"><i><a href="https://unsplash.com/photos/tpo12_X_I2M" target="_blank">Photo Credits: Alina Grubnyak</a></i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+               
+        <!--Solution Showcase -->
+            <section id="P3finalDesign" class="section finalDesign">
+                <div class="row ">
+                    <div class="col-sm-5 offset-sm-1 top">
+                        <h4 class="prototype"><span class="highlightBlue">Final Design</span></h4>
+                        <div class="solutionDescription">
+                            <div>
+                                <h5 class="prototype mt-4"><span class="highlightBlue">Performance Overview Page</span></h5>
+                                <p>
+                                    In this final design, users are first greeted with an overview page that presents a view of Adidas’ performance across three major dimensions – customer insights, social media trends, and financial performance. These three dimensions cater to the preferred method of assessing performance that a product manager (customer insights) fashion designer (social media trends) and a global executive (financial performance) would have. We also studied areas of overlapping interest between stakeholders, and ordered dashboard sections accordingly (e.g., most compelling sections in the top left, least at the bottom right) in keeping with <a href="https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c" target="_blank">Z-pattern hierarchies</a>. 
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="prototype mt-4"><span class="highlightBlue">Prototype Production Page</span></h5>
+                                <p>
+                                    With all the insights on customer preferences providing by the overview page, we designed the second page of the dashboard to channel those insights into action. 
+                                    Users can understand whether existing prototypes are attuned to what customers find desirable or what is trending on social media. The page also offers an overview of all the latest shoe designs with metrics on the elements that matter most to all three stakeholders. Designers can determine the changes they need to make to the shoe, while executives and product managers can weigh in with the financial and customer data provided.                                        
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="prototype mt-4"><span class="highlightBlue">Detailed Shoe Production Page</span></h5>
+                                <p>
+                                    Designers can also zero in on a specific shoe to focus their attention. When switching to this view, the shoe slideshow gallery at the top left switches to a 360-degree view of the specific shoe they’re looking at. All graphs are updated to provide views of the specific shoe against peer comparables to make more context-driven decisions on the areas to improve. With eco-friendliness a key consideration for designers, they can also identify alternative shoe composition suggestions without losing track of the other elements that matter to customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="lightBlue col-12 mt-3 pt-5">
+                        <div class="heartDown"></div>
+                        <div class="solutionVisuals">
+                            <div>
+                                <div class="solutionSlide">
+                                    <img class="solutionSlidePic width-80" src="http://drive.google.com/uc?export=view&id=191kw803Ugz77v47_hu91a4tITcZDyhW5" alt="overview page of dashboard">
+                                    
+                                    <p class=" pt-2 darkBlueText"><i>"Impossible is Nothing" Dashboard: Performance Overview Page</i></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="solutionSlide">
+                                    <img class="solutionSlidePic width-80" src="http://drive.google.com/uc?export=view&id=117n4ia_LhIfegfyRhZ_nqkSO4_ePk3ji" alt="production page of dashboard">
+                                    <p class=" pt-2 darkBlueText"><i>"Impossible is Nothing" Dashboard: Prototype Production Overview Page</i></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="solutionSlide">
+                                    <img class="solutionSlidePic width-80" src="http://drive.google.com/uc?export=view&id=1rcv_NOu-I0bXi6qJWTQm41Ygmq5ZhmYn" alt="shoe-specific production page of dashboard">
+                                    <p class=" pt-2 darkBlueText"><i>"Impossible is Nothing" Dashboard: Prototype Production Deep-Dive Page</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Takeaways and Reflections-->
+            <section id="P3takeaways" class="section reflectionSection">
+                <div class="row">
+                    <div class="col-11 offset-sm-1">
+                        <h4 class="prototype"><span class="highlightBlue">Project Takeaways and Reflection</span></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 offset-sm-1">
+                        <h5 class="prototype mt-4 mb-3"><span>If I Had More Time, I Would...</span></h5>
+                        <p><strong>Use Real Data: </strong>Within the scope of this project, the emphasis was on a thoughtfully designed dashboard that catered to the tastes of a diverse set of stakeholders. Although I tried to incorporate realistic data in the mockups, I would have wanted to see if the views were valuable and actionable to stakeholders when depicting real data.</p>
+                        <p><strong>Do User Testing: </strong>This project provided our team with three “persona cards” to build for, with all information pre-collected. This forced us to make some assumptions about these stakeholders’ needs. I would have loved to test our mockups with actual shoe designers, product managers, and executives to see if our assumptions held water.</p>
+                        <p><strong>Do More Competitor Research: </strong>Although we spent time looking at best-in-class dashboards, most of them involved data visualizations in unrelated fields (e.g., wealth management). I would’ve been interested to study more production dashboards to glean any valuable ideas that we could adapt for our purposes.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
+                        <div>
+                            <img class="CircleContent rightCirclePic" src="Assets/Images/Project_Dashboard/amazonExcelData.png" alt="amazon excel data">
+                            <p class="col-sm-9 CircleContent darkBlueText text-center"><i>Sample Amazon review data that we used to develop our prototype and its categories</i></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-5 order-sm-2">
+                        <h5 class="prototype mt-4 mb-3"><span>If I Went Back in Time, I Would...</span></h5>
+                        <p><strong>Stay Focused on User Needs: </strong>It was a learning curve to treat the Adidas persona cards as legitimate user research. Although we did eventually course-correct, we initially often made assumptions about the personas instead of referencing information provided. Consequently, our initial dashboard views were too generic and lacked focus.</p>
+                        <p><strong>Wait Before Ramping Up Fidelity: </strong>Our team moved almost immediately from rough paper sketches to a detailed Figma prototype. The higher visual fidelity was time-consuming to achieve and focused on shallow issues (e.g., color choices) instead of deeper concerns about the dashboard’s purpose, which we had to dedicate more time to in later phases.</p>
+                        <p><strong>Design Modular Prototypes: </strong>We neglected any sort of design system in our initial prototype development and had major pains in adjusting our prototype as a result. By project-end, we had developed an entire component-based design system in Figma, but wasted significant time in the interim.</p>
+                    </div>
+                    <div class="col-sm-6 order-sm-1">
+                        <div class="mediumCircles mt-1 reflectionCircle4 lightRed"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle5 lightYellow"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle6 lightBlue"></div>
+                        <div class="">
+                            <img class="CircleContent leftCirclePic" src="Assets/Images/Project_Dashboard/personaCards.png" alt="picture of persona cards">
+                            <p class="col-sm-9 CircleContent darkBlueText"><i>Adidas persona cards that we used as the basis of our dashboard and (occasionally) got away from</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-5 offset-sm-1">
+                        <h5 class="prototype mt-4 mb-3"><span>I Became Better At...</span></h5>
+                        <p><strong>Using Animations to Complement Content: </strong>In building the dashboard, I delved into Protopie and gained a far more nuanced understanding of how animations can both draw the eye and prove distracting depending on their usage. By the project’s end, I was able to create compelling animations that emphasized the right content at the right time.</p>
+                        <p><strong>Visualizing Complex Information: </strong>Coming from consulting, I had worked extensively with data to create informationally dense visualizations, but this project helped me combine that expertise with a visual sense to create data visualizations that were both informative and visually delightful. These visualizations could please a fashion designer and a global executive!</p>
+                        <p><strong>Prioritizing Information that Actually Matters: </strong>I firmly believe that the most important decisions in a dashboard involve deciding what information to not include, and this project gave me the comfort to make those decisions. It’s imperative to focus on the most salient user needs and constantly question whether the information provided serves those needs and empowers users.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
+                        <div>
+                            <img class="CircleContent rightCirclePic mb-2" src="Assets/Images/Project_Dashboard/protopieProgress.png" alt="picture of dashboard on protopie">
+                            <p class="col-sm-9 CircleContent darkBlueText"><i>Creating the dashboard’s animations on Protopie, and extending beyond Figma’s limited animation capabilities</i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Project Background-->
+            
+                <section id="P3projectBackground" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightGreen">Project Background</span></h4>
+                        </div>
+                        <!--Process for Desktop-->
+                        <div class="col-9 offset-sm-1 mt-4 processLong">
+                            <div class="d-flex justify-content-between">
+                                <span class="processLine"></span>
+                                <div>
+                                    <a href="#P3personaAnalysis">
+                                    <div class="purple iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/personaIcon.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P3sketchingIteration1">
+                                        <div class="pink iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/sketchingIcon.svg" alt="icon of sketching a first iteration phase">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P3highFidelity">
+                                        <div class="red iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/screenIcon.svg" alt="icon of moving to hi-fi">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P3motionAnimation">
+                                        <div class="yellow iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/motionIcon.svg" alt="icon of motion and animation">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P3finalThoughts">
+                                        <div class="blue iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/starIcon.svg" alt="icon of final thoughts">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P3PersonaAnalysis">Persona Analysis</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P3sketchingIteration1">Sketching a First Iteration</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P3highFidelity">Moving to High Fidelity</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P3motionAnimation">Motion & Animation</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P3finalThoughts">Results & Final Thoughts</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Process for Mobile-->
+                        <div class="col-10 offset-1 col-sm-9 offset-sm-1 processWinding mt-4">
+                            <div class="d-flex justify-content-between">
+                                <a href="#P3personaAnalysis">
+                                    <div class="purple iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <span class="processLine1"></span>
+                                        <img class="iconWinding" src="Assets/Images/Universal/personaIcon.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Persona Analysis</p>
+                                </a>
+                                <a href="#P3sketchingIteration1">
+                                    <div class="pink iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <div class="verticalProcessLine"></div>
+                                        <img class="iconWinding" src="Assets/Images/Universal/sketchingIcon.svg" alt="icon of sketching a first iteration phase">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Sketching a First Iteration</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#P3highFidelity">
+                                    <div class="red iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <span class="processLine2"></span>
+                                        <div class="verticalProcessLine"></div>
+                                        <img class="iconWinding" src="Assets/Images/Universal/screenIcon.svg" alt="icon of moving to hi-fi">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Moving to High Fidelity</p>
+                                </a>
+                                <a href="#P3motionAnimation">
+                                    <div class="yellow iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <img class="iconWinding" src="Assets/Images/Universal/motionIcon.svg" alt="icon of motion and animation">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Motion & Animation</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#P3finalThoughts">
+                                    <div class="blue iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <img class="iconWinding" src="Assets/Images/Universal/starIcon.svg" alt="icon of final thoughts">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Results & Final Thoughts</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 offset-sm-1 mb-4">
+                            <h5 class="prototype mt-4"><span class="highlightGreen">Project Context</span></h5>
+                            <p><i><strong>
+                                How might we leverage diverse stakeholder perspectives to improve Adidas’s performance in the fashion sneaker segment?
+                            </strong></i></p>
+                            <p class="mt-4">
+                                The importance of diversity extends beyond inclusion and representation of ethnicities, genders, or sexualities. Although it is less-mentioned, another critical part of any team’s success is their cognitive diversity, which enhances a company’s innovation by 20%, reduces risks by 30% and eases decisions’ implementation, according to Deloitte.
+                                <br><br>
+                                Despite the benefits, cognitive diversity can be elusive - it often involves instilling appreciation for varying perspectives, which can be difficult to do in siloed organizations where employees rarely explore the value of approaches beyond their bubble. 
+                                <br><br>
+                                From our project brief, Adidas is one such organization, where shoes’ product teams have had difficulty appreciating one another’s perspectives, and company executives’ focus on profitability consistently dominates conversation on how to iterate on shoe designs. 
+                                <br><br>
+                                Within this context, our team’s task was to develop a dashboard that could bridge the gap in understanding between three personas on a representative product team - Ansela, the Global VP for Adidas Fashion Sneakers, Kenny, the Director of Fashion Sneaker Marketing for North America, and SOS, a designer for Adidas Fashion Sneakers. With our dashboard, we aimed to transform the team’s cognitive diversity from a bottleneck into a strength.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightGreenFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1"><i>Deloitte's research reveals that high-performing teams are both cognitively and demographically diverse. By cognitive diversity, we are referring to educational and functional diversity, as well as diversity in the mental frameworks people use to solve problems.</i>
+                                </h5>
+                                <h5 class="fontGreen mb-5">
+                                    <a class="fontGreen" href="https://www2.deloitte.com/content/dam/insights/us/articles/4209_Diversity-and-inclusion-revolution/DI_Diversity-and-inclusion-revolution.pdf" target="_blank">Deloitte Review (Jan. 2018)</a>
+                                </h5>
+                                <img class="quotation-end lightGreenFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="lightGreen col-12 background">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="width-80" src="Assets/Images/Project_Dashboard/P3_PersonaCards.svg" alt="current state of Adidas data model">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Armed with these three persona cards, our team looked to develop a dashboard that could drive collaboration and help this team design better shoes</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            <!--Persona Analysis-->
+            
+                <section id="P3personaAnalysis" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightPurple">Persona Analysis</span></h4>
+                        </div>
+
+                        <!--Persona Analysis Part 1 -->
+                        <div class="col-sm-5 offset-sm-1 mb-4">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPurple">
+                                What information could our dashboard potentially present?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                We had been provided with two pieces of information – persona cards for the three members of a typical product team at Adidas (fashion designer, product manager, and financial executive), and sales + review data for one of Adidas’ shoes and its closest competitor.
+                                <br><br>
+                                With this information, we looked to evaluate the current state of Adidas’ data collection and shoe reviews. How were decisions currently being made on shoe designs? What were the major issues with shoes that a dashboard would need to address? What elements did the shoes do right that the dashboard would need to continue to monitor?
+                                <br><br>
+                                We started categorizing our findings into three sections – roses, buds, and thorns. A rose (pink sticky) indicated something Adidas was doing well and should continue to monitor, a bud (green sticky) indicated a potential opportunity for data collection, and a thorn (blue sticky) indicated issues that the dashboard would need to address.
+                                <br><br>
+                                It became clear that this view was helpful in understanding initial opportunities for the dashboard based off the current state, but that it didn’t provide a nuanced view of how those opportunities (or the dashboard) could serve the needs of any specific persona. These stickies would need to be mapped in the broader context of the personas’ goals and motivations. 
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                    I purchased these Adidas sneakers because I was very pleased with previous Adidas sneakers but these are very hard and un-bendable. I only wore them once and could not wear them again. I tried softening them by bathing them and bending them but to no avail. I think I will plant cactus in them. This is for your information, if you wish to grant me a credit, they cost 57.11
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    Anonymous reviewer of Adidas’ Grand Court Sneakers
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="lightPurple col-12 background">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="width-80" src="Assets/Images/Project_Dashboard/P3_AffinityDiagram.svg" alt="affinity diagram of Adidas shoes">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our small-scale affinity diagram, which helped us clarify the high-level opportunities and painpoints with Adidas' shoes currently</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <!--Persona Analysis Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    What information would be valuable to our core personas?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Although we had isolated high-potential information to showcase in our dashboard, we still hadn’t thought too deeply about how this data would actually empower or aid our three personas. We decided to reorganize our data into a Venn Diagram and identify which persona would find certain data elements useful.
+                                <br><br>
+                                We started with a current-state view. To begin, our persona cards shed light on the motivations and goals of the personas. We noted these motivations with relational arrows between Venn circles. Given those relationships, we sorted data that was available in the current state into the relevant circles.
+                                <br><br>
+                                This allowed us to progress to our second Venn diagram – the future state view. We combined the opportunities we had identified from our rose/bud/thorn exercise and the persona cards’ details on what each persona cared about in designing a shoe, and built an ideal future-state – if data was no issue, what would each persona want to know before they launched a shoe? 
+                                <br><br>
+                                From this view, we were able to see just how many potential datapoints we could include in our dashboard – 30+ categories that could prove useful to 1+ persona. This view also helped us understand just how many potential sources of data we could pull in to build our dashboard. How could we present all this information in a way that was digestible and useful to our personas?
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                    She views online information and business analytics as an effective way to increase data-driven innovation inside a company that has traditionally relied on executives in Germany
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    Excerpt from Ansela Manful’s (VP Fashion Sneakers) persona card
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                    He understands that his decisions are driven by spreadsheets, but he also knows risk taking comes from being in the street
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    Excerpt from Kenny Won’s (Director of Sneaker Marketing) persona card
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                    She wants to design things people love and cherish, that they keep, that lead them on adventures, that make them brave.
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    Excerpt from Sos Bondo’s (Fashion Designer) persona card
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="lightPurple col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_VennCurrentState.svg" alt="current state venn diagram">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our current-state Venn diagram mapped the data that was currently available to the personas that could derive value from that data</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_VennFutureState.svg" alt="future state venn diagram">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our future-state Venn diagram layered in data that would help each of the personas achieve their specific goals. Data at the center was relevant to more personas</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Persona Analysis Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Insights from Persona Analysis</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                    <div class="align-self-center d-flex justify-content-center align-content-center numberCircles purple mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        To create a compelling dashboard, we would need to think about how to balance a comprehensive view with something that is easily digestible for all stakeholders
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="align-self-center d-flex justify-content-center align-content-center numberCircles purple mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        As we thought about what information to show on the dashboard, we would need to prioritize data that was relevant to multiple stakeholders so that the dashboard would be valuable to the entire team
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="align-self-center d-flex justify-content-center align-content-center numberCircles purple mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Our fashion designer and product manager personas didn't seem to appreciate most traditional methods of data presentation (e.g., graphs), so we would have to find novel ways to create engaging data visualizations for them
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+            
+
+            <!--Sketching a First Iteration -->
+            
+                <section id="P3sketchingIteration1" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightPink">Sketching a First Iteration</span></h4>
+                        </div>
+
+                        <!--Sketching a First Iteration Part 1 -->
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    How can we present each persona with the information they need?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Now that our team understood what information our personas would benefit from having on the dashboard, we shifted gears to ideation and thinking through how to display this information effectively. Our team made the mistake of not further prioritizing the information we should show on our dashboard, instead focusing efforts on how to most effectively display all potentially valuable data in a single tool. 
+                                <br><br> 
+                                To facilitate diversity of thought, each of us spent time individually ideating on the dashboard’s potential layout, then discussed elements of overlap. In our meeting, we quickly aligned on the idea of a tabular view, where each tab would focus on one lens of data (e.g., shoe production, web & social, finance), and each persona could focus on the tabs that interested them. With each persona having such different perspectives and needs, this seemed like the most intuitive way to cater to each perspective.
+                                <br><br>
+                                With this tabular view, we could also accommodate the unique ways each persona ingested data, featuring more traditional charts and graphs for Ansela, and more visual elements for Sos or Kenny.
+
+                            </p>
+                        </div>
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4 top">
+                            <div class="relative">
+                                <img class="quotation-start lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-2"><i>
+                                    I think there needs to be a difference in who sees what. Each of these personas has such different goals, so our dashboard should help each of them achieve those goals without providing extraneous information to the others
+                                </i>
+                                </h5>
+                                <h5 class="fontPink mb-5">Raajat Gupta</h5>
+                                <img class="quotation-end lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="lightPink col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_AmySketches.svg" alt="hand-drawn dashboard mockup 1">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>One of the team's sketches, showcasing what a tabular dashboard could look like, with visualizations grouped by the type of data they were presenting</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_RaajatSketches.svg" alt="hand-drawn dashboard mockup 1">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Another set of sketches that detailed the specific visualizations that could go under a 3-tab view, with each tab mapped to one of the personas</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Sketching a First Iteration Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    How can we provide the right view of the data to each persona?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                We began to translate our thinking into a high-fidelity prototype, confident that we had cracked the secret to the perfect dashboard. After brainstorming the potentially valuable graphs to include in the dashboard and consolidating them into the 16 most relevant ones, we began to see four categories emerge in the information they provided – Finance, Customer Needs, Web & Social Media, and Shoe Production. 
+                                <br><br>
+                                These categories served as our tabs. Each persona could gravitate towards the tabs that served them without being bombarded with unnecessary information from other tabs. As we began to develop these graphs, we struggled to understand the right cut of the data to provide. We hypothesized that the right view was context-dependent, and that instead of being declarative, we should allow the user to determine the optimal view of the graph.
+                                <br><br>
+                                With this logic, we built each graph to be interactive. Users could click on a graph to then filter the view by shoe type, gender, and various other metrics. In our view, this allowed the dashboard to “always be right” in providing the most relevant view to users.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4 top">
+                            <div class="relative">
+                                <img class="quotation-start lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1"><i>
+                                    Wouldn’t it be perfect if instead of prescribing the right view of the graph, we allowed the user to pick for themselves? Instead of overwhelming them with all the depth and granularity we could provide, why don’t we let them pick the view they want for themselves?
+                                </i>
+                                </h5>
+                                <h5 class="fontPink mb-5">
+                                    Amy Zhuang (team member)
+                                </h5>
+                                <img class="quotation-end lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1"><i>
+                                    If we do it right, we can be everything to everyone
+                                    <br><br>
+                                </i>
+                                </h5>
+                                <h5 class="fontPink mb-5">
+                                    Serena Wang (team member)
+                                </h5>
+                                <img class="quotation-end lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="lightPink col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv1-1.svg" alt="first iteration dashboard tabs">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>A sample of the finance tab of the dashboard (left) along with the deep-dive of the clicked graph (right) allowing filtration by geography</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv1-2.svg" alt="first iteration dashboard deep-dive">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>A sample of the finance tab of the dashboard (left) along with the deep-dive of the clicked graph (right) allowing filtration by shoe type and gender</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv1-3.svg" alt="first iteration dashboard tabs">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>A sample of the finance tab of the dashboard (left) along with the deep-dive of the clicked graph (right) allowing filtration by shoe type and gender</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv1-4.svg" alt="first iteration dashboard deep-dive">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>A sample of the finance tab of the dashboard (left) along with the deep-dive of the clicked graph (right) allowing filtration by shoe type</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Sketching a First Iteration Part 3 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    How can our dashboard promote the pursuit of a common goal?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                We showcased our dashboard as part of a group critique in class. From our critique, we realized our dashboard had mistaken comprehensiveness for utility. Ultimately, the role of a dashboard shouldn’t be to serve as a repository of data visualizations; instead its goal should be to provide relevant and actionable information that help users achieve a specific goal. We were wrong in trying to be everything to everyone.
+                                <br><br>
+                                That all started with defining the central goal itself – we wanted to align on a goal that would unite the seemingly divergent interests of Ansela, Kenny and Sos. 
+                                <br><br>
+                                We realized that although each persona took different approaches, they were all in service of designing better sneakers. This goal was central to the purpose of the product team itself and could help the personas focus more on collaborative work efforts.  Following from that, all our dashboard information should provide actionable information to improve sneaker design.
+                                <br><br>
+                                We revisited our dashboard and its myriad visualizations, and conducted a Remove-Keep- Modify exercise. We assessed whether each visualization could further our stakeholders’ central goal in an actionable way, and the best way to present that visualization if it was relevant. With this lens, we arrived at a significantly reduced and focused subset of graphs which complemented each other, rather than competing for attention.                                    
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                    This feels more like a website than a dashboard. A well-functioning dashboard should provide the most important views to its users without asking them to endure significant cognitive load and decide what views and filters they need. With this dashboard, I go from having a summary of information that informs me to a repository I have to search through
+                                    </i>
+                                </h5>
+                                <h5 class="fontPink mb-5">
+                                    Sara Blumenstein (course instructor)
+                                </h5>
+                                <img class="quotation-end lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="lightPink col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_RemoveKeepModifyOverview.svg" alt="first iteration dashboard tabs">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>We conducted our remove (red sticky), keep (yellow sticky) and modify (green sticky) exercise on every frame of our dashboard</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_RemoveKeepModifyDetailed.svg" alt="first iteration dashboard deep-dive">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>We focused the efforts of our exercise on the four main tabs of the dashboard, with rationale behind each of our decisions</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sketching a First Iteration Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Insights from Sketching a First Iteration</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        It’s never a bad thing to ask “why”. We accepted that our dashboard would need to provide a comprehensive view of the data without considering the benefits and drawbacks of this decision
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        An effective dashboard should serve a specific purpose or goal that each visualization supports. In lieu of defining this goal, a dashboard can quickly become cluttered and create a high cognitive load for the user
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        It's important to maintain a lower level of fidelity (particularly visual fidelity) until completely clear on the objectives and functions of your solution. Otherwise, critiques focus on inconsequential visual elements and ignore foundational issues
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            <!--Moving to High Fidelity -->
+            
+                <section id="P3highFidelity" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightRed">Moving to High Fidelity</span></h4>
+                        </div>
+
+                        <!-- Moving to High Fidelity Part 1-->
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightRed">
+                                    How can our dashboard drive decision-making?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                We needed to move past the tabular view we had before, which reinforced siloed working. Instead, our dashboard should aim to promote discussion and collaboration as its users <i>design better shoes</i> together.
+                                <br><br>
+                                To reinforce this behavior, we restructured our dashboard to have three main pages – a performance overview page, a prototype production page, and a production deep-dive page. 
+                                <br><br>
+                                On the first page, users could understand Adidas’ current state, both to identify key trends that they could incorporate into future designs, and to understand whether recent launches were successful. Users could then translate those insights to the second page and confirm whether upcoming launches were incorporating findings, with the option to do a deeper analysis of specific shoes on the third page. 
+                                <br><br>
+                                With each page serving a specific purpose, we refreshed the visualizations on each page to support that purpose. We got rid of data that could be easily found or didn’t drive action, such as Instagram followers.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        Everytime we decide whether or not to include a visualization in this dashboard, we need to ask ourselves one question – will it help our personas design better shoes? If we can’t justify it from that perspective, it doesn’t belong in our dashboard
+                                    </i>
+                                </h5>
+                                <h5 class="fontRed mb-5">
+                                    Raajat Gupta
+                                </h5>
+                                <img class="quotation-end lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="lightRed col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv2-1.svg" alt="mid-fidelity dashboard overview page">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>In our new homepage, we moved away from a clickable, widget-based view to defining a clear vision of what the most important information was for our personas</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv2-2.svg" alt="mid-fidelity dashboard production page">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>We separated out the overview page from the prototype production page, dividing them because they served a different purpose. The former was intended to provide a reflective, historical view; the latter was to help design future shoes</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv2-3.svg" alt="mid-fidelity dashboard shoe-specific production page">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>To add further focus on actionable insights, we created a deep-dive page for shoe prototypes to allow better understanding of specific painpoints and opportunities for each shoe</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Moving to High Fidelity 1 Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightRed">
+                                    How do we minimize cognitive load for our dashboard’s users?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Another group critique helped confirm that we were closer to creating a useful dashboard, but that it could still feel like a “collection of visualizations” rather than a hub for decision-making. To address this issue, we undertook two actions.
+                                <br><br>
+                                First, we did another pass of our visualizations, forcing ourselves to ideate specific scenarios where a persona could take action for each graph (e.g., If Kenny sees Nike has the top hashtag, he can go on Twitter to learn more). Where we couldn’t think of a clear scenario, we removed the visualization from the dashboard.
+                                <br><br>
+                                Second, we were more choiceful in the dashboard’s layout. We had previously selected a layout that allowed all the visualizations to fit (yikes), but we now clustered elements that provided related information, then created a hierarchy for clusters based off how many personas the cluster was informative to (e.g., customer insights helped all three personas, and so was in the top left). We employed a z-pattern hierarchy system. 
+                                <br><br>
+                                We also refined our dashboard controls. Our project imposed constraints where we were only allowed to institute a single physical control to manage the dashboard. To easily toggle between pages, we employed a joystick control. We instituted navigation callouts on the left and top of the dashboard to signal to users both where they were in the dashboard, and where they could navigate.                                
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4 top">
+                            <div class="relative">
+                                <img class="quotation-start lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        If someone is looking at your dashboard, they should immediately know what to do with a piece of information, whether they know to research something further, change the design of a shoe, or show the information to a peer. Although this is close, I can't say that for every chart in this dashboard
+                                    </i>
+                                </h5>
+                                <h5 class="fontRed mb-5">
+                                    Anonymous Student Critiquer
+                                </h5>
+                                <img class="quotation-end lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="lightRed col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv3-1.svg" alt="final dashboard overview page">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>In our final homepage, we reduced clutter and simplified the page even further to only show data that we felt could drive action for our personas</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv3-2.svg" alt="final dashboard production page">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our drive towards simplification was repeated once again for our final prototype production page</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_Dashboard/P3_Dashboardv3-3.svg" alt="final dashboard shoe-specific production page">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>We layered in more of a customer lens in our shoe-specific page, creating a "common needs and painpoints" section that outlined major customer insights from user testing</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Moving to High Fidelity Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Insights from Moving to High Fidelity</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    Good data visualizations, particularly in a dashboard, are actionable and contextual. Whenever deciding whether to include a graph, ask yourself, "what can a user do with this?" and “how will this information be used in context?” 
+                                </p>
+                                </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    Information hierarchy is a powerful way to reduce cognitive load. It helps structure a page and guides the reader’s attention so they can more easily understand where to go for the information they need without thinking
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    Controls need effective feedforward and affordances. A user should be able to build an accurate mental model of how a control will interact with the UI before they even touch the control itself
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            
+
+            <!-- Motion & Animation -->
+            
+                <section id="P3motionAnimation" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightYellow">Motion & Animation</span></h4>
+                        </div>
+
+                        <!-- Motion & Animation Part 1 -->
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightYellow">
+                                    How can motion and animation enhance the clarity of visualizations?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Although our visualizations were now clear and focused, we also had to address their dynamism. We imagined our visualizations to provide live views of the data they represented, to optimize their actionability and relevance. 
+                                <br><br> 
+                                To accommodate this dynamism, we introduced motion and animation into the visualizations. Instead of having them refresh at arbitrary points and risk our users making decision on outdated data, we thought animations could provide a smoother, live “refresh” experience.
+                                <br><br> 
+                                We also designed our animations to indicate how the data was changing (e.g., as new social media trends emerged, they “climbed” the graph, while out-of-date trends “fell” down. By doing this, we were able to use animation to both swap in new information and communicate how that information was impacting what the users were seeing. By doing this, we could draw users’ attention when there were major changes to the data and make significant changes more digestible.                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="lightYellow col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="http://drive.google.com/uc?export=view&id=191kw803Ugz77v47_hu91a4tITcZDyhW5" alt="overview page of dashboard">
+                                        
+                                        <p class=" pt-2 darkBlueText"><i>Our Performance Overview page uses motion to signal changes across graphs, particularly in the "social media trends" section</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="http://drive.google.com/uc?export=view&id=117n4ia_LhIfegfyRhZ_nqkSO4_ePk3ji" alt="production page of dashboard">
+                                        <p class=" pt-2 darkBlueText"><i>Our Prototype Production page incorporates motion to signal new insights from user prototype testing</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic width-80" src="http://drive.google.com/uc?export=view&id=1rcv_NOu-I0bXi6qJWTQm41Ygmq5ZhmYn" alt="shoe-specific production page of dashboard">
+                                        <p class=" pt-2 darkBlueText"><i>Our Production Deep-Dive page uses motion to emphasize specific parts of the graphs, and indicate new insights from testing</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Motion & Animation Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightYellow">
+                                    How can motion and animation enhance the dashboard’s user experience?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Given just how many different data sources our dashboard was aiming to draw from, we also realized that our users would likely face material load times when the dashboard switched views. We wanted to be transparent with users about those load times, but we also wanted to minimize their frustrations.
+                                <br><br>
+                                Motion and animation helped us solve this issue. We instituted loading animations upon page loads across all our dashboard pages, where data would spend 2-3 seconds “appearing”. This animation made the load-in less jarring by temporarily distracting users until the data was loaded.
+                                <br><br>
+                                We also introduced motion and animation as a means to attract and engage users. We knew that Sos and Kenny were wary of data visualizations, and found them less engaging than Ansela. To attract them, we instituted aesthetically pleasing visualizations (e.g., rotating shoes, shoe slideshows) that helped convey information better than static images of the shoes, but also made the dashboard itself more interactive and visual, in accordance with Kenny and Sos’s personalities.                                 
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4 top">
+                            <div class="relative">
+                                <img class="quotation-start lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        She gets bored when she must listen to lectures from US and German managers who wear ties and talk about ROI
+                                    </i>
+                                </h5>
+                                <h5 class="fontGrey mb-5">
+                                    Excerpt from Sos Bondo’s (Fashion Designer) persona card
+                                </h5>
+                                <img class="quotation-end lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="lightYellow col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <div class="videoContainer">
+                                            <iframe class="responsiveVideo" src="https://drive.google.com/file/d/1dbXqCR0fbZNznQ3NZ9KUF974lKCHkOml/preview" width="640" height="480">
+                                            </iframe>
+                                        </div>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Motion and animation helped distract users when they switched between pages or turned on the device, and gave the data time to load in</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Motion & Animation Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Insights from Motion & Animation</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                    <div class="yellow align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Motion and animation are great tools for making a dashboard feel more lively, but they need to be used with purpose to prevent them from feeling distracting or reducing the dashboard's effectiveness
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="yellow align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Motion and animation are most effective when they are used to tell the story of the data, so that a user does not even need to look at the actual figures to know how the data has changed
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="yellow align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Almost all animations can be defined in three simple steps: deciding the object of the interaction, determining the trigger, and defining the rules / feedback upon triggering. This simplified model is a great way to think about how to create user-friendly, delightful micro-interactions
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+
+            <!-- Results & Final Thoughts -->
+            
+                <section id="P3finalThoughts" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightBlue">Results & Final Thoughts</span></h4>
+                        </div>
+                        <div class="col-sm-5 offset-sm-1 mb-4">
+                            <p class="mt-4">
+                                We closed off this project with a pitch presentation to a guest panel, which included actors playing the personas of Ansela, Kenny, and Sos. 
+                                <br><br>
+                                The pitch was received with overwhelming praise, with all personas seeming to find value from the dashboard, and commenting that it helped them build empathy for other perspectives that they would otherwise never have. We were able to achieve our goal of creating a single view that spoke to three distinct personas.
+                                <br><br>
+                                In reflecting on the project, I’m cognizant of how close our team was to creating an encyclopedia instead of a website. My biggest takeaway from this project is just how critical it is to define the goals and desired outcomes of a solution before designing any of it. With that goal in mind, decision-making is simplified by assessing whether a design choice aligns to the goal. Without such a goal, it is easy to make design choices that build a “prettier” solution but that serve no deeper purpose. 
+                                <br><br>
+                                Similarly, I’m struck by the <a href="https://www.designkit.org/methods/66" target="_blank">power of “why”</a>. Particularly in group projects, it’s easy to make decisions because they are agreeable, without questioning their soundness or alignment with user needs. This project helped me challenge that mindset, and constantly question our process so that all decisions enhanced our value to our personas.                                
+                            </p>
+                        </div>
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        I have two major takeaways. First, building around a focused goal is instrumental in delivering value because it ensures all information provided is genuinely useful. Second, motion is incredible—it can add character, communicate function, and turn awkward transitions beautiful. This fledgling designer has added another tool to his toolkit.
+                                    </i>
+                                </h5>
+                                <h5 class="fontBlue mb-5">
+                                    Raajat Gupta
+                                </h5>
+                                <img class="quotation-end lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        One of the most important things I learned from this project was to not be afraid to completely change a prototype that wasn’t working, no matter how much time we had sunk into it. The diversity of ideas we were able to come up with together as a group was greater than anything we would have been able to come up with on our own.
+                                    </i>
+                                </h5>
+                                <h5 class="fontBlue mb-5">
+                                    Sarah Chen (team member)
+                                </h5>
+                                <img class="quotation-end lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="lightBlue col-12 background">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="width-80" src="Assets/Images/Project_Dashboard/dashboard-MapView.svg" alt="map of dashboard and its pages">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>A final summary of the view we developed with our "Impossible is Nothing" Dashboard</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Bottom Navigation -->
+            <section id="P3bottomNav" class="row bottomNav">
+                <div class="d-flex justify-content-start col-4">
+                    <a href="#" class="d-flex align-self-center bottomNavContainer">
+                        <div class="leftNavCircle lightYellow"></div>
+                        <img class="leftNavPic" src="Assets/Images/Home/tileBlackBoxTheater.png" alt="Ghost Hunters">    
+                        <h5 class="bottomNavText text-left prototype hoverWord" data-words="Prev|Black Box Theater">Prev</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-center col-4">
+                    <a href="#P3projectHeader" class="backTop align-self-center">
+                        <div class="backTopCircle blue d-flex justify-content-center align-content-center">
+                            <img class="backTopArrow align-self-center" src="Assets/Images/Universal/backTopArrow.svg" alt="back to top arrow">
+                        </div>
+                        <h5 class="prototype fontBlue text-center pt-2 backTopText">Back to Top</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-end col-4">
+                    <a href="#" class="d-flex align-self-center bottomNavContainer">
+                        <div class="rightNavCircle lightRed"></div>
+                        <img class="rightNavPic" src="Assets/Images/Home/tileSpeakMindDesktop.png" alt="SpeakMind"> 
+                        <h5 class="bottomNavText text-right prototype hoverWord" data-words="Next|SpeakMind">Next</h5>
+                    </a>
+                </div>
+                    
+                
+                
+            </section>
+
+        </div>
+        <script src="Assets/Libraries/slick/slick.min.js"></script>
+        <script src="Assets/js/type.js"></script>
+    </body>
+</html>
