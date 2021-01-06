@@ -414,6 +414,10 @@ body, html {
     scroll-padding-top: 400px;
 }
 
+#P1solutionOverview, #P1finalDesign, #P1takeaways, #P1projectBackground, #P1DefiningProblem, #P1NarrowingIn, #P1LoFi, #P1MidFi, #P1HiFi, #P1finalThoughts, #P1bottomNav {
+    overflow-x:hidden;
+}
+
 #P2solutionOverview, #P2finalDesign, #P2takeaways, #P2projectBackground, #P2context, #P2adjacentOfferings, #P2tiesToTheater, #P2initialIdeas, #P2prototyping, #P2finalThoughts, #P2bottomNav {
     overflow-x:hidden;
 }
@@ -806,6 +810,12 @@ Button Formatting
 ==============================================
 */
 
+
+/* 
+--------------------------
+Purple Button
+--------------------------
+*/
 .btn-purple {
     color: #fff;
     font-weight: bold;
@@ -824,7 +834,7 @@ Button Formatting
     color: #fff;
     background-color: hsl(266, 72%, 67%);
     border-color: hsl(266, 72%, 70%);
-    box-shadow: 0 0 0 0.2rem  hsl(266, 72%, 70%, 0.5);
+    box-shadow: 0 0 0 0.2rem  hsla(266, 72%, 70%, 0.5);
   }
   
   .btn-purple.disabled, .btn-purple:disabled {
@@ -842,7 +852,51 @@ Button Formatting
   
   .btn-purple:not(:disabled):not(.disabled):active:focus, .btn-purple:not(:disabled):not(.disabled).active:focus,
   .show > .btn-purple.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem hsl(266, 72%, 70%, 0.5);
+    box-shadow: 0 0 0 0.2rem hsla(266, 72%, 70%, 0.5);
+  }
+
+/* 
+--------------------------
+Blue Button
+--------------------------
+*/
+.btn-blue {
+    color: #fff;
+    font-weight: bold;
+    background-color: hsl(229, 57%, 64%);
+    border-color: hsl(229, 57%, 64%);
+    border-radius: 30px;
+  }
+  
+  .btn-blue:hover {
+    color: #fff;
+    background-color: hsl(229, 57%, 54%);
+    border-color: hsl(229, 57%, 59%);
+  }
+  
+  .btn-blue:focus, .btn-blue.focus {
+    color: #fff;
+    background-color: hsl(229, 57%, 54%);;
+    border-color: hsl(229, 57%, 59%);
+    box-shadow: 0 0 0 0.2rem  hsla(229, 57%, 59%, 0.5);
+  }
+  
+  .btn-blue.disabled, .btn-blue:disabled {
+    color: #fff;
+    background-color: hsl(229, 57%, 64%);
+    border-color: hsl(229, 57%, 64%);
+  }
+  
+  .btn-blue:not(:disabled):not(.disabled):active, .btn-blue:not(:disabled):not(.disabled).active,
+  .show > .btn-blue.dropdown-toggle {
+    color: #fff;
+    background-color: hsl(229, 57%, 59%);
+    border-color: hsl(229, 57%, 54%);
+  }
+  
+  .btn-blue:not(:disabled):not(.disabled):active:focus, .btn-blue:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem hsla(229, 57%, 59%, 0.5);
   }
 
 /*
@@ -1958,6 +2012,13 @@ Summary Circles
     height: auto;
     margin-left: 25%;
     margin-top: -45%;
+}
+
+#P1zuzu {
+    width: 90%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: -25%;
 }
 
 
