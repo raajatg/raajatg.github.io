@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpeakMind</title>
+        <link rel="icon" href="Assets/Images/Universal/circlesIcon.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="Assets/Libraries/Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Assets/css/animations.css">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="Assets/Libraries/Bootstrap/js/bootstrap.js"></script>
+        
+        <script src="Assets/js/core.js"></script>
+        <script src="Assets/js/main.js"></script>
+    </head>
+    <body>
+        <!--Dot Navigation-->
+        <div id="dot-nav" class="position-fixed">
+            <ul>
+                <li class="awesome-tooltip blueDot" title="Solution Overview"><a href="#P4solutionOverview"></a></li>
+                <li class="awesome-tooltip blueDot" title="Final Design"><a href="#P4finalDesign"></a></li>
+                <li class="awesome-tooltip blueDot" title="Takeaways and Reflection"><a href="#P4takeaways"></a></li>
+                <li class="awesome-tooltip greenDot" title="Project Background"><a href="#P4projectBackground"></a></li>
+                <li class="awesome-tooltip purpleDot" title="Defining the Issue"><a href="#P4DefiningIssue"></a></li>
+                <li class="awesome-tooltip pinkDot" title="Aligning on a Solution"><a href="#P4Aligning"></a></li>
+                <li class="awesome-tooltip redDot" title="Developing our Prototype"><a href="#P4Developing"></a></li>
+                <li class="awesome-tooltip yellowDot" title="Incorporating all Stakeholders"><a href="#P4Incorporating"></a></li>
+                <li class="awesome-tooltip blueDot" title="Results & Final Thoughts"><a href="#P4finalThoughts"></a></li>
+            </ul>
+        </div>
+
+        <!--Navbar-->
+        <nav class="navbar fixed-top header mar-bot">
+        
+            <!-- Navbar brand -->
+            <a class="navbar-brand name" href="index.html">RAAJAT GUPTA</a>
+                <!-- Collapsible content -->
+                <div class="collapse ml-auto" id="navbarSupportedContent22">
+        
+                    <!-- Links -->
+                    <ul class="navbar-nav flex-row ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link header-text px-2" href="about.html">ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-text px-2" href="https://drive.google.com/file/d/1r0b4M6qJ3EzEkZkw6zHYJf-X4mWIlBOm/view" target="_blank">CV</a>
+                    </li>
+                    </ul>
+                    <!-- Links -->
+                
+                </div>
+                <!-- Collapsible content -->
+            <!-- Collapse button -->
+            <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+            aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon3"><span></span><span></span><span></span></div>
+            </button>  
+        </nav>
+        <!--/.Navbar-->
+        
+        <div class="vh-100 container-fluid projectContainer text-left pt-4">
+            
+            <!--Project Page Header-->
+                <div id="P4projectHeader" class="row projectHeader">
+                    <div class="projectHeaderPic align-self-center col-sm-5">
+                        <div class="size2Circles PPcircleTwo lightRed"></div>
+                        <div class="size2Circles PPcircleThree lightYellow"></div>
+                        <div class="size2Circles PPcircleOne lightBlue"></div>
+                        <img class="P4headerPic fadeCustom" src="Assets/Images/Home/tileSpeakMindIcon.png" alt="Header picture of SpeakMind logo">
+                    </div>
+                    
+                    <div class="projectHeaderSummary col-sm-5 order-md-1 pt-2">
+                        <h2 class="prototype">SpeakMind</h2>
+                        <p class="prototype fontRed subtitle">April 2020 - June 2020</p>
+                        <h5 class="metrophobic">
+                            I started a mental health non-profit organization that helped Canadians dealing with increased COVID-related loneliness by connecting them to empathetic listeners with similar backgrounds and experiences
+                        </h5>
+                        <h4>
+                            <a href="https://speakmind.ca/" target="_blank">
+                                <button type="button" class="btn btn-red mt-3 metrophobic p-3">SpeakMind Website</button>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+        <!--Solution Overview -->
+            <section id="P4solutionOverview" class="section solutionOverview">
+                <div class="row ">
+                    <div class="col-sm-5 offset-sm-1 mb-4 top">
+                        <h4 class="prototype"><span class="highlightBlue">Project Overview</span></h4>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">Context & User Problem</span></h5>
+                        <p>
+                            COVID-19 has been more than a physical health crisis. Last year, 67% of Canadians said their mental health was good or very good; this year that number has <a href="http://angusreid.org/isolation-and-loneliness-covid19/" target="_blank">dropped to 53%</a>. A huge driver of that is loneliness, which has had a <a href="https://www.morneaushepell.com/sites/default/files/assets/paragraphs/resource-list/mhicanadaseptember2020final.pdf" target="">greater impact on mental health than even the fear of dying from COVID-19</a>. Despite this loneliness, Canadians do not want to talk to mental health professionals <a href="https://www.camh.ca/en/driving-change/addressing-stigma" target="_blank">because of perceived stigma</a>. How can we help this huge portion of the population feel better?
+                        </p>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">Solution</span></h5>
+                        <p>
+                            More than anything, lonely Canadians wanted someone to empathize with their problems and provide relevant perspectives. SpeakMind is a non-profit that seeks to provide just that, connecting lonely Canadians to empathetic listeners without facing any perceived stigma. SpeakMind users just let us know what’s on their mind along with some basic demographic information, and we match them to someone with similar demographics who can understand the user’s current state, and offer helpful advice. 
+                        </p>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">Outcomes</span></h5>
+                        <p>
+                            SpeakMind garnered ~400 signups in its first month of inception from both volunteers and users. 100% of SpeakMind users have provided a perfect satisfaction rating with the service, with several users forming ongoing friendships with their listeners. SpeakMind has been featured across various volunteer and news platforms as a result of its value to Canadians, including a feature in <a href="https://www.toronto.com/news-story/9985473-volunteers-in-toronto-are-ready-to-crush-covid-19-isolation-by-phone/ " target="_blank">Toronto.com</a>, Toronto’s largest local news site. 
+                        </p>
+                    </div>
+                    <div class="col-sm-5 offset-sm-1">
+                        <div class="row">
+                            <div class="col-5">
+                                <h5 class="prototype"><span class="highlightBlue">My Role</span></h5>
+                                    <p class="mt-2 mb-0">Co-Founder</p>
+                                    <p class="mt-2 mb-0">Lead UX Researcher</p>
+                                    <p class="mt-2 mb-0">Lead UX Writer</p>
+                                    <p class="mt-2 mb-0">Prototype Developer</p>
+                            </div>
+                            <div class="col-5">
+                                <h5 class="prototype"><span class="highlightBlue">Methods</span></h5>
+                                <p class="mt-2 mb-0">Contextual Inquiry</p>
+                                <p class="mt-2 mb-0">Persona Development</p>
+                                <p class="mt-2 mb-0">Speed Dating</p>
+                                <p class="mt-2 mb-0">Experience Prototyping</p>
+                                <p class="mt-2 mb-0">A/B Testing</p>
+                            </div>
+                            <div class="col-5 mt-4">
+                                <h5 class="prototype"><span class="highlightBlue hoverWord" data-words="Collaborators|Friends">Collaborators</span></h5>
+                                <a href="https://www.linkedin.com/in/percilparikh/" target="_blank"><p class="mt-2 mb-0">Percil Parikh</p></a>
+                                <p class="mt-2 mb-0">Kevin Sivadas</p>
+                                <p class="mt-2 mb-0">Parshad Brahmbhatt</p>
+                            </div>
+                        </div>
+                        <div class="col-12 summaryGraphic">
+                            <div class="size2Circles mt-1 summaryCircle1 lightRed"></div>
+                            <div class="size2Circles mt-1 summaryCircle2 lightYellow"></div>
+                            <div class="size2Circles mt-1 summaryCircle3 lightBlue"></div>
+                            <img id="P4phoneconvo" src="Assets/Images/Project_SpeakMind/talking-phone.png" alt="woman talking on phone">
+                        </div>
+                    </div>
+                </div>
+            </section>
+               
+        <!--Solution Showcase -->
+            <section id="P4finalDesign" class="section finalDesign">
+                <div class="row ">
+                    <div class="col-sm-5 offset-sm-1 top">
+                        <h4 class="prototype"><span class="highlightBlue">Final Design</span></h4>
+                        <div class="solutionDescription">
+                            <div>
+                                <h5 class="prototype mt-4"><span class="highlightBlue">Website</span></h5>
+                                <p>
+                                    Given that we’re a fledgling company, our website’s main purpose is to provide more information about our mission and services. The vast majority of our interviewees said that they would already be interested in participating in our service if they clicked through to our website, so our home page expedites the sign-up process by providing a concise summary of SpeakMind’s purpose to users and volunteers and funneling them to sign up.
+                                    <br><br>
+                                    A smaller but vocal minority also came to our website to learn more about us, details on their potential experience with us, and our differentiating factors. To answer these questions, we structured a concise FAQ page where interested visitors can easily find the information, they need with navigation tabs.                                    
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="prototype mt-4"><span class="highlightBlue">User Sign-Up Form</span></h5>
+                                <p>
+                                    For lonely Canadians that are looking to find someone to talk to, our user sign-up form allows them to quickly input the essential information we need to connect them to someone that can relate to our users’ issues and provide helpful advice.
+                                    <br><br>
+                                    The wording of the form is carefully selected to avoid stigmatizing words like “mental health”, “depression”, or “anxiety”, which can deter users from getting support for fear of appearing mentally unstable. To provide full transparency and build trust, we provide rationale for every question we ask. As they go through the form, users buy into our process and are more likely to fill in optional information about themselves that improves our matching process. 
+                                    
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="prototype mt-4"><span class="highlightBlue">Volunteer Sign-Up Form</span></h5>
+                                <p>
+                                    For Canadians that want to help abate their peers’ feelings of loneliness, our volunteer sign-up form collects contact / demographic information, as well as areas of experience that volunteers would be comfortable discussing with users. 
+                                    <br><br>
+                                    Whereas users are seeking help, volunteers are providing it. As a result, our form introduction asks volunteers to sign up if they “think it’s important to stand together in this age”, leveraging principles of <a href="https://www.nngroup.com/articles/commitment-consistency-ux/" target="_blank">consistency and commitment</a> to persuade them to follow through on their sign-up. Similarly to the user sign-up form, our form also lays out the rationale for questions to build trust with prospective volunteers.                                    
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="prototype mt-4"><span class="highlightBlue">Volunteer Orientation Package</span></h5>
+                                <p>
+                                    To set our volunteers up for success, the Volunteer Orientation Package lays out how volunteers can help their matches deal with mental stressors using a variety of tactics promoted by Canada’s leading mental health organizations.
+                                    <br><br>
+                                    The purpose of this document is two-fold – make our volunteers feel comfortable, and make sure they always act appropriately. We interviewed various volunteers to understand their hesitations in helping their matches and addressed those hesitations in our guide (e.g., laying out what they are and aren’t expected to do). We also worked with various mental health professionals across Canada to make sure our advice was sound and provided guidance at various levels of situation escalation.                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="lightBlue col-12 mt-3 pt-5">
+                        <div class="heartDown"></div>
+                        <div class="solutionVisuals">
+                            <div>
+                                <div class="solutionSlide">
+                                    <a href="Assets/Images/Project_SpeakMind/site-homepage.png" target="_blank">
+                                        <img class="solutionSlidePic width-60" src="./Assets/Images/Project_SpeakMind/site-homepage.png" alt="SpeakMind homepage">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1"><i>SpeakMind: Home Screen</i></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="solutionSlide">
+                                    <a href="Assets/Images/Project_SpeakMind/user-signup.png" target="_blank"></a>
+                                        <img class="solutionSlidePic width-80" src="./Assets/Images/Project_SpeakMind/user-signup.png" alt="SpeakMind user signup">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1"><i>SpeakMind: User Signup Flow</i></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="solutionSlide">
+                                    <a href="Assets/Images/Project_SpeakMind/volunteer-signup.png" target="_blank"></a>
+                                        <img class="solutionSlidePic width-80" src="./Assets/Images/Project_SpeakMind/volunteer-signup.png" alt="SpeakMind volunteer signup">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1"><i>SpeakMind: Volunteer Signup Flow</i></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="solutionSlide">
+                                    <a href="https://drive.google.com/file/d/1Ony5Gaa2ZN01ooOJse7SGzli9Zxh41aZ/view?usp=sharing" target="_blank"></a>
+                                        <img class="solutionSlidePic width-80" src="./Assets/Images/Project_SpeakMind/volunteer-orientation-package.png" alt="SpeakMind volunteer orientation package">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1"><i>SpeakMind: Volunteer Orientation Package</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Takeaways and Reflections-->
+            <section id="P4takeaways" class="section reflectionSection">
+                <div class="row">
+                    <div class="col-11 offset-sm-1">
+                        <h4 class="prototype"><span class="highlightBlue">Project Takeaways and Reflection</span></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 offset-sm-1">
+                        <h5 class="prototype mt-4 mb-3"><span>If I Had More Time, I Would...</span></h5>
+                        <p>
+                            <strong>Understand where our solution may be lacking: </strong>
+                            All the UX research work I did for this project was leveraged in preparation for SpeakMind’s launch. Unfortunately, I was unable to interview or survey SpeakMind’s users after launch, which would have helped me understand how our offering could be improved to better support our users.                            
+                        <p>
+                            <strong>Learn why volunteer sign-ups outpaced user sign-ups: </strong>
+                            Despite avoiding stigmatizing words in our copy and emphasizing how users would be matched with “people like them”, volunteer sign-ups were over triple user sign-ups. I’d love to dive into why this disparity exists, and if tweaks in the presentation of our solution could close this gap.                            
+                        </p>
+                        <p>
+                            <strong>Consolidate best practices across volunteers:</strong>
+                            Some of our volunteers had extremely glowing reviews from their matches. I’d love to interview these rock stars to learn the approaches they took to support their users, with the hope of standardizing those approaches across our volunteer base.                            
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
+                        <div>
+                            <img class="CircleContent rightCirclePic" src="Assets/Images/Project_SpeakMind/glowing-review.png" alt="glowing review">
+                            <p class="col-sm-9 CircleContent darkBlueText text-center"><i>Some of our volunteers shared best practices from their time with their matches (e.g., setting weekly goals) that I'd love to consolidate</i></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-5 order-sm-2">
+                        <h5 class="prototype mt-4 mb-3"><span>If I Went Back in Time, I Would...</span></h5>
+                        <p>
+                            <strong>Explore more outside-the-box solutions: </strong>
+                            Early on in the research process, I became fixated on a solution that retained many of traditional helplines’ dynamics (talking to a stranger on the phone for support). This fixation eventually birthed SpeakMind. I wish I explored more diverse concepts early on – why does the best solution have to resemble a helpline?                            
+                        </p>
+                        <p>
+                            <strong>Expand my visual design skills: </strong>
+                            I focused most of my efforts on understanding users’ and volunteers’ needs on this project, but there were ample opportunities to improve my visual design skills (e.g., Instagram ads) that I wish I had capitalized on beyond making them “good enough”                            
+                        </p>
+                        <p>
+                            <strong>Provide more support to volunteers early on: </strong>
+                            Early on in SpeakMind’s launch, volunteers only had the orientation package to guide them in their conversations with users, which left some volunteers still feeling uncertain on how to start conversations. Eventually, I developed an email guide on starting conversations, but I wish I had provided that support earlier.                            
+                        </p>
+                    </div>
+                    <div class="col-sm-6 order-sm-1">
+                        <div class="mediumCircles mt-1 reflectionCircle4 lightRed"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle5 lightYellow"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle6 lightBlue"></div>
+                        <div class="">
+                            <img class="CircleContent leftCirclePic" src="Assets/Images/Project_SpeakMind/SpeakMind-FBAd1.png" alt="Facebook ad">
+                            <p class="col-sm-9 CircleContent darkBlueText"><i>This Facebook ad that I designed got SpeakMind's major message across, but it was also thoroughly uninspired as I focused on research</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-5 offset-sm-1">
+                        <h5 class="prototype mt-4 mb-3"><span>I Became Better At...</span></h5>
+                        <p>
+                            <strong>Designing for multiple stakeholder groups: </strong>
+                            This was my first UX research project designing for multiple user archetypes (users and volunteers). Although the complexity of balancing both parties’ interests was initially taxing, by incorporating both parties’ views, I designed a solution that better served everyone                            
+                        </p>
+                        <p>
+                            <strong>Incorporating user perspectives in my writing: </strong>
+                            I’ve traditionally spent most of my time in concept development fleshing out the mechanics and features of solutions, worrying less about elements like copy. With the sensitive topics I dealt with in this project, I became far more appreciative of the role of UX in designing a strong experience                            
+                        </p>
+                        <p>
+                            <strong>Manually A/B testing my work to optimize it: </strong>
+                            I used an A/B approach to test various emails and optimize my approach across dozens of outreach initiatives. I learned how to quickly and effectively parse meaningful differences between options to extract the best features of all my versions.                            
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
+                        <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
+                        <div>
+                            <img class="CircleContent rightCirclePic mb-2 width-60" src="Assets/Images/Project_SpeakMind/final-email.png" alt="final email">
+                            <p class="col-sm-9 CircleContent darkBlueText"><i>We reached out to dozens of organizations with 5 variations of emails that we eventually narrowed down to a single template</i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Project Background-->
+            
+                <section id="P4projectBackground" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightGreen">Project Background</span></h4>
+                        </div>
+                        <!--Process for Desktop-->
+                        <div class="col-9 offset-sm-1 mt-4 processLong">
+                            <div class="d-flex justify-content-between">
+                                <span class="processLine"></span>
+                                <div>
+                                    <a href="#P4DefiningIssue">
+                                    <div class="purple iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P4Aligning">
+                                        <div class="pink iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/narrowingInIcon.svg" alt="icon of sketching a first iteration phase">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P4Developing">
+                                        <div class="red iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/prototypingIcon.svg" alt="icon of moving to hi-fi">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P4Incorporating">
+                                        <div class="yellow iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/personaIcon.svg" alt="icon of moving to hi-fi">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#P4finalThoughts">
+                                        <div class="blue iconCircles d-flex justify-content-center align-content-center">
+                                            <img class="icon" src="Assets/Images/Universal/starIcon.svg" alt="icon of final thoughts">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P4DefiningIssue">Defining the Issue</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P4Aligning">Aligning on a Solution</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P4Developing">Developing our Prototype</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P4Incorporating">Incorporating all Stakeholders</a></p>
+                                </div>
+                                <div>
+                                    <p class="mt-1 iconCaption"><a href="#P4finalThoughts">Results & Final Thoughts</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Process for Mobile-->
+                        <div class="col-10 offset-1 col-sm-9 offset-sm-1 processWinding mt-4">
+                            <div class="d-flex justify-content-between">
+                                <a href="#P4DefiningIssue">
+                                    <div class="purple iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <span class="processLine1"></span>
+                                        <img class="iconWinding" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Defining the Issue</p>
+                                </a>
+                                <a href="#P4Aligning">
+                                    <div class="pink iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <div class="verticalProcessLine"></div>
+                                        <img class="iconWinding" src="Assets/Images/Universal/narrowingInIcon.svg" alt="icon of sketching a first iteration phase">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Aligning on a Solution</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#P4Developing">
+                                    <div class="yellow iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <span class="processLine2"></span>
+                                        <span class="verticalProcessLine"></span>
+                                        <img class="iconWinding" src="Assets/Images/Universal/personaIcon.svg" alt="icon of final thoughts">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Incorporating all Stakeholders</p>
+                                </a>
+                                <a href="#P4Incorporating">
+                                    <div class="red iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <img class="iconWinding" src="Assets/Images/Universal/prototypingIcon.svg" alt="icon of motion and animation">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Developing our Prototype</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#P4finalThoughts">
+                                    <div class="blue iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <img class="iconWinding" src="Assets/Images/Universal/starIcon.svg" alt="icon of final thoughts">
+                                    </div>
+                                    <p class="mt-1 iconCaptionWinding">Results & Final Thoughts</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4"><span class="highlightGreen">Project Context</span></h5>
+                            <p>
+                                <strong><i>
+                                    How might we reduce feelings of loneliness amongst Canadians that are increasingly isolated during the COVID-19 pandemic?
+                                </strong></i>
+                            </p>
+                            <p class="mt-4">
+                                COVID-19 unleashed an unprecedented physical health crisis on the world in 2020. However, as public gatherings shut down and social isolation became the norm, the pandemic also triggered another, lesser known, mental health crisis. 
+                                <br><br>
+                                In Canada, mental health took a nosedive. 23% of Canadians suffered from isolated and lonely in 2019; <a href="http://angusreid.org/isolation-and-loneliness-covid19/" target="_blank">that number was 33% in 2020</a>. Morneau Shepell reports Canadians’ average mental health score on a monthly basis and reported that the lowest average mental health score was observed amongst respondents reporting feelings of loneliness during COVID-19. Their mental health score was <a href="https://www.morneaushepell.com/sites/default/files/assets/paragraphs/resource-list/mhicanadaseptember2020final.pdf" target="_blank">1.5x worse than those who feared dying from COVID-19</a>. 
+                                <br><br>
+                                As someone living in Toronto, Canada during this time and seeing the impact of COVID on the mental health of my loved ones, solving this issue was personal for me. After receiving work from home mandates at my firm, many of my colleagues who had immigrated to Toronto without friends and family became withdrawn and frequently complained about loneliness. I hated seeing them suffer with no obvious solution in sight. How could I help them feel less lonely while respecting rules around social isolation?                                
+                            </p>
+                        </div>
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightGreenFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1"><i>Individuals that indicate loneliness as the primary concern (16 per cent) have the lowest mental health score (-25.8), followed by 12 per cent who fear dying from COVID-19 (-17.7)</i>
+                                </h5>
+                                <h5 class="fontGreen mb-5">
+                                    <a class="fontGreen" href= "https://www.morneaushepell.com/sites/default/files/assets/paragraphs/resource-list/mhicanadaseptember2020final.pdf " target= "_blank">Morneau Shepell</a>
+                                </h5>
+                                <img class="quotation-end lightGreenFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="lightGreen col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/initial-research.png" target="_blank">
+                                            <img class="width-80" src="Assets/Images/Project_SpeakMind/initial-research.png" alt="Initial Research">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Across various sources, Canadians' loneliness has spiked because of COVID-19; that increase in loneliness has directly led to declines in mental health</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+            <!--Defining the Issue-->
+            
+                <section id="P4DefiningIssue" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightPurple">Defining the Issue</span></h4>
+                        </div>
+
+                        <!--Defining the Issue Part 1 -->
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    Which people are feeling lonelier during this pandemic?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Before I could tackle this issue and begin interviewing disproportionately impacted Canadians, I wanted to better understand how to define this subset of the population. I dove into the literature discussing the impact of COVID-19 on mental health. 
+                                <br><br>
+                                Unsurprisingly, COVID-19 was magnifying loneliness in populations that were already particularly susceptible. That primarily included 18 – 30 year olds and people facing unemployment or students, along with people that lived alone. People living in urban centers were also disproportionately impacted.
+                                <br><br>
+                                These findings helped me narrow down the people I wanted to talk to and learn more from. Many of these factors applied to my work colleagues – younger people living alone in downtown Toronto. Others applied to some of my casual friends that were still in school. These populations became the focus of my user interviews.                                  
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        These data show that some people who were already at risk for being lonely (e.g. young adults aged 18-30 years, people with low household income and adults living alone) experienced an even greater risk during the COVID-19 pandemic compared with usual (indicated by higher coefﬁcients). Furthermore, being a student emerged as a higher risk factor during lockdown than usual
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    <a class="fontPurple" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7405905/" target="_blank">Bu et. al</a>
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="lightPurple col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/loneliness-factors.png" target="_blank">
+                                            <img class="width-60" src="Assets/Images/Project_SpeakMind/loneliness-factors.png" alt="Factors impacting loneliness">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Several of the factors that put people at greater risk of loneliness before COVID were even greater drivers of loneliness after COVID</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <!--Defining the Issue Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    What drives increased feelings of loneliness amongst this impacted group?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                understood that getting respondents to reflect openly about these factors would be difficult. To motivate honest thinking and avoid interviewees romanticizing or misremembering their experiences before COVID, I constructed a contextual inquiry protocol.
+                                <br><br>
+                                I understood that I couldn’t observe users in the context of a time before COVID, so I instead had them bring an artifact that reminded them of a day before COVID where they felt socially fulfilled. I asked them to screenshot their calendar on a day they felt happy, where there were no extraordinary social engagements that would be impossible to reproduce.
+                                <br><br>
+                                Users brought packed calendars – days filled with full days of meetings or brainstorming sessions. They talked about how those meetings provided opportunities to share moments from their days and talk casually with people that were willing to listen. 
+                                <br><br>
+                                These users were describing relatively inconsequential social interaction that took on new meaning and importance because it allowed them to take their lives less seriously and stress less about small inconveniences (e.g., complaining about a boss or professor together), something they realized they did a lot more now.                                 
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        Have you ever had one of those meetings at 5pm that is just a total disaster and you know you’ll be working all night and you just want to cry? Having someone to share that moment with just changes everything… you can laugh about how absurd everything is and feel like it’s going to be ok.. that everything won’t be hopeless.
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    User Interviewee #3
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="lightPurple col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/contextual-inquiry.png" target="_blank">
+                                            <img class="width-80" src="Assets/Images/Project_SpeakMind/contextual-inquiry.png" alt="contextual inquiry interviews">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>To tease out interviewees' actual memories of their social connections before COVID-19, our contextual inquiry script used the artifact analysis method to create vivid memories of their past</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!--Defining the Issue Part 3 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    How do our prospective users feel about existing resources to combat loneliness?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Upon synthesizing these findings, I wondered why users neglected free helplines or warmlines if they were just looking for someone to chat with. These services were designed for people feeling lonely or anxious (as opposed to crisis lines for those posing a threat to their own lives).
+                                <br><br>
+                                To answer my question, I had users try out one such warmline with a think-aloud protocol where they went through the service’s chat feature and talked about the service’s value to them. 
+                                <br><br>
+                                 The warmline was received poorly. Users that claimed they wanted a chance to casually chat about their day and frustrations felt that they were admitting they had mental health issues by participating in something so “formal”. The chat felt far too mechanical and inaccessible to them – they’d prefer to text or hop on a call to mimic actual social interaction. 
+                                <br><br>
+                                However, the overarching feedback across all 8 interviews was that they had nothing in common with their support worker. The worker didn’t understand their life, circumstances, or experiences. They imagined somebody old and out of touch (workers’ identities are anonymous), when users wanted somebody who could relate to them and share their frustrations instead of trying to be consoling.                                
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        It’s just impossible to imagine this random support worker on the other end actually understanding what I’m going through… it’s their job to agree with me and make me feel better, it just feels like the connection is so hollow and without anything for us to actually connect on
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    User Interviewee #4
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        I know this isn’t a suicide hotline or a crisis line, but I just feel like using one of these services is like saying there’s something wrong with me… I’m just a little lonely, I’m not depressed or thinking about killing myself. This just makes me feel even more stressed about not having my shit together
+                                    </i>
+                                </h5>
+                                <h5 class="fontPurple mb-5">
+                                    User Interviewee #3
+                                </h5>
+                                <img class="quotation-end lightPurpleFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="lightPink col-12">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/think-aloud.png" target="_blank">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_SpeakMind/think-aloud.png" alt="think-aloud protocol">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1">
+                                            <i>
+                                                Our think aloud protocol focused on eliciting users' feelings about the warmline, and whether they'd consider using it in the future
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="http://www.warmline.ca/" target="_blank">
+                                            <img class="solutionSlidePic width-40" src="Assets/Images/Project_SpeakMind/warmline-homepage.png" alt="idea pitch slides 2">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1">
+                                            <i>
+                                                The homepage of the Progress Place Warmline - Toronto's largest warmline offering text and phone support
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+
+                    <!-- Defining the Issue Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Defining the Issue</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                    <div class="align-self-center d-flex justify-content-center align-content-center numberCircles purple mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Both from secondary and primary research conducted, loneliness disproportionately struck younger adults with lower household incomes that were living alone in larger cities
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="align-self-center d-flex justify-content-center align-content-center numberCircles purple mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        The biggest counter to loneliness before the pandemic was being able to engage in casual conversation with people who our interviewees could relate to about the annoyances in their lives 
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="align-self-center d-flex justify-content-center align-content-center numberCircles purple mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Although mental health services like warmlines offer many similar services, interviewees disliked the stigma associated with any “lines” and felt that their operators were unrelatable and too formal to build genuine connections with
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+            
+
+            <!--Aligning on a Solution -->
+            
+                <section id="P4Aligning" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightPink">Aligning on a Solution</span></h4>
+                        </div>
+
+                        <!--Aligning on a Solution Part 1 -->
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    How can we improve upon existing resources to combat loneliness?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Our team’s renewed goal was to find a way to connect our target users to “people like them”. At the same time, our team wanted to be mindful of physical distancing mandates and develop a virtual solution. How could we do this?
+                                <br><br>
+                                To explore possibilities, we brainstormed in the form of storyboards. Unfortunately, our team had become enamored by the idea of an improved hotline system, and it made it difficult for us to expand our thinking far beyond this structure. Ultimately, we fleshed out three distinct ideas:
+                                <br><br>
+                                <ol>
+                                <li><strong>Who’s Game? </strong>Users with similar video game interests can connect with one another to play co-operative games. These games serve as the backdrop to have open, casual conversations about life frustrations</li>
+                                <li><strong>Echo Chamber: </strong>Users facing a life annoyance can post about it on a forum, where someone facing a similar annoyance can reply to strike up a conversation</li>
+                                <li><strong>SpeakMind: </strong>Users can submit their contact information and issue to an anonymous service that matches them with someone like them that is happy to lend an empathetic ear</li>
+                                </ol>
+                                Before narrowing down on a single solution, we wanted to get our target users’ perspectives on which concept resonated most with them.                                
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="lightPink col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/storyboards.png" target="_blank">
+                                            <img class="width-80" src="Assets/Images/Project_SpeakMind/storyboards.png" alt="idea storyboards">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our storyboards explored three different ways to forge virtual social connections. They were also low-effort enough to elicit honest, guilt-free user criticism</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <!--Aligning on a Solution Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    How do our target users feel about our potential solutions?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                After going through our storyboards, our interviewees strongly gravitated towards <i>SpeakMind</i>. They felt it remedied a lot of the issues present in the warmline. They were matched with someone as opposed to being randomly assigned, which made them feel more connected to the person they were talking to. Additionally, because volunteers were regular people, interviewees imagined the conversations being more organic, as opposed to feeling therapeutic or structured.
+                                <br><br>
+                                Although interviewees liked SpeakMind’s lack of structure, they thought <i>Game On!</i> took it too far. They worried that users of the service would be more focused on gaming than conversation, and that any attempts they made to talk about their lives would be poorly received. Despite the warmline’s unwanted formality, users still wanted the purpose of the service to be clear to all.
+                                <br><br>
+                                Echo Chamber was received more positively. Users enjoyed being able to express their complaints and find likeminded peers to share annoyances with. However, interviewees also disliked how the service’s sole focus was on complaints. Common issues should be a contributing factor to matches, but not the sole factor. 
+                                <br><br>
+                                With so many considerations and preferences to keep track of, I developed a user persona to ensure that our future designs could incorporate all of our target user’s feedback to date.                                
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4 top">
+                            <div class="relative">
+                                <img class="quotation-start lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1"><i>
+                                    Even though I love gaming, I can’t see it as something that would make me feel more connected to a person.. I get so into the games I play that I don’t think much about the person I’m playing with. I have some friends I’ve played with for years and I couldn’t tell you what their job is…
+                                </i>
+                                </h5>
+                                <h5 class="fontPink mb-5">
+                                    User Interviewee #3
+                                </h5>
+                                <img class="quotation-end lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1"><i>
+                                    I love the idea of SpeakMind, if it’s done right. It would be so cool to find someone who’s like me and I know will just get me the moment I open my mouth. 
+                                </i>
+                                </h5>
+                                <h5 class="fontPink mb-5">
+                                    User Interviewee #1
+                                </h5>
+                                <img class="quotation-end lightPinkFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="lightPink col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/persona-diagram.png" target="_blank">
+                                            <img class="width-60" src="Assets/Images/Project_SpeakMind/persona-diagram.png" alt="persona diagram">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>As we fleshed out SpeakMind, our user persona helped keep us focused on the salient user needs and painpoints we had identified to date</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    
+                    <!--Aligning on a Solution Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Insights from Aligning on a Solution</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        More than anything else, our target users are looking to find someone that they can relate to. This extends to more than just common pain points because users want to form a genuine connection with the person they talk to
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        We need to toe a fine line between being open about the services we provide (helping lonely people find social connections) and positioning ourselves as mental health support. Going too far in either direction is a big turnoff
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Users want to know that they’re talking to regular people, as opposed to licensed medical professionals or social workers. Conversation with regular people helps users feel relaxed, casual, and allows them to enjoy themselves more
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            <!-- Developing our Prototype -->
+            
+                <section id="P4Developing" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightRed">Developing our Prototype</span></h4>
+                        </div>
+
+                        <!--Developing our Prototype Part 1-->
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightRed">
+                                    How do we rapidly prototype and test the SpeakMind experience?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Although users responded positively to the concept of SpeakMind, we also wanted to understand what potential issues there could be in the end-to-end experience. 
+                                <br><br>
+                                We began by developing a user journey map, including all the information we had to date on the customer’s desired experience. Although we hadn’t spoken to our users about how they imagined discovering a service like SpeakMind, we were able to talk with <a href="https://www.getgroceryhero.com/" target="_blank">another COVID-specific non-profit</a> and learn that most users (particularly within our persona’s age range) learned about the service through Instagram ads.
+                                <br><br>
+                                We then translated this journey map into a low-fidelity prototype. By keeping fidelity low, we wanted users to focus on the core parts of the experience, and worry less about superficial elements like color choices. 
+                                <br><br>
+                                The prototype covered the end-to-end experience of SpeakMind, starting with discovery through an Instagram ad, click through to our website, sign up through a form, contact and discussion with a match, then feedback. We were able to run through this entire experience with our participants over Zoom. To simulate the “discussion with a match”, a member of our team was given the participant’s number and called them after the signup process was complete.                                
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        We’ve been able to have significant success through three main methods of outreach – social media advertising has been our biggest driver by far, especially Instagram. But we’ve also been able to get traction on volunteering websites, and even by getting covered by local news. 
+                                    </i>
+                                </h5>
+                                <h5 class="fontRed mb-5">
+                                    Luca De Blasis (GroceryHero, another COVID-related non-profit)
+                                </h5>
+                                <img class="quotation-end lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="lightRed col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/lo-fi-process.png" target="_blank">
+                                            <img class="width-80" src="Assets/Images/Project_SpeakMind/lo-fi-process.png" alt="Lo-Fi Process">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our Lo-Fi process started off with showing users a fake Instagram ad that they'd come across, then taking them through a "Word Document" version of our website to focus their attention on our copy. After they completed the survey, they were called by a member of our team posing as a volunteer</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <!--Developing our Prototype Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightRed">
+                                    How do users feel about our prototyped solution?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Our “digital paper prototype” received mixed reviews. Users still liked the core idea of being matched to a person like them, and many actually had 20-30 minute conversations with our volunteer stand-in. However, users also felt that our prototype kept making it “hard to get on board”.
+                                <br><br>
+                                The relatively barren homepage, with only a brief description and sign up buttons, felt sketchy to them. Users wondered how they would have any potential concerns or questions addressed, especially when so little information was provided. To them, transparency was especially important for a mental health solution.
+                                <br><br>
+                                The sign-up process was also abrasive. Users felt there were too many personal questions (we had posed them to better match users to “people like them”) and thought that focusing on users’ demographics and issues would be sufficient. 
+                                <br><br>
+                                Users also hated our usage of “mental health” language. Our reference to terms like anxiety, depression, mental health surfaced feelings of judgment and insecurity once again. Our simulated volunteer also started conversations by asking “what was wrong”, which put users on edge when they were just seeking a normal conversation. We realized we needed to put more attention on the volunteer experience and put them in a position to succeed. As of now, after they were matched with users, volunteers were being left to their own devices.                                
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        I know you guys mean well, but it’s just frustrating when we spend so much time talking about how the warmline makes me feel bad about myself, and then you turn around and throw words like depression around so casually on your website. It just turns me off completely
+                                    </i>
+                                </h5>
+                                <h5 class="fontRed mb-5">
+                                    User Interviewee #3
+                                </h5>
+                                <img class="quotation-end lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        I just want to get someone who’s similar to me. I feel like these questions are trying to find me my soulmate
+                                    </i>
+                                </h5>
+                                <h5 class="fontRed mb-5">
+                                    User Interviewee #1
+                                </h5>
+                                <img class="quotation-end lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Developing our Prototype Part 3-->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightRed">
+                                    What user-oriented improvements should we make to our solution?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                As we moved to high-fidelity, I started by rewriting all our copy. I avoided stigmatizing terminology, and instead focused on identifying our target users as those feeling “stressed”, “bored”, or “lonely”. 
+                                <br><br>
+                                In the spirit of transparency and openness, we also developed a contact page for users to ask questions, and began work on an FAQ page to answer some of the major questions that had come up across our various interviews. We added rationale descriptions below each of our survey questions to put our users at ease and address data privacy concerns that had come up.
+                                <br><br>
+                                We also overhauled the structure of the user sign-up form. We removed the more invasive personal questions, asking only about users’ demographics and issue. We even made these personal questions optional, so all users had to tell us was their contact information and age. 
+                                <br><br>
+                                After testing this updated version of the website with the users, we were met with resounding approval. But our interviews had revealed a gaping hole in our process – we had done nothing to improve the volunteer experience. We switched gears to building that experience out.                                
+                            </p>
+                        </div>
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        This just flows better. I feel more at ease when I come to a website that doesn’t try to tell me I’m mentally ill, that allows me to ask any question I want, and that respects my time by asking me only the necessary items they need to get me matched. It just makes me feel more confident in the process
+                                    </i>
+                                </h5>
+                                <h5 class="fontRed mb-5">
+                                    User Interviewee #1
+                                </h5>
+                                <img class="quotation-end lightRedFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        <div class="lightRed col-12">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/site-homepage.png" target="_blank">
+                                            <img class="solutionSlidePic width-60" src="Assets/Images/Project_SpeakMind/site-homepage.png" alt="site homepage">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1">
+                                            <i>
+                                                In our final homepage, we changed our language to remove stigmatizing language (e.g., depression) and focus more on feelings of loneliness and worry
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/user-signup.png" target="_blank">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_SpeakMind/user-signup.png" alt="user sign-up form">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1">
+                                            <i>
+                                                Our user sign-up form was pared down significantly to only ask users about their demographics and what was on their mind. We also provided rationale for each of our question to set users at ease
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/contact-page.png" target="_blank">
+                                            <img class="solutionSlidePic width-60" src="Assets/Images/Project_SpeakMind/contact-page.png" alt="contact page">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1">
+                                            <i>
+                                                We added a contact page to promote further transparency in our services
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                        
+                    <!-- Developing our Prototype Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Insights from Developing our Prototype</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    Language matters. Simple word choices can drastically change users’ perceptions, so always read writing from the user’s perspective, incorporating their worldviews, insecurities, and motivations
+                                </p>
+                                </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    Particularly for a mental health offering dealing with sensitive information, it’s crucial to be transparent with users about why their data is being collected and how their privacy will be maintained
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    It can be difficult to balance comprehensiveness with ease of use (e.g., how exactly should we match users to someone like them?) Given the subjectivity of this balancing act, it’s especially important to intake user preferences in this area
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            
+
+            <!-- Incorporating all Stakeholders -->
+            
+                <section id="P4Incorporating" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightYellow">Incorporating all Stakeholders</span></h4>
+                        </div>
+
+                        <!-- Incorporating all Stakeholders Part 1 -->
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightYellow">
+                                    What volunteer-oriented improvements should we make to our solution?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Designing for a smooth volunteer experience felt like going back to square one. 
+                                Thankfully, this was a rare case where we understood the volunteer journey relatively well – it would be dictated by the user journey. We fleshed it out in another user journey map to ensure we weren’t missing elements of the volunteer experience, then designed the artifacts needed for another round of testing. 
+                                <br><br>
+                                This included developing the volunteer sign-up form, building out the FAQ page to include volunteer-specific questions, and designing email templates instructing volunteers how to contact their matches.
+                                <br><br>
+                                We structured testing similarly to our user experience prototyping – starting with discovery through to chatting with a “user” that one of us posed as. Interviewees were generally complimentary, but noted throughout the process that they felt “in over their head”. 
+                                <br><br>
+                                They were terrified of saying the wrong thing to users or worsening their state, and felt that SpeakMind just wasn’t doing enough to support them. Our current process was too clinical and hands-off – we needed to provide guidance to volunteers on how to interact with their matches.                                 
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        I really like how clear everything is. I know exactly why you’re asking me what you ask me when I sign up, and most of the extra questions I’d have are here in the FAQ
+                                    </i>
+                                </h5>
+                                <h5 class="fontGrey mb-5">
+                                    Volunteer Interviewee #1
+                                </h5>
+                                <img class="quotation-end lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        I’m sorry, but I just couldn’t imagine signing up for this service without having some sort of help or guidance. I could be talking to someone with severe depression who’s just claiming to be lonely. If I get it wrong, I could put their life at serious risk…
+                                    </i>
+                                </h5>
+                                <h5 class="fontGrey mb-5">
+                                    Volunteer Interviewee #2
+                                </h5>
+                                <img class="quotation-end lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="lightYellow col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="Assets/Images/Project_SpeakMind/FAQ.png" target="_blank">
+                                            <img class="solutionSlidePic width-60" src="Assets/Images/Project_SpeakMind/FAQ.png" alt="FAQ section">
+                                        </a>  
+                                        <p class="pt-2 col-sm-10 offset-sm-1"><i>We had collected the major questions we had received from prospective users and volunteers throughout the need-finding process. We answered them on our site, taking care to separate questions by user type so that everyone could easily find the information they needed</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="https://www.toronto.com/news-story/9985473-volunteers-in-toronto-are-ready-to-crush-covid-19-isolation-by-phone/" target="_blank">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_SpeakMind/volunteer-signup.png" alt="volunteer signup form">
+                                        </a>  
+                                        <p class="pt-2 col-sm-10 offset-sm-1"><i>Our volunteer sign-up form adhered to the same principles as our revised user sign-up form - be transparent with question descriptions, be concise, and minimize the amount of personal information asked for</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Incorporating all Stakeholders Part 2 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightYellow">
+                                    How do we empower our volunteers to support others?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                From our interviews, volunteers’ feelings of inadequacy and worry became most prominent right after being matched. In that moment, when users stated their issues, volunteers felt completely unprepared to help, and talked about quitting entirely. How do we empower our volunteers?
+                                <br><br>
+                                We developed a multi-pronged support system that provided guidance to volunteers at every step of the way after sign-up. Immediately after being accepted to SpeakMind, volunteers would receive an orientation package detailing what their role did and didn’t entail, general and specific tactics to tackle loneliness, and what to do if their match needed the help of a professional. We made expectations clear and showed our volunteers how to excel within their role.
+                                <br><br>
+                                Because this package required significant volunteer and medical professional input beyond our own understanding, we took a collaborative, rapid-iteration approach. We scheduled twice-daily meetings with at least one prospective volunteer or medical professional, got their feedback on the package, then improved it for the next meeting. In the span of a week, we went from a rough skeleton to a completed package that empowered volunteers and contained medically sound recommendations.                                 
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4 top">
+                            <div class="relative">
+                                <img class="quotation-start lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        I feel like I don't know where I should be helping... if they express some mild loneliness then sure I should say something. But what if they have extreme anxiety? Depression? I have no clue what to say in that situation
+                                    </i>
+                                </h5>
+                                <h5 class="fontGrey mb-5">
+                                    Volunteer Interviewee #4
+                                </h5>
+                                <img class="quotation-end lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                            <div class="relative">
+                                <img class="quotation-start lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        You can roughly think about help in three broad categories - general principles to adhere to, specific tactics to use for lower-level anxiety or sadness, and resources to refer to for more intense feelings of despair. You need to make that clear to volunteers
+                                    </i>
+                                </h5>
+                                <h5 class="fontGrey mb-5">
+                                    Anonymous Medical Professional
+                                </h5>
+                                <img class="quotation-end lightYellowFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="lightYellow col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="./Assets/Images/Project_SpeakMind/volunteer-orientation-package.png" target="_blank">
+                                            <img class="width-80" src="Assets/Images/Project_SpeakMind/volunteer-orientation-package.png" alt="volunteer orientation package">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our final volunteer package incorporated the major needs of our prospective volunteers to feel comfortable helping others, and the advice medical professionals recommended we give our volunteers to help them succeed without overstepping boundaries</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!--Incorporating all Stakeholders Part 3 -->
+                    <div class="row">
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightYellow">
+                                    How do we effectively expand our reach?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                With our offering fully developed, I wondered if I could take a design-centered approach to outreach as well. I elected to try A/B testing as an efficient way to try out different email permutations, especially because I knew the exact goal I was trying to optimize for: response rate.
+                                <br><br>
+                                I crafted 5 different versions of emails to send out. Each had <a href="https://www.campaignmonitor.com/resources/knowledge-base/what-is-the-most-important-part-of-an-email/" target="_blank">drastically different subject lines</a> ranging from playful (Let’s solve Canada’s loneliness pandemic together) to more cryptic (We can help you boost your impact on Toronto’s mental wellness). Over dozens of sendouts and varying reply rates, I was able to parse out the elements that both drove and prevented action by examining elements of overlap between emails that did well or poorly.
+                                <br><br>
+                                Eventually, we settled on our final subject line which incorporated the best elements of our options. With this subject line, we were published in a news article, featured on various volunteer organization sites, and hosted on various company volunteer sites (including Manulife).                                  
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="lightYellow col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="./Assets/Images/Project_SpeakMind/email-permutations.png" target="_blank">
+                                            <img class="width-80" src="Assets/Images/Project_SpeakMind/email-permutations.png" alt="A/B Testing Permutations">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>Our final email subject line (far right) took a serious tone, had a clear call to action, referenced mental wellness instead of mental health, and was short enough to fit on a subject line preview.</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Incorporating all Stakeholders Takeaways-->
+                    <div class="row justify-content-center mt-3 mb-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-md-5">
+                                <h5 class="prototype mt-5">Insights from Incorporating all Stakeholders</h5>
+                                <div class="d-flex mt-4 align-content-center justify-content-center">
+                                    <img class="takeawayCircles" src="Assets/Images/Universal/takeawayCircles.svg" alt="background decorative circles">
+                                    <div class="yellow align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        In developing an effective solution, it’s critical to incorporate the needs of all impacted stakeholders, going beyond the end users. 
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="yellow align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        For employees / volunteers to succeed, they need to feel like they are equipped with the right tools and resources, and that the company that they’re associated with has their best interests at heart
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center">
+                                    <div class="yellow align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        A/B testing can be an efficient and highly effective way to quickly optimize towards a specific goal, especially when the focus of manipulation is a tightly constrained part of an overall solution
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            <!-- Results & Final Thoughts -->
+            
+                <section id="P4finalThoughts" class="section">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightBlue">Results & Final Thoughts</span></h4>
+                        </div>
+                        <div class="col-sm-5 offset-sm-1 mb-4 top">
+                            <p class="mt-4">
+                                Within the first month of SpeakMind’s launch in May, we received ~400 signups from volunteers and users. Thanks to a diverse pool of volunteers, we were able to match all our users with volunteers that had similar experiences and demographics to facilitate rewarding conversations. Users that completed feedback forms after their SpeakMind experience ended provided a 100% satisfaction rate, with many continuing to stay in touch with their volunteer outside of SpeakMind. 
+                                <br><br>
+                                Many of our volunteers also provided glowing reviews, citing how well-structured the organization was, and how rewarding the experience had been. We were able to overcome the overwhelming hesitation volunteers had felt earlier on in our development process. SpeakMind also garnered attention in the local press, featured in one of Toronto’s most-read local newspapers. 
+                                <br><br>
+                                For me, starting up my own non-profit with design-centered principles was an incredible learning experience. I loved the opportunity to operate autonomously and use my UX research toolkit to define SpeakMind’s value proposition and strategy.
+                                <br><br>
+                                I also loved being able to make a difference for my community and design for a neglected group of people in our society. I hope my future design work will allow me to positively impact the lives of broad populations, and bring people closer together.                                
+                            </p>
+                        </div>
+                        <div class="col-sm-4 align-self-center offset-sm-1 mb-4">
+                            <div class="relative">
+                                <img class="quotation-start lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                                <h5 class="quote mb-1">
+                                    <i>
+                                        Hello, it is almost the end of the summer and things have now settled down into some new semblance of normalcy so I thought I should update you on what has been happening. First, my initial match actually introduced me to one of his friends because he was feeling stressed over summer school. So ever since mid July I have been regularly interacting with 2 people thanks to speakmind! I am actually very grateful that my initial match thought of doing this because it is very flattering to be given another opportunity. It just feels very good to know that you are adding value and other people find you helpful, especially in times like these.
+                                    </i>
+                                </h5>
+                                <h5 class="fontBlue mb-5">
+                                    Anonymous SpeakMind volunteer
+                                </h5>
+                                <img class="quotation-end lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="lightBlue col-12">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <a href="./Assets/Images/Project_SpeakMind/email-permutations.png" target="_blank">
+                                            <img class="width-40" src="Assets/Images/Project_SpeakMind/newspaper-article.png" alt="A/B Testing Permutations">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1"><i>SpeakMind's success was in large part driven by the Toronto community and people like Mike Adler, who worked to spread the word on our services to help those in the city feeling lonely</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            <!-- Bottom Navigation -->
+            <section id="P4bottomNav" class="row bottomNav">
+                <div class="d-flex justify-content-start col-4">
+                    <a href="#" class="d-flex align-self-center bottomNavContainer">
+                        <div class="leftNavCircle lightPurple"></div>
+                        <img class="leftNavPic" src="Assets/Images/Home/tileAdidasDashboard.png" alt="Dashboard">    
+                        <h5 class="bottomNavText text-left prototype hoverWord" data-words="Prev|Adidas Dashboard">Prev</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-center col-4">
+                    <a href="#P4projectHeader" class="backTop align-self-center">
+                        <div class="backTopCircle blue d-flex justify-content-center align-content-center">
+                            <img class="backTopArrow align-self-center" src="Assets/Images/Universal/backTopArrow.svg" alt="back to top arrow">
+                        </div>
+                        <h5 class="prototype fontBlue text-center pt-2 backTopText">Back to Top</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-end col-4">
+                    <a href="black-box-theater.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="rightNavCircle lightPink"></div>
+                        <img class="rightNavPicMini" src="Assets/Images/Home/tileAIFramework.png" alt="AI Framework"> 
+                        <h5 class="bottomNavText text-right prototype hoverWord" data-words="Next|Enterprise AI Framework">Next</h5>
+                    </a>
+                </div>
+                    
+                
+                
+            </section>
+
+        </div>
+        <script src="Assets/Libraries/slick/slick.min.js"></script>
+        <script src="Assets/js/type.js"></script>
+    </body>
+</html>

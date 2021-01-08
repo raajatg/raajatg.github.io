@@ -21,7 +21,7 @@ Color Formatting
 }
 
 .red {
-    background-color: #F87272;
+    background-color: hsl(0, 91%, 71%);
 }
 
 .purple {
@@ -373,6 +373,18 @@ Media Formatting
 ==============================================
 */
 
+.width-40 {
+    width: 40% !important;
+    max-width: 400px;
+    height: auto;
+}
+
+.width-60 {
+    width: 60% !important;
+    max-width: 600px;
+    height: auto;
+}
+
 .width-80 {
     width: 80%;
     max-width: 1000px;
@@ -423,6 +435,10 @@ body, html {
 }
 
 #P3solutionOverview, #P3finalDesign, #P3takeaways, #P3projectBackground, #P3personaAnalysis, #P3sketchingIteration1, #P3highFidelity, #P3motionAnimation, #P3finalThoughts, #P3bottomNav {
+    overflow-x:hidden;
+}
+
+#P4solutionOverview, #P4finalDesign, #P4takeaways, #P4projectBackground, #P4DefiningIssue, #P4Aligning, #P4Developing, #P4Incorporating, #P4finalThoughts, #P4bottomNav {
     overflow-x:hidden;
 }
 
@@ -899,6 +915,65 @@ Blue Button
     box-shadow: 0 0 0 0.2rem hsla(229, 57%, 59%, 0.5);
   }
 
+/* 
+--------------------------
+Red Button
+--------------------------
+*/
+.btn-red {
+    color: #fff;
+    font-weight: bold;
+    background-color: hsl(0, 91%, 71%);
+    border-color: hsl(0, 91%, 71%);
+    border-radius: 30px;
+  }
+  
+  .btn-red:hover {
+    color: #fff;
+    background-color: hsl(0, 91%, 61%);
+    border-color: hsl(0, 91%, 66%);
+  }
+  
+  .btn-red:focus, .btn-red.focus {
+    color: #fff;
+    background-color: hsl(0, 91%, 61%);
+    border-color: hsl(0, 91%, 66%);
+    box-shadow: 0 0 0 0.2rem  hsla(0, 91%, 66%, 0.5);
+  }
+  
+  .btn-red.disabled, .btn-red:disabled {
+    color: #fff;
+    background-color: hsl(0, 91%, 71%);
+    border-color: hsl(0, 91%, 71%);
+  }
+  
+  .btn-red:not(:disabled):not(.disabled):active, .btn-red:not(:disabled):not(.disabled).active,
+  .show > .btn-red.dropdown-toggle {
+    color: #fff;
+    background-color: hsl(0, 91%, 66%);
+    border-color: hsl(0, 91%, 61%);
+  }
+  
+  .btn-red:not(:disabled):not(.disabled):active:focus, .btn-red:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-red.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem hsla(0, 91%, 66%,0.5);
+  }
+
+  hsl(0, 91%, 61%);
+  hsl(0, 91%, 66%);
+
+  hsl(0, 91%, 61%);
+  hsl(0, 91%, 66%);
+  hsla(0, 91%, 66%, 0.5);
+
+  hsl(0, 91%, 71%);
+  hsl(0, 91%, 71%);
+
+  hsl(0, 91%, 66%);
+  hsl(0, 91%, 61%);
+
+  hsla(0, 91%, 66%, 0.5);
+
 /*
 ============================================================================================
 ============================================================================================
@@ -983,7 +1058,7 @@ Portfolio Tile Images
 #projectFour > .tileImage {
     background-color: #FFE1DB;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileSpeakMindDesktop.png);
+    background-image: url(../Images/Home/tileSpeakMindIcon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 60%;
@@ -1896,6 +1971,14 @@ Page Header
     margin-top: -7%;
 }
 
+.P4headerPic {
+    width: 80%;
+    height: auto;
+    z-index: 100;
+    margin-left: 0%;
+    margin-top: -7%;
+}
+
 @media (max-width: 576px) {
     .projectHeader {
         overflow: hidden;
@@ -1998,6 +2081,14 @@ Summary Circles
 
 .summaryCircle3 {
     transform: translate(-10%,0%);
+}
+
+#P4phoneconvo {
+    width: 50%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: -25%;
+    transform: scaleX(-1) rotate(-5deg);
 }
 
 #P3adidasModel {
@@ -2469,6 +2560,15 @@ Bottom Navigation Pictures (Desktop)
 .rightNavPic {
     min-width: 200px;
     max-width: 200px;
+    height: auto;
+    position: absolute;
+    bottom: 45%;
+    right: 0%;
+}
+
+.rightNavPicMini {
+    min-width: 100px;
+    max-width: 100px;
     height: auto;
     position: absolute;
     bottom: 45%;
