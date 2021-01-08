@@ -2010,6 +2010,17 @@ Page Header
         margin-top: 15%;
         margin-bottom: 25%;
     }
+
+    .P4headerPic {
+        width: 80%;
+        height: auto;
+        z-index: 100;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 15%;
+        margin-bottom: 25%;
+    }
 }
 
 /*
