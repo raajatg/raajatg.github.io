@@ -28,6 +28,21 @@ $(document).ready(function () {
         return false;
       });
 
+    $("#projectFour").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+
+    $("#projectFive").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+
+    $("#projectSix").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+
 
 
     /*
