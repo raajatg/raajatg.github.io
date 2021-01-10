@@ -809,11 +809,11 @@ Heart Arrow Formatting
 }
 
 .heartDown {
-    transform: rotate(0deg);
     position: absolute;
-    background-image: url(../Images/Universal/heart.svg);
+    background-image: url(../Images/Universal/slideshow-arrow.svg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 20%;
     max-width: 200px;
     min-width: 50px;
@@ -822,7 +822,7 @@ Heart Arrow Formatting
     right: 0;
     margin-right: auto;
     margin-left: auto;
-    top: -16vw;
+    top: -9vw;
     z-index: 0;
 }
 
