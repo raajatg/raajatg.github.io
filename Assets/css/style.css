@@ -766,7 +766,8 @@ Heart Arrow Formatting
     position: absolute;
     background-image: url(../Images/Universal/heart.svg);
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     z-index: 1;
     width: 40%;
     padding-bottom: 35%;
@@ -781,7 +782,8 @@ Heart Arrow Formatting
     position: absolute;
     background-image: url(../Images/Universal/heart.svg);
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     z-index: 1;
     width: 40%;
     padding-bottom: 35%;
@@ -796,7 +798,8 @@ Heart Arrow Formatting
     position: absolute;
     background-image: url(../Images/Universal/heart.svg);
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     z-index: 1;
     width: 40%;
     padding-bottom: 35%;

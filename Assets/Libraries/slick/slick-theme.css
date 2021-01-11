@@ -29,9 +29,6 @@
 
     width: 70px;
     height: 70px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
 
     cursor: pointer;
 
@@ -41,6 +38,19 @@
     background: transparent;
     z-index: 30;
 }
+
+.slick-prev {
+    -webkit-transform: translate(15%, -50%);
+    -ms-transform: translate(15%, -50%);
+    transform: translate(15%, -50%);
+}
+
+.slick-next {
+    -webkit-transform: translate(-15%, -50%);
+    -ms-transform: translate(-15%, -50%);
+    transform: translate(-15%, -50%);
+}
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -67,7 +77,7 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 40px;
+    font-size: 60px;
     line-height: 1;
 
     opacity: 1;
@@ -76,6 +86,16 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+@media (max-width: 576px) {
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-size: 30px;
+    }
+
+}
+
 
 .slick-prev
 {
