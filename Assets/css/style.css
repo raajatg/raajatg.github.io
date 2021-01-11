@@ -2069,7 +2069,7 @@ Slick Slideshow Implementation
 
 @media (max-width: 576px) {
     .solutionSlide {
-        padding-top: 50px !important;
+        padding-top: 20px !important;
     }
 }
 
