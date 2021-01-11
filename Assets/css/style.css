@@ -2061,6 +2061,7 @@ Slick Slideshow Implementation
 
 .solutionSlide {
     margin: 0 auto;
+    margin-top: 3%;
     text-align: center;
     padding-top: 4.5vw;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
