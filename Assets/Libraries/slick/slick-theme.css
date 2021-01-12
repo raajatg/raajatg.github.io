@@ -79,9 +79,7 @@
     font-family: 'slick';
     font-size: 60px;
     line-height: 1;
-
-    opacity: 1;
-    color: #6F82D8;
+    color: hsla(0,0%,0%,1);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -991,6 +991,101 @@ Red Button
 /*
 ============================================================================================
 ============================================================================================
+PATIENCE PAGE FORMATTING
+============================================================================================
+============================================================================================
+*/
+
+.patienceCircles {
+    border-radius: 50%;
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    z-index: -10;
+    transition: 1s;
+}
+
+.patience {
+    border-radius: 50%;
+    width: 30vw;
+    transition: 1s;
+}
+
+.patienceCircle1 {
+    left: -10%;
+    top: 0%;
+}
+
+.patienceCircle2 {
+    right: 0%;
+    top: 5%;
+}
+
+.patienceCircle3 {
+    left: 10%;
+    bottom: -5%;
+}
+
+.patienceCircle4 {
+    left: 25%;
+    bottom: 60%;
+}
+
+.patienceCircle5 {
+    right: 15%;
+    top: 50%;
+}
+
+.patienceCircle6 {
+    left: 80%;
+    bottom: -10%;
+}
+
+@media (max-width: 576px) {
+    .patience {
+        width: 50vw;
+    }
+
+    .patienceCircles {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .patienceCircle1 {
+        left: 0%;
+        top: 0%;
+    }
+    
+    .patienceCircle2 {
+        right: -10%;
+        top: 15%;
+    }
+    
+    .patienceCircle3 {
+        left: -10%;
+        bottom: 5%;
+    }
+    
+    .patienceCircle5 {
+        left: 60%;
+        bottom: 20%;
+    }
+    
+    .patienceCircle4 {
+        left: 5%;
+        top: 30%;
+    }
+    
+    .patienceCircle6 {
+        right: -20%;
+        bottom: -10%;
+    }
+
+}
+
+/*
+============================================================================================
+============================================================================================
 HOME PAGE FORMATTING
 ============================================================================================
 ============================================================================================
