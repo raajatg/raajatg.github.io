@@ -17,7 +17,7 @@ Color Formatting
 }
 
 .green {
-    background-color: #1FAD83;
+    background-color: hsl(162, 70%, 40%);
 }
 
 .red {
@@ -412,6 +412,21 @@ Media Formatting
     max-width: 1000px;
     height: auto;
 }
+
+.width-100 {
+    min-width: 105%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.close-left {
+    margin-left: -20% !important;
+}
+
+.close-right {
+    margin-right: -20% !important;
+}
+
 
 .videoContainer {
     position: relative !important;
@@ -921,7 +936,7 @@ Blue Button
   
   .btn-blue:focus, .btn-blue.focus {
     color: #fff;
-    background-color: hsl(229, 57%, 54%);;
+    background-color: hsl(229, 57%, 54%);
     border-color: hsl(229, 57%, 59%);
     box-shadow: 0 0 0 0.2rem  hsla(229, 57%, 59%, 0.5);
   }
@@ -942,6 +957,50 @@ Blue Button
   .btn-blue:not(:disabled):not(.disabled):active:focus, .btn-blue:not(:disabled):not(.disabled).active:focus,
   .show > .btn-blue.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem hsla(229, 57%, 59%, 0.5);
+  }
+
+/* 
+--------------------------
+Green Button
+--------------------------
+*/
+.btn-green {
+    color: #fff;
+    font-weight: bold;
+    background-color: hsl(162, 70%, 40%);
+    border-color: hsl(162, 70%, 40%);
+    border-radius: 30px;
+  }
+  
+  .btn-green:hover {
+    color: #fff;
+    background-color: hsl(162, 70%, 30%);
+    border-color: hsl(162, 70%, 35%);
+  }
+  
+  .btn-green:focus, .btn-green.focus {
+    color: #fff;
+    background-color: hsl(162, 70%, 30%);
+    border-color: hsl(162, 70%, 35%);
+    box-shadow: 0 0 0 0.2rem  hsla(162, 70%, 35%, 0.5);
+  }
+  
+  .btn-green.disabled, .btn-green:disabled {
+    color: #fff;
+    background-color: hsl(162, 70%, 40%);
+    border-color: hsl(162, 70%, 40%);
+  }
+  
+  .btn-green:not(:disabled):not(.disabled):active, .btn-green:not(:disabled):not(.disabled).active,
+  .show > .btn-green.dropdown-toggle {
+    color: #fff;
+    background-color: hsl(162, 70%, 35%);
+    border-color: hsl(162, 70%, 30%);
+  }
+  
+  .btn-green:not(:disabled):not(.disabled):active:focus, .btn-green:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-green.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem hsla(162, 70%, 35%, 0.5);
   }
 
 /* 
@@ -1156,9 +1215,9 @@ Portfolio Tile Images
 }
 
 #projectThree > .tileImage {
-    background-color: #EEE1FF;
+    background-color: #E7FEF2;
     padding-bottom: 100%;
-    background-image: url(../Images/Home/tileAdidasDashboard.png);
+    background-image: url(../Images/Home/tileGroGetters.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1175,16 +1234,16 @@ Portfolio Tile Images
 }
 
 #projectFive > .tileImage {
-    background-color: #FFE9FE;
+    background-color: #EEE1FF;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileAIFrameworkTransparent.svg);
+    background-image: url(../Images/Home/tileAdidasDashboard.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 60%;
 }
 
 #projectSix > .tileImage {
-    background-color: #E7FEF2;
+    background-color: #FFE9FE;
     padding-bottom: 100%;
     background-image: url(../Images/Home/google-home-edit.png);
     background-position: center;
@@ -1229,7 +1288,7 @@ Portfolio Tile Text
 
 #projectThree > .tileTextContainer {
     transition: 1s;
-    background: linear-gradient(to bottom, white 50%, white 50%, #E6CCFF);
+    background: linear-gradient(to bottom, white 50%, white 50%, hsl(149, 90%, 92%));
     background-size: 100% 250%;
 }
 
@@ -1240,14 +1299,14 @@ Portfolio Tile Text
 }
 
 #projectFive > .tileTextContainer {
-    background: linear-gradient(to right, white 47%, #FFE0FE 47%, #FFE9FE);
+    background: linear-gradient(to right, white 47%, #E6CCFF 47%, hsl(266, 100%, 96%));
     padding-left: 5vw;
     background-size: 250%;
 }
 
 #projectSix > .tileTextContainer {
     transition: 1s;
-    background: linear-gradient(to bottom, white 50%, white 50%, #D8FDEA);
+    background: linear-gradient(to bottom, white 50%, #FFE0FE 50%, hsl(303, 100%, 97%));
     background-size: 100% 250%;
 }
 
@@ -1413,7 +1472,7 @@ Adjustments to Tiles for MEDIUM SCREEN SIZE
 
      /* Cover tile with color feature */
     #projectThree > .tileTextContainer {
-        background: linear-gradient(to right, white 47%, #F3E8FF 47%, #E6CCFF) !important;
+        background: linear-gradient(to right, white 47%, #E1FDEF 47%, hsl(149, 90%, 95%)) !important;
         padding-right: 5vw;
         background-size: 250% !important;
     }
@@ -1429,7 +1488,7 @@ Adjustments to Tiles for MEDIUM SCREEN SIZE
     }
 
     #projectSix > .tileTextContainer {
-        background: linear-gradient(to right, white 47%, #E1FDEF 47%, #D8FDEA) !important;
+        background: linear-gradient(to right, white 47%, hsl(303, 100%, 97%) 47%, #FFE0FE);
         padding-right: 5vw;
         background-size: 250% !important;
     }
@@ -1511,7 +1570,7 @@ Adjustments to Tiles for SMALL SCREEN SIZE
 
     #projectThree > .tileTextContainer {
         transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
+        background: linear-gradient(to bottom, white 50%, hsl(150, 92%, 98%) 50%, hsl(149, 90%, 92%)) !important;
         background-size: 100% 250% !important;
         padding-bottom: 2rem !important;
     }
@@ -1525,14 +1584,14 @@ Adjustments to Tiles for SMALL SCREEN SIZE
 
     #projectFive > .tileTextContainer {
         transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #FFE0FE 50%, #FFE9FE) !important;
+        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
         background-size: 100% 250% !important;
         padding-bottom: 2rem !important;
     }
 
     #projectSix > .tileTextContainer {
         transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #E6FEF2 50%, #D8FDEA) !important;
+        background: linear-gradient(to bottom, white 50%, #FFE0FE 50%, #FFE9FE) !important;
         background-size: 100% 250% !important;
         padding-bottom: 2rem !important;
     }
@@ -1545,12 +1604,8 @@ Adjustments to Tiles for SMALL SCREEN SIZE
         background-position: 0% -60% !important;
     }
 
-    #projectOne > .tileImage {
-        background-position: center;
-    }
-
-    #projectThree > .tileImage {
-        padding-bottom: 50% !important;
+    #projectThree:hover .tileTextContainer {
+        background-position: 0% -22% !important;
     }
 
     #projectFour:hover .tileTextContainer {
@@ -1559,6 +1614,18 @@ Adjustments to Tiles for SMALL SCREEN SIZE
 
     #projectFive:hover .tileTextContainer {
         background-position: 0% -60% !important;
+    }
+
+    #projectSix:hover .tileTextContainer {
+        background-position: 0% -22% !important;
+    }
+
+    #projectOne > .tileImage {
+        background-position: center;
+    }
+
+    #projectThree > .tileImage {
+        padding-bottom: 50% !important;
     }
 
     #projectSix > .tileImage {
@@ -2096,6 +2163,14 @@ Page Header
     margin-top: -7%;
 }
 
+.P6headerPic {
+    width: 130%;
+    height: auto;
+    z-index: 100;
+    margin-left: -30%;
+    margin-top: -20%;
+}
+
 @media (max-width: 576px) {
     .projectHeader {
         overflow: hidden;
@@ -2145,6 +2220,16 @@ Page Header
         z-index: 100;
         margin-left: auto;
         margin-right: auto;
+        display: block;
+        margin-top: 15%;
+        margin-bottom: 25%;
+    }
+
+    .P6headerPic {
+        width: 100%;
+        height: auto;
+        z-index: 100;
+        margin-left: -15%;
         display: block;
         margin-top: 15%;
         margin-bottom: 25%;
@@ -2221,6 +2306,13 @@ Summary Circles
 
 .summaryCircle3 {
     transform: translate(-10%,0%);
+}
+
+#P6groceryShopping {
+    width: 40%;
+    height: auto;
+    margin-left: 45%;
+    margin-top: -30%;
 }
 
 #P5robot {
