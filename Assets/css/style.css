@@ -414,7 +414,7 @@ Media Formatting
 }
 
 .width-100 {
-    width: 100%;
+    width: 88% !important;
     max-width: 1000px;
     height: auto;
 }
@@ -482,6 +482,11 @@ body, html {
 #P5solutionOverview, #P5finalDesign, #P5takeaways, #P5projectBackground, #P5Envisioning, #P5Developing, #P5Refining, #P5finalThoughts, #P5bottomNav {
     overflow-x:hidden;
 }
+
+#section-solutionOverview, #section-finalDesign, #section-takeaways, #section-projectBackground, #section-process-1, #section-process-2, #section-process-3, #section-process-4, #section-process-5, #section-bottomNav {
+    overflow-x:hidden; 
+}
+
 
 .section {
     padding-top: 70px;
@@ -2361,11 +2366,17 @@ Final Design
 
 @media (min-width: 1300px) {
     .finalDesign {
-        margin-top: -10%;
+        margin-top: -5%;
     }
 }
 
 @media (min-width: 1500px) {
+    .finalDesign {
+        margin-top: -10%;
+    }
+}
+
+@media (min-width: 1700px) {
     .finalDesign {
         margin-top: -20%;
     }
@@ -2459,12 +2470,21 @@ Reflection Circle Media
     width: 70%;
     height: auto;
     margin-top: 10%;
+    max-width: 600px;
 }
 
 .leftCirclePic {
     width: 70%;
     height: auto;
     margin-top: 10%;
+    max-width: 600px;
+}
+
+.leftCirclePicSmall {
+    width: 30%;
+    height: auto;
+    margin-top: 10%;
+    max-width: 600px;
 }
 
 /*
