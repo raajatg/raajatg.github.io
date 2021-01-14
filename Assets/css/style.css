@@ -195,6 +195,7 @@ p a {
 
 a:hover {
     color: #093478;
+    text-decoration: none;
 }
 
 /* 
