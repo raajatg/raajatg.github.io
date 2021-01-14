@@ -13,7 +13,7 @@ Color Formatting
 */
 
 .blue {
-    background-color: #6F82D8;
+    background-color: hsl(229, 57%, 64%);
 }
 
 .green {
@@ -25,11 +25,11 @@ Color Formatting
 }
 
 .purple {
-    background-color: #B991ED;
+    background-color: hsl(266, 72%, 75%);
 }
 
 .pink {
-    background-color: #F897E9;
+    background-color: hsl(309, 87%, 78%);
 }
 
 .yellow {
@@ -187,6 +187,10 @@ p {
 
 a {
     color: #6F82D8;
+}
+
+p a {
+    text-decoration: underline;
 }
 
 a:hover {
@@ -694,6 +698,11 @@ Circle Sizes
     border-radius: 500px;
 }
 
+/* 
+--------------------------
+Icon Circles
+--------------------------
+*/
 
 .iconCircles {
     height: 8vw;
@@ -711,6 +720,42 @@ Circle Sizes
     min-width: 80px;
     min-height: 80px;
     border-radius: 50%;
+}
+
+/* 
+--------------------------
+Icon Circles Hover
+--------------------------
+*/
+
+.iconCircles.blue:hover, .iconCirclesWinding.blue:hover {
+    background-color: hsl(229, 57%, 54%);
+    border-color: hsl(229, 57%, 59%);
+}
+
+.iconCircles.green:hover, .iconCirclesWinding.green:hover {
+    background-color: hsl(162, 70%, 30%);
+    border-color: hsl(162, 70%, 35%);
+}
+
+.iconCircles.purple:hover, .iconCirclesWinding.purple:hover {
+    background-color: hsl(266, 72%, 66%);
+    border-color: hsl(266, 72%, 70%);
+}
+
+.iconCircles.pink:hover, .iconCirclesWinding.pink:hover {
+    background-color: hsl(309, 87%, 68%);
+    border-color: hsl(309, 87%, 73%);
+}
+
+.iconCircles.red:hover, .iconCirclesWinding.red:hover {
+    background-color: hsl(0, 91%, 61%);
+    border-color: hsl(0, 91%, 66%);
+}
+
+.iconCircles.yellow:hover, .iconCirclesWinding.yellow:hover {
+    background-color: hsl(54, 97%, 66%);
+    border-color: hsl(54, 97%, 71%);
 }
 
 .numberCircles {
@@ -1200,6 +1245,10 @@ Portfolio Tile Images
 --------------------------
 */
 
+#projectOne:hover, #projectTwo:hover, #projectThree:hover, #projectFour:hover, #projectFive:hover, #projectSix:hover {
+    cursor: pointer;
+}
+
 #projectOne > .tileImage {
     background-color: #E5EEFF;
     padding-bottom: 50%;
@@ -1631,6 +1680,7 @@ Adjustments to Tiles for SMALL SCREEN SIZE
 
     #projectThree > .tileImage {
         padding-bottom: 50% !important;
+        background-size: auto 70% !important;
     }
 
     #projectSix > .tileImage {
