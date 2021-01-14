@@ -195,7 +195,6 @@ p a {
 
 a:hover {
     color: #093478;
-    text-decoration: none;
 }
 
 /* 
@@ -2565,6 +2564,7 @@ Icon Formatting
     max-width: 100px;
     text-align: center;
     font-size: 14px;
+    text-decoration: none !important;
 }
 
 .iconWinding {
@@ -2581,6 +2581,7 @@ Icon Formatting
     text-align: center;
     background-color: white;
     font-size: 14px;
+    text-decoration: none !important;
 }
 
 .processWinding {
