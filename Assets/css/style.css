@@ -189,7 +189,7 @@ a {
     color: #6F82D8;
 }
 
-p a {
+p a:hover {
     text-decoration: underline;
 }
 
