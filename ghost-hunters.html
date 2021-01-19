@@ -204,33 +204,33 @@
                         <div class="heartDown"></div>
                         <div class="solutionVisuals">
                             <div>
-                                <div class="solutionSlide">
+                                <div class="solutionSlide" data-toggle="modal" data-target="#modal0">
                                     <a href="Assets/Images/Project_GhostHunters/tutorialScreens.png" target="_blank">
-                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/tutorialScreens.png" alt="Ghost Hunter tutorial screens">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/tutorialScreens.png" alt="Ghost Hunter tutorial screens" data-target="#carousel0" data-slide-to="0">
                                     </a>
                                     <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunters: sample tutorial screens</i></p>
                                 </div>
                             </div>
                             <div>
-                                <div class="solutionSlide">
+                                <div class="solutionSlide" data-toggle="modal" data-target="#modal0">
                                     <a href="Assets/Images/Project_GhostHunters/hunterFlow.png" target="_blank">
-                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/hunterFlow.png" alt="Ghost Hunter ghost hunter screens">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/hunterFlow.png" alt="Ghost Hunter ghost hunter screens" data-target="#carousel0" data-slide-to="1">
                                     </a>
                                     <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunter: Example flow of hunter gameplay</i></p>
                                 </div>
                             </div>
                             <div>
-                                <div class="solutionSlide">
+                                <div class="solutionSlide" data-toggle="modal" data-target="#modal0">
                                     <a href="Assets/Images/Project_GhostHunters/demonFlow.png" target="_blank">
-                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/demonFlow.png" alt="Ghost Hunter demon screens">
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/demonFlow.png" alt="Ghost Hunter demon screens" data-target="#carousel0" data-slide-to="2">
                                     </a>
                                     <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunter: Example flow of demon gameplay</i></p>
                                 </div>
                             </div>
                             <div>
-                                <div class="solutionSlide">
+                                <div class="solutionSlide" data-toggle="modal" data-target="#modal0">
                                     <a href="Assets/Images/Project_GhostHunters/votingFlow.png" target="_blank">
-                                        <img class="solutionSlidePic width-100" src="Assets/Images/Project_GhostHunters/votingFlow.png" alt="Ghost Hunter voting screens">
+                                        <img class="solutionSlidePic width-100" src="Assets/Images/Project_GhostHunters/votingFlow.png" alt="Ghost Hunter voting screens" data-target="#carousel0" data-slide-to="3">
                                     </a>
                                     <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunter: Example flow of voting screens</i></p>
                                 </div>
@@ -240,6 +240,86 @@
                 </div>
             </section>
 
+            <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal0" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel0" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/tutorialScreens.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/tutorialScreens.png" alt="Ghost Hunter tutorial screens">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunters: sample tutorial screens</i></p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_GhostHunters/hunterFlow.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/hunterFlow.png" alt="Ghost Hunter ghost hunter screens">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunter: Example flow of hunter gameplay</i></p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_GhostHunters/demonFlow.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/demonFlow.png" alt="Ghost Hunter demon screens">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunter: Example flow of demon gameplay</i></p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_GhostHunters/votingFlow.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/votingFlow.png" alt="Ghost Hunter voting screens">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Ghost Hunter: Example flow of voting screens</i></p>
+                                </div>
+
+                                <!--Change Carousel Name! -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel0" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel0" data-slide-to="1"></li>
+                                    <li data-target="#carousel0" data-slide-to="2"></li>
+                                    <li data-target="#carousel0" data-slide-to="3"></li>
+                                </ol>
+                                
+                                </div>
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-prev" href="#carousel0" role="button" data-slide="prev">
+                                
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-next" href="#carousel0" role="button" data-slide="next">
+                                
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                </span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
             
             
             <!--Takeaways and Reflections-->
@@ -266,15 +346,50 @@
                         <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
                         <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
                         <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
-                        <div>
+                        <div data-toggle="modal" data-target="#modal0-1">
                             <a href="Assets/Images/Project_GhostHunters/votingLogic.png" target="_blank">
-                                <img class="CircleContent rightCirclePic" src="Assets/Images/Project_GhostHunters/votingLogic.png" alt="voting screens logic">
+                                <img class="CircleContent rightCirclePic" src="Assets/Images/Project_GhostHunters/votingLogic.png" alt="voting screens logic" data-target="#carousel0-1" data-slide-to="0">
                             </a>
                             <p class="col-sm-9 CircleContent darkBlueText text-center slideshowCaption"><i>An inside look at our voting screen branching logic, in which we mocked up over 60 different screens for every permutation of user choices</i></p>
                         </div>
                         
                     </div>
                 </div>
+
+                <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal0-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel0-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/votingLogic.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/votingLogic.png" alt="voting screens logic">
+                                    </a>
+                                    <p class="col-sm-9 CircleContent darkBlueText text-center slideshowCaption"><i>An inside look at our voting screen branching logic, in which we mocked up over 60 different screens for every permutation of user choices</i></p>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                 <div class="row mt-5" data-aos="fade-right" data-aos-duration="600" data-aos-offset="300">
                     <div class="col-sm-5 order-sm-2">
                         <h5 class="prototype mt-4 mb-3"><span>If I Went Back in Time, I Would...</span></h5>
@@ -292,14 +407,50 @@
                         <div class="mediumCircles mt-1 reflectionCircle4 lightRed"></div>
                         <div class="mediumCircles mt-1 reflectionCircle5 lightYellow"></div>
                         <div class="mediumCircles mt-1 reflectionCircle6 lightBlue"></div>
-                        <div class="">
+                        <div data-toggle="modal" data-target="#modal0-2">
                             <a href="Assets/Images/Project_GhostHunters/paperPrototypesDifferences.png" target="_blank">
-                                <img class="CircleContent leftCirclePic" src="Assets/Images/Project_GhostHunters/paperPrototypesDifferences.png" alt="two versions of paper prototypes">
+                                <img class="CircleContent leftCirclePic" src="Assets/Images/Project_GhostHunters/paperPrototypesDifferences.png" alt="two versions of paper prototypes" data-target="#carousel0-2" data-slide-to="0">
                             </a>
                             <p class="col-sm-9 CircleContent darkBlueText text-center slideshowCaption"><i>Our paper prototypes varied drastically in fidelity between designs, which distracted users from giving feedback</i></p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal0-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel0-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/paperPrototypesDifferences.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/paperPrototypesDifferences.png" alt="two versions of paper prototypes">
+                                    </a>
+                                    <p class="col-sm-9 CircleContent darkBlueText text-center slideshowCaption"><i>Our paper prototypes varied drastically in fidelity between designs, which distracted users from giving feedback</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                 <div class="row mt-5" data-aos="fade-left" data-aos-duration="600" data-aos-offset="300">
                     <div class="col-sm-5 offset-sm-1">
                         <h5 class="prototype mt-4 mb-3"><span>I Became Better At...</span></h5>
@@ -320,14 +471,50 @@
                         <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
                         <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
                         <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
-                        <div>
+                        <div data-toggle="modal" data-target="#modal0-3">
                             <a href="Assets/Images/Project_GhostHunters/earlyStageTutorial.png" target="_blank">
-                                <img class="CircleContent rightCirclePic mb-2" src="Assets/Images/Project_GhostHunters/earlyStageTutorial.png" alt="early tutorial screens">
+                                <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/earlyStageTutorial.png" alt="early tutorial screens" data-target="#carousel0-3" data-slide-to="0">
                             </a>
                             <p class="col-sm-9 CircleContent darkBlueText text-center slideshowCaption"><i>The initial version of our tutorial screen felt like a win at the time, but was thoroughly enjoybable for users to go through (most likely because it looked like a scrapbook)</i></p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal0-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel0-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/earlyStageTutorial.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/earlyStageTutorial.png" alt="two versions of paper prototypes">
+                                    </a>
+                                    <p class="col-sm-9 CircleContent darkBlueText text-center slideshowCaption"><i>The initial version of our tutorial screen felt like a win at the time, but was thoroughly enjoybable for users to go through (most likely because it looked like a scrapbook)</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
             </section>
             
             <!--Project Background-->
