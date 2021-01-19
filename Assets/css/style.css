@@ -1924,7 +1924,7 @@ About Me Page Circle Hover Responses
 
     .meCircleFour::after {
         content: "";
-        background-image: url('../Images/Me/trivia_Mandalorian.jpeg');
+        background-image: url('../Images/Me/trivia_wandavision.png');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -1966,7 +1966,36 @@ About Me Page Circle Hover Responses
         visibility: visible !important;
     }
     
+
+    /* 
+    --------------------------
+    Circle Six
+    --------------------------
+    */
+
+    .meCircleSix:hover {
+        z-index: 500 !important;
+    }
+
+    .meCircleSix::after {
+        content: "";
+        background-image: url('../Images/Me/trivia_choolaah.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+    }
+
+    .meCircleSix:hover .circleTrivia {
+        visibility: visible !important;
+    }
 }
+
+
 
 /*
 ==============================================
@@ -2069,7 +2098,7 @@ Responsive Page Changes
 
     #triviaWatching:after {
         content: "";
-        background-image: url('../Images/Me/trivia_Mandalorian.jpeg');
+        background-image: url('../Images/Me/trivia_wandavision.png');
         background-size: cover;
         position: absolute;
         top: 0;
