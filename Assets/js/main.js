@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
   // Awesome Tooltip needed for Slick (Slideshow) and Dot Navigation
   $('.awesome-tooltip').tooltip({
@@ -156,5 +155,14 @@ $(document).ready(function () {
   });
 
 
-  
-  
+ 
+  /* Function to open fullscreen mode */
+  function openFullscreen(elem) {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+    }
