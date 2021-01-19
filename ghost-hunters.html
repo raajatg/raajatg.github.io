@@ -686,9 +686,9 @@
                             <div class="heartDown"></div>
                             <div class="solutionVisuals">
                                 <div>
-                                    <div class="solutionSlide">
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal1">
                                         <a href="Assets/Images/Project_GhostHunters/newMetaphors1.png" target="_blank">
-                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/newMetaphors1.png" alt="new metaphors (1/2)">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/newMetaphors1.png" alt="new metaphors (1/2)" data-target="#carousel1" data-slide-to="0">
                                         </a>
                                         <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
                                             <i>
@@ -698,9 +698,9 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="solutionSlide">
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal1">
                                         <a href="Assets/Images/Project_GhostHunters/newMetaphors2.png" target="_blank">
-                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/newMetaphors2.png" alt="new metaphors (2/2)">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/newMetaphors2.png" alt="new metaphors (2/2)" data-target="#carousel1" data-slide-to="1">
                                         </a>
                                         <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
                                             <i>
@@ -710,6 +710,81 @@
                                     </div>
                                 </div>
                             </div>   
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/newMetaphors1.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/newMetaphors1.png" alt="new metaphors (1/2)">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                        <i>
+                                            For the New Metaphors Exercise, we asked interviewees to think through which metaphors applied to their feelings about fake news.
+                                        </i>
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_GhostHunters/newMetaphors2.png" target="_blank">
+                                        <img class="d-block w-100" src="Assets/Images/Project_GhostHunters/newMetaphors2.png" alt="new metaphors (2/2)">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                        <i>
+                                            Interviewees were able to choose from ~100 metaphors to ensure their feelings were represented accurately
+                                        </i>
+                                    </p>
+                                </div>
+
+                                <!--Change Carousel Name! -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel1" data-slide-to="1"></li>
+                                </ol>
+                                
+                                </div>
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                </span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
                         </div>
                     </div>
 
@@ -764,13 +839,48 @@
                         <div class="lightPurple col-12">
                             <div class="heartDown"></div>
                                 <div>
-                                    <div class="solutionSlide">
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal2-1">
                                         <a href="Assets/Images/Project_GhostHunters/litReview.png" target="_blank">
-                                            <img class="width-80" src="Assets/Images/Project_GhostHunters/litReview.png" alt="Literature Review">
+                                            <img class="width-80" src="Assets/Images/Project_GhostHunters/litReview.png" alt="Literature Review" data-target="#carousel2-1" data-slide-to="0">
                                         </a>
                                         <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Our literature review helped us see that although the consumers of fake news were a big part of its spread, they could also be the key to its downfall</i></p>
                                     </div>
                                 </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/litReview.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/litReview.png" alt="Literature Review">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Our literature review helped us see that although the consumers of fake news were a big part of its spread, they could also be the key to its downfall</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     
@@ -814,9 +924,9 @@
                             <div class="heartDown"></div>
                             <div class="solutionVisuals">
                                 <div>
-                                    <div class="solutionSlide">
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal2-2">
                                         <a href="Assets/Images/Project_GhostHunters/interview1Script.png" target="_blank">
-                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/interview1Script.png" alt="Interview 1">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/interview1Script.png" alt="Interview 1" data-target="#carousel2-2" data-slide-to="0">
                                         </a>
                                         <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
                                             <i>
@@ -826,9 +936,9 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="solutionSlide">
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal2-2">
                                         <a href="Assets/Images/Project_GhostHunters/interview1News.png" target="_blank">
-                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/interview1News.png" alt="Interview 1 News Rubric">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GhostHunters/interview1News.png" alt="Interview 1 News Rubric" data-target="#carousel2-2" data-slide-to="1">
                                         </a>
                                         <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
                                             <i>
@@ -838,6 +948,81 @@
                                     </div>
                                 </div>
                             </div>   
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/interview1Script.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/interview1Script.png" alt="Interview 1">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                        <i>
+                                            We developed a screener survey that we posted on various active Facebook groups. It helped us identify Facebook users that actively shared or engaged with news, and their reasons for doing so
+                                        </i>
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_GhostHunters/interview1News.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/interview1News.png" alt="Interview 1 News Rubric">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                        <i>
+                                            As part of our interview, we had interviewees inspect two articles with drastically differing levels of credibility, scored on "credibility rubrics" we created
+                                        </i>
+                                    </p>
+                                </div>
+
+                                <!--Change Carousel Name! -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel2-2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel2-2" data-slide-to="1"></li>
+                                </ol>
+                                
+                                </div>
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-prev" href="#carousel2-2" role="button" data-slide="prev">
+                                
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-next" href="#carousel2-2" role="button" data-slide="next">
+                                
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                </span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
                         </div>
                     </div>
 
@@ -893,9 +1078,9 @@
                         <div class="lightPurple col-12">
                             <div class="heartDown"></div>
                                 <div>
-                                    <div class="solutionSlide">
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal2-3">
                                         <a href="Assets/Images/Project_GhostHunters/newsRubricScores.png" target="_blank">
-                                            <img class="width-80" src="Assets/Images/Project_GhostHunters/newsRubricScores.png" alt="interviewee scores of news">
+                                            <img class="width-80" src="Assets/Images/Project_GhostHunters/newsRubricScores.png" alt="interviewee scores of news" data-target="#carousel2-3" data-slide-to="0">
                                         </a>
                                         <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Our interviewees assessed the two news articles we provided to them as being virtually equal in credibility, despite their drastically differing levels of legitimacy</i></p>
                                     </div>
@@ -903,6 +1088,40 @@
                         </div>
                     </div>
 
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GhostHunters/newsRubricScores.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GhostHunters/newsRubricScores.png" alt="interviewee scores of news">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Our interviewees assessed the two news articles we provided to them as being virtually equal in credibility, despite their drastically differing levels of legitimacy</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
 
                     <!-- Defining the Problem Takeaways-->
                     <div class="row justify-content-center mt-3 mb-5" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="300">
