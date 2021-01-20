@@ -2640,6 +2640,12 @@ Icon Formatting
     }
 }
 
+@media (max-width: 576px) {
+    .mobile-invisible {
+        display: none !important;
+    }
+}
+
 /* 
 --------------------------
 Process Lines
