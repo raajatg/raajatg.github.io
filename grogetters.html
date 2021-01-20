@@ -461,35 +461,35 @@
                         <div class="col-9 offset-sm-1 mt-4 processLong" data-aos="fade-right" data-aos-duration="600" data-aos-offset="300">
                             <div class="d-flex justify-content-between">
                                 <span class="processLine"></span>
-                                <div>
+                                <div class="anchor">
                                     <a href="#section-process-1">
                                     <div class="purple iconCircles d-flex justify-content-center align-content-center">
                                             <img class="icon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
                                     </div>
                                     </a>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <a href="#section-process-2">
                                         <div class="pink iconCircles d-flex justify-content-center align-content-center">
                                             <img class="icon" src="Assets/Images/Universal/LoFi-Icon.svg" alt="icon of sketching a first iteration phase">
                                         </div>
                                     </a>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <a href="#section-process-3">
                                         <div class="red iconCircles d-flex justify-content-center align-content-center">
                                             <img class="icon" src="Assets/Images/Universal/MidFi-Icon.svg" alt="icon of moving to hi-fi">
                                         </div>
                                     </a>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <a href="#section-process-4">
                                         <div class="yellow iconCircles d-flex justify-content-center align-content-center">
                                             <img class="icon" src="Assets/Images/Universal/HiFi-Icon.svg" alt="icon of motion and animation">
                                         </div>
                                     </a>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <a href="#section-process-5">
                                         <div class="blue iconCircles d-flex justify-content-center align-content-center">
                                             <img class="icon" src="Assets/Images/Universal/starIcon.svg" alt="icon of final thoughts">
@@ -498,19 +498,19 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <div>
+                                <div class="anchor">
                                     <p class="mt-1 iconCaption"><a href="#section-process-1">Understanding the Problem</a></p>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <p class="mt-1 iconCaption"><a href="#section-process-2">Lo-Fi Designs</a></p>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <p class="mt-1 iconCaption"><a href="#section-process-3">Mid-Fi Designs</a></p>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <p class="mt-1 iconCaption"><a href="#section-process-4">Hi-Fi Designs</a></p>
                                 </div>
-                                <div>
+                                <div class="anchor">
                                     <p class="mt-1 iconCaption"><a href="#section-process-5">Results & Final Thoughts</a></p>
                                 </div>
                             </div>
@@ -1374,8 +1374,8 @@
 
                                 <!--Change Carousel Name! -->
                                 <ol class="carousel-indicators">
-                                    <li data-target="#carousel3-2" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel3-2" data-slide-to="1"></li>
+                                    <li data-target="#carousel4-3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel4-3" data-slide-to="1"></li>
                                 </ol>
                                 
                                 </div>
@@ -1473,13 +1473,48 @@
                         <div class="lightYellow col-12 mt-3 pt-5">
                             <div class="heartDown"></div>
                                 <div>
-                                    <div class="solutionSlide">
-                                        <a href="Assets/Images/Project_GroGetters/hi-fi-mobile-screens.png" target="_blank">
-                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GroGetters/hi-fi-mobile-screens.png" alt="overview page of dashboard">
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal5-1">
+                                        <a href="Assets/Images/Project_GroGetters/hi-fi-mobile-screens.png">
+                                            <img class="solutionSlidePic width-80" src="Assets/Images/Project_GroGetters/hi-fi-mobile-screens.png" alt="overview page of dashboard" data-target="#carousel5-1" data-slide-to="0">
                                         </a>
                                         <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>In the final set of mobile screens, I integrated all the key features of the app into a single jumping-off point, with these features opening as modals that allowed users to continue navigating in the background or easily close modals and return to navigation</i></p>
                                     </div>
                                 </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal5-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel5-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GroGetters/hi-fi-mobile-screens.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GroGetters/hi-fi-mobile-screens.png" alt="overview page of dashboard">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>In the final set of mobile screens, I integrated all the key features of the app into a single jumping-off point, with these features opening as modals that allowed users to continue navigating in the background or easily close modals and return to navigation</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     
@@ -1537,7 +1572,7 @@
                                 <!-- List Modification -->
                                 <div>
                                     <div class="solutionSlide">
-                                            <a href="Assets/Images/Project_GroGetters/GG-Mobile-List-Add.mp4" target="_blank">
+                                            <a href="Assets/Images/Project_GroGetters/GG-Mobile-List-Add.mp4">
                                                 <video class="solutionSlidePic width-100" autoplay loop muted playsinline>
                                                     <source src="Assets/Images/Project_GroGetters/GG-Mobile-List-Add.mp4" type="video/webm">
                                                     <source src="Assets/Images/Project_GroGetters/GG-Mobile-List-Add.mp4" type="video/mp4">
@@ -1549,7 +1584,7 @@
                                 <!-- Brand & Deal Discovery -->
                                 <div>
                                     <div class="solutionSlide">
-                                            <a href="Assets/Images/Project_GroGetters/GG-Mobile-Deals.mp4" target="_blank">
+                                            <a href="Assets/Images/Project_GroGetters/GG-Mobile-Deals.mp4">
                                                 <video class="solutionSlidePic width-100" autoplay loop muted playsinline>
                                                     <source src="Assets/Images/Project_GroGetters/GG-Mobile-Deals.mp4" type="video/webm">
                                                     <source src="Assets/Images/Project_GroGetters/GG-Mobile-Deals.mp4" type="video/mp4">
@@ -1561,7 +1596,7 @@
                                 <!-- Forgotten Item Reminders -->
                                 <div>
                                     <div class="solutionSlide">
-                                            <a href="Assets/Images/Project_GroGetters/GG-Mobile-Reminders.mp4" target="_blank">
+                                            <a href="Assets/Images/Project_GroGetters/GG-Mobile-Reminders.mp4">
                                                 <video class="solutionSlidePic width-100" autoplay loop muted playsinline>
                                                     <source src="Assets/Images/Project_GroGetters/GG-Mobile-Reminders.mp4" type="video/webm">
                                                     <source src="Assets/Images/Project_GroGetters/GG-Mobile-Reminders.mp4" type="video/mp4">
@@ -1594,15 +1629,50 @@
                     <div class="lightYellow col-12 mt-3 pt-5">
                         <div class="heartDown"></div>
                             <div>
-                                <div class="solutionSlide">
-                                    <a href="Assets/Images/Project_GroGetters/hi-fi-watch-screens.png" target="_blank">
-                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GroGetters/hi-fi-watch-screens.png" alt="overview page of dashboard">
+                                <div class="solutionSlide" data-toggle="modal" data-target="#modal5-3">
+                                    <a href="Assets/Images/Project_GroGetters/hi-fi-watch-screens.png" >
+                                        <img class="solutionSlidePic width-80" src="Assets/Images/Project_GroGetters/hi-fi-watch-screens.png" alt="overview page of dashboard" data-target="#carousel5-3" data-slide-to="0">
                                     </a>
                                     <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>The final watch interface focused on providing the most critical features of the app without requiring significant physical contact with the watch (e.g., haptic feedback for forgotten items, voice for search)</i></p>
                                 </div>
                             </div>
                     </div>
                 </div>
+
+                <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal5-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel5-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_GroGetters/hi-fi-watch-screens.png" >
+                                        <img class="w-100 d-block" src="Assets/Images/Project_GroGetters/hi-fi-watch-screens.png" alt="overview page of dashboard">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>The final watch interface focused on providing the most critical features of the app without requiring significant physical contact with the watch (e.g., haptic feedback for forgotten items, voice for search)</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
 
                     <!-- Hi-Fi Designs Takeaways-->
                     <div class="row justify-content-center mt-3 mb-5" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="300">
@@ -1686,7 +1756,7 @@
                 </div>
 
 
-                <div class="d-flex justify-content-center col-4">
+                <div class="d-flex justify-content-center col-4 anchor">
                     <a href="#section-projectHeader" class="backTop align-self-center">
                         <div class="backTopCircle blue d-flex justify-content-center align-content-center">
                             <img class="backTopArrow align-self-center" src="Assets/Images/Universal/backTopArrow.svg" alt="back to top arrow">

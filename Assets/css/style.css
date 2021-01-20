@@ -475,23 +475,23 @@ body, html {
     scroll-padding-top: 400px;
 }
 
-#P1solutionOverview, #P1finalDesign, #P1takeaways, #P1projectBackground, #P1DefiningProblem, #P1NarrowingIn, #P1LoFi, #P1MidFi, #P1HiFi, #P1finalThoughts, #P1bottomNav {
+#P1solutionOverview, #P1finalDesign, #P1takeaways, #section-projectBackground, #P1DefiningProblem, #P1NarrowingIn, #P1LoFi, #P1MidFi, #P1HiFi, #P1finalThoughts, #P1bottomNav {
     overflow-x:hidden;
 }
 
-#P2solutionOverview, #P2finalDesign, #P2takeaways, #P2projectBackground, #P2context, #P2adjacentOfferings, #P2tiesToTheater, #P2initialIdeas, #P2prototyping, #P2finalThoughts, #P2bottomNav {
+#P2solutionOverview, #P2finalDesign, #P2takeaways, #section-projectBackground, #P2context, #P2adjacentOfferings, #P2tiesToTheater, #P2initialIdeas, #P2prototyping, #P2finalThoughts, #P2bottomNav {
     overflow-x:hidden;
 }
 
-#P3solutionOverview, #P3finalDesign, #P3takeaways, #P3projectBackground, #P3personaAnalysis, #P3sketchingIteration1, #P3highFidelity, #P3motionAnimation, #P3finalThoughts, #P3bottomNav {
+#P3solutionOverview, #P3finalDesign, #P3takeaways, #section-projectBackground, #P3personaAnalysis, #P3sketchingIteration1, #P3highFidelity, #P3motionAnimation, #P3finalThoughts, #P3bottomNav {
     overflow-x:hidden;
 }
 
-#P4solutionOverview, #P4finalDesign, #P4takeaways, #P4projectBackground, #P4DefiningIssue, #P4Aligning, #P4Developing, #P4Incorporating, #P4finalThoughts, #P4bottomNav {
+#P4solutionOverview, #P4finalDesign, #P4takeaways, #section-projectBackground, #P4DefiningIssue, #P4Aligning, #P4Developing, #P4Incorporating, #P4finalThoughts, #P4bottomNav {
     overflow-x:hidden;
 }
 
-#P5solutionOverview, #P5finalDesign, #P5takeaways, #P5projectBackground, #P5Envisioning, #P5Developing, #P5Refining, #P5finalThoughts, #P5bottomNav {
+#P5solutionOverview, #P5finalDesign, #P5takeaways, #section-projectBackground, #P5Envisioning, #P5Developing, #P5Refining, #P5finalThoughts, #P5bottomNav {
     overflow-x:hidden;
 }
 
@@ -501,8 +501,10 @@ body, html {
 
 
 .section {
-    padding-top: 70px;
+    margin-top: 70px;
 }
+
+
 
 .background {
     z-index: -100;
@@ -2194,6 +2196,8 @@ Dot Navigation Formatting (https://codepen.io/evleen13/pen/ZMzPOP)
 	position: relative;
 	top:-5px;
 }
+
+
 .awesome-tooltip + .tooltip > .tooltip-inner {
     /*background-color: #8e44ad;*/ 
     color: #f5f5f5; 

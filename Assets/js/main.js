@@ -116,7 +116,7 @@ $(document).ready(function () {
         var id = $(this).find('a').attr("href"),
         posi,
         ele,
-        padding = 0;
+        padding = 70;
     
         ele = $(id);
         posi = ($(ele).offset() || 0).top - padding;
@@ -126,7 +126,35 @@ $(document).ready(function () {
         return false;
       });
 
+      $('#downArrow').click(function () {
+    
+        var id = $(this).find('a').attr("href"),
+        posi,
+        ele,
+        padding = 70;
+    
+        ele = $(id);
+        posi = ($(ele).offset() || 0).top - padding;
+    
+        $('html, body').animate({ scrollTop: posi }, 'slow');
+    
+        return false;
+      });
 
+      $('.anchor').click(function () {
+    
+        var id = $(this).find('a').attr("href"),
+        posi,
+        ele,
+        padding = 70;
+    
+        ele = $(id);
+        posi = ($(ele).offset() || 0).top - padding;
+    
+        $('html, body').animate({ scrollTop: posi }, 'slow');
+    
+        return false;
+      });
     /*
     ==============================================
     Slick Slideshow Clicking (https://codepen.io/evleen13/pen/ZMzPOP)
