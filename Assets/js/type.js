@@ -19,7 +19,7 @@ const homeType = new Typewriter(app);
     .typeString(`Oh, hello there${handwaveFinal}!`)
     .pauseFor(2000)
     .deleteAll()
-    .typeString("I'm Raajat Gupta.")
+    .typeString("<strong>I'm Raajat Gupta.</strong>")
     .start();
 
 
@@ -33,7 +33,7 @@ var introduction = document.getElementById('introduction');
 
 const meType = new Typewriter(introduction);
     meType.pauseFor(1000)
-    .typeString("I'm Raajat Gupta.")
+    .typeString("<strong>I'm Raajat Gupta.</strong>")
     .typeString('<br/>')
     .pauseFor(500)
     .typeString("I use design as a tool🔧 for building community.")

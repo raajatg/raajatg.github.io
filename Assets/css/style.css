@@ -84,6 +84,11 @@ Color Formatting
     filter: brightness(0) saturate(100%) invert(96%) sepia(76%) saturate(518%) hue-rotate(312deg) brightness(108%) contrast(103%);
 }
 
+.blueBorder {
+    border-color: hsl(229, 57%, 64%) !important;
+}
+
+
 /*
 ==============================================
 Text Formatting
@@ -142,7 +147,7 @@ Text Colors
 }
 
 .slideshowCaption {
-    font-size: small;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -180,9 +185,30 @@ Element-Level Changes
 --------------------------
 */
 
+h2 {
+    font-weight: 900;
+}
+
+h5 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 p {
-    font-family: "helvetica","sans-serif";
-    font-size: 1rem;
+    font-family: "neue-haas-unica","sans-serif";
+    font-size: 1.1rem;
+    letter-spacing: 0.1px;
+}
+
+@media (max-width: 992px) {
+    h5 {
+        font-size: 1.25rem
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
 
 a {
@@ -205,12 +231,11 @@ Font Families / Features
 */
 
 .prototype {
-    font-family: "PROTOTYPE", "helvetica","sans-serif";
-    letter-spacing: 2px;
+    font-family: "neue-haas-unica","sans-serif";
 }
 
 .metrophobic {
-    font-family: "Metrophobic", "helvetica","sans-serif";
+    font-family: "neue-haas-unica","sans-serif";
 }
 
 .faded {
@@ -279,14 +304,14 @@ Custom Text Types
 }
 
 .name {
-    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-family: "neue-haas-unica", "helvetica","sans-serif";
     font-size: 1.5rem;
     letter-spacing: 2px;
     color: #093478;
 }
 
 .header-text {
-    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-family: "neue-haas-unica", "helvetica","sans-serif";
     font-size: 0.8rem;
     letter-spacing: 2px;
     color: #093478;
@@ -294,22 +319,22 @@ Custom Text Types
 }
 
 .footerText {
-    font-family: "Metrophobic", "helvetica","sans-serif";
+    font-family: "neue-haas-unica", "helvetica","sans-serif";
     font-style: italic;
     font-size: x-small;
     margin: 0;
 }
 
 .nav-text {
-    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-family: "neue-haas-unica","sans-serif";;
     color: #093478;
 }
 
 .typed-text {
-    font-family: "Metrophobic", "helvetica","sans-serif";
+    font-family: "neue-haas-unica", "helvetica","sans-serif";
+    font-weight: 200;
     letter-spacing: 2px;
     color: #093478;
-    font-weight: normal;
 }
 
 #biography > .typed-text {
@@ -317,39 +342,46 @@ Custom Text Types
  }
 
 .tileSupertitle {
-    font-family: "PROTOTYPE", "helvetica","sans-serif";
-    font-size: 0.6rem;
-    letter-spacing: 2px;
+    font-family: "neue-haas-unica","sans-serif";
+    font-size: 0.7rem;
     color: grey;
-    margin-bottom: -1rem;
+    margin-top: -1rem;
 }
 
 .tileTitle {
-    font-family: "PROTOTYPE", "helvetica","sans-serif";
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-family: "neue-haas-unica","sans-serif";
+    font-size: 1.7rem;
+    line-height: 1.2;
     color: black;
+    margin-bottom: -1rem;
 }
 
 .tileSubtitle {
-    font-family: "helvetica","sans-serif";
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    font-family: "neue-haas-unica","sans-serif";
+    font-size: 1rem;
     color: black;
 }
 
 .tileTitleGreyed {
-    font-family: "PROTOTYPE", "helvetica","sans-serif";
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-family: "neue-haas-unica","sans-serif";
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin-bottom: -1rem;
     color: gray;
 }
 
 .tileSubtitleGreyed {
-    font-family: "helvetica","sans-serif";
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    font-family: "neue-haas-unica","sans-serif";
+    font-size: 1rem;
     color: gray;
+}
+
+.case-study-title {
+    font-weight: 900;
+}
+
+.case-study-subtitle {
+    font-weight: 400;
 }
 
 .textBorder {
@@ -419,6 +451,7 @@ Media Formatting
 
 .width-100 {
     width: 93% !important;
+    padding-top: 50px;
     max-width: 1000px;
     height: auto;
 }
@@ -499,12 +532,35 @@ body, html {
     overflow-x:hidden; 
 }
 
+hr {
+    margin: 0;
+}
 
-.section {
-    margin-top: 70px;
+.between-sections {
+    border: 1px solid black;
+    margin-left: 8.333333%;
+    margin-right: 8.333333%;
+    border-radius: 5px;
+    margin-bottom: -50px;
 }
 
 
+.inside-section {
+    border: 0.15px solid #edf0f1;
+    margin-left: 8.333333%;
+    margin-right: 8.333333%;
+    border-radius: 5px;
+}
+
+.section {
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+
+.big-gap {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
 .background {
     z-index: -100;
@@ -732,38 +788,56 @@ Icon Circles
     border-radius: 50%;
 }
 
+.topIconCircles {
+    height: 4vw;
+    width: 4vw;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+}
+
+.titleIconCircles {
+    min-width: 2.8rem;
+    min-height: 2.8rem;
+    max-width: 2.8rem;
+    max-height: 2.8rem;
+    border-radius: 100%;
+}
+
 /* 
 --------------------------
 Icon Circles Hover
 --------------------------
 */
 
-.iconCircles.blue:hover, .iconCirclesWinding.blue:hover {
+.iconCircles.blue:hover, .iconCirclesWinding.blue:hover, .topIconCircles.blue:hover {
     background-color: hsl(229, 57%, 54%);
     border-color: hsl(229, 57%, 59%);
 }
 
-.iconCircles.green:hover, .iconCirclesWinding.green:hover {
+.iconCircles.green:hover, .iconCirclesWinding.green:hover, .topIconCircles.green:hover  {
     background-color: hsl(162, 70%, 30%);
     border-color: hsl(162, 70%, 35%);
 }
 
-.iconCircles.purple:hover, .iconCirclesWinding.purple:hover {
+.iconCircles.purple:hover, .iconCirclesWinding.purple:hover, .topIconCircles.purple:hover  {
     background-color: hsl(266, 72%, 66%);
     border-color: hsl(266, 72%, 70%);
 }
 
-.iconCircles.pink:hover, .iconCirclesWinding.pink:hover {
+.iconCircles.pink:hover, .iconCirclesWinding.pink:hover, .topIconCircles.pink:hover  {
     background-color: hsl(309, 87%, 68%);
     border-color: hsl(309, 87%, 73%);
 }
 
-.iconCircles.red:hover, .iconCirclesWinding.red:hover {
+.iconCircles.red:hover, .iconCirclesWinding.red:hover, .topIconCircles.red:hover  {
     background-color: hsl(0, 91%, 61%);
     border-color: hsl(0, 91%, 66%);
 }
 
-.iconCircles.yellow:hover, .iconCirclesWinding.yellow:hover {
+.iconCircles.yellow:hover, .iconCirclesWinding.yellow:hover, .topIconCircles.yellow:hover  {
     background-color: hsl(54, 97%, 66%);
     border-color: hsl(54, 97%, 71%);
 }
@@ -2341,8 +2415,7 @@ Slick Slideshow Implementation
 .solutionSlide {
     margin: 0 auto;
     margin-top: 3%;
-    text-align: center;
-    padding-top: 4.5vw;
+    
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
@@ -2519,6 +2592,22 @@ Reflection Circle Positioning (Desktop)
     z-index: -1;
 }
 
+.reflectionCircles {
+    background-image: url(../Images/Universal/takeawayCircles.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -50px;
+    
+}
+
+@media (max-width: 768px) {
+    .reflectionCircles {
+        background-size: contain;
+        margin-top: 1rem;
+    }
+}
+
 /* 
 --------------------------
 Reflection Circle Positioning (Mobile)
@@ -2558,24 +2647,28 @@ Reflection Circle Media
 }
 
 .rightCirclePic {
-    width: 70%;
-    height: auto;
-    margin-top: 10%;
-    max-width: 600px;
+    max-width: 400px;
+    margin-top: 5%;
 }
 
 .leftCirclePic {
-    width: 70%;
-    height: auto;
-    margin-top: 10%;
-    max-width: 600px;
+    max-width: 400px;
+    margin-top: 5%;
 }
 
 .leftCirclePicSmall {
-    width: 30%;
-    height: auto;
-    margin-top: 10%;
     max-width: 600px;
+}
+
+.newCirclePic {
+    width: 100%;
+    height: auto
+}
+
+@media (max-width: 576px) {
+    .rightCirclePic, .leftCirclePic, .leftCirclePicSmall {
+        margin-top: 10%;
+    }
 }
 
 /*
@@ -2626,6 +2719,31 @@ Icon Formatting
     text-decoration: none !important;
 }
 
+.topIcon {
+    height: 2vw;
+    width: 2vw;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 32px;
+    max-height: 32px;
+    align-self: center;
+}
+
+.topIconCaption {
+    width: 8vw;
+    min-width: 80px;
+    text-align: left;
+    text-decoration: none !important;
+}
+
+.titleIcon {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    align-self: center;
+}
+
 .processWinding {
     display: none;
 }
@@ -2642,6 +2760,12 @@ Icon Formatting
 
 @media (max-width: 576px) {
     .mobile-invisible {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .medium-invisible {
         display: none !important;
     }
 }
@@ -2664,6 +2788,13 @@ Process Lines
 .verticalProcessLine {
     border-left: 3px solid black;
     height: 200px;
+    position: absolute;
+    z-index: -1;
+}
+
+.verticalProcessLine2 {
+    border-left: 3px solid black;
+    height: 110px;
     position: absolute;
     z-index: -1;
 }

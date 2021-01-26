@@ -161,17 +161,35 @@ $(document).ready(function () {
     ==============================================
     */
 
-    $('.solutionDescription').slick({
+    /*
+      $('.solutionDescription').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         asNavFor: '.solutionVisuals'
       });
+      */
+
       $('.solutionVisuals').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.solutionDescription',
+        adaptiveHeight: true,
+        dots: true,
+        focusOnSelect: true
+      });
+
+      $('.solutionDescription2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.solutionVisuals2'
+      });
+      $('.solutionVisuals2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.solutionDescription2',
         dots: true,
         focusOnSelect: true
       });

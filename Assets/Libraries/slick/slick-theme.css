@@ -218,5 +218,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    color: #6F82D8;
+    color: #000;
 }

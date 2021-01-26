@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
@@ -8157,6 +8157,10 @@ button.bg-dark:focus {
 
 .w-50 {
   width: 50% !important;
+}
+
+.w-60 {
+  width: 60% !important;
 }
 
 .w-75 {
