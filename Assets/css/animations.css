@@ -31,8 +31,8 @@ Custom Animation for entrance of left bottom circle
 	animation-name: fadeInText;
 	-webkit-animation-name: fadeInText;
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;
@@ -67,8 +67,8 @@ Custom Animation for entrance of left bottom circle
 	animation-name: leftBottomCircle;
 	-webkit-animation-name: leftBottomCircle;	
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;
@@ -116,8 +116,8 @@ Custom Animation for entrance of left top circle
 	animation-name: leftTopCircle;
 	-webkit-animation-name: leftTopCircle;	
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;	
@@ -165,8 +165,8 @@ Custom Animation for entrance of top circle
 	animation-name: topCircle;
 	-webkit-animation-name: topCircle;	
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;	
@@ -214,8 +214,8 @@ Custom Animation for entrance of right top circle
 	animation-name: rightTopCircle;
 	-webkit-animation-name: rightTopCircle;	
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;	
@@ -263,8 +263,8 @@ Custom Animation for entrance of right bottom circle
 	animation-name: rightBottomCircle;
 	-webkit-animation-name: rightBottomCircle;	
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;	
@@ -312,8 +312,8 @@ Custom Animation for entrance of bottom circle
 	animation-name: bottomCircle;
 	-webkit-animation-name: bottomCircle;	
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;	

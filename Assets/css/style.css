@@ -88,6 +88,26 @@ Color Formatting
     border-color: hsl(229, 57%, 64%) !important;
 }
 
+.greenBorder {
+    border-color: hsl(162, 70%, 40%) !important;
+}
+
+.purpleBorder {
+    border-color: hsl(266, 72%, 75%) !important;
+}
+
+.pinkBorder {
+    border-color: hsl(309, 87%, 78%) !important;
+}
+
+.redBorder {
+    border-color: hsl(0, 91%, 71%) !important;
+}
+
+.yellowBorder {
+    border-color: hsl(54, 97%, 76%) !important;
+}
+
 
 /*
 ==============================================
@@ -187,22 +207,33 @@ Element-Level Changes
 
 h2 {
     font-weight: 900;
+    font-size: 2rem;
 }
 
 h5 {
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h6 {
     font-weight: 900;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-p {
+p, li {
     font-family: "neue-haas-unica","sans-serif";
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.1px;
 }
 
 @media (max-width: 992px) {
     h5 {
+        font-size: 1.5rem
+    }
+
+    h6 {
         font-size: 1.25rem
     }
 
@@ -249,9 +280,20 @@ Quotes
 */
 
 .quote {
-    font-family: "Metrophobic", "helvetica","sans-serif";
+    font-family: "neue-haas-unica","sans-serif";
+    font-weight: 300;
     color: #8995A0;
     z-index: 5;
+}
+
+@media (max-width: 768px) {
+    .quote {
+        font-family: "neue-haas-unica","sans-serif";
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #8995A0;
+        z-index: 5;
+    }
 }
 
 .quotation-start {
@@ -290,8 +332,19 @@ Custom Text Types
 --------------------------
 */
 
+.emphasis {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.emphasis2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 120%;
+}
+
 .numbering {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .plainList {
@@ -305,8 +358,9 @@ Custom Text Types
 
 .name {
     font-family: "neue-haas-unica", "helvetica","sans-serif";
+    font-weight: 800;
     font-size: 1.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #093478;
 }
 
@@ -332,8 +386,8 @@ Custom Text Types
 
 .typed-text {
     font-family: "neue-haas-unica", "helvetica","sans-serif";
-    font-weight: 200;
-    letter-spacing: 2px;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: #093478;
 }
 
@@ -382,6 +436,27 @@ Custom Text Types
 
 .case-study-subtitle {
     font-weight: 400;
+}
+
+.sectionCaption {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.smaller-text {
+    font-size: 0.95rem;
+    letter-spacing: 0.1px;
+}
+
+@media (max-width: 992px) {
+   .smaller-text {
+        font-size: 0.9rem;
+    }
+}
+
+.sectionCaptionBold {
+    font-weight: 600;
+    font-style: italic;
 }
 
 .textBorder {
@@ -450,10 +525,28 @@ Media Formatting
 }
 
 .width-100 {
-    width: 93% !important;
-    padding-top: 50px;
+    width: 93%;
     max-width: 1000px;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.open-image {
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.side-image {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 @media (max-width: 576px){
@@ -506,6 +599,10 @@ Page Structure Formatting
 body, html {
     height: 100%;    
     scroll-padding-top: 400px;
+}
+
+.projectContainer {
+    max-width: 1800px;
 }
 
 #P1solutionOverview, #P1finalDesign, #P1takeaways, #section-projectBackground, #P1DefiningProblem, #P1NarrowingIn, #P1LoFi, #P1MidFi, #P1HiFi, #P1finalThoughts, #P1bottomNav {
@@ -562,6 +659,15 @@ hr {
     margin-top: 50px;
 }
 
+.processSectionGap {
+    margin-top: 100px;
+}
+
+.learning {
+    max-width: 440px;
+    margin-right: 17px;
+}
+
 .background {
     z-index: -100;
 }
@@ -569,7 +675,6 @@ hr {
 .top {
     z-index: 100;
 }
-
 
 .relative {
     position: relative !important;
@@ -721,6 +826,8 @@ Circle Sizes
 .size2Circles {
     height: 30vw;
     width: 30vw;
+    max-width: 600px;
+    max-height: 600px;
     border-radius: 50%;
     position: absolute;
     margin-left: auto;
@@ -750,6 +857,8 @@ Circle Sizes
 .mediumCircles {
     width: 25vw;
     height: 25vw;
+    max-width: 350px;
+    max-height: 350px;
     border-radius: 50%;
     position: absolute;
     margin-left: auto;
@@ -843,9 +952,9 @@ Icon Circles Hover
 }
 
 .numberCircles {
-    min-width: 50px;
-    max-width: 50px;
-    height: 50px;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
     border-radius: 50%;
     -webkit-text-stroke: 0.01px grey;
 }
@@ -901,7 +1010,23 @@ Takeaway Circles
     width: auto;
 }
 
+/*
+==============================================
+Other Shapes
+==============================================
+*/
 
+.triangle-right-red {
+	width: 0;
+	height: 0;
+	border-top: 1rem solid transparent;
+	border-left: 2rem solid hsl(0, 91%, 71%);
+	border-bottom: 1rem solid transparent;
+    right: -20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
 
 
 /*
@@ -978,6 +1103,24 @@ Heart Arrow Formatting
     z-index: 0;
 }
 
+.heartDown2 {
+    position: absolute;
+    background-image: url(../Images/Universal/slideshow-arrow.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5%;
+    max-width: 50px;
+    min-width: 50px;
+    padding-bottom: 20%;
+    left: -60%;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: -9vw;
+    z-index: 0;
+}
+
 @media (max-width: 576px) {
     .heartDown {
         transform: rotate(0deg);
@@ -1004,6 +1147,49 @@ Button Formatting
 ==============================================
 */
 
+/* 
+--------------------------
+Pink Button
+--------------------------
+*/
+.btn-pink {
+    color: #fff;
+    font-weight: bold;
+    background-color: hsl(309, 87%, 78%);
+    border-color: hsl(309, 87%, 78%);
+    border-radius: 30px;
+  }
+  
+  .btn-pink:hover {
+    color: #fff;
+    background-color: hsl(309, 87%, 68%);
+    border-color: hsl(309, 87%, 73%)
+  }
+  
+  .btn-pink:focus, .btn-pink.focus {
+    color: #fff;
+    background-color: hsl(309, 87%, 68%);
+    border-color: hsl(309, 87%, 73%);
+    box-shadow: 0 0 0 0.2rem  hsla(309, 87%, 73%, 0.5);
+  }
+  
+  .btn-pink.disabled, .btn-pink:disabled {
+    color: #fff;
+    background-color: hsl(309, 87%, 78%);
+    border-color: hsl(309, 87%, 78%);
+  }
+  
+  .btn-pink:not(:disabled):not(.disabled):active, .btn-pink:not(:disabled):not(.disabled).active,
+  .show > .btn-pink.dropdown-toggle {
+    color: #fff;
+    background-color: hsl(309, 87%, 68%);
+    border-color: hsl(309, 87%, 65%);
+  }
+  
+  .btn-pink:not(:disabled):not(.disabled):active:focus, .btn-pink:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-pink.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem  hsla(309, 87%, 73%, 0.5);
+  }
 
 /* 
 --------------------------
@@ -1834,99 +2020,99 @@ About Me Page Circles
 .meCircleOne {
     z-index: 1;
     overflow: hidden;
-    margin-right: -20%;
+    margin-right: -10%;
     margin-top: -5%;
 }
 
 .meCircleTwo {
     z-index: 2;
     overflow: hidden;
-    margin-right: 10%;
-    margin-top: 20%;
+    margin-right: 5%;
+    margin-top: 10%;
 }
 
 .meCircleThree {
     z-index: 3;
     overflow: hidden;
-    margin-right: 30%;
-    margin-top: 50%;
+    margin-right: 25%;
+    margin-top: 25%;
 }
 
 .meCircleFour {
-    z-index: 4;
+    z-index: 99;
     overflow: hidden;
-    margin-right: 38%;
-    margin-top: 85%;
+    margin-right: 40%;
+    margin-top: 50%;
 }
 
 .meCircleFive {
-    z-index: 5;
+    z-index: 100;
     overflow: hidden;
-    margin-right: 30%;
-    margin-top: 130%;
+    margin-right: 43%;
+    margin-top: 70%;
 }
 
 .meCircleSix {
     z-index: 101;
     overflow: hidden;
-    margin-right: 20%;
-    margin-top: 170%;
+    margin-right: 30%;
+    margin-top: 100%;
 }
 
 .meCircleSeven {
     z-index: 102;
     overflow: hidden;
-    margin-right: -20%;
-    margin-top: 195%;
+    margin-right: 10%;
+    margin-top: 130%;
 }
 
 .meCircleEight {
     z-index: 103;
     overflow: hidden;
-    margin-right: -35%;
-    margin-top: 230%;
+    margin-right: -15%;
+    margin-top: 160%;
 }
 
 .meCircleNine {
     z-index: 104;
     overflow: hidden;
     margin-right: -25%;
-    margin-top: 270%;
+    margin-top: 190%;
 }
 
 .meCircleTen {
     z-index: 105;
     overflow: hidden;
-    margin-right: -5%;
-    margin-top: 305%;
+    margin-right: -15%;
+    margin-top: 215%;
 }
 
 .meCircleEleven {
     z-index: 106;
     overflow: hidden;
-    margin-right: 20%;
-    margin-top: 335%;
+    margin-right: 10%;
+    margin-top: 245%;
 }
 
 .meCircleTwelve {
     z-index: 107;
     overflow: hidden;
-    margin-right: 35%;
-    margin-top: 370%;
+    margin-right: 30%;
+    margin-top: 280%;
 }
 
 .meCircleThirteen {
     z-index: 108;
     overflow: hidden;
-    margin-right: 20%;
-    margin-top: 400%;
+    margin-right: 43%;
+    margin-top: 320%;
 }
 
 .meCircleFourteen {
     z-index: 109;
     overflow: hidden;
-    margin-right: -5%;
-    margin-top: 430%;
+    margin-right: 35%;
+    margin-top: 360%;
 }
 
 /*
@@ -2089,8 +2275,9 @@ Page Images (Pictures of Me)
     z-index: 6;
     width: 100%;
     height: auto;
-    margin-right: -15%;
-    margin-top: calc(100vw/10);
+    max-width: 500px;
+    margin-right: -80px;
+    margin-top: 100px;
     clip-path: polygon(49% 0, 37% 24%, 10% 28%, 0 41%, 1% 63%, 7% 64%, 5% 77%, 7% 100%, 72% 100%, 100% 82%, 100% 30%, 73% 23%, 89% 5%, 79% 0);
     -webkit-clip-path: polygon(49% 0, 37% 24%, 10% 28%, 0 41%, 1% 63%, 7% 64%, 5% 77%, 7% 100%, 72% 100%, 100% 82%, 100% 30%, 73% 23%, 89% 5%, 79% 0);
 }
@@ -2347,7 +2534,7 @@ Page Header
     }
 
     .projectHeaderSummary {
-        margin-left: 0;
+        margin-left: 8.333333%;
         margin-top: 5%;
     }
 
@@ -2415,7 +2602,14 @@ Slick Slideshow Implementation
 .solutionSlide {
     margin: 0 auto;
     margin-top: 3%;
-    
+    text-align: center;
+    padding-top: 4.5vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+.solutionSlide2 {
+    margin: 0 auto;
+    margin-top: 3%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
@@ -2685,12 +2879,37 @@ Icon Formatting
 
 .icon {
     height: 4vw;
-    width: 4vw;
-    min-width: 40px;
+    width: auto;
     min-height: 40px;
-    max-width: 50px;
     max-height: 50px;
     align-self: center;
+}
+
+.insightFaces {
+    height: 150px;
+    width: auto;
+    align-self: center; 
+}
+@media (max-width: 576px) {
+    .insightFaces {
+        height: 80px;
+        width: auto;
+        align-self: center; 
+    }
+}
+
+
+.sideIcons {
+    height: 100px;
+    width: auto;
+    align-self: center; 
+}
+@media (max-width: 576px) {
+    .sideIcons {
+        height: 60px;
+        width: auto;
+        align-self: center; 
+    }
 }
 
 .iconCaption {
@@ -2730,10 +2949,11 @@ Icon Formatting
 }
 
 .topIconCaption {
-    width: 8vw;
     min-width: 80px;
     text-align: left;
+    margin-bottom: 0 !important;
     text-decoration: none !important;
+    font-size: 0.95rem;
 }
 
 .titleIcon {
@@ -2748,6 +2968,12 @@ Icon Formatting
     display: none;
 }
 
+@media (max-width: 992px) {
+    .topIconCaption {
+        font-size: 0.95rem;
+    }
+}
+
 @media (max-width: 768px) {
     .processLong {
         display: none;
@@ -2758,7 +2984,7 @@ Icon Formatting
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .mobile-invisible {
         display: none !important;
     }
@@ -2794,7 +3020,7 @@ Process Lines
 
 .verticalProcessLine2 {
     border-left: 3px solid black;
-    height: 110px;
+    height: 90px;
     position: absolute;
     z-index: -1;
 }
@@ -2938,6 +3164,16 @@ Bottom Navigation Circles (Desktop)
     -webkit-animation-play-state: paused;
 }
 
+@media (min-width: 1750px) {
+    .leftNavCircle {
+        left: 20px;
+    }
+
+    .rightNavCircle {
+        right: 20px;
+    }
+}
+
 /* 
 --------------------------
 Bottom Navigation Circles (Mobile)
@@ -3066,6 +3302,16 @@ Bottom Navigation Pictures (Desktop)
     right: 0%;
 }
 
+@media (min-width: 1750px) {
+    .leftNavPic {
+        left: 10%;
+    }
+
+    .rightNavPic {
+        right: 10%;
+    }
+}
+
 /* 
 --------------------------
 Bottom Navigation Pictures (Mobile)
@@ -3105,6 +3351,13 @@ Bottom Navigtion Text (Desktop)
     max-width: 75px;
     min-height: 75px;
     max-height: 75px;
+}
+
+@media (min-width: 1750px) {
+    .bottomNavText {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
 
 /* 

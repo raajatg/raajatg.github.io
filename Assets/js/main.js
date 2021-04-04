@@ -161,7 +161,7 @@ $(document).ready(function () {
     ==============================================
     */
 
-    /*
+    
       $('.solutionDescription').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -169,7 +169,7 @@ $(document).ready(function () {
         fade: true,
         asNavFor: '.solutionVisuals'
       });
-      */
+      
 
       $('.solutionVisuals').slick({
         slidesToShow: 1,
