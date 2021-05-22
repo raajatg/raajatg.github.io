@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Music Trainer</title>
+        <link rel="icon" href="Assets/Images/Universal/circlesIcon.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/qui2aik.css">
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="Assets/Libraries/Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Assets/Libraries/aos/aos.css">
+        <link rel="stylesheet" href="Assets/css/animations.css">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="Assets/Libraries/Bootstrap/js/bootstrap.js"></script>
+        
+        <script src="Assets/js/core.js"></script>
+        <script src="Assets/js/main.js"></script>
+    </head>
+    <body>
+        <!--Dot Navigation-->
+        <div id="dot-nav" class="position-fixed">
+            <ul>
+                <li class="awesome-tooltip blueDot" title="Solution Overview"><a href="#section-solutionOverview"></a></li>
+                <li class="awesome-tooltip blueDot" title="Final Design"><a href="#section-finalDesign"></a></li>
+                <li class="awesome-tooltip greenDot" title="Takeaways and Reflection"><a href="#section-takeaways"></a></li>
+                <li class="awesome-tooltip purpleDot" title="Diving into the Problem"><a href="#section-process-1"></a></li>
+                <li class="awesome-tooltip pinkDot" title="Lo-Fi Designs"><a href="#section-process-2"></a></li>
+                <li class="awesome-tooltip redDot" title="Mid-Fi Designs"><a href="#section-process-3"></a></li>
+                <li class="awesome-tooltip greenDot" title="Hi-Fi Designs"><a href="#section-process-4"></a></li>
+                <li class="awesome-tooltip blueDot" title="Results & Final Thoughts"><a href="#section-process-5"></a></li>
+            </ul>
+        </div>
+
+        <!--Navbar-->
+        <nav class="navbar fixed-top header mar-bot">
+        
+            <!-- Navbar brand -->
+            <a class="navbar-brand name" href="./">RAAJAT GUPTA</a>
+                <!-- Collapsible content -->
+                <div class="collapse ml-auto" id="navbarSupportedContent22">
+        
+                    <!-- Links -->
+                    <ul class="navbar-nav flex-row ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link header-text px-2" href="about.html">ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-text px-2" href="https://drive.google.com/file/d/1yX9Q-NzGBHg8DKY7EifKNhOjF0Ut3gfn/view?usp=sharing" target="_blank">CV</a>
+                    </li>
+                    </ul>
+                    <!-- Links -->
+                
+                </div>
+                <!-- Collapsible content -->
+            <!-- Collapse button -->
+            <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+            aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon3"><span></span><span></span><span></span></div>
+            </button>  
+        </nav>
+        <!--/.Navbar-->
+        
+        <div class="vh-100 container-fluid projectContainer text-left pt-4">
+            
+            <!--Project Page Header-->
+                <div id="section-projectHeader" class="row projectHeader">
+                    <div class="projectHeaderPic align-self-center col-sm-5">
+                        <div class="size2Circles PPcircleTwo lightRed"></div>
+                        <div class="size2Circles PPcircleThree lightYellow"></div>
+                        <div class="size2Circles PPcircleOne lightBlue"></div>
+                        <img class="P2headerPic fadeCustom" src="Assets/Images/Home/tileBailey.png" alt="Header picture of Adidas dashboard">
+                    </div>
+                    
+                    <div class="projectHeaderSummary col-10 col-sm-5 order-md-1 pt-2">
+                        <h1 class="prototype case-study-title">Bailey: The Personal (Music) Trainer</h1>
+                        <p class="prototype fontPurple subtitle"><strong>January 2021 - May 2021</strong></p>
+                        <h5 class="case-study-subtitle">
+                            I designed the conversational flows and embodiment for Bailey, an anthropomorphized “personal music trainer”. Bailey learns autonomous vehicle riders’ relationships to music, then curates rewarding and intimate listening experiences.  
+                        </h5>
+                        <h4>
+                            <a href="https://drive.google.com/file/d/1jrx_Tzbwp7quoxnQRfBl6XyvTnRS81jg/view?usp=sharing" target="_blank">
+                                <button type="button" class="btn btn-purple mt-3 metrophobic p-3">Final Findings Presentation</button>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+        <!--Solution Overview -->
+            <section id="section-solutionOverview" class="section solutionOverview">
+                <div class="row">
+                    <div class="col-10 col-md-4 offset-1 mb-4">
+                        <h5 class="prototype"><span class="highlightBlue">User Problem</span></h5>
+                        <p>
+                            <strong>How might we design a conversational agent that consistently curates highly satisfying music-listening experiences for autonomous vehicle riders?</strong>
+                            <br><br>
+                            Drivers place elevated importance on music in car rides but struggle to curate listening experiences because of the overwhelming set of music choices. A conversational agent could reduce stress, especially in AVs where riders can focus more on the conversation. 
+                        </p>
+
+                        <h5 class="prototype mt-4"><span class="highlightBlue">User Outcomes</span></h5>
+                        <ol class="pl-3">
+                            <li><p>It <strong>reduces listener effort to zero</strong> in curating high-quality music recommendations</p></li>
+                            <li><p>It <strong>deepens listeners' personal connection to music</strong> by facilitating music-related self-reflection</p></li>
+                            <li><p>It <strong>teaches users about the elements they like</strong> in music to empower them in future discovery</p></li>
+                        </ol>
+                    </div>
+                    <div class="col-10 col-md-6 offset-1 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="col-6 col-md-5">
+                                <h6 class="prototype"><span class="highlightBlue">My Role</span></h6>
+                                    <p class="mt-2 mb-0"><strong>UX Researcher + Conversation Designer</strong></p>
+                                    <p class="smaller-text mt-2 mb-0">I designed and led novel research methods exploring users’ relationships to music and reactions to our WoZ prototypes.</p>
+                                    <p class="smaller-text mt-2 mb-0">I mapped out conversational flows and designed an anthropomorphized agent that encourages rider vulnerability and information-sharing.</p>
+                                <h6 class="prototype mt-4"><span class="highlightBlue">Client</span></h6>
+                                    <p class="smaller-text mt-2 mb-0">Spotify (Academic Project)</p>
+                                <h6 class="prototype mt-4"><span class="highlightBlue hoverWord" data-words="Collaborators|Friends">Collaborators</span></h6>
+                                    <a href="https://www.linkedin.com/in/nikolas-martelaro-06080625/" target="_blank"><p class="smaller-text mt-2 mb-0">Nikolas Martelaro (Advisor)</p></a>
+                                    <a href="https://www.azizg.com/" target="_blank"><p class="smaller-text mt-2 mb-0">Aziz Ghadiali</p></a>
+                                    <a href="https://www.linkedin.com/in/thuy-vy-nguyen-750340157/" target="_blank"><p class="smaller-text mt-2 mb-0">Thuy-Vy Nguyen</p></a>
+                                    <a href="https://www.linkedin.com/in/victor-grajski/" target="_blank"><p class="smaller-text mt-2 mb-0">Victor Grajski</p></a>
+                                    <a href="https://www.linkedin.com/in/daisy-gollis-382982193/" target="_blank"><p class="smaller-text mt-2 mb-0">Daisy Gollis</p></a>
+                            </div>
+                            <div class="col-6 col-md-5">
+                                <h6 class="prototype"><span class="highlightBlue">Project Summary</span></h6> 
+                                <div class="anchor mt-3">    
+                                    <a href="#section-finalDesign">
+                                        <div class="d-flex justify-content-start align-content-center">
+                                            <div class="blue topIconCircles d-flex justify-content-center align-content-center">
+                                                <span class="verticalProcessLine2"></span>
+                                                <img class="topIcon" src="Assets/Images/Universal/final-design-Icon.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="topIconCaption ml-2 align-self-center">Final Design</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="anchor mt-2">    
+                                    <a href="#section-takeaways">
+                                        <div class="d-flex justify-content-start align-content-center">
+                                            <div class="green topIconCircles d-flex justify-content-center align-content-center">
+                                                <img class="topIcon" src="Assets/Images/Universal/takeaways-Icon.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="topIconCaption ml-2 align-self-center">Project Takeaways</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="anchor">
+                                    <h6 class="prototype mt-4"><span class="highlightBlue">Project Story</span></h6>
+                                </div>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-1">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="purple topIconCircles d-flex justify-content-center align-content-center">
+                                                    <span class="verticalProcessLine2"></span>
+                                                    <img class="topIcon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Exploring Current Relationships to Music</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-2">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="pink topIconCircles d-flex justify-content-center align-content-center">
+                                                    <span class="verticalProcessLine2"></span>
+                                                    <img class="topIcon" src="Assets/Images/Universal/possibleFutures-Icon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Ideating on Possible Futures</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-3">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="red topIconCircles d-flex justify-content-center align-content-center">
+                                                    <span class="verticalProcessLine2"></span>
+                                                    <img class="topIcon" src="Assets/Images/Universal/MidFi-Icon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Identifying a Potential Solution</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-4">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="green topIconCircles d-flex justify-content-center align-content-center">
+                                                    <span class="verticalProcessLine2"></span>
+                                                    <img class="topIcon" src="Assets/Images/Universal/drive-Icon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Testing an Immersive Experience</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-5">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="blue topIconCircles d-flex justify-content-center align-content-center">
+                                                    <img class="topIcon" src="Assets/Images/Universal/starIcon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Results & Final Thoughts</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="col-12 summaryGraphic">
+                            <div class="size2Circles mt-1 summaryCircle1 lightRed"></div>
+                            <div class="size2Circles mt-1 summaryCircle2 lightYellow"></div>
+                            <div class="size2Circles mt-1 summaryCircle3 lightBlue"></div>
+                            <img id="P6groceryShopping" src="Assets/Images/Project_GroGetters/grocery-shopping.png" alt="grocery shopper">
+                            <p class="darkBlueText text-right photoCaption"><i><a href="https://unsplash.com/photos/49E1OTngM5s" target="_blank">Photo Credits: Giuseppe Argenziano</a></i></p>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </section>
+
+        <!--Solution Showcase -->
+        <section id="section-finalDesign" class="section">
+            <div class="row pt-5 pb-5 lightBlue">
+                <div class="col-10 col-md-4 offset-1">
+                    <div class="d-flex align-content-center">
+                        <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                            <img class="titleIcon" src="Assets/Images/Universal/final-design-Icon.svg" alt="icon of persona analysis phase">
+                        </div>
+                        <h2 class="prototype"><span class="highlightBlue align-self-center">Final Value Proposition</span></h2>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 offset-md-0 col-md-6 d-flex align-content-center mt-3 mt-md-0">
+                    <h4 class="sectionCaption">
+                        Bailey <strong>curates deeply personal music</strong> for listeners in autonomous vehicles by <strong>learning more about users’ relationship to music</strong> and the specific elements they like in songs. Bailey also <strong>facilitates self-reflection</strong> on musical tastes and educates users on musical elements.
+                    </h4>
+                </div>
+            </div>
+
+            <div id="finalDesign-mobile" class="section">
+                             
+                        <div class="row big-gap">
+                            <div class="col-10 col-md-4 offset-1 top">
+                                    <div>
+                                        <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Curate More Personal Musical Moments</span></h5>
+                                        <p class="mb-1">  
+                                            <strong>Explores why people like music</strong> (e.g., the voice, beat, lyrics, instruments) to get a more accurate picture of users’ preferences.
+                                            <br><br>
+                                            <strong>Learns users’ relationships to the music</strong> including associations to their past, other people, or personal connections to create more powerful playlists or “time capsule” moments.
+                                        </p>
+                                    </div>
+                            </div>
+                            <div class="col-md-6 top mt-3 mt-md-0">
+                                <div>
+                                        <div data-toggle="modal" data-target="#modal00">
+                                            <video class="width-100" controls data-target="#carousel00" data-slide-to="0">
+                                                <source src="Assets/Images/Project_ProactiveHomeDJ/Needs_In_Moment.mp4" type="video/webm" data-target="#carousel00" data-slide-to="0">
+                                                <source src="Assets/Images/Project_ProactiveHomeDJ/Needs_In_Moment.mp4" type="video/mp4" data-target="#carousel00" data-slide-to="0">
+                                            </video>
+                                        <p class="col-10 col-md-9 CircleContent slideshowCaption"><i>Sam identifies what users are talking about and finds relevant music</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <hr class="inside-section">
+                        <div class="row big-gap">
+                            <div class="col-10 col-md-4 offset-1 offset-md-0 top order-md-2">
+                                <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Help Users Reach Aspirational States</span></h5>
+                                <p class="mb-1">  
+                                    <strong> Helps “break out” of undesirable moods</strong> when users are feeling down (e.g., sad) by detecting body pose and playing music that users have listened to when in an aspirational mood state (e.g., happy)
+                                    <br><br>
+                                    <strong>Helps “lean in” to desirable moods</strong> when users are in a positive mood state, or if their past listening history suggests they enjoy listening to traditionally negative music when feeling down                                    
+                                </p>
+                            </div>
+                            <div class="col-md-6 mt-3 offset-md-1 order-md-1 mt-3 mt-md-0">
+                                <div data-toggle="modal" data-target="#modal00">
+                                    <video class="width-100" controls data-target="#carousel00" data-slide-to="1">
+                                        <source src="Assets/Images/Project_ProactiveHomeDJ/Aspirational_States.mp4" type="video/webm" data-target="#carousel00" data-slide-to="1">
+                                        <source src="Assets/Images/Project_ProactiveHomeDJ/Aspirational_States.mp4" type="video/mp4" data-target="#carousel00" data-slide-to="1">
+                                    </video>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Sam provides a moment of stress relief with its music choice</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="inside-section">           
+                        <div class="row big-gap">
+                            <div class="col-10 col-md-4 offset-1 top">
+                                    <div>
+                                        <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Foster Interpersonal Connections</span></h5>
+                                        <p class="mb-1">  
+                                            <strong>Adjusts for listener dynamics</strong> by detecting the identities, music taste overlaps, and inferred relationships of nearby users and optimizing for those dynamics 
+                                            <br><br>
+                                            <strong>Creates appreciation for others’ tastes</strong> by introducing users’ music to others based off calculated similarity in music tastes and closeness of user relationship.                                            
+                                        </p>
+                                    </div>
+                            </div>
+                            <div class="col-md-6 mt-3 top mt-3 mt-md-0">
+                                <div>
+                                        <div data-toggle="modal" data-target="#modal00">
+                                            <video class="width-100" controls data-target="#carousel00" data-slide-to="2">
+                                                <source src="Assets/Images/Project_ProactiveHomeDJ/Interpersonal_Connections.mp4" type="video/webm" data-target="#carousel00" data-slide-to="2">
+                                                <source src="Assets/Images/Project_ProactiveHomeDJ/Interpersonal_Connections.mp4" type="video/mp4" data-target="#carousel00" data-slide-to="2">
+                                            </video>
+                                        <p class="col-sm-9 CircleContent slideshowCaption"><i>Sam introduces one housemate to the music of another</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <hr class="inside-section">
+                        <div class="row big-gap">
+                            <div class="col-10 col-md-4 offset-1 offset-md-0 top order-md-2">
+                                <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Deepen Personal Music Connections</span></h5>
+                                <p class="mb-1">  
+                                    <strong>Creates “personalized musical moments”</strong> by identifying objects of interests in field of view and suggesting music based on niche musical associations with those objects.
+                                    <br><br>
+                                    <strong>Introduces multi-modal communication</strong> to relay denser pieces of music-related information to users for them to digest at their own pace (e.g., concert information, news articles, personal playlists)
+                                    <br><br>
+                                    <strong>Curates “just for me” moments</strong> where niche music is played for specific users when they are momentarily alone in group spaces to maximize this “alone time”
+                                </p>
+                            </div>
+                            <div class="col-md-6 mt-3 offset-md-1 order-md-1 mt-3 mt-md-0">
+                                <div data-toggle="modal" data-target="#modal00">
+                                    <video class="width-100" controls data-target="#carousel00" data-slide-to="3">
+                                        <source src="Assets/Images/Project_ProactiveHomeDJ/Deepen_Connections.mp4" type="video/webm" data-target="#carousel00" data-slide-to="3">
+                                        <source src="Assets/Images/Project_ProactiveHomeDJ/Deepen_Connections.mp4" type="video/mp4" data-target="#carousel00" data-slide-to="3">
+                                    </video>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Sam detects chorizos with its camera and plays a relevant song</i></p>
+                                </div>
+                            </div>
+                        </div>
+                            
+            
+            </div>
+
+        </section>
+
+        <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal00" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel00" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/Needs_In_Moment.mp4" target="_blank">
+                                        <video class="width-100" controls>
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Needs_In_Moment.mp4" type="video/webm">
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Needs_In_Moment.mp4" type="video/mp4">
+                                        </video>
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Sam identifies what users are talking about and finds relevant music</i></p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/Aspirational_States.mp4" target="_blank">
+                                        <video class="width-100" autoplay loop muted playsinline>
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Aspirational_States.mp4" type="video/webm">
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Aspirational_States.mp4" type="video/mp4">
+                                        </video>
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Sam provides a moment of stress relief with its music choice</i></p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/Interpersonal_Connections.mp4" target="_blank">
+                                        <video class="width-100" autoplay loop muted playsinline>
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Interpersonal_Connections.mp4" type="video/webm">
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Interpersonal_Connections.mp4" type="video/mp4">
+                                        </video>
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Sam introduces one housemate to the music of another</i></p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/Deepen_Connections.mp4" target="_blank">
+                                        <video class="width-100" autoplay loop muted playsinline>
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Deepen_Connections.mp4" type="video/webm">
+                                            <source src="Assets/Images/Project_ProactiveHomeDJ/Deepen_Connections.mp4" type="video/mp4">
+                                        </video>
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Sam detects chorizos with its camera and plays a relevant song</i></p>
+                                </div>
+
+                                <!--Change Carousel Name! -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel00" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel00" data-slide-to="1"></li>
+                                    <li data-target="#carousel00" data-slide-to="2"></li>
+                                    <li data-target="#carousel00" data-slide-to="3"></li>
+                                </ol>
+                                
+                                </div>
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-prev" href="#carousel00" role="button" data-slide="prev">
+                                
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-next" href="#carousel00" role="button" data-slide="next">
+                                
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                </span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            
+            <!--Takeaways and Reflections-->
+            <section id="section-takeaways" class="section">
+                <!-- Title Section -->
+                <div class="row pt-5 pb-5 mb-5 lightGreen">
+                    <div class="col-10 col-md-4 offset-1">
+                        <div class="d-flex align-content-center">
+                            <div class="green titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                <img class="titleIcon" src="Assets/Images/Universal/takeaways-Icon.svg" alt="icon of persona analysis phase">
+                            </div>
+                            <h2 class="prototype"><span class="highlightGreen align-self-center">Project Takeaways</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                        <h4 class="sectionCaption">
+                            I became far more <span class="sectionCaptionBold">comfortable with unorthodox prototyping methods</span>, but would have liked to create a more <span class="sectionCaptionBold">consistent agent personality</span>, and dive more into music as a platform for <span class="sectionCaptionBold">deepening interpersonal connections</span>.
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <!--I Became Better At-->
+                    <div class="row solutionSlide2">
+                        <div class="col-10 col-md-5 offset-1">
+                            <h5 class="prototype"><span class="highlightGreen">I became better at...</span></h5>
+                            <p>
+                                <strong>Prototyping voice assistants quickly and effectively. </strong>
+                                We developed a WoZ system that approximated an intelligent voice assistant and helped us learn far more than a rigid, technology-enabled setup would have.
+                            </p>
+                            <br><br>
+                            <h5 class="prototype"><span class="highlightGreen">If I went back in time, I would...</span></h5>
+                            <p>
+                                <strong>Systemize the team’s collective knowledge. </strong>
+                                Sam’s responses and personality were tightly modeled off us, which led to inconsistencies in responses. I’d want to centralize our thinking to maximize Sam’s consistency and realism. 
+                            </p>
+                            <br><br>
+                            <h5 class="prototype"><span class="highlightGreen">If I had more time, I would...</span></h5>
+                            <p>
+                                <strong>Explore music as a tool for building social connection.</strong>
+                                Users liked learning about others’ tastes, but disliked being vulnerable about their own tastes. I’d like to explore how to balance these preferences.
+                            </p>
+                            
+                        </div>
+                        <div class="col-md-6 order-md-1 reflectionCircles d-flex align-content-center">
+                            <div class="align-self-center" data-toggle="modal" data-target="#modal0-3">
+                                <a href="Assets/Images/Project_ProactiveHomeDJ/Takeaways_WoZ-Setup.png">
+                                    <img class="CircleContent rightCirclePic rounded w-50" src="Assets/Images/Project_ProactiveHomeDJ/Takeaways_WoZ-Setup.png" alt="mobile and watch deals difference" data-target="#carousel0-3" data-slide-to="0">
+                                </a>
+                                <p class="col-8 col-md-9 CircleContent text-center slideshowCaption"><i>With resource and time constraints, we developed a system where we could type inputs that participants heard as Sam's voice</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal0-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel0-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/Takeaways_WoZ-Setup.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/Takeaways_WoZ-Setup.png" alt="mobile and watch deals difference">
+                                    </a>
+                                    <p class="col-md-9 CircleContent text-center slideshowCaption"><i>With resource and time constraints, we developed a system where we could type inputs that participants heard as Sam's voice</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                
+            </section>
+            
+            
+
+            <!--Understanding Music Listening Today-->
+                <section id="section-process-1" class="section">
+                    <div class="row pt-5 pb-5 lightPurple">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="purple titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPurple align-self-center">Understanding Music Listening Today</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I conducted 6 household focus group interviews to understand the highs and lows associated with existing group music-listening experience at home.
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process1-1">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Directed Storytelling</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process1-1">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Focus Groups</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process1-1">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Affinity Diagrams</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+                    
+                    <!--Understanding Music Listening Today Part 1 -->
+                    <div class="row mt-4">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 id="process1-1" class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    How enjoyable are group music-listening experiences at home today?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                We had two goals before we could improve the enjoyability of music-listening experiences for multi-person households:
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        To build towards an ideal future, we first needed to understand <span class="emphasis highlightPurple">why users listened to music</span>, and where their experiences fell short. 
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center mb-4">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        We also wanted to <span class="emphasis highlightPurple">examine household’s interpersonal dynamics</span>, and how those played into listening preferences. 
+                                    </p>
+                                </div>
+                                With those two goals in mind, we <span class="emphasis highlightPurple">designed a focus group and directed storytelling hybrid protocol</span>, in which we asked households to share their most recent times listening to music individually and together, and mapped our findings on an affinity diagram.
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal2-1">
+                                <a href="Assets/Images/Project_ProactiveHomeDJ/Focus-Group-Affinity-1.png">
+                                    <img class="w-100" src="Assets/Images/Project_ProactiveHomeDJ/Focus-Group-Affinity-1.png" alt="future state venn diagram" data-target="#carousel2-1" data-slide-to="1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/Focus-Group-Affinity-1.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/Focus-Group-Affinity-1.png" alt="first iteration dashboard tabs">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Focus Group Insights -->
+                    <div class="row">
+                        <div class="col-10 offset-1 mt-4">
+                            <h5>
+                                <span class="highlightPurple">
+                                    We learned...
+                                </span>
+                            </h5>
+                            <div class="d-flex flex-wrap">
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        People care about music <strong>supporting their group activity</strong> and maintaining social environment.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        People found it <strong>difficult to curate</strong> and play the right music without significant effort.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        The “right music” is <strong>closely tied to the context</strong> and goals users have while listening
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        People want to listen to music they <strong>know they will enjoy</strong> without much experimentation
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            <!--Testing Potential Futures -->
+            
+                <section id="section-process-2" class="section">
+                    <div class="row pt-5 pb-5 lightPink">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="pink titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/possibleFutures-Icon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPink align-self-center">Testing Potential Futures</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I fleshed out the concept for a proactive music-playing voice assistant, and tested variations of what that could look like with script-based enactments
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process2-1">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Literature Reviews</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process2-2">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Script-Based Enactments</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process2-2">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Wizard of Oz (WoZ)</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!--Testing Potential Futures Part 1 -->
+                    <div id="process2-1" class="row mt-5">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    What could the voice assistant of the future look like?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Across all their music-listening pain points, users repeatedly mentioned the <span class="emphasis highlightPink">frustration of having to prescribe exactly</span> what the assistant should play. I identified a reframing opportunity that became the focus of our project:
+                                <br><br>
+                                <div class="d-flex">
+                                    <img class="icon align-self-start" src="Assets/Images/Universal/goalPink.png">
+                                    <span class="emphasis2 fontGrey ml-3">
+                                        What if voice assistants could <strong>recommend and adjust music proactively</strong> to account for users’ changing contexts, social dynamics, and goals?
+                                    </span>
+                                </div>
+                                <br><br>
+                                To understand if this was possible, I went deep into <span class="emphasis highlightPink">literature reviews of next-gen voice assistants and context-sensing technologies</span>, and identified four key sensor technologies (with varying levels of privacy concerns) that could together form a complete picture of users’ needs.
+                                
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-5 col-md-5 mb-2 align-self-center order-md-2">
+                            <div class="relative">
+                                <div class="d-flex align-content-center mt-4 blue lightPink p-2">
+                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="cardIcon" src="Assets/Images/Project_ProactiveHomeDJ/tech_video.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <strong>Always-On Video Cameras:</strong> Can detect users’ emotions and identity through facial analysis, along with objects of interest through image recognition
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-4 blue lightPink p-2">
+                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="cardIcon" src="Assets/Images/Project_ProactiveHomeDJ/tech_microphone.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <strong>Always-On Microphones: </strong> Can parse relevant conversations through speech analysis, and identify ambient noises (e.g., stirring pot) through sound recognition
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-4 blue lightPink p-2">
+                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="cardIcon" src="Assets/Images/Project_ProactiveHomeDJ/tech_radar.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <strong>Radar:</strong> Can identify body language and activity through human pose analysis, along with user location 
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-4 blue lightPink p-2">
+                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="cardIcon" src="Assets/Images/Project_ProactiveHomeDJ/tech_infrared.svg" alt="icon of persona analysis phase">
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <strong>Infrared:</strong>  Can also detect mood and emotion (at lower resolution) through heat signatures
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                    <!--Testing Potential Futures Part 2 -->
+                    <div id="process2-2" class="row processSectionGap">
+                        <div class="col-12 offset-1 mb-2">
+                            <div class="col-10 col-md-5 mb-2 order-md-1 ml-0 pl-0">
+                                <h5 class="prototype mt-4">
+                                    <span class="highlightPink">
+                                        How do music listeners feel about a proactive voice assistant?
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-md-5 offset-1 mb-2 order-md-1">
+                            <p class="mt-4">
+                                As exciting as this opportunity area was, we needed to understand <span class="emphasis highlightPink">whether users would find value from a proactive voice assistant</span>, and if that value was localized to specific situations. 
+                                <br><br>
+                                We were still early in the process and a more involved WoZ was premature, so we instead employed <span class="emphasis highlightPink">script-based enactments of specific group-based value propositions</span> at three levels of proactivity to test user interest.
+                                <br><br>                                
+                                To improve immersion, we <span class="emphasis highlightPink">ran the voice assistant’s “dialogue” through a computer-generated voice on our Zoom call</span>. Generally, users enjoyed the proactive assistants, but with some caveats.
+                                    
+                            </p>
+                        </div>
+                        
+                        <div class="col-10 offset-1 offset-md-0 ml-5 col-md-5 mb-2 align-self-center order-md-2">
+                            <div class="d-flex align-content-center mt-4 lightPink rounded p-2">
+                                <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Low Proactivity:</strong> The agent detects that a change to the music is needed (e.g., volume, genre, song) but prompts the user for specific changes
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center lightPink rounded p-2">
+                                <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Medium Proactivity:</strong> The agent suggests an appropriate change to the user after a contextual cue, but waits for user confirmation before acting
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center lightPink rounded p-2">
+                                <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                   <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>High Proactivity:</strong> The agent confidently identifies the appropriate change to make to the music, and only informs the user of the change made
+                                </p>
+                            </div>
+                        </div>
+
+                            <div class="col-12 order-md-3" data-toggle="modal" data-target="#modal3-1">
+                                <a href="Assets/Images/Project_ProactiveHomeDJ/Script_Enactments.png">
+                                    <img class="w-100 open-image" src="Assets/Images/Project_ProactiveHomeDJ/Script_Enactments.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel3-1" data-slide-to="0">
+                                </a>
+                            </div>                        
+                    </div>
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal3-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel3-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/Script_Enactments.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/Script_Enactments.png" alt="first iteration dashboard tabs">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Testing Potential Futures Insights -->
+                    <div class="row processSectionGap">
+                        <div class="col-10 offset-1 mt-4">
+                            <h5>
+                                <span class="highlightPink">
+                                    We learned...
+                                </span>
+                            </h5>
+                            <div class="d-flex flex-wrap">
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Users generally felt a <strong>proactive voice assistant reduced their effort</strong> (in picking, switching, and discovering music) and led to better music recommendations
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Users want to be able to <strong>provide more input to the assistant up-front</strong> when it’s still learning, then gradually allow it to act with more autonomy
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Users <strong>don’t want the assistant to justify its actions</strong>, as long as music recommendations are reasonable
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Users are <strong>uncomfortable with invasive sensors</strong> (primarily video cameras), but become more sensitive when the assistant draws attention to inputs used
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+
+            <!--WoZ Prototyping Rd 1-->
+            
+                <section id="section-process-3" class="section">
+                    <div class="row pt-5 pb-5 lightRed">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="red titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/MidFi-Icon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightRed align-self-center">Wizard of Oz Prototyping, Round 1</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I co-developed a Wizard of Oz prototyping method for a proactive voice assistant and embedded this prototype in a multi-person household for 6 days to identify improvement opportunities
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process3-1">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Wizard of Oz (WoZ)</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-2">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Diary Studies</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-3">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Affinity Diagrams</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!-- WoZ Prototyping Rd 1 Part 1-->
+                    <div id="process3-1" class="row processSectionGap">
+                        <div class="col-10 offset-1 mb-2 pl-0">
+                            <h5 class="col-12 col-md-6 prototype mt-4">
+                                <span class="highlightRed">
+                                    How can we identify a proactive voice assistant’s true value in the real world?
+                                </span>
+                            </h5>
+                            <p class="col-12 col-md-6 mt-4">
+                                Real life was rarely as clean as a perfectly scripted scenario. So how could we deploy our system in real life and see where it failed and succeeded?
+                            </p>
+                        </div>
+                            <div class="col-10 col-md-5 offset-1 mb-2">
+                                <p class="mt-4">
+                                    <span class="emphasis2">Step 1: Build a “good-enough” context-sensing, intelligent assistant</span> 
+                                    <br><br>
+                                    We couldn’t create a fully-working voice assistant with real sensors given our time and budget constraints. Instead, we developed a Wizard of Oz (WoZ) prototype, with: 
+                                    <div class="d-flex flex-wrap">
+                                        <div class="d-flex align-content-center mt-4 col-md-6">
+                                            <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                                <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/equipment_phone.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                Two phones
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-content-center mt-4 col-6">
+                                            <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                                <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/equipment_speaker.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                A bluetooth speaker
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-content-center mt-4 col-6">
+                                            <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                                <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/equipment_mic.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                A lapel mic
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-content-center mt-4 col-6">
+                                            <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                                <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/equipment_box.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                A small box and tape
+                                            </p>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+
+                            <div class="col-10 offset-1 offset-md-0 ml-5 col-md-5 mb-4 align-self-center">
+                                <div data-toggle="modal" data-target="#modal4-1">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-closeup.png">
+                                        <img class="w-100" src="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-closeup.png" alt="future state venn diagram" data-target="#carousel4-1" data-slide-to="1">
+                                    </a>
+                                </div>
+                            </div>
+
+                        <div id="process3-2" class="col-10 col-md-5 offset-1 mb-2">
+                            <br><br>    
+                            <span class="emphasis2">Step 2: Embed this assistant into participants’ lives</span> 
+                                <br><br>
+                                Two roommates agreed to participate in a 6-day study where we spoke and played music as Sam the voice assistant. We had three goals, based off feedback from our scripts:
+                                
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/goalRed.png">
+                                            <p class="fontRed mb-0 ml-2 align-content-center"><strong>GOAL:</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-1">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/strategyIconRed.png">
+                                            <p class="fontRed mb-0 ml-2 align-content-center"><strong>TACTIC:</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightRed mt-3">
+                                            <p class="p-2 pl-3 pr-3">
+                                                Users had only experienced the agent’s value in limited circumstances
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightRed mt-3">
+                                            <p class="p-2">
+                                                Stress-test the assistant across a broad range of common area contexts
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightRed mt-3 position-relative">
+                                            <p class="p-2">
+                                                Users wanted more control at first, but claimed they would trust the agent with time
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightRed mt-3">
+                                            <p class="p-2">
+                                                Start off at a medium level of proactivity, then slowly ramp up to a high level
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightRed mt-3">
+                                            <p class="p-2">
+                                                Users were uncomfortable with explicit reminders of data collected
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightRed mt-3">
+                                            <p class="p-2">
+                                                Collect video and audio data without drawing attention and examine users’ comfort level
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                We combined the study with <span class="emphasis highlightRed">interim feedback interviews every 3 days and diary study responses after every session</span>, which helped us refine, iterate, and improve upon our interactions.                                
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal4-2">
+                                <a href="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-embedded.png">
+                                    <img class="w-100" src="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-embedded.png" alt="future state venn diagram" data-target="#carousel4-2" data-slide-to="1">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal4-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel4-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-closeup.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-closeup.png" alt="hand-drawn dashboard mockup 1">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal4-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel4-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-embedded.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/WoZ-Rig-embedded.png" alt="hand-drawn dashboard mockup 1">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WoZ Prototyping Rd 1 Part 2-->
+                    <div id="process3-3" class="row processSectionGap">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4 mb-0">
+                                <span class="highlightRed">
+                                    We learned...
+                                </span>
+                            </h5>
+                            <p class="mt-4 order-md-3">
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-lg-12 pl-0 d-flex">
+                                        <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                        <p class="ml-2 align-self-center">
+                                            Overall, our participants <strong>wanted the assistant to use contextual information</strong> to improve its proactive music recommendations
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-12 pl-0 d-flex">
+                                        <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                        <p class="ml-2 align-self-center">
+                                            They wanted the assistant to <strong>text them details about denser information</strong> to allow them to digest it when and how they wanted
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-12 pl-0 d-flex">
+                                        <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                        <p class="ml-2 align-self-center">
+                                            They liked the assistant creating <strong>individualized music-listening experiences</strong>, even in multi-person settings
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-12 pl-0 d-flex">
+                                        <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                        <p class="ml-2 align-self-center">
+                                            They were completely comfortable with the assistant’s data usage, but only after they <strong>understood the purpose and value of data collection</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="col-10 col-md-5 offset-1 offset-md-0 mb-2 align-self-center">
+                            <div class="relative">
+                                <div data-toggle="modal" data-target="#modal4-3">
+                                    <video class="width-100" muted autoplay loop playsinline data-target="#carousel4-3" data-slide-to="1">
+                                        <source src="Assets/Images/Project_ProactiveHomeDJ/FINAL-AffinityDiagramTimeLapse.mp4" type="video/webm" data-target="#carousel4-3" data-slide-to="1">
+                                        <source src="Assets/Images/Project_ProactiveHomeDJ/FINAL-AffinityDiagramTimeLapse.mp4" type="video/mp4" data-target="#carousel4-3" data-slide-to="1">
+                                    </video>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Synthesizing 6 days' worth of experiences took a bit of time...</i></p>
+                                </div>
+                            </div>
+                            <br><br>
+                            
+                        </div>
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal4-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel4-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="Assets/Images/Project_ProactiveHomeDJ/Needs_In_Moment.mp4" target="_blank">
+                                            <video class="width-100 d-block" muted autoplay loops playsinline>
+                                                <source src="Assets/Images/Project_ProactiveHomeDJ/FINAL-AffinityDiagramTimeLapse.mp4" type="video/webm">
+                                                <source src="Assets/Images/Project_ProactiveHomeDJ/FINAL-AffinityDiagramTimeLapse.mp4" type="video/mp4">
+                                            </video>
+                                        </a>
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Synthesizing 6 days' worth of experiences took a bit of time...</i></p>
+                                    </div>
+
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            <!-- WoZ Prototyping Rd 2 -->
+            
+                <section id="section-process-4" class="section">
+                    <div class="row pt-5 pb-5 lightGreen">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="green titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/MidFi-Icon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightgreen align-self-center">Wizard of Oz Prototyping, Round 2</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I designed a more informative WoZ study and an accompanying onboarding app that led to the most enjoyable participant experiences with Sam yet.
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process4-1">
+                                        <button type="button" class="btn btn-green mt-3 metrophobic p-2">Wizard of Oz (WoZ)</button>
+                                    </a>
+                                </span>
+                                <span class="anchor">
+                                    <a href="#process4-2">
+                                        <button type="button" class="btn btn-green mt-3 metrophobic p-2">Mobile App Design</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!-- WoZ Prototyping Rd 2 Part 1-->
+                    <div id="process4-1" class="row processSectionGap">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightGreen">
+                                    How do we test the scalability of our findings?
+                                </span>
+                            </h5>
+                            <p class="mt-4 order-md-3">
+                                We had received a lot of validation on our assistant, improved its conversational flow and added in new features like trivia and “just for me” moments. 
+                                <br><br>
+                                But to ensure we weren’t overfitting to a single household’s preferences, we elected to <span class="emphasis highlightGreen">run our study again with some deliberate changes</span>:
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/question-mark.png">
+                                            <p class="fontGreen mb-0 ml-2 align-content-center"><strong>QUESTION:</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-1">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/idea-bulb.png">
+                                            <p class="fontGreen mb-0 ml-2 align-content-center"><strong>IDEA:</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightGreen mt-3">
+                                            <p class="p-2 pl-3 pr-3">
+                                                Was it easier to find amenable music because our participants were brothers?
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightGreen mt-3">
+                                            <p class="p-2">
+                                                Recruit a <strong>diverse 4-person household</strong> with different music tastes and interpersonal dynamics
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightGreen mt-3 position-relative">
+                                            <p class="p-2">
+                                                How can we reduce the frustration of 10-minute setup times for our participants?
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightGreen mt-3">
+                                            <p class="p-2">
+                                                Streamline setup with <strong>phone stands we built from foam core</strong>, allowing for easy placement and maneuverability
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightGreen mt-3">
+                                            <p class="p-2">
+                                                How do we test viability beyond a limited set of contexts (cooking, working, relaxing)?
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightGreen mt-3">
+                                            <p class="p-2">
+                                                <strong>Move the assistant around the house</strong> to capture diverse contexts and situations to assess the agent’s capabilities
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="col-10 col-md-4 offset-1 mb-2 align-self-center">
+                            <div class="relative">
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/problemGreen.png" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontGreen mb-0"><strong>ISSUE:</strong></p>
+                                        Our initial study had some clear limitations that made it difficult to generalize its findings
+                                    </i>
+                                    </h3>
+                                </div>
+                                <br><br>
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/ideaGreen.png" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontGreen mb-0"><strong>SOLUTION:</strong></p>
+                                        Conduct a second study with markedly different participant dynamics, contexts to test, and an improved prototype
+                                    </i>
+                                    </h3>
+                                </div>
+                            </div>
+                            <br><br>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row mt-md-5">
+                        <div class="col-12" data-toggle="modal" data-target="#modal5-1">
+                            <a href="Assets/Images/Project_ProactiveHomeDJ/improved-rig.png">
+                                <img class="w-100 open-image" src="Assets/Images/Project_ProactiveHomeDJ/improved-rig.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel5-1" data-slide-to="0">
+                                <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Our improved prototype rig could be easily moved to different settings and adjusted to better capture video</i></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal5-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel5-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/improved-rig.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/improved-rig.png" alt="hand-drawn dashboard mockup 1">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Our improved prototype rig could be easily moved to different settings and adjusted to better capture video</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!--WoZ Prototyping Rd 2 Part 2 -->
+                    <div id="process4-2" class="row processSectionGap">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 id="process1-1" class="prototype mt-4">
+                                <span class="highlightGreen">
+                                    How do we create comfort with data collection up-front?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                In addition to these changes, we also noted the importance of <span class="emphasis highlightGreen">communicating the agent’s value up-front to create comfort</span> in data collection. To that end, we <span class="emphasis highlightGreen">developed an “onboarding app”</span>, which allowed users to understand and approve the sensors the device used. 
+                                <br><br>
+                                We had our second study’s participants complete the flow. With this deeper understanding, our users <span class="emphasis highlightGreen">provided full authorization to the agent to use any sensors</span> necessary, and cited the transparency and clarity of the app as the primary reason for this comfort.
+                                <br><br>
+                            </p>
+                        </div>
+
+                        <div class="col-10 col-md-4 offset-1 mb-2 align-self-center">
+                            <div class="relative">
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/problemGreen.png" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontGreen mb-0"><strong>ISSUE:</strong></p>
+                                        Users weren't comfortable with sensors unless they knew how sensor data powered better music recommendations
+                                    </i>
+                                    </h3>
+                                </div>
+                                <br><br>
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/ideaGreen.png" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontGreen mb-0"><strong>SOLUTION:</strong></p>
+                                        Develop an onboarding app that simultaneously educates users and allows them to enable sensors they're comfortable with
+                                    </i>
+                                    </h3>
+                                </div>
+                            </div>
+                            <br><br>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-12" data-toggle="modal" data-target="#modal5-3">
+                            <a href="Assets/Images/Project_ProactiveHomeDJ/onboarding-app.png">
+                                <img class="w-100 open-image" src="Assets/Images/Project_ProactiveHomeDJ/onboarding-app.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel5-3" data-slide-to="0">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal5-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel5-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ProactiveHomeDJ/onboarding-app.png">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/onboarding-app.png" alt="hand-drawn dashboard mockup 1">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row processSectionGap">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightGreen">
+                                    We learned...
+                                </span>
+                            </h5>
+                            <p class="mt-4 order-md-3">
+                                Although feedback was still overwhelmingly positive, we learned about some limitations of our agent, which will be focus areas for future studies.
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 mt-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        <strong>Mood is the most informative factor</strong> in understanding a user’s music listening preferences, but is also the <strong>most difficult to accurately and consistently interpret</strong>. 
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        People want to <strong>use music to strengthen social connections</strong>, but want to <strong>minimize their own vulnerability</strong>.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Listeners <strong>liked additional information</strong> to help them connect to the music, but <strong>context dictated their preferred method</strong> of delivery
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Adopting a <strong>friendly and supportive voice and tone</strong> increases the overall effectiveness of the agent
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            <!-- Results & Final Thoughts -->
+            
+            <section id="section-process-5" class="section reflectionSection">
+                <!-- Title Section -->
+                <div class="row pt-5 pb-5 mb-5 lightBlue">
+                    <div class="col-10 col-md-4 offset-1">
+                        <div class="d-flex align-content-center">
+                            <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                <img class="titleIcon" src="Assets/Images/Universal/starIcon.svg" alt="icon of persona analysis phase">
+                            </div>
+                            <h2 class="prototype"><span class="highlightBlue align-self-center">Results & Final Thoughts</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                        <h4 class="sectionCaption">
+                             I helped design a solution that <strong>eased shoppers' anxieties around shopping in-person</strong>, and made them <strong>feel confident</strong> getting their groceries during COVID-19</span>.
+                        </h4>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">    
+                    <div class="col-10 col-md-5 offset-1 mb-2">
+                        <h5 id="process1-1" class="prototype mt-4">
+                            <span class="highlightBlue">
+                                Consolidating findings into a framework
+                            </span>
+                        </h5>
+                        <p class="mt-5">
+                            Our team is staying on in an advisory capacity as part of a broader team that will be refining the conversation design we laid the foundation for. They'll focus on <span class="emphasis highlightBlue">building deeper social connections with music</span>, and <span class="emphasis highlightBlue">refining the conversation design of the agent</span>.
+                            <br><br>
+                            We <span class="emphasis highlightBlue">developed a model conversational flow that mapped out exactly how we acted</span> across our two studies in successful interactions, along with a model for conversation that could guide designers going forward.
+                            <br><br>
+                            The team is proud of the value Sam can drive for users and Spotify alike:
+                        </p>
+                    </div>
+                    <div class="col-10 offset-1 offset-md-0 ml-5 col-md-5 mb-4 align-self-center">
+                        <div data-toggle="modal" data-target="#modal6-1">
+                            <a href="Assets/Images/Project_ProactiveHomeDJ/conversation-framework.png">
+                                <img class="w-100" src="Assets/Images/Project_ProactiveHomeDJ/conversation-framework.png" alt="future state venn diagram" data-target="#carousel6-1" data-slide-to="1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal markup -->
+                
+                <!--Change Modal Name! -->
+                <div class="modal fade" id="modal6-1" tabindex="-1" role="dialog" aria-hidden="true">
+                    
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        
+                        <!-- Carousel markup -->
+
+                        <!--Change Carousel Name! -->  
+                        <div id="carousel6-1" class="carousel slide" data-ride="carousel">
+                            
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="Assets/Images/Project_ProactiveHomeDJ/conversation-framework.png">
+                                    <img class="w-100 d-block" src="Assets/Images/Project_ProactiveHomeDJ/conversation-framework.png" alt="first iteration dashboard tabs">
+                                </a>
+                            </div>
+                            
+                            </div>
+                        </div>
+
+                        
+                        </div>
+                
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-10 col-md-5 offset-1 mb-4">
+                            <span class="emphasis2">Listener Benefits:</span>
+
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/Icon-listener-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Eliminates the need for users to monitor or adjust their music</strong> based off their contexts, with dynamic and automatic adjustments 
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/Icon-listener-benefit-2.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Helps users strengthen their social connections</strong> within their household by sharing music between household members
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/Icon-listener-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Helps users better connect to the music</strong> itself with timely pieces of extra information (e.g., concert info, trivia, new release information)
+                                </p>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-10 col-md-5 offset-1 offset-md-0 mb-4">
+                        <div class="align-self-end">
+                        <span class="emphasis2">Spotify Benefits:</span>
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/Icon-spotify-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Differentiated value in the voice assistant market</strong>, strengthening ecosystem partnerships with smart home players
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/Icon-spotify-benefit-2.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Increased active users</strong> as users can reliably expect their music to not be a distraction in their day-to-day lives
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ProactiveHomeDJ/Icon-spotify-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Increased user sign-up and retention</strong> from a superior music recommendation system
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+            <!-- Bottom Navigation -->
+            <section id="section-bottomNav" class="row bottomNav">
+                <div class="d-flex justify-content-start col-4">
+                    <a href="black-box-theater.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="leftNavCircle lightYellow"></div>
+                        <img class="leftNavPic" src="Assets/Images/Home/tileBlackBoxTheater.png" alt="Ghost Hunters">    
+                        <h5 class="bottomNavText text-left prototype hoverWord" data-words="Prev|Black Box Theater">Prev</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-center col-4 anchor">
+                    <a href="#section-projectHeader" class="backTop align-self-center">
+                        <div class="backTopCircle blue d-flex justify-content-center align-content-center">
+                            <img class="backTopArrow align-self-center" src="Assets/Images/Universal/backTopArrow.svg" alt="back to top arrow">
+                        </div>
+                        <h5 class="prototype fontBlue text-center pt-2 backTopText">Back to Top</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-end col-4">
+                    <a href="speakmind.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="rightNavCircle lightRed"></div>
+                        <img class="rightNavPic" src="Assets/Images/Home/tileSpeakMindIcon.png" alt="SpeakMind"> 
+                        <h5 class="bottomNavText text-right prototype hoverWord" data-words="Next|SpeakMind">Next</h5>
+                    </a>
+                </div>
+                    
+                
+                
+            </section>
+
+        </div>
+        
+        <script src="Assets/Libraries/slick/slick.min.js"></script>
+        <script src="Assets/js/type.js"></script>
+        <script src="Assets/Libraries/aos/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        </script>
+    </body>
+    
+</html>

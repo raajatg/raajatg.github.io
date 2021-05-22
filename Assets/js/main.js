@@ -4,8 +4,6 @@ $(document).ready(function () {
   $('.awesome-tooltip').tooltip({
     placement: 'left'
     });
-
-
     /*
     ==============================================
     Make entire project tile clickable
@@ -41,6 +39,36 @@ $(document).ready(function () {
       window.location = $(this).find("a").attr("href"); 
       return false;
     });
+
+    $("#projectOneSM").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+
+  $("#projectTwoSM").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+  });
+
+  $("#projectThreeSM").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+
+  $("#projectFourSM").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
+
+  $("#projectFiveSM").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
+
+  $("#projectSixSM").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
 
 
 
