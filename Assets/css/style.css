@@ -439,8 +439,7 @@ Custom Text Types
 }
 
 .sectionCaption {
-    font-weight: 300;
-    font-style: italic;
+    font-weight: 200;
 }
 
 .smaller-text {
@@ -455,8 +454,7 @@ Custom Text Types
 }
 
 .sectionCaptionBold {
-    font-weight: 600;
-    font-style: italic;
+    font-weight: 400;
 }
 
 .textBorder {
@@ -665,7 +663,8 @@ hr {
 
 .learning {
     max-width: 440px;
-    margin-right: 17px;
+    margin-right: 10px;
+    margin-top: 15px;
 }
 
 .background {
@@ -1522,54 +1521,55 @@ Portfolio Tile Images
 #projectOne > .tileImage {
     background-color: #E5EEFF;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileJuju.svg);
-    background-position: left;
+    background-image: url(../Images/Home/tileMIH.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 80%;
+    background-size: auto 85%;
     
 }
 
 #projectTwo > .tileImage {
-    background-color: #FFFBCC;
+    background-color: #EEE1FF;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileBlackBoxTheater.png);
+    background-image: url(../Images/Home/tileBailey.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 80%;
 }
 
 #projectThree > .tileImage {
-    background-color: #E7FEF2;
+    background-color: #FFE1DB;
+    
     padding-bottom: 100%;
-    background-image: url(../Images/Home/tileGroGetters.png);
+    background-image: url(../Images/Home/tileBloomberg.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto 20%;
 }
 
 #projectFour > .tileImage {
-    background-color: #FFE1DB;
+    background-color: #E7FEF2;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileSpeakMindIcon.png);
-    background-position: center;
+    background-image: url(../Images/Home/tileGroGetters.png);
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: auto 60%;
+    background-size: auto 80%;
     
 }
 
 #projectFive > .tileImage {
-    background-color: #EEE1FF;
+    background-color: #FFFBCC;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileAdidasDashboard.png);
+    background-image: url(../Images/Home/tileAffinity.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 60%;
+    background-size: auto 100%;
 }
 
 #projectSix > .tileImage {
     background-color: #FFE9FE;
     padding-bottom: 100%;
-    background-image: url(../Images/Home/google-home-edit.png);
+    background-image: url(../Images/Home/tileJuju.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 70%;
@@ -1605,25 +1605,25 @@ Portfolio Tile Text
 }
 
 #projectTwo > .tileTextContainer {
-    background: linear-gradient(to right, white 47%, #FFF9B2 47%, #FFFBCE);
+    background: linear-gradient(to right, white 47%, #E6CCFF 47%, hsl(266, 100%, 96%));
     padding-left: 5vw;
     background-size: 250%;
 }
 
 #projectThree > .tileTextContainer {
     transition: 1s;
-    background: linear-gradient(to bottom, white 50%, white 50%, hsl(149, 90%, 92%));
+    background: linear-gradient(to bottom, white 50%, white 50%, #FFD5CC);
     background-size: 100% 250%;
 }
 
 #projectFour > .tileTextContainer {
-    background: linear-gradient(to right, white 47%, #FFE7E2 47%, #FFD5CC);
+    background: linear-gradient(to right, white 47%, #E1FDEF 47%, hsl(149, 90%, 95%));
     padding-right: 5vw;
     background-size: 250%;
 }
 
 #projectFive > .tileTextContainer {
-    background: linear-gradient(to right, white 47%, #E6CCFF 47%, hsl(266, 100%, 96%));
+    background: linear-gradient(to right, white 47%, #FFF9B2 47%, #FFFBCE);
     padding-left: 5vw;
     background-size: 250%;
 }
@@ -1796,7 +1796,7 @@ Adjustments to Tiles for MEDIUM SCREEN SIZE
 
      /* Cover tile with color feature */
     #projectThree > .tileTextContainer {
-        background: linear-gradient(to right, white 47%, #E1FDEF 47%, hsl(149, 90%, 95%)) !important;
+        background: linear-gradient(to right, white 47%, #FFE7E2 47%, #FFD5CC);
         padding-right: 5vw;
         background-size: 250% !important;
     }
@@ -1887,28 +1887,29 @@ Adjustments to Tiles for SMALL SCREEN SIZE
 
     #projectTwo > .tileTextContainer {
         transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #FFFBCC 50%, #FFF9B2) !important;
+        
+        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
         background-size: 100% 250% !important;
         padding-bottom: 2rem !important;
     }
 
     #projectThree > .tileTextContainer {
         transition: 1s;
-        background: linear-gradient(to bottom, white 50%, hsl(150, 92%, 98%) 50%, hsl(149, 90%, 92%)) !important;
+        background: linear-gradient(to bottom, white 50%, #FFE7E2 50%, #FFD5CC) !important;
         background-size: 100% 250% !important;
         padding-bottom: 2rem !important;
     }
 
     #projectFour > .tileTextContainer {
         transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #FFE7E2 50%, #FFD5CC) !important;
+        background: linear-gradient(to bottom, white 50%, hsl(150, 92%, 98%) 50%, hsl(149, 90%, 92%)) !important;
         background-size: 100% 250% !important;
         padding-bottom: 2rem !important;
     }
 
     #projectFive > .tileTextContainer {
         transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
+        background: linear-gradient(to bottom, white 50%, #FFFBCC 50%, #FFF9B2) !important;
         background-size: 100% 250% !important;
         padding-bottom: 2rem !important;
     }
@@ -1946,11 +1947,16 @@ Adjustments to Tiles for SMALL SCREEN SIZE
 
     #projectOne > .tileImage {
         background-position: center;
+        background-size: auto 75%;
     }
 
     #projectThree > .tileImage {
         padding-bottom: 50% !important;
-        background-size: auto 70% !important;
+        background-size: auto 35% !important;
+    }
+
+    #projectFour > .tileImage {
+        background-position: center;
     }
 
     #projectSix > .tileImage {
@@ -2488,6 +2494,14 @@ Page Header
     margin-left: 5%;
 }
 
+.P1headerPic {
+    width: 65%;
+    height: auto;
+    z-index: 100;
+    margin-left: 0%;
+    margin-top: -20%;
+}
+
 .P2headerPic {
     width: 80%;
     height: auto;
@@ -2536,6 +2550,16 @@ Page Header
     .projectHeaderSummary {
         margin-left: 8.333333%;
         margin-top: 5%;
+    }
+
+    .P1headerPic {
+        width: 60%;
+        height: auto;
+        z-index: 100;
+        margin-left: 7%;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 20%;
     }
 
     .P2headerPic {
@@ -2886,7 +2910,7 @@ Icon Formatting
 }
 
 .insightFaces {
-    height: 150px;
+    height: 130px;
     width: auto;
     align-self: center; 
 }
@@ -2961,6 +2985,14 @@ Icon Formatting
     min-height: 1.5rem;
     max-width: 1.5rem;
     max-height: 1.5rem;
+    align-self: center;
+}
+
+.cardIcon {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
     align-self: center;
 }
 
