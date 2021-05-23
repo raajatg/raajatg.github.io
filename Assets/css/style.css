@@ -567,7 +567,7 @@ Media Formatting
 .videoContainer {
     position: relative !important;
     overflow: hidden !important;
-    width: 80% !important;
+    width: 85% !important;
     padding-top: min(45%, 750px);
     margin-left: auto;
     margin-right: auto;
@@ -666,8 +666,8 @@ hr {
 }
 
 .learning {
-    max-width: 440px;
-    margin-right: 10px;
+    max-width: 400px;
+    margin-right: 5px;
     margin-top: 15px;
 }
 
@@ -3070,7 +3070,7 @@ Reflection Circle Media
 }
 
 .rightCirclePic {
-    max-width: 400px;
+    max-width: 550px;
     margin-top: 5%;
 }
 
