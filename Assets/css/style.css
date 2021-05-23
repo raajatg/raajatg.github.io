@@ -539,6 +539,14 @@ Media Formatting
     width: 50%;
 }
 
+.tall-image {
+    max-height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .side-image {
     max-width: 300px;
     display: block;
@@ -1383,6 +1391,8 @@ PATIENCE PAGE FORMATTING
     position: absolute;
     height: 30vw;
     width: 30vw;
+    max-width: 600px;
+    max-height: 600px;
     z-index: -10;
     transition: 1s;
 }
@@ -1390,6 +1400,7 @@ PATIENCE PAGE FORMATTING
 .patience {
     border-radius: 50%;
     width: 30vw;
+    max-width: 600px;
     transition: 1s;
 }
 
@@ -1423,7 +1434,7 @@ PATIENCE PAGE FORMATTING
     bottom: -10%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .patience {
         width: 50vw;
     }
@@ -2371,7 +2382,7 @@ About Me Page Circle Hover Responses
 
     .meCircleThree::after {
         content: "";
-        background-image: url('../Images/Me/trivia_JackHarlow.jpg');
+        background-image: url('../Images/Me/trivia_SilkSonic.jpeg');
         background-size: cover;
         position: absolute;
         top: 0px;
@@ -2397,7 +2408,7 @@ About Me Page Circle Hover Responses
 
     .meCircleFour::after {
         content: "";
-        background-image: url('../Images/Me/trivia_wandavision.png');
+        background-image: url('../Images/Me/trivia_nba.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -2452,7 +2463,7 @@ About Me Page Circle Hover Responses
 
     .meCircleSix::after {
         content: "";
-        background-image: url('../Images/Me/trivia_choolaah.jpg');
+        background-image: url('../Images/Me/trivia_baarbaar.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -2559,7 +2570,7 @@ Responsive Page Changes
 
     #triviaListening:after {
         content: "";
-        background-image: url('../Images/Me/trivia_JackHarlow.jpg');
+        background-image: url('../Images/Me/trivia_SilkSonic.jpeg');
         background-size: cover;
         position: absolute;
         bottom: 0;
@@ -2572,7 +2583,7 @@ Responsive Page Changes
 
     #triviaWatching:after {
         content: "";
-        background-image: url('../Images/Me/trivia_wandavision.png');
+        background-image: url('../Images/Me/trivia_nba.jpg');
         background-size: cover;
         position: absolute;
         top: 0;
@@ -2720,7 +2731,7 @@ Page Header
     height: auto;
     z-index: 100;
     margin-left: -20%;
-    margin-top: -7%;
+    margin-top: -30%;
 }
 
 .P4headerPic {
@@ -2761,7 +2772,7 @@ Page Header
         width: 60%;
         height: auto;
         z-index: 100;
-        margin-left: 7%;
+        margin-left: 15%;
         display: block;
         margin-top: 5%;
         margin-bottom: 20%;
@@ -2775,7 +2786,7 @@ Page Header
         margin-right: auto;
         display: block;
         margin-top: 5%;
-        margin-bottom: 15%;
+        margin-bottom: 35%;
     }
 
     .P3headerPic {
@@ -2785,8 +2796,8 @@ Page Header
         margin-left: auto;
         margin-right: auto;
         display: block;
-        margin-top: 15%;
-        margin-bottom: 25%;
+        margin-top: 5%;
+        margin-bottom: 15%;
     }
 
     .P4headerPic {
