@@ -33,7 +33,7 @@ var introduction = document.getElementById('introduction');
 
 const meType = new Typewriter(introduction);
     meType.pauseFor(1000)
-    .typeString("<h1 style='font-size:3rem;'>I'm Raajat Gupta.</h1>")
+    .typeString("<h1 class='about-title'>I'm Raajat Gupta</h1>")
     .pauseFor(500)
     .typeString("I use research as a tool for creating connections. 🏚")
     .pauseFor(1000)
