@@ -396,7 +396,7 @@ Custom Text Types
  }
 
 .tileSupertitle {
-    font-family: "neue-haas-unica","sans-serif";
+    font-fazily: "neue-haas-unica","sans-serif";
     font-size: 0.7rem;
     color: grey;
     margin-top: -1rem;
@@ -432,6 +432,11 @@ Custom Text Types
 
 .case-study-title {
     font-weight: 900;
+}
+
+.subheader {
+    font-weight: 500;
+    font-size: 1.4rem;
 }
 
 .case-study-subtitle {
@@ -539,12 +544,32 @@ Media Formatting
     width: 50%;
 }
 
+.wide-image{
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tall-image {
     max-height: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+
+.tall-image-carousel {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.very-tall-image {
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .side-image {
@@ -2209,6 +2234,10 @@ Page Structuring
     height: calc(5*(1.3rem + 0.6vw));
 }
 
+#introductionTwo {
+    height: calc(3*(1.3rem + 0.6vw));
+}
+
 #bioImages {
     overflow: hidden;
 }
@@ -2477,6 +2506,33 @@ About Me Page Circle Hover Responses
     .meCircleSix:hover .circleTrivia {
         visibility: visible !important;
     }
+
+     /* 
+    --------------------------
+    Circle Seven
+    --------------------------
+    */
+
+    .meCircleSeven:hover {
+        z-index: 500 !important;
+    }
+
+    .meCircleSeven::after {
+        content: "";
+        background-image: url('../Images/Me/trivia_thrifting.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+    }
+
+    .meCircleSeven:hover .circleTrivia {
+        visibility: visible !important;
+    }
 }
 
 
@@ -2568,6 +2624,19 @@ Responsive Page Changes
         border-radius: 500px;
     }
 
+    #triviaEating:after {
+        content: "";
+        background-image: url('../Images/Me/trivia_baarbaar.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 34%;
+        left: -1.3%;
+        opacity: 0.18;
+        width: 42vw;
+        height: 42vw;
+        border-radius: 500px;
+    }
+
     #triviaListening:after {
         content: "";
         background-image: url('../Images/Me/trivia_SilkSonic.jpeg');
@@ -2593,6 +2662,20 @@ Responsive Page Changes
         height: 42vw;
         border-radius: 500px;
     }
+
+    #triviaLearning:after {
+        content: "";
+        background-image: url('../Images/Me/trivia_thrifting.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 34%;
+        right: -1.3%;
+        opacity: 0.15;
+        width: 42vw;
+        height: 42vw;
+        border-radius: 500px;
+    }
+
 
     #triviaGaming:after {
         content: "";
@@ -3374,7 +3457,7 @@ Bottom Navigation Circles (Desktop)
     right: -180px;
     z-index: -100;
     top: 0%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.25);
 
     animation-name: pulsing;
 	-webkit-animation-name: pulsing;	
@@ -3592,6 +3675,9 @@ Bottom Navigtion Text (Desktop)
 .bottomNavText {
     padding-top: 175px;
     z-index: 100 !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 1.2rem;
 }
 
 .backTopArrow {

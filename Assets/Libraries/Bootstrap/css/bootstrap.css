@@ -6574,8 +6574,7 @@ a.close.disabled {
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 0;
-  bottom: -97%;
+  bottom: 0%;
   z-index: 1;
   display: -ms-flexbox;
   display: flex;
@@ -6583,7 +6582,8 @@ a.close.disabled {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 15%;
+  width: 12%;
+  height: 8%;
   color: #000;
   text-align: center;
   opacity: 1;
