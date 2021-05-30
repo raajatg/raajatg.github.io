@@ -561,6 +561,13 @@ Media Formatting
     margin-right: auto;
 }
 
+.very-wide-image{
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tall-image {
     max-height: 700px;
     display: block;
@@ -1653,7 +1660,7 @@ Portfolio Tile Images
 #projectFive > .tileImage {
     background-color: #FFE9FE;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileJuju.svg);
+    background-image: url(../Images/Home/tileGhostHunters.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 70%;
@@ -1680,7 +1687,7 @@ Portfolio Tile Images
 #projectSixSM > .tileImage {
     background-color: #FFE9FE;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileJuju.svg);
+    background-image: url(../Images/Home/tileGhostHunters.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 70%;
@@ -2844,11 +2851,11 @@ Page Header
 }
 
 .P6headerPic {
-    width: 130%;
+    width: 110%;
     height: auto;
     z-index: 100;
-    margin-left: -30%;
-    margin-top: -20%;
+    margin-left: -10%;
+    margin-top: -22%;
 }
 
 @media (max-width: 576px) {
@@ -2868,7 +2875,7 @@ Page Header
         margin-left: 15%;
         display: block;
         margin-top: 5%;
-        margin-bottom: 20%;
+        margin-bottom: 15%;
     }
 
     .P2headerPic {
@@ -2879,7 +2886,7 @@ Page Header
         margin-right: auto;
         display: block;
         margin-top: 5%;
-        margin-bottom: 35%;
+        margin-bottom: 15%;
     }
 
     .P3headerPic {
@@ -2901,7 +2908,7 @@ Page Header
         margin-right: auto;
         display: block;
         margin-top: 15%;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
     }
 
     .P5headerPic {
@@ -2912,17 +2919,17 @@ Page Header
         margin-right: auto;
         display: block;
         margin-top: 15%;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
     }
 
     .P6headerPic {
-        width: 100%;
+        width: 90%;
         height: auto;
         z-index: 100;
-        margin-left: -15%;
+        margin-left: -1%;
         display: block;
         margin-top: 15%;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
     }
 }
 
