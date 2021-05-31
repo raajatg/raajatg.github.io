@@ -145,6 +145,10 @@ Text Colors
     color: #FDF187;
 }
 
+.fontDarkYellow {
+    color: #B9A600;
+}
+
 .fontGrey {
    color: #636c74;
 }
@@ -1729,7 +1733,7 @@ Portfolio Tile Text
 
 #projectOneSM > .tileTextContainer {
     background: linear-gradient(to right, white 47%, #EDF3FF 47%, #CDDDFF);
-    padding-right: 5vw;
+    padding-left: 5vw;
     background-size: 250%;
 }
 
@@ -1771,7 +1775,7 @@ Portfolio Tile Text
 
 #projectFive > .tileTextContainer {
     background: linear-gradient(to right, white 47%, #FFE0FE 47%, hsl(303, 100%, 97%));
-    padding-right: 5vw;
+    padding-left: 5vw;
     background-size: 250%;
 }
 
@@ -1789,6 +1793,7 @@ Portfolio Tile Text
 
 #projectSixSM > .tileTextContainer {
     transition: 1s;
+    padding-left: 5vw;
     background: linear-gradient(to right, white 47%, #FFE0FE 47%, hsl(303, 100%, 97%));
     background-size: 100% 250%;
 }
