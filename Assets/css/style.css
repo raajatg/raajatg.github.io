@@ -1617,7 +1617,7 @@ Portfolio Tile Images
 #projectTwoSM > .tileImage {
     background-color: #FFE1DB;
     padding-bottom: 50%;
-    background-image: url(../Images/Home/tileBloomberg.png);
+    background-image: url(../Images/Home/tileTerminal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 60%;
@@ -1626,10 +1626,10 @@ Portfolio Tile Images
 #projectThree > .tileImage {
     background-color: #FFE1DB;
     padding-bottom: 100%;
-    background-image: url(../Images/Home/tileBloomberg.png);
+    background-image: url(../Images/Home/tileTerminal.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 60%;
+    background-size: auto 50%;
 }
 
 #projectThreeSM > .tileImage {
