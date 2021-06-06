@@ -394,7 +394,7 @@ Custom Text Types
 .header-text {
     font-family: "neue-haas-unica", "helvetica","sans-serif";
     font-size: 0.8rem;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     color: #093478;
     font-weight: bold;
 }
