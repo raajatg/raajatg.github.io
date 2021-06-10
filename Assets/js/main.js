@@ -1,10 +1,56 @@
 
+
 $(document).ready(function () {
   // Awesome Tooltip needed for Slick (Slideshow) and Dot Navigation
   $('.awesome-tooltip').tooltip({
     placement: 'left'
     });
     /*
+    ==============================================
+    Model Trainer Feature Card Clickable Tabs
+    ==============================================
+    */
+    $('#upload-list a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('#upload-list2 a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('#annotation-list a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('#annotation-list2 a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('#training-list a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('#training-list2 a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('#evaluation-list a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('#evaluation-list2 a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+     /*
     ==============================================
     Make entire project tile clickable
     ==============================================

@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Model Training Reimagined</title>
+        <link rel="icon" href="Assets/Images/Universal/circlesIcon.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/qui2aik.css">
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="Assets/Libraries/Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Assets/Libraries/aos/aos.css">
+        <link rel="stylesheet" href="Assets/css/animations.css">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="Assets/Libraries/Bootstrap/js/bootstrap.js"></script>
+        
+        <script src="Assets/js/core.js"></script>
+        <script src="Assets/js/main.js"></script>
+    </head>
+    <body>
+        <!--Dot Navigation-->
+        <div id="dot-nav" class="position-fixed">
+            <ul>
+                <li class="awesome-tooltip blueDot" title="Solution Overview"><a href="#section-solutionOverview"></a></li>
+                <li class="awesome-tooltip blueDot" title="Final Feature Propositions"><a href="#section-finalDesign"></a></li>
+                <li class="awesome-tooltip greenDot" title="Takeaways and Reflection"><a href="#section-takeaways"></a></li>
+                <li class="awesome-tooltip purpleDot" title="Learning Model-Training Today"><a href="#section-process-1"></a></li>
+                <li class="awesome-tooltip pinkDot" title="Optimizing for Understanding"><a href="#section-process-2"></a></li>
+                <li class="awesome-tooltip redDot" title="Aligning on an Ideal State"><a href="#section-process-3"></a></li>
+                <li class="awesome-tooltip blueDot" title="Results & Final Thoughts"><a href="#section-process-5"></a></li>
+            </ul>
+        </div>
+
+        <!--Navbar-->
+        <nav class="navbar fixed-top header mar-bot">
+            <!-- Navbar brand -->
+            <a class="navbar-brand name hoverWordDark" href="./">RAAJAT GUPTA</a>
+                <!-- Collapsible content -->
+                <div class="ml-auto">
+                    <!-- Links -->
+                    <div class="flex-row ml-auto">
+                        <a class="header-text px-2 hoverWordDark" href="about.html">ME</a>
+                        <a class="header-text px-2 hoverWordDark" href="https://drive.google.com/file/d/1yX9Q-NzGBHg8DKY7EifKNhOjF0Ut3gfn/view?usp=sharing" target="_blank">RESUME</a>
+                    </div>
+                </div>
+        </nav>
+        <!--/.Navbar-->
+        
+        <div class="vh-100 container-fluid projectContainer text-left pt-4">
+            
+            <!--Project Page Header-->
+                <div id="section-projectHeader" class="row projectHeader">
+                    <div class="projectHeaderPic align-self-center col-sm-5">
+                        <div class="size2Circles PPcircleTwo lightRed"></div>
+                        <div class="size2Circles PPcircleThree lightYellow"></div>
+                        <div class="size2Circles PPcircleOne lightBlue"></div>
+                        <img class="P3headerPic fadeCustom" src="Assets/Images/Home/tileTerminal.png" alt="Header picture of Adidas dashboard">
+                    </div>
+                    
+                    <div class="projectHeaderSummary col-10 col-sm-5 order-md-1 pt-2">
+                        <h1 class="prototype case-study-title">Model Training Reimagined</h1>
+                        <h4 class="prototype progress-title">Research Complete, Design in Progress</h1>
+                        <h4 class="fontGrey subheader">UX Research, Cross-Functional Teaming, Feature Development</h4>
+                        <p class="prototype fontRed subtitle"><strong>February 2021 - Present</strong></p>
+                        <h5 class="case-study-subtitle">
+                            I redesigned Bloomberg’s machine learning model training process, so analysts without technical backgrounds can quickly and effectively train models that output to Bloomberg’s Terminal.
+                        </h5>
+                    </div>
+                </div>
+        <!--Solution Overview -->
+            <section id="section-solutionOverview" class="section solutionOverview">
+                <div class="row">
+                    <div class="col-10 col-md-4 offset-1 mb-4">
+                        <h5 class="prototype"><span class="highlightRed">User Problem</span></h5>
+                        <p>
+                            <strong>How might we improve the understandability of the model development lifecycle to empower Bloomberg's data analysts?</strong>
+                            <br><br>
+                            Bloomberg’s Terminal consolidates information across millions of financial documents, with ML models that identify and extract key datapoints. 
+                            <br><br>
+                            Business analysts have the domain expertise needed to train the models but lack the technical skills needed to understand the process. Bridging this gap is critical so analysts can systemize their knowledge.
+                        </p>
+
+                        <h5 class="prototype mt-4"><span class="highlightRed">Outcomes (so far)</span></h5>
+                        <p>Compared to the current model development lifecycle used by analysts, our proposed process offers three core benefits:</p>
+                        <ol class="pl-3">
+                            <li><p>It <strong>reduces the number of steps</strong> in the model-training process by over 25% without tradeoffs in model performance</p></li>
+                            <li><p>It <strong>reconciles analysts’ and ML engineers’ mental models</strong> of the lifecycle with transparent, understandable process steps</p></li>
+                            <li><p>It <strong>guides analysts through training</strong> so they can more easily identify model issues and train more accurate models</p></li>
+                        </ol>
+                    </div>
+                    <div class="col-10 col-md-6 offset-1 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="col-6 col-md-5 mb-4">
+                                <h6 class="prototype"><span class="highlightRed">My Role</span></h6>
+                                    <p class="mt-2 mb-0"><strong>UX Research Lead</strong></p>
+                                    <p class="smaller-text mt-2 mb-0">I identified major pain points in analysts’ current model-training experience through a variety of research methods.</p>
+                                    <p class="smaller-text mt-2 mb-0">I developed and validated a series of product recommendations, collaborating with engineers, product managers, and analysts.</p>
+                                <h6 class="prototype mt-4"><span class="highlightRed">Client</span></h6>
+                                    <p class="smaller-text mt-2 mb-0">Bloomberg LP (MHCI Capstone)</p>
+                                <h6 class="prototype mt-4"><span class="highlightRed hoverWord" data-words="Collaborators|Friends">Collaborators</span></h6>
+                                    <a href="https://www.linkedin.com/in/amandastent/" target="_blank"><p class="smaller-text mt-2 mb-0">Amanda Stent (Bloomberg Technical Advisor)</p></a>
+                                    <a href="https://www.linkedin.com/in/monicapiper/" target="_blank"><p class="smaller-text mt-2 mb-0">Monica Piper (Bloomberg UX Advisor)</p></a>
+                                    <a href="https://www.linkedin.com/in/nehasagarwal/" target="_blank"><p class="smaller-text mt-2 mb-0">Neha Agarwal (Bloomberg UX Advisor)</p></a>
+                                    <a href="https://www.linkedin.com/in/monicachang1/" target="_blank"><p class="smaller-text mt-2 mb-0">Monica Chang</p></a>
+                                    <a href="https://www.linkedin.com/in/nitya-devireddy/" target="_blank"><p class="smaller-text mt-2 mb-0">Nitya Devireddy</p></a>
+                                    <a href="https://www.linkedin.com/in/jenniferpark94/" target="_blank"><p class="smaller-text mt-2 mb-0">Jennifer Park</p></a>
+                                    <a href="https://www.linkedin.com/in/nathanjen/" target="_blank"><p class="smaller-text mt-2 mb-0">Nathan Jen</p></a>
+                            </div>
+                            <div class="col-6 col-md-5">
+                                <h6 class="prototype"><span class="highlightRed">Project Summary</span></h6> 
+                                <div class="anchor mt-3">    
+                                    <a href="#section-finalDesign">
+                                        <div class="d-flex justify-content-start align-content-center">
+                                            <div class="blue topIconCircles d-flex justify-content-center align-content-center">
+                                                <span class="verticalProcessLine2"></span>
+                                                <img class="topIcon" src="Assets/Images/Universal/final-design-Icon.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="topIconCaption ml-2 align-self-center">Final Feature Propositions</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="anchor mt-2">    
+                                    <a href="#section-takeaways">
+                                        <div class="d-flex justify-content-start align-content-center">
+                                            <div class="green topIconCircles d-flex justify-content-center align-content-center">
+                                                <img class="topIcon" src="Assets/Images/Universal/takeaways-Icon.svg" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="topIconCaption ml-2 align-self-center">Project Takeaways</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="anchor">
+                                    <h6 class="prototype mt-4"><span class="highlightRed">Project Story</span></h6>
+                                </div>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-1">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="purple topIconCircles d-flex justify-content-center align-content-center">
+                                                    <span class="verticalProcessLine2"></span>
+                                                    <img class="topIcon" src="Assets/Images/Universal/MLIcon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Learning Model-Training Today</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-2">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="pink topIconCircles d-flex justify-content-center align-content-center">
+                                                    <span class="verticalProcessLine2"></span>
+                                                    <img class="topIcon" src="Assets/Images/Universal/understandIcon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Optimizing for Understanding</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-3">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="red topIconCircles d-flex justify-content-center align-content-center">
+                                                    <span class="verticalProcessLine2"></span>
+                                                    <img class="topIcon" src="Assets/Images/Universal/refineIcon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Aligning on an Ideal State</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="anchor mt-1">    
+                                        <a href="#section-process-5">
+                                            <div class="d-flex justify-content-start align-content-center">
+                                                <div class="blue topIconCircles d-flex justify-content-center align-content-center">
+                                                    <img class="topIcon" src="Assets/Images/Universal/sunIcon.svg" alt="icon of persona analysis phase">
+                                                </div>
+                                                <p class="topIconCaption ml-2 align-self-center">Looking to the Summer</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="col-12 summaryGraphic">
+                            <div class="size2Circles mt-1 summaryCircle1 lightRed"></div>
+                            <div class="size2Circles mt-1 summaryCircle2 lightYellow"></div>
+                            <div class="size2Circles mt-1 summaryCircle3 lightBlue"></div>
+                            <img id="P6groceryShopping" src="Assets/Images/Project_GroGetters/grocery-shopping.png" alt="grocery shopper">
+                            <p class="darkBlueText text-right photoCaption"><i><a href="https://unsplash.com/photos/49E1OTngM5s" target="_blank">Photo Credits: Giuseppe Argenziano</a></i></p>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </section>
+
+        <!--Solution Showcase -->
+        <section id="section-finalDesign" class="section">
+            <div class="row pt-5 pb-5 lightBlue">
+                <div class="col-10 col-md-4 offset-1">
+                    <div class="d-flex align-content-center">
+                        <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                            <img class="titleIcon" src="Assets/Images/Universal/final-design-Icon.svg" alt="icon of persona analysis phase">
+                        </div>
+                        <h2 class="prototype"><span class="highlightBlue align-self-center">Final Feature Propositions</span></h2>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 offset-md-0 col-md-6 d-flex align-content-center mt-3 mt-md-0">
+                    <h4 class="sectionCaption">
+                        Training machine learning models is a <strong>4-stage process</strong>. I <strong>developed 12 recommendations across stages</strong> that makes the process more understandable to analysts, so they can identify the most effective tactics to maximize model performance with minimal effort:
+                    </h4>
+                </div>
+                <div class="col-10 offset-1 offset-md-2 col-md-8 mt-5">
+                    <img class="w-100 open-image" src="Assets/Images/Project_ModelTrainingReimagined/model-training-process.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel3-1" data-slide-to="0">
+                </div>  
+            </div>
+
+            <div id="finalDesign-mobile" class="section">
+                             
+            <!--UPLOAD FEATURES -->
+                <div class="row">
+                    <div class="col-10 col-md-6 offset-1 top">
+                            <div>
+                                <div class="d-flex">
+                                    <img class="topIcon mr-2" src="Assets/Images/Project_ModelTrainingReimagined/uploadIcon.png">
+                                    <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Upload: Tie Data to Project Goals</span></h5>
+                                </div>
+                                <p class="mb-1">  
+                                    During Upload, analysts receive overall project goals from their managers, then <strong>find and upload datasets that have examples of information</strong> they want their model to eventually extract. Two features can improve this stage:
+                                </p>
+                            </div>
+                    </div>
+                </div>
+
+                
+                <div class="row offset-md-1">
+                    <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-3 mt-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs" id="upload-list" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#feature1" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link"  href="#research1" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                            <div class="row card-body d-flex">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="feature1" role="tabpanel">
+                                        <div class="row card-body d-flex">
+                                            <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-document-library.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                                <h6 class="fontBlue mb-0 align-self-center mt-1 mb-3"><strong>Document Library:</strong></h6>
+                                                <p class="align-self-center mb-1 smaller-text">
+                                                    Uploaded documents can have metadata associated with them to help analysts <strong>easily sort, organize, and understand their datasets</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="research1" role="tabpanel" aria-labelledby="history-tab">
+                                        <div class="row card-body d-flex">
+                                            <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-document-library.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                                <h6 class="fontBlue mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                                <p class="align-self-center mb-1 smaller-text">
+                                                    Analysts can stop uploading data when dataset distributions match what models would see in the real world, but there’s <strong>no way now to see what distributions look like</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-2 mt-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs" id="upload-list2" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#feature2" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link"  href="#research2" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                            <div class="row card-body d-flex">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="feature2" role="tabpanel">
+                                        <div class="row card-body d-flex">
+                                            <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-prior-project-base.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                                <h6 class="fontBlue mb-0 align-self-center mt-1 mb-3"><strong>Prior Project Base:</strong></h6>
+                                                <p class="align-self-center mb-1 smaller-text">
+                                                    Analysts can <strong>import past datasets, annotations and model configurations</strong> during upload, as opposed to just being able to upload raw documentation
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="research2" role="tabpanel" aria-labelledby="history-tab">
+                                        <div class="row card-body d-flex">
+                                            <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-prior-project-base.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                                <h6 class="fontBlue mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                                <p class="align-self-center mb-1 smaller-text">
+                                                    Analysts often upload and label similar documents between projects, and can <strong>spend more time on duplicative work</strong> than value-additive training
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        <hr class="inside-section big-gap">
+
+        <!--ANNOTATION FEATURES -->
+        <div class="row">
+            <div class="col-10 col-md-6 offset-1 top">
+                    <div>
+                        <div class="d-flex">
+                            <img class="topIcon mr-2" src="Assets/Images/Project_ModelTrainingReimagined/annotationIcon.png">
+                            <h5 class="prototype mt-3 mb-4"><span class="highlightGreen">Annotate: Understand Progress to Improve Efficiency</span></h5>
+                        </div>
+                        <p class="mb-1">  
+                            In Annotation, analysts <strong>manually label all elements in their uploaded documents</strong> that they eventually want their model to identify on its own (like creating an “answer key”). Two features in particular can speed up that process:
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        
+        <div class="row offset-md-1">
+            <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-3 mt-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="annotation-list" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active fontGreen" href="#feature3" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fontGreen"  href="#research3" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    <div class="row card-body d-flex">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="feature3" role="tabpanel">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-BEV.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontGreen mb-0 align-self-center mt-1 mb-3"><strong>Bird's Eye View:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Create <strong>summary visualizations of annotations to date</strong> so analysts can pinpoint gaps in their labeling work and prioritize certain documents or elements
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="research3" role="tabpanel" aria-labelledby="history-tab">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-BEV.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontGreen mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Today, <strong>analysts must rely on intuition and prior experience</strong> to know when labeling is done. This leads to premature finishes, and issues with model performance later
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-2 mt-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="annotation-list2" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active fontGreen" href="#feature4" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fontGreen"  href="#research4" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    <div class="row card-body d-flex">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="feature4" role="tabpanel">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-automatic-annotator.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontGreen mb-0 align-self-center mt-1 mb-3"><strong>Automatic Annotator:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Analysts annotate a subset of documents in detail. The <strong>system uses those labels as reference to create its own labeling rules</strong> and label the rest of the documents automatically
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="research4" role="tabpanel" aria-labelledby="history-tab">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-automatic-annotator.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontGreen mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Annotation is the most time-consuming, tedious part of model training, and is <strong>prone to errors and mistakes when done completely manually</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="inside-section big-gap">
+
+        <!--TRAINING FEATURES -->
+        <div class="row">
+            <div class="col-10 col-md-6 offset-1 top">
+                    <div>
+                        <div class="d-flex">
+                            <img class="topIcon mr-2" src="Assets/Images/Project_ModelTrainingReimagined/trainIcon.png">
+                            <h5 class="prototype mt-3 mb-4"><span class="highlightPurple">Train: Optimize Input Selections</span></h5>
+                        </div>
+                        <p class="mb-1">  
+                            Once analysts label their documents, they then <strong>select machine learning functions and parameters that will be used to train the model</strong> so it can identify desired labels, even in unlabeled documents. Two features can guide analysts in making their selections:
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        
+        <div class="row offset-md-1">
+            <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-3 mt-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="training-list" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active fontPurple" href="#feature5" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fontPurple"  href="#research5" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    <div class="row card-body d-flex">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="feature5" role="tabpanel">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-training-optimizer.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontPurple mb-0 align-self-center mt-1 mb-3"><strong>Model Training Optimizer:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            <strong>Simultaneously train various model types and configurations</strong> to identify the best model for a specific project without analysts needing to select inputs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="research5" role="tabpanel" aria-labelledby="history-tab">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-training-optimizer.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontPurple mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Analysts <strong>don’t know enough about machine learning to knowledgeably select the right models</strong>, but want to know that their selected inputs are the best possible ones
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-2 mt-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="training-list2" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active fontPurple" href="#feature6" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fontPurple"  href="#research6" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    <div class="row card-body d-flex">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="feature6" role="tabpanel">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-training-guide.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontPurple mb-0 align-self-center mt-1 mb-3"><strong>Model Training Guide:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Integrate <strong>short, action-oriented explanations of ambiguous or highly technical terminology</strong> in the training process to guide users on what they can expect from adjusting inputs
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="research6" role="tabpanel" aria-labelledby="history-tab">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-training-guide.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontPurple mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Analysts <strong>continually seek guidance</strong> from engineers on parameter inputs, which <strong>stresses out analysts and increases engineers’ workloads</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="inside-section big-gap">
+
+        <!--EVALUATION FEATURES -->
+        <div class="row">
+            <div class="col-10 col-md-6 offset-1 top">
+                    <div>
+                        <div class="d-flex">
+                            <img class="topIcon mr-2" src="Assets/Images/Project_ModelTrainingReimagined/evaluateIcon.png">
+                            <h5 class="prototype mt-3 mb-4"><span class="highlightRed">Evaluate: Know Exactly How to Improve Performance</span></h5>
+                        </div>
+                        <p class="mb-1">  
+                            Once a model is trained, analysts must evaluate its performance to <strong>identify areas where it is performing poorly and determine how to drive improvement</strong> (often with additional annotations). Two features can help speed this process up:
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        
+        <div class="row offset-md-1">
+            <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-3 mt-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="evaluation-list" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active fontRed" href="#feature7" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fontRed"  href="#research7" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    <div class="row card-body d-flex">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="feature7" role="tabpanel">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-error-explainer.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontRed mb-0 align-self-center mt-1 mb-3"><strong>Error Explainer:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Identify <strong>patterns in where model predictions differ from labels</strong>, and point analysts towards documents that are especially problematic for re-annotation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="research7" role="tabpanel" aria-labelledby="history-tab">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-error-explainer.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontRed mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Today, analysts are shown a single table with every instance of where predictions differed from actual labels, with <strong>no prioritization or identification of problem areas</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-5 col-md-0 ml-md-2 mt-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="evaluation-list2" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active fontRed" href="#feature8" role="tab" aria-controls="description" aria-selected="true">Feature</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fontRed"  href="#research8" role="tab" aria-controls="history" aria-selected="false">Evidence</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    <div class="row card-body d-flex">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="feature8" role="tabpanel">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-model-summary.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontRed mb-0 align-self-center mt-1 mb-3"><strong>Summary Reporting Tool:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            Analysts can <strong>export quick summaries of model performance over time</strong>, highlight weaknesses, and share their perspectives on long-term achievable performance targets with managers
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="research8" role="tabpanel" aria-labelledby="history-tab">
+                                <div class="row card-body d-flex">
+                                    <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-lg-5 offset-lg-0 d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                        <img class="featureIcon" src="Assets/Images/Project_ModelTrainingReimagined/feature-model-summary.png" alt="icon of persona analysis phase">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3 md-lg-0 align-self-center">
+                                        <h6 class="fontRed mb-0 align-self-center mt-1 mb-3"><strong>Identified Need:</strong></h6>
+                                        <p class="align-self-center mb-1 smaller-text">
+                                            <strong>Model goals are often determined independent of what analysts believe to be feasible</strong>, and lowering manager expectations can be difficult, especially because their time is limited.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+</section>
+
+
+            
+            <!--Takeaways and Reflections-->
+            <section id="section-takeaways" class="section">
+                <!-- Title Section -->
+                <div class="row pt-5 pb-5 mb-5 lightGreen">
+                    <div class="col-10 col-md-4 offset-1">
+                        <div class="d-flex align-content-center">
+                            <div class="green titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                <img class="titleIcon" src="Assets/Images/Universal/takeaways-Icon.svg" alt="icon of persona analysis phase">
+                            </div>
+                            <h2 class="prototype"><span class="highlightGreen align-self-center">Project Takeaways</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                        <h4 class="sectionCaption">
+                            I learned to <strong>integrate the perspectives of multiple stakeholders to create richer solutions</strong>, but could still become overly influenced by interesting technologies or subsets of users.
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <!--I Became Better At-->
+                    <div class="row solutionSlide2">
+                        <div class="col-10 col-md-5 offset-1">
+                            <h5 class="prototype"><span class="highlightGreen">I became better at...</span></h5>
+                            <p>
+                                <strong>Collaborating with cross-functional teams.</strong>
+                                I worked with Bloomberg’s product managers, engineers, and UX design team to reconcile idea desirability with feasibility and viability, ultimately leading to more powerful solutions.
+                            </p>
+                            <br><br>
+                            <h5 class="prototype"><span class="highlightGreen">If I went back in time, I would...</span></h5>
+                            <p>
+                                <strong>Identify best solutions independent of technologies.</strong>
+                                I had a tendency to propose best in class model-training solutions before validating their need; as the project, progressed, I became more disciplined in identifying needs before solutions.
+                            </p>
+                            <br><br>
+                            <h5 class="prototype"><span class="highlightGreen">If I had more time, I would...</span></h5>
+                            <p>
+                                <strong>Test with even more users.</strong>
+                                Since analysts’ technical proficiency varied so much, it would’ve been helpful to test ideas independently with each segment, to ensure we’re not designing for a niche group.
+                            </p>
+                            
+                        </div>
+                        <div class="col-md-6 order-md-1 reflectionCircles d-flex align-content-center">
+                            <div class="align-self-center" data-toggle="modal" data-target="#modal0-3">
+                                <img class="CircleContent rightCirclePic rounded w-100" src="Assets/Images/Project_ModelTrainingReimagined/lit-review.png" alt="mobile and watch deals difference" data-target="#carousel0-3" data-slide-to="0">
+                                <p class="col-8 col-md-9 CircleContent text-center slideshowCaption"><i>We consulted literature to learn about the best-in-class in machine learning training, but that also encouraged us to solutionize before identifying needs.</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal0-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel0-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/lit-review.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/lit-review.png" alt="mobile and watch deals difference">
+                                    </a>
+                                    <p class="col-8 col-md-9 CircleContent text-center slideshowCaption"><i>We consulted literature to learn about the best-in-class in machine learning training, but that also encouraged us to solutionize before identifying needs.</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                
+            </section>
+            
+            
+
+            <!--Learning Model-Training Today-->
+                <section id="section-process-1" class="section">
+                    <div class="row pt-5 pb-5 lightPurple">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="purple titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/MLIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPurple align-self-center">Learning Model-Training Today</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I developed a remote contextual inquiry method to <strong>embed myself into Bloomberg analysts’ model-building workflow</strong>, then extracted insights and discrete pain points from 11 interviews to address
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process1-1">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">"Show and Tell" Inquiries"</button>
+                                    </a>
+                                </span>
+                                <span class="anchor">
+                                    <a href="#process1-2">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Affinity Diagramming</button>
+                                    </a>
+                                </span>
+                                <span class="anchor">
+                                    <a href="#process1-2">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">User Journey Mapping</button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+                    
+                    <!--Understanding Model Training Today Part 1 -->
+                    <div class="row mt-4">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 id="process1-1" class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    How is the current model-training experience for analysts?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Bloomberg already had a model-training interface in place – “AutoModeler”. However, <span class="emphasis highlightPurple">analysts struggled to use and understand AutoModeler to build effective models</span>. AutoModeler’s product managers weren’t sure why.
+                                <br><br>
+                                Our team needed to uncover the lived experience of building projects in AutoModeler. We were <span class="emphasis highlightPurple">dealing with two constraints</span>:
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Even with access to the tool, <span class="emphasis highlightPurple">we couldn’t effectively simulate the range of model-building experiences</span> analysts underwent
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center mb-4">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightPurple">All analysts were remote due to COVID-19</span>, so we couldn’t sit in on their daily model-building
+                                    </p>
+                                </div>
+                            </p>
+                            <p>
+                                To address these two constraints, I constructed a remote contextual inquiry method:
+                                <div class="d-flex">
+                                    <img class="icon align-self-start" src="Assets/Images/Universal/research-icon.png">
+                                    <span class="emphasis2 fontGrey ml-3">
+                                        <p class="fontPurple mb-0"><strong>SHOW AND TELL INQUIRY:</strong></p>
+                                        Analysts share their screen as they run us through their most recently built model and relive their decisions and issues with AutoModeler
+                                    </span>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal2-1">
+                                <img class="w-100" src="Assets/Images/Project_ModelTrainingReimagined/show-and-tell.png" alt="future state venn diagram" data-target="#carousel2-1" data-slide-to="1">
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Through the Show and Tell method, our team mapped out detailed accounts of every analyst’s experience using the above template (content redacted for confidentiality)</i></p>
+                            </div>
+                        </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/show-and-tell.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/show-and-tell.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Through the Show and Tell method, our team mapped out detailed accounts of every analyst’s experience using the above template (content redacted for confidentiality)</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Learning Model Training Today Part 2-->
+                    <div class="row mt-4">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 id="process1-2" class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    Where should we focus our attention?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                With raw findings from 11 interviews, I suggested a user journey map alongside an affinity diagram as a means of synthesis and to answer our two major research questions:
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/question-mark.png">
+                                            <p class="fontPurple mb-0 ml-2 align-content-center"><strong>QUESTION:</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-1">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/research-icon.png">
+                                            <p class="fontPurple mb-0 ml-2 align-content-center"><strong>METHOD:</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightPurple mt-3">
+                                            <p class="p-2 pl-3 pr-3">
+                                                What were the <strong>overarching limitations of AutoModeler</strong> that our solution needed to address across the board?
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightPurple mt-3">
+                                            <p class="p-2">
+                                                <strong>Affinity Diagramming:</strong> Identify clusters of findings that together form larger, overarching insights on AutoModeler’s limitations
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightPurple mt-3">
+                                            <p class="p-2 pl-3 pr-3">
+                                                Which <strong>areas are especially problematic</strong> and need to be redesigned in the current process?
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightPurple mt-3">
+                                            <p class="p-2">
+                                                <strong>User Journey Mapping:</strong> Identify low points in the user experience to capture problematic steps and phases
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal2-2">
+                                <img class="w-100" src="Assets/Images/Project_ModelTrainingReimagined/affinity-diagram.png" alt="future state venn diagram" data-target="#carousel2-2" data-slide-to="1">
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Our Affinity Diagram helped us see broader themes in interviews</i></p>
+                            </div>
+                        </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/affinity-diagram.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/affinity-diagram.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Our Affinity Diagram helped us see broader themes in interviews</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4 mb-4" data-toggle="modal" data-target="#modal2-3">
+                        <img class="w-100 open-image" src="Assets/Images/Project_ModelTrainingReimagined/user-journey-map.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel2-3" data-slide-to="0">
+                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We built user journey maps for each stage, then consolidated them into a single view</i></p>
+                    </div>     
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/user-journey-map.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/user-journey-map.png" alt="hand-drawn dashboard mockup 1">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We built user journey maps for each stage, then consolidated them into a single view</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Diary Study Insights -->
+                    <div class="row">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPurple">
+                                    We learned...
+                                </span>
+                            </h5>
+                        </div>
+
+                        <div class="col-10 offset-1">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Analysts <strong>don’t have enough technical / contextual knowledge</strong> to identify the ideal next steps in the process 
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Analysts <strong>struggle to find patterns within their data</strong> because information is presented at a granular level 
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Analysts refrain from sharing their workloads because they <strong>cannot adequately predict and control others’ inputs</strong>
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Analysts are inefficient because the system <strong>doesn’t remember their preferences or specific needs</strong> between projects.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        There were <strong>confusing / tedious steps across the lifecycle</strong>, particularly in annotation and evaluation 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            
+
+            <!--Optimizing for Understanding-->
+            
+                <section id="section-process-2" class="section">
+                    <div class="row pt-5 pb-5 lightPink">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="pink titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/understandIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPink align-self-center">Optimizing for Understanding</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I drew inspiration from how <strong>chess.com makes chess understandable</strong>, and used design metaphors to <strong>learn how analysts’ definition of understandability differed</strong> between training stages
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process2-1">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Analogous Domain Prototyping</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process2-2">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Design Metaphors</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!--Optimizing for Understanding Part 1 -->
+                    <div id="process2-1" class="row mt-5">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    What are proven ways of making complex topics understandable?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                The overarching insights from our affinity diagram helped the team <span class="emphasis highlightPink">align on a problem statement</span> going forward:
+                                <div class="d-flex">
+                                    <img class="icon align-self-start" src="Assets/Images/Universal/goalPink.png">
+                                    <span class="emphasis2 fontGrey ml-3">
+                                        <p class="fontPink mb-0"><strong>PROBLEM STATEMENT:</strong></p>
+                                        How might we improve the understandability of the model development lifecycle to empower analysts with varying levels of technical proficiency?
+                                    </span>
+                                </div>
+                                <p class="mt-4">
+                                    We faced a few constraints in identifying inspiration for improving understandability. <span class="emphasis highlightPink">I suggested looking to analogous domains as a workaround</span>.
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/thinking-face.png">
+                                            <p class="fontPink mb-0 ml-2 align-content-center"><strong>ISSUE:</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-1">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/idea-bulb.png">
+                                            <p class="fontPink mb-0 ml-2 align-content-center"><strong>IDEA:</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightPink mt-3">
+                                            <p class="p-2 pl-3 pr-3">
+                                                <strong>Accessible machine learning was a nascent field</strong>; most “user-friendly” interfaces were still far too technical.
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightPink mt-3">
+                                            <p class="p-2">
+                                                We could draw inspiration from <strong>chess.com, which made complex chess games understandable</strong> for players that had never played before
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row flex align-content-center">
+                                    <div class="col-6">
+                                        <div class="rounded lightPink mt-3 position-relative">
+                                            <p class="p-2">
+                                                <strong>Chess.com offered a variety of methods</strong> to teach novices chess as they played. What was best?
+                                            </p>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-6">
+                                        <div class="rounded lightPink mt-3">
+                                            <p class="p-2">
+                                                Note how novice players perform under the different methods, along with their qualitative experience, to <strong>identify the best learning strategies</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center" data-toggle="modal" data-target="#modal3-1">
+                            <img class="w-100" src="Assets/Images/Project_ModelTrainingReimagined/chess-pretotype.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel3-1" data-slide-to="0">
+                            <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>I looked at different ways to teach people chess, identifying the best strategies to translate to AutoModeler</i></p>
+                        </div>
+                    </div>
+
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal3-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel3-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/chess-pretotype.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/chess-pretotype.png" alt="hand-drawn dashboard mockup 1">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>I looked at different ways to teach people chess, identifying the best strategies to translate to AutoModeler</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Analogous Domain Insights -->
+                    <div class="row">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    We learned...
+                                </span>
+                            </h5>
+                        </div>
+
+                        <div class="col-10 offset-1">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Novices have a more <strong>effective learning experience when they can work through a problem independently</strong>, with constant feedback.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Novices <strong>enjoyed receiving machine over human support</strong> because it felt less judgmental and “nagging”.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Optimizing for Understanding Part 2 -->
+                    <div id="process2-2" class="row mt-5">
+                        <div class="col-10 col-md-4 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    How do users define understandability?
+                                </span>
+                            </h5>
+                            <p class="mt-4">
+                                Although we knew that understandability was important to users across the model-building process, and we had learned some strategies for improving understandability, <span class="emphasis highlightPink">we weren’t sure if users wanted the same level of hand-holding and guidance across all stages</span>.
+                                <br><br>
+                                To answer that question, we turned to design metaphors:
+                                <br><br>
+                                <span class="emphasis2">How can design metaphors help?</span> 
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Start by <span class="emphasis highlightPink">imagining different ways users could interact with the system</span> in a future-state, along various levers
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center mb-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Combine complementary ways into a <span class="emphasis highlightPink">defined relationship illustrated by a clear metaphor</span>
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-4 align-content-center mb-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Users <span class="emphasis highlightPink">map their ideal “relationship”</span> with the model at each stage <span class="emphasis highlightPink">using the easily grasped metaphors</span> (as opposed to abstract concepts)
+                                    </p>
+                                </div>
+                                <p>
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-6 mb-4 align-self-center" data-toggle="modal" data-target="#modal3-2">
+                            <img class="w-100 wide-image" src="Assets/Images/Project_ModelTrainingReimagined/design-metaphors.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel3-2" data-slide-to="0">
+                            <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>A completed design metaphors session</i></p>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal3-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel3-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/design-metaphors.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/design-metaphors.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>A completed design metaphors session</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Crafting an Initial Solution Insights -->
+                    <div class="row">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-4">
+                                <span class="highlightPink">
+                                    We learned...
+                                </span>
+                            </h5>
+                        </div>
+
+                        <div class="col-10 offset-1">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        <strong>Users wanted drastically different levels of guidance, feedback, and understandability</strong> at each phase of the process 
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pl-0 d-flex learning">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        <strong>Annotation and evaluation were especially confusing</strong>; analysts needed disproportionately more guidance and feedback in these stages 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!--Aligning on an Ideal State-->
+            
+                <section id="section-process-3" class="section">
+                    <div class="row pt-5 pb-5 lightRed">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="red titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/refineIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightRed align-self-center">Aligning on an Ideal State</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I <strong>co-developed 30+ ideas to improve the model-training process</strong> across all four stages, and performed a mix of quantitative and qualitative analysis to <strong>prioritize 12 features for implementation</strong>
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process3-1">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Storyboarding</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process3-1">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Speed Dating</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-2">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Data Analysis</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-3">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Storyboard Synthesis Framework</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!--Aligning on an Ideal State Part 1-->
+                    <div id="process3-1" class="row processSectionGap">
+                        <div class="row mt-4">    
+                            <div class="col-10 col-md-5 offset-1 mb-2">
+                                <h5 id="process1-1" class="prototype mt-4">
+                                    <span class="highlightRed">
+                                        How could we incorporate our findings to improve AutoModeler?
+                                    </span>
+                                </h5>
+                                <p class="mt-5">
+                                    At the onset of the project, our team had hundreds of ideas to potentially improve AutoModeler. But with the research we had done, <span class="emphasis highlightRed">we finally had four guardrails on what good ideas looked like</span>.
+                                    <br><br>
+                                    With these guiding inputs in mind, <span class="emphasis highlightRed">we developed 30 storyboards to represent our ideas across all four model-building phases</span>. We asked users to rank ideas within each phase, and provide qualitative feedback.
+                                </p>
+                            </div>
+
+                            <div class="col-10 offset-1 mb-4 align-self-center">
+                                <div class="relative">
+                                    <p class="mt-3">
+                                        <span class="emphasis2">Storyboarding Guiding Principles</span>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="col-12 col-md-6">
+                                                <div class="d-flex align-content-center mt-4 blue lightRed p-2">
+                                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                        <img class="cardIcon" src="Assets/Images/Universal/thinking-face.png" alt="icon of persona analysis phase">
+                                                    </div>
+                                                    <p class="align-self-center mt-1 mb-1">
+                                                        <strong>They needed to bridge users’ technical gaps</strong>, help them find patterns, control others’ inputs, and incorporate preferences from previous projects (from Show and Tell)
+                                                    </p>
+                                                </div>
+
+                                                <div class="d-flex align-content-center mt-4 blue lightRed p-2">
+                                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                        <img class="cardIcon" src="Assets/Images/Universal/Icon-sad-face.png" alt="icon of persona analysis phase">
+                                                    </div>
+                                                    <p class="align-self-center mt-1 mb-1">
+                                                        <strong>They needed to address specific pain points</strong> in the model-building process across the stages (from User Journey Map)
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <div class="d-flex align-content-center mt-4 blue lightRed p-2">
+                                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                        <img class="cardIcon" src="Assets/Images/Project_LutronAffinity/feature-rationale.svg" alt="icon of persona analysis phase">
+                                                    </div>
+                                                    <p class="align-self-center mt-1 mb-1">
+                                                        <strong>They needed to encourage long-term learning</strong> by providing ample feedback for users to learn the next best step for themselves (from analogous domains)
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex align-content-center mt-4 blue lightRed p-2">
+                                                    <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                        <img class="cardIcon" src="Assets/Images/Project_LutronAffinity/feature-approve-deny.svg" alt="icon of persona analysis phase">
+                                                    </div>
+                                                    <p class="align-self-center mt-1 mb-1">
+                                                        <strong>They needed to provide more guidance and feedback during annotation and evaluation</strong>, and less during upload and training (from design metaphors)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal4-1">
+                                        <a href="Assets/Images/Project_ModelTrainingReimagined/annotation-storyboards.png" target="_blank">
+                                            <img class="solutionSlidePic" src="Assets/Images/Project_ModelTrainingReimagined/annotation-storyboards.png" alt="new metaphors (1/2)" data-target="#carousel1" data-slide-to="0">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                            <i>
+                                                Annotation storyboards - we assessed four major needs identified in the user journey maps
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal4-1">
+                                        <a href="Assets/Images/Project_ModelTrainingReimagined/evaluation-storyboards.png" target="_blank">
+                                            <img class="solutionSlidePic" src="Assets/Images/Project_ModelTrainingReimagined/evaluation-storyboards.png" alt="new metaphors (2/2)" data-target="#carousel1" data-slide-to="1">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                            <i>
+                                                Evaluation storyboards - we assessed four major needs identified in the user journey maps
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide" data-toggle="modal" data-target="#modal4-1">
+                                        <a href="Assets/Images/Project_ModelTrainingReimagined/upload-training-storyboards.png" target="_blank">
+                                            <img class="solutionSlidePic" src="Assets/Images/Project_ModelTrainingReimagined/upload-training-storyboards.png" alt="new metaphors (1/2)" data-target="#carousel1" data-slide-to="2">
+                                        </a>
+                                        <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                            <i>
+                                                Upload and Training storyboards - these were less problematic stages, so we looked at overarching needs
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal4-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/annotation-storyboards.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/annotation-storyboards.png" alt="new metaphors (1/2)">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                        <i>
+                                            Annotation storyboards - we assessed four major needs identified in the user journey maps
+                                        </i>
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/evaluation-storyboards.png" target="_blank">
+                                        <img class="d-block w-100" src="Assets/Images/Project_ModelTrainingReimagined/evaluation-storyboards.png" alt="new metaphors (2/2)">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                        <i>
+                                            Evaluation storyboards - we assessed four major needs identified in the user journey maps
+                                        </i>
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/upload-training-storyboards.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/upload-training-storyboards.png" alt="new metaphors (1/2)">
+                                    </a>
+                                    <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption">
+                                        <i>
+                                            Upload and Training storyboards - these were less problematic stages, so we looked at overarching needs
+                                        </i>
+                                    </p>
+                                </div>
+
+                                <!--Change Carousel Name! -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel1" data-slide-to="1"></li>
+                                    <li data-target="#carousel1" data-slide-to="2"></li>
+                                </ol>
+                                
+                                </div>
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+
+                                <!--Change Carousel Name! -->
+                                <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                </span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Aligning on an Ideal State Part 2 -->
+                    <div id="process3-2" class="row processSectionGap">
+                        <div class="col-10 offset-1 mb-2 pl-0">
+                            <h5 class="col-12 col-md-6 prototype mt-4">
+                                <span class="highlightRed">
+                                    How do we prioritize ideas to build out into features?
+                                </span>
+                            </h5>
+                            <p class="col-12 col-md-6 mt-4">
+                                To turn 30 ideas into a more manageable feature set, <span class="emphasis highlightRed">we mixed quantitative and qualitative analyses of analysts’ feedback</span> across 20 interviews:
+                            </p>
+                        </div>
+                            <div class="col-10 col-md-5 offset-1 mb-2">
+                                <p class="mt-4">
+                                    <span class="emphasis2">Quantitative Analysis:</span> 
+                                    <br><br>
+                                    All our analysts had ranked ideas for each stage, and <span class="emphasis highlightRed">provided a score (out of 5) signifying their likeliness of using each idea</span>. 
+                                    <br><br>
+                                    We used this metrics to graph each stage’s idea, and <span class="emphasis highlightRed">identify the ideas that were meaningfully separated</span> as likely to be used, and ranked highly. 
+                                    <div class="d-flex mt-4 mb-4">
+                                        <img class="cardIcon align-self-start" src="Assets/Images/Universal/analysisIcon.png">
+                                        <span class="emphasis2 fontGrey ml-3">
+                                            <p class="fontRed mb-0"><strong>ANALYSIS RESULTS:</strong></p>
+                                            We extracted 10 ideas across all four stages that were clear-cut favorites from analysts as improving understandability and empowering analyst decision-making
+                                        </span>
+                                    </div>
+                                </p>
+                                <br><br>
+                                <div data-toggle="modal" data-target="#modal4-2">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/quant-framework.png" target="_blank">
+                                        <img class="w-100" src="Assets/Images/Project_ModelTrainingReimagined/quant-framework.png" alt="future state venn diagram" data-target="#carousel4-2" data-slide-to="1">
+                                    </a>
+                                </div>
+                            </div>
+
+                        <div id="process3-3" class="col-10 offset-1 offset-md-0 col-md-5 ml-md-5 mb-2 mt-4"> 
+                            <span class="emphasis2">Qualitative Analysis:</span> 
+                                <br><br>
+                                <p>
+                                    We noted all qualitative feedback on each idea with a storyboard synthesis framework, <span class="emphasis highlightRed">separating moments of delight and dislike across ideas</span>. 
+                                    <br><br>
+                                    We examined ways that we could <span class="emphasis highlightRed">incorporate the highlights and minimize pain points across ideas</span> to maximize the potential of the priority ideas.
+                                </p>
+                                <div class="d-flex mb-4">
+                                    <img class="cardIcon align-self-start" src="Assets/Images/Universal/analysisIcon.png">
+                                    <span class="emphasis2 fontGrey ml-3">
+                                        <p class="fontRed mb-0"><strong>ANALYSIS RESULTS:</strong></p>
+                                        From our analysis, we emerged with 12 distinct features that were built upon our prioritized ideas and that incorporated the most universally appreciated elements across our speed dating
+                                    </span>
+                                </div>
+                            </p>
+                            <br><br>
+                            <div data-toggle="modal" data-target="#modal4-3">
+                                <a href="Assets/Images/Project_ModelTrainingReimagined/qualt-framework.png" target="_blank">
+                                    <img class="w-100" src="Assets/Images/Project_ModelTrainingReimagined/qualt-framework.png" alt="future state venn diagram" data-target="#carousel4-3" data-slide-to="1">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal4-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel4-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/quant-framework.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/quant-framework.png" alt="hand-drawn dashboard mockup 1">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal4-3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel4-3" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/qualt-framework.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/qualt-framework.png" alt="hand-drawn dashboard mockup 1">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Results & Final Thoughts -->
+            
+            <section id="section-process-5" class="section reflectionSection">
+                <!-- Title Section -->
+                <div class="row pt-5 pb-5 mb-5 lightBlue">
+                    <div class="col-10 col-md-4 offset-1">
+                        <div class="d-flex align-content-center">
+                            <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                <img class="titleIcon" src="Assets/Images/Universal/starIcon.svg" alt="icon of persona analysis phase">
+                            </div>
+                            <h2 class="prototype"><span class="highlightBlue align-self-center">Results & Final Thoughts</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                        <h4 class="sectionCaption">
+                            I developed <strong>12 evidence-backed feature recommendations for Bloomberg</strong> to incorporate into a new version of AutoModeler. I’ll be spending the <strong>summer semester building out the features</strong> for annotation and evaluation
+                        </h4>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">    
+                    <div class="col-10 col-md-5 offset-1 mb-2">
+                        <h5 id="process1-1" class="prototype mt-4">
+                            <span class="highlightBlue">
+                                From product design to service design
+                            </span>
+                        </h5>
+                        <p class="mt-4">
+                            There was a fundamental flaw with our findings to date: <span class="emphasis highlightBlue" >they only considered analyst desirability, without thinking about the technical feasibility or commercial viability</span> of these features.
+                            <br><br>
+                            We addressed this with the business prioritization matrix:
+                        </p>
+                        <div class="d-flex mt-4 mb-4">
+                            <img class="cardIcon align-self-start" src="Assets/Images/Project_ModelTrainingReimagined/compassIcon.png">
+                            <span class="emphasis2 fontGrey ml-3">
+                                <p class="fontBlue mb-0"><strong>THE BUSINESS PRIORITIZATION MATRIX:</strong></p>
+                                Ask AutoModeler’s engineers and product managers to map each feature’s impact to business and number of engineering resources required to gauge each feature's rough ROI
+                            </span>
+                        </div>
+                        <p>
+                            With our matrix, we’ve <span class="emphasis highlightBlue" >narrowed down our focus to 6 ideas within annotation and evaluation</span> that we’ll be designing and prototyping for the remainder of the summer. With these 6 ideas, we aim to deliver significant value:
+                        </p>
+                    </div>
+
+                    <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                        <div data-toggle="modal" data-target="#modal6-1">
+                            <img class="w-100 very-wide-image" src="Assets/Images/Project_ModelTrainingReimagined/viability-feasibility-matrix.png" alt="future state venn diagram" data-target="#carousel6-1" data-slide-to="1">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal6-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel6-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_ModelTrainingReimagined/viability-feasibility-matrix.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_ModelTrainingReimagined/viability-feasibility-matrix.png" alt="first iteration dashboard tabs">
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                
+                <div class="row mt-5">
+                    <div class="col-10 col-md-5 offset-1 mb-4">
+                            <span class="emphasis2">Analyst Benefits:</span>
+
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ModelTrainingReimagined/Icon-analyst-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduce training time by 25%</strong> by significantly cutting down the number of steps in the process
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/understandIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Improve analysts’ understanding of the process</strong> and steps to take in ambiguous situations
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ModelTrainingReimagined/Icon-analyst-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Incorporate analysts’ knowledge</strong> into models better by making it easier to integrate their thought processes into model training
+                                </p>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-10 col-md-5 offset-1 offset-md-0 mb-4">
+                        <div class="align-self-end">
+                        <span class="emphasis2">Bloomberg Benefits:</span>
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ModelTrainingReimagined/Icon-Bloomberg-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Improve information accuracy</strong> of Bloomberg Terminal with more accurate models powering outputs
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ModelTrainingReimagined/Icon-Bloomberg-benefit-2.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduce engineering dependency</strong>, freeing them up to perform more value-additive tasks
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_ModelTrainingReimagined/Icon-Bloomberg-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Increase employee efficiency</strong>, allowing for more models to be trained to further automate Terminal’s information-gathering
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+            <!-- Bottom Navigation -->
+            <section id="section-bottomNav" class="row bottomNav">
+                <div class="d-flex justify-content-start col-4">
+                    <a href="grogetters.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="leftNavCircle lightBlue"></div>
+                        <img class="leftNavPic" src="Assets/Images/Home/tileMIH.png" alt="Proactive Home DJ">    
+                        <h5 class="bottomNavText text-left prototype hoverWord" data-words="Prev|Proactive Home DJ">Prev</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-center col-4 anchor">
+                    <a href="#section-projectHeader" class="backTop align-self-center">
+                        <div class="backTopCircle blue d-flex justify-content-center align-content-center">
+                            <img class="backTopArrow align-self-center" src="Assets/Images/Universal/backTopArrow.svg" alt="back to top arrow">
+                        </div>
+                        <h5 class="prototype fontBlue text-center pt-2 backTopText">Back to Top</h5>
+                    </a>
+                </div>
+
+                <div class="d-flex justify-content-end col-4">
+                    <a href="lutron-affinity.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="rightNavCircle lightPurple"></div>
+                        <img class="rightNavPic" src="Assets/Images/Home/tileBailey.png" alt="Personal Music Trainer"> 
+                        <h5 class="bottomNavText text-right prototype hoverWord" data-words="Next|Personal Music Trainer">Next</h5>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+        
+        <script src="Assets/Libraries/slick/slick.min.js"></script>
+        <script src="Assets/js/type.js"></script>
+        <script src="Assets/Libraries/aos/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        </script>
+    </body>
+    
+</html>
