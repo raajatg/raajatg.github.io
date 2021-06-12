@@ -33,18 +33,13 @@ var introduction = document.getElementById('introduction');
 
 const meType = new Typewriter(introduction);
     meType.pauseFor(1000)
-    .typeString("<h1 class='about-title'>I'm Raajat Gupta</h1>")
-    .pauseFor(500)
-    .typeString("I use research as a tool for creating connections. 🏚")
-    .pauseFor(1000)
-    .deleteChars(3)
-    .typeString(" 🏘")
+    .typeString("I'm Raajat Gupta")
     .start();
 
 var introductionTwo = document.getElementById('introductionTwo');
 
     const meTypeTwo = new Typewriter(introductionTwo);
-        meTypeTwo.pauseFor(14500)
+        meTypeTwo.pauseFor(4000)
         .typeString("Let's define the <strong>future of human relationships. 👫</strong>")
         .pauseFor(1500)
         .deleteChars(18)
