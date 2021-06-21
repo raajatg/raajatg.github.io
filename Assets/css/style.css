@@ -263,12 +263,12 @@ a {
 }
 
 p a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 a:hover {
     color: #093478;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* 
@@ -305,7 +305,7 @@ Quotes
 @media (max-width: 768px) {
     .quote {
         font-family: "neue-haas-unica","sans-serif";
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: 300;
         color: #8995A0;
         z-index: 5;
@@ -580,6 +580,13 @@ Media Formatting
     margin-right: auto;
 }
 
+.big-open-image {
+    max-width: 1300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .wide-image{
     max-width: 600px;
     display: block;
@@ -732,17 +739,17 @@ hr {
 }
 
 .section {
-    margin-bottom: 75px;
-    margin-top: 75px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .big-gap {
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .processSectionGap {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .featureCard {
@@ -926,6 +933,21 @@ Circle Sizes
     overflow: hidden;
 }
 
+.PPFixedcircleOne {
+    top: 25%;
+    left: 28%;
+}
+
+.PPFixedcircleTwo {
+    top: 42%;
+    left: -70%;
+}
+
+.PPFixedcircleThree {
+    top: -35%;
+    left: -40%;
+}
+
 @media (max-width: 576px) {
     .size2Circles {
         height: 65vw;
@@ -938,6 +960,21 @@ Circle Sizes
         right: 0;
         margin-top: 0%;
         z-index: -1;
+    }
+
+    .PPFixedcircleOne {
+        top: 20%;
+        left: 45%;
+    }
+    
+    .PPFixedcircleTwo {
+        top: 30%;
+        left: -50%;
+    }
+    
+    .PPFixedcircleThree {
+        top: -15%;
+        left: -25%;
     }
 }
 
@@ -3299,12 +3336,13 @@ Icon Formatting
 }
 
 .iconCaption {
+    text-decoration: none !important;
     width: 8vw;
     min-width: 90px;
     max-width: 100px;
     text-align: center;
-    font-size: 14px;
-    text-decoration: none !important;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
 }
 
 .iconWinding {
@@ -3427,7 +3465,7 @@ Process Lines
 .processLine1 {
     display:block;
     position: absolute;
-    width: 90%; 
+    width: 87%; 
     border-top: 3px solid #000;
     z-index: -1;
     margin-left: auto;
@@ -3440,7 +3478,7 @@ Process Lines
 .processLine2 {
     display:block;
     position: absolute;
-    width: 90%; 
+    width: 87%; 
     border-top: 3px solid #000;
     z-index: -1;
     margin-left: auto;
