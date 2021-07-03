@@ -40,9 +40,9 @@ var introductionTwo = document.getElementById('introductionTwo');
 
     const meTypeTwo = new Typewriter(introductionTwo);
         meTypeTwo.pauseFor(4000)
-        .typeString("Let's define the <strong>future of human relationships. 👫</strong>")
+        .typeString("Let's define the <strong>future of human relations. 👫</strong>")
         .pauseFor(1500)
-        .deleteChars(18)
+        .deleteChars(14)
         .typeString("<strong>-AI bonds. 🤖</strong>")
         .pauseFor(1500)
         .deleteChars(18)
