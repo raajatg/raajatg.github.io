@@ -1730,7 +1730,7 @@ Portfolio Tile Images
 #projectThree > .tileImage {
     background-color: #FFE1DB;
     padding-bottom: 100%;
-    background-image: url(../Images/Home/tileTerminal.png);
+    background-image: url(../Images/Home/tileAutomodeler.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 50%;
@@ -1776,10 +1776,10 @@ Portfolio Tile Images
 #projectTwoSM > .tileImage {
     background-color: #FFE1DB;
     padding-bottom: 25%;
-    background-image: url(../Images/Home/tileTerminal.png);
+    background-image: url(../Images/Home/tileAutomodeler.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 70%;
+    background-size: auto 80%;
     box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -2958,8 +2958,8 @@ Page Header
     height: auto;
     z-index: 100;
     margin-left: 5%;
-    margin-top: 10%;
-    margin-bottom: 25%;
+    margin-top: 0%;
+    margin-bottom: 15%;
 }
 
 .P4headerPic {
