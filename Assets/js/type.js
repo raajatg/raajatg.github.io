@@ -16,7 +16,7 @@ let handwaveFinal = String.fromCodePoint(codePoint);
 
 const homeType = new Typewriter(app);
     homeType.pauseFor(2000)
-    .typeString(`Oh, hello there${handwaveFinal}!`)
+    .typeString(`Oh, hello there! ${handwaveFinal}`)
     .pauseFor(2000)
     .deleteAll()
     .typeString("<strong>I'm Raajat Gupta.</strong>")
