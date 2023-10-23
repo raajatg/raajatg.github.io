@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Redesigning Ride Interruptions</title>
+        <link rel="icon" href="Assets/Images/Universal/circlesIcon.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/qui2aik.css">
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="Assets/Libraries/Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Assets/Libraries/aos/aos.css">
+        <link rel="stylesheet" href="Assets/css/animations.css">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="Assets/Libraries/Bootstrap/js/bootstrap.js"></script>
+        
+        <script src="Assets/js/core.js"></script>
+        <script src="Assets/js/main.js"></script>
+    </head>
+    <body>
+        <!--Dot Navigation-->
+        <div id="dot-nav" class="position-fixed">
+            <ul>
+                <li class="awesome-tooltip blueDot" title="Solution Overview"><a href="#section-solutionOverview"></a></li>
+                <li class="awesome-tooltip greenDot" title="Project Timeline"><a href="#section-projectBackground"></a></li>
+                <li class="awesome-tooltip purpleDot" title="Understand Interruptions Today"><a href="#section-process-1"></a></li>
+                <li class="awesome-tooltip pinkDot" title="Translate Rider Needs into a New Flow"><a href="#section-process-2"></a></li>
+                <li class="awesome-tooltip redDot" title="Test Dense Urban Stranding Flow"><a href="#section-process-3"></a></li>
+                <li class="awesome-tooltip greenDot" title="Test Railroad Tracks Stranding Flow"><a href="#section-process-4"></a></li>
+                <li class="awesome-tooltip blueDot" title="Final Design"><a href="#section-finalDesign"></a></li>
+                <li class="awesome-tooltip blueDot" title="Results & Final Thoughts"><a href="#section-process-5"></a></li>
+            </ul>
+        </div>
+
+       <!--Navbar-->
+        <nav class="navbar fixed-top header mar-bot">
+            <!-- Navbar brand -->
+            <a class="navbar-brand name hoverWordDark" href="./">RAAJAT GUPTA</a>
+                <!-- Collapsible content -->
+                <div class="ml-auto">
+                    <!-- Links -->
+                    <div class="flex-row ml-auto">
+                        <a class="header-text px-2 hoverWordDark" href="about.html">ME</a>
+                        <a class="header-text px-2 hoverWordDark" href="https://drive.google.com/file/d/1yX9Q-NzGBHg8DKY7EifKNhOjF0Ut3gfn/view?usp=sharing" target="_blank">RESUME</a>
+                    </div>
+                </div>
+        </nav>
+        <!--/.Navbar-->
+        
+        <div class="vh-100 container-fluid projectContainer text-left pt-5">
+            
+            <!--Project Page Header-->
+                <div id="section-projectHeader" class="row projectHeader">
+                    <div class="projectHeaderPic align-self-center col-sm-5">
+                        <div class="size2Circles PPFixedcircleTwo lightRed"></div>
+                        <div class="size2Circles PPFixedcircleThree lightYellow"></div>
+                        <div class="size2Circles PPFixedcircleOne lightBlue"></div>
+                        <img class="P3headerPic" src="Assets/Images/Home/tileWaymoInterruptions.png" alt="Header picture of Adidas dashboard">
+                    </div>
+                    
+                    <div class="projectHeaderSummary col-10 col-sm-5 order-md-1 pt-2">
+                        <h1 class="prototype case-study-title">Redesigning Ride Interruptions</h1>
+                        <h4 class="fontGrey subheader">UXR Project at Waymo</h4>
+                        <p class="prototype fontGreen subtitle"><strong>September 2022 - February 2023</strong></p>
+                        <h5 class="case-study-subtitle">
+                            I redesigned Waymo’s ride interruption flow, so riders experiencing temporary driving issues could quickly and effectively navigate next steps for staying safe and getting to their destination.
+                        </h5>
+                        
+                        <h4>
+                            <!--HIDDEN
+                            <a href="https://drive.google.com/file/d/1LoPBCXItzXvs0hJ-ddgGE_wR8eHwq6sk/view" target="_blank">
+                                <button type="button" class="btn btn-blue mt-3 metrophobic p-3">Interim Findings Presentation</button>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1XUNQ0Zl-i-o2qrh3NcRG_mG9CPdL8GRs/view?usp=sharing" target="_blank">
+                                <button type="button" class="btn btn-blue mt-3 metrophobic p-3">Final Findings Presentation</button>
+                            </a>
+                            -->
+                            <div class="anchor">
+                            <a href="#section-finalDesign">
+                                <button type="button" class="btn btn-green mt-3 metrophobic p-3">Jump to Final Solution →</button>
+                            </a>
+                        </div>
+                        </h4>
+                    </div>
+                </div>
+        <!--Solution Overview -->
+            <section id="section-solutionOverview" class="section solutionOverview">
+                <div class="row">
+                    <div class="col-10 col-md-5 offset-1 mb-4">
+                        <h5 class="prototype"><span class="highlightBlue">Research Goal</span></h5>
+                        <p>
+                            <strong>
+                                How might we ensure riders feel safe and able to progress to their destination if their self-driving vehicle experiences a driving interruption?
+                            </strong>
+                            <br><br>
+                            In 2022, Waymo was gearing up to significantly expand its miles driven and territories covered. Scaling would also mean an increase in strandings, when the car stops moving because the self-driving software can’t identify a path forward. We needed to redesign our in-car flow to help riders effectively navigate next steps across stranding types, and de-risk territory expansion.
+                        </p>
+
+                        <h5 class="prototype mt-5"><span class="highlightBlue">Solution Benefits</span></h5>
+                        <p>
+                            Our final redesigned interruptions flow (now deployed across vehicles) meaningfully improved rider safety and satisfaction in three main ways:
+                        </p>
+                        <ol class="pl-3">
+                            <li><p>
+                                It <strong>integrates rider preferences</strong> into the rescue flow by allowing riders to decide next steps that work best for their needs in the moment
+                            </p></li>
+                            <li><p>
+                                It <strong>reduces erosion of rider trust</strong> after a stranding happens by quickly and safely getting them to their final destination
+                            </p></li>
+                            <li><p>
+                                It <strong>minimizes the human labor</strong> needed to rescue riders by removing dependencies on Rider Support and Waymo’s Roadside Assistance
+                            </p></li>
+                        </ol>
+
+                    </div>
+                    <div class="col-10 col-md-4 offset-1 mt-5 mt-md-0">
+                                <h5 class="prototype"><span class="highlightBlue">My Role</span></h5>
+                                    <p class="mt-2 mb-0"><strong>UX Research Lead</strong></p>
+                                    <p class="mt-2 mb-0">
+                                        I designed and executed the research plan which first identified gaps in the existing interruptions experience, then tested new flow concepts.
+                                    </p>
+                                    <p class="mt-2 mb-0">
+                                        I socialized findings and collaborated closely with designers, engineers and product managers to develop these iterative concepts and finalize the flow in use today.
+                                    </p>
+                                <h5 class="prototype mt-5"><span class="highlightBlue">Organization</span></h5>
+                                    <p class="mt-2 mb-0">Waymo LLC</p>
+                                <h5 class="prototype mt-5"><span class="highlightBlue hoverWord" data-words="Collaborators|Friends">Collaborators</span></h5>
+                                    <a href="https://www.linkedin.com/in/maria-moon-a805425/" target="_blank"><p class="smaller-text mt-2 mb-0">Maria Moon</p></a>
+                                    <a href="https://www.linkedin.com/in/tylerfox1/" target="_blank"><p class="smaller-text mt-2 mb-0">Tyler Fox</p></a>
+                                    <a href="https://www.linkedin.com/in/katrayes/" target="_blank"><p class="smaller-text mt-2 mb-0">Kat Allen</p></a>
+                                    <a href="https://www.linkedin.com/in/kylebechtel/" target="_blank"><p class="smaller-text mt-2 mb-0">Kyle Bechtel</p></a>
+                                
+                    </div>
+                    <div class="col-10 col-md-4 offset-1 mt-0 mt-md-0">
+                        
+                    </div>
+                </div>
+            </section>
+            
+        <!--Project Background-->    
+        <section id="section-projectBackground" class="section">
+                <!-- Title Section -->
+                <div class="row pt-5 pb-5 mb-4 lightGreen">
+                    <div class="col-10 col-md-4 offset-1">
+                        <div class="d-flex align-content-center">
+                            <div class="green titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                <img class="titleIcon" src="Assets/Images/Universal/timelineIcon.svg" alt="icon of persona analysis phase">
+                            </div>
+                            <h2 class="prototype"><span class="highlightGreen align-self-center">Project Timeline</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                        <h4 class="sectionCaption">
+                            I first <strong>investigated the gaps in the current ride interruptions experience</strong> and shared those findings with our cross-functional team to create an all-new flow for both medium- and high-risk ISS. I then <strong>tested these new flows in immersive contexts with able-bodied and disabled riders</strong> to define a finalized flow.
+                        </h4>
+                    </div>
+                </div>
+                <!--Process for Desktop-->
+                <div class="col-10 offset-sm-1 mt-5 processLong">
+                    <div class="d-flex justify-content-between">
+                        <span class="processLine"></span>
+                        <div class="anchor">
+                            <a href="#section-process-1">
+                            <div class="purple iconCircles d-flex justify-content-center align-content-center">
+                                    <img class="icon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of understanding context phase">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-2">
+                                <div class="pink iconCircles d-flex justify-content-center align-content-center">
+                                    <img class="icon" src="Assets/Images/Universal/possibleFutures-Icon.svg" alt="icon of narrowing in on solution">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-3">
+                                <div class="red iconCircles d-flex justify-content-center align-content-center">
+                                    <img class="icon" src="Assets/Images/Universal/trafficIcon.svg" alt="icon of users' ties to theater">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-4">
+                                <div class="green iconCircles d-flex justify-content-center align-content-center">
+                                    <img class="icon" src="Assets/Images/Universal/trainIcon.svg" alt="icon of prototyping our solution phase">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-5">
+                                <div class="blue iconCircles d-flex justify-content-center align-content-center">
+                                    <img class="icon" src="Assets/Images/Universal/starIcon.svg" alt="icon of final thoughts">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="anchor">
+                            <a href="#section-process-1"><p class="mt-1 iconCaption">Understand Interruptions Today</p></a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-2"><p class="mt-1 iconCaption">Translate Rider Needs into a New Flow</p></a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-3"><p class="mt-1 iconCaption">Test Dense Urban Stranding Flow</p></a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-4"><p class="mt-1 iconCaption">Test Railroad Tracks Stranding Flow</p></a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-5"><p class="mt-1 iconCaption">Results & Final Thoughts</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Process for Mobile-->
+                <div class="col-10 offset-1 col-sm-9 offset-sm-1 processWinding mt-5">
+                    <div class="d-flex justify-content-between">
+                        <div class="anchor">
+                            <a href="#section-process-1">
+                                <div class="purple iconCirclesWinding d-flex justify-content-center align-content-center">
+                                    <span class="processLine1"></span>
+                                    <img class="iconWinding" src="Assets/Images/Universal/contextIcon.svg" alt="icon of understanding context phase">
+                                </div>
+                                <p class="mt-1 iconCaptionWinding">Understand Interruptions Today</p>
+                            </a>
+                        </div>    
+                        <div class="anchor">
+                            <a href="#section-process-2">
+                                <div class="pink iconCirclesWinding d-flex justify-content-center align-content-center">
+                                    <div class="verticalProcessLine"></div>
+                                    <img class="iconWinding" src="Assets/Images/Universal/possibleFutures-Icon.svg" alt="icon of investigating adjacent offerings phase">
+                                </div>
+                                <p class="mt-1 iconCaptionWinding">Translate Rider Needs into a New Flow</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="anchor">
+                            <a href="#section-process-4">
+                                <div class="green iconCirclesWinding d-flex justify-content-center align-content-center">
+                                    <span class="processLine2"></span>
+                                    <div class="verticalProcessLine"></div>
+                                    <img class="iconWinding" src="Assets/Images/Universal/trainIcon.svg" alt="icon of examining users' ties to theater">
+                                </div>
+                                <p class="mt-1 iconCaptionWinding">Test Railroad Tracks Stranding Flow</p>
+                            </a>
+                        </div>
+                        <div class="anchor">
+                            <a href="#section-process-3">
+                                <div class="red iconCirclesWinding d-flex justify-content-center align-content-center">
+                                    <img class="iconWinding" src="Assets/Images/Universal/trafficIcon.svg" alt="icon of exploring initial ideas">
+                                </div>
+                                <p class="mt-1 iconCaptionWinding">Test Dense Urban Stranding Flow</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="anchor">
+                            <a href="#section-process-5">
+                                <div class="blue iconCirclesWinding d-flex justify-content-center align-content-center">
+                                    <img class="iconWinding" src="Assets/Images/Universal/starIcon.svg" alt="icon of prototyping">
+                                </div>
+                                <p class="mt-1 iconCaptionWinding">Results & Final Thoughts</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+            <!--Understanding Interruptions Today-->
+                <section id="section-process-1" class="section">
+                    <div class="row pt-5 pb-5 lightPurple">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="purple titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPurple align-self-center">Understand Interruptions Today</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I conducted an audit of how effective our existing flow was by studying effective techniques for stress minimization, and interviewing Waymo employees who had experienced ride interruptions.
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process1-1">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">In-Depth Interviews</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process1-1">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Experience Rewind</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process1-2">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Literature Review</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+                    
+                    <!--Understanding Interruptions Today Part 1 -->
+                    <div class="row mt-5">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-0"><strong>In-Depth Interviews + Experience Rewind</strong></p>
+                            <h5 id="process1-1" class="prototype mt-1">
+                                <span class="highlightPurple">
+                                    How effective is our current interruptions flow?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Before interviewing external riders, I wanted to quickly identify major areas of improvement from our interruptions flow to inform our redesign. 
+                                <br><br>
+                                At this stage I quickly realized it was better to interview Waymo employees who had experienced strandings for two main reasons:
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightPurple">Employees can give us better feedback than public riders</span> on how we handle busier areas because they test-ride in territories not yet accessible to public riders
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-3 align-content-center mb-4">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightPurple">Employees can be recruited in days</span> for a quick turnaround, compared to weeks for recruiting public riders
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal2-1">
+                                <a href="Assets/Images/Project_WaymoInterruptions/waymonaut_interviews.jpg" target="_blank">
+                                    <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/waymonaut_interviews.jpg" alt="future state venn diagram" data-target="#carousel2-1" data-slide-to="1">
+                                </a>
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Waymo employees relived their stranding experience with us and talked through where we succeeded and failed throughout the experience</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoInterruptions/waymonaut_interviews.jpg" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoInterruptions/waymonaut_interviews.jpg" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Waymo employees relived their stranding experience with us and talked through where we succeeded and failed throughout the experience</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Understanding Interruptions Today Part 2 -->
+                    <div class="row mt-5">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-0"><strong>Literature Review</strong></p>
+                            <h5 id="process1-2" class="prototype mt-1">
+                                <span class="highlightPurple">
+                                    What are generally effective techniques for reducing stress?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Interviews had given us a good idea of where gaps in Waymo’s current experience were, but to iterate on our interruptions flow, I wanted to draw inspiration from analogous sources.
+                                <br><br>
+                                I looked at how other organizations have effectively reduced stress for individuals, ranging from building evacuations to plane crashes. 
+                                <br><br>
+                                Although a Waymo stranding in-road may be less stressful, these techniques resonated with the gaps we had identified from our own employees.
+                                
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal2-2">
+                                <a href="Assets/Images/Project_WaymoInterruptions/stress_litreview.png" target="_blank">
+                                    <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/stress_litreview.png" alt="future state venn diagram" data-target="#carousel2-2" data-slide-to="1">
+                                </a>
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>An active, problem-focused coping method led to higher satisfaction, enjoyment and desire to continue in stressful situations for athletes</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoInterruptions/stress_litreview.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoInterruptions/stress_litreview.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>An active, problem-focused coping method led to higher satisfaction, enjoyment and desire to continue in stressful situations for athletes</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Current State Insights -->
+                    <div class="row">
+                        <div class="col-10 offset-1 mt-5">
+                            <h5>
+                                <span class="highlightPurple">
+                                    We learned...
+                                </span>
+                            </h5>
+                            <div class="row">
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Riders need an explanation of <strong>why we’ve stranded and what’s happening next</strong> to feel like Waymo is prepared for this situation
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Riders <strong>appreciate providing input on their preferences</strong> as Waymo determines next steps; this helps riders feel in control
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        <strong>As a stranding becomes higher-risk</strong> (e.g., middle of city vs. residential street), riders want Waymo to <strong>be more prescriptive on next step</strong> instead of soliciting input
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        A <strong>“human touch” may help reduce stress</strong> even further by building an emotional connection that fosters rider trust
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            <!--Translate Rider Needs into a New Flow-->
+            
+                <section id="section-process-2" class="section">
+                    <div class="row pt-5 pb-5 lightPink">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="pink titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/possibleFutures-Icon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPink align-self-center">Translate Rider Needs into a New Flow</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                In defining the new interruptions flow, I identified distinct flows needed for different stranding types, then led co-design sessions with Product to build flows that incorporated research findings.
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process2-2">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Co-Design</button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!--Translate Rider Needs into a New Flow Part 1 -->
+                    <div id="process2-1" class="row mt-5">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-1">
+                                <span class="highlightPink">
+                                    How many distinct flows do we need to build and test?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                One of the biggest takeaways from our interviews was how <span class="emphasis highlightPink">drastically riders’ preferences changes</span> as perceived risk to their well-being changed. Roughly, there were three categories of strandings:
+                                <div class="d-flex align-content-center mt-3 blue lightPink p-0 card">
+                                    <div class="card-body d-flex p-2">
+                                        <div class="d-flex justify-content-center align-content-center align-self-center mr-3">
+                                            <img class="cardIcon" src="Assets/Images/Project_WaymoInterruptions/stranding_RRX.png" alt="icon of persona analysis phase">
+                                        </div>
+                                        <p class="align-self-center mt-1 mb-1">
+                                            <strong>High-risk (e.g., railroad crossings):</strong> Imminent risk to life meant riders wanted to get out immediately and have a traditional human driver pick them up
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-content-center mt-3 blue lightPink p-0 card">
+                                    <div class="card-body d-flex p-2">
+                                        <div class="d-flex justify-content-center align-content-center align-self-center mr-3">
+                                            <img class="cardIcon" src="Assets/Images/Project_WaymoInterruptions/stranding_denseurban.png" alt="icon of persona analysis phase">
+                                        </div>
+                                        <p class="align-self-center mt-1 mb-1">
+                                            <strong>Medium-risk (e.g., dense urban areas):</strong> High-visibility but lower danger meant riders were open to different options, but wanted a fast resolution with minimal waiting
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-content-center mt-3 blue lightPink p-0 card">
+                                    <div class="card-body d-flex p-2">
+                                        <div class="d-flex justify-content-center align-content-center align-self-center mr-3">
+                                            <img class="cardIcon" src="Assets/Images/Project_WaymoInterruptions/stranding_residential.png" alt="icon of persona analysis phase">
+                                        </div>
+                                        <p class="align-self-center mt-1 mb-1">
+                                            <strong>Low-risk (e.g., residential street):</strong> When there’s nobody around, riders were comfortable with the existing flow (wait in the car for a human to drive the car manually)
+                                        </p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal3-1">
+                                <a href="Assets/Images/Project_WaymoInterruptions/stranding-analysis-matrix.png" target="_blank">
+                                    <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/stranding-analysis-matrix.png" alt="future state venn diagram" data-target="#carousel2-2" data-slide-to="1">
+                                </a>
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>I mapped out the rider openness to different next steps for different types of strandings, which helped us identify what flows riders would even be open to testing</i></p>
+                            </div>
+                        </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal3-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel3-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoInterruptions/stranding-analysis-matrix.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoInterruptions/stranding-analysis-matrix.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>I mapped out the rider openness to different next steps for different types of strandings, which helped us identify what flows riders would even be open to testing</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+                    <!--Translate Rider Needs into a New Flow Part 2 -->
+                    <div class="row mt-5">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-0"><strong>Co-Design</strong></p>
+                            <h5 id="process2-2" class="prototype mt-1">
+                                <span class="highlightPink">
+                                    How do we ensure our new flows address rider needs?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                After aligning with the team on the <span class="emphasis highlightPink">need for two separate testing sessions for high- and medium-risk strandings</span>, our design team got to work developing flows for each scenario.
+                                <br><br>
+                                To help, I led a 3-step process that got the team aligned on final testable prototypes:
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        Designers use findings to <span class="emphasis highlightPink">mock up multiple potential flows</span> for each stranding type
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        I lead bi-weekly shareouts where the <span class="emphasis highlightPink">product team provides feedback</span> based on clarity and alignment with rider needs
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        The team <span class="emphasis highlightPink">finalizes 2 flows per scenario</span> to test with riders
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal3-2">
+                                <a href="Assets/Images/Project_WaymoInterruptions/flow-critique.png" target="_blank">
+                                    <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/flow-critique.png" alt="future state venn diagram" data-target="#carousel2-1" data-slide-to="1">
+                                </a>
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Our designers mocked up flows for the high-risk and medium-risk strandings, and I led team-wide critiques that iterated on concepts to align with rider needs</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal3-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel3-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoInterruptions/flow-critique.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoInterruptions/flow-critique.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Our designers mocked up flows for the high-risk and medium-risk strandings, and I led team-wide critiques that iterated on concepts to align with rider needs</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+            </section>
+
+            <!--Test Dense Urban Stranding-->
+            
+                <section id="section-process-3" class="section">
+                    <div class="row pt-5 pb-5 lightRed">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="red titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/trafficIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightRed align-self-center">Test Dense Urban Stranding Flow</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I parallel prototyped two flows with riders after simulating an actual dense urban stranding to immerse them in the stressors and time pressure involved when actually going through an interruption flow.
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process3-1">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Parallel Prototyping</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-1">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Usability Testing</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-2">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">In-Field Immersion</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-2">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Accessibility Evaluation</button>
+                                    </a>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!-- Test Dense Urban Stranding Part 1-->
+                    <div class="row mt-5">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-1"><strong>Parallel Prototyping + Usability Testing</strong></p>
+                            <h5 id="process3-1" class="prototype mt-1">
+                                <span class="highlightRed">
+                                    How much input do riders want when they’re being rescued?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                One of the team’s biggest open questions revolved around <span class="emphasis highlightRed">how much input riders wanted to give on their preferred next step</span> after a stranding. 
+                                <br><br>
+                                To answer, I <span class="emphasis highlightRed">proposed parallel prototyping</span> to identify when riders wanted more or less prescriptiveness so we could then build a single flow. Our two flows were:
+                                <div class="d-flex align-content-center mt-3">
+                                    <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightRed">Tell the rider what’s happening:</span> Provide a single path to resolution with updates on progress towards that resolution
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-3 align-content-center mb-4">
+                                    <div class="red align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightRed">Ask the rider what they want:</span> Give riders options on resolution, and let them pick while supported by information we provide
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-5 col-md-5 mb-4 align-self-center">
+                            <div class="relative">
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/problemRed.png" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontRed mb-0"><strong>ISSUE:</strong></p>
+                                        How can we determine if riders prefer a more prescriptive or soliciting approach to stranding rescues?
+                                    </i>
+                                    </h3>
+                                </div>
+                                <br><br>
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/ideaRed.png" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontRed mb-0"><strong>IDEA:</strong></p>
+                                        Parallel prototype two flows with drastically different prescriptiveness to identify what elements resonate from each
+                                    </i>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Test Dense Urban Stranding Part 2-->
+                    <div id="process3-2" class="row processSectionGap">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-1"><strong>In-Field Immersion + Accessibility Evaluation</strong></p>
+                            <h5 class="prototype mt-1">
+                                <span class="highlightRed">
+                                    How do we safely immerse riders in the context of a dense urban stranding?
+                                </span>
+                            </h5>
+                            <p class="mt-5 order-md-3">
+                                It’s impossible to properly understand what flow riders would prefer in real life without introducing the stress / time pressure of the situation, so <span class="emphasis highlightRed">I developed an immersive testing solution</span>:
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-5 pl-0">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/lock-icon.png">
+                                            <p class="fontRed mb-0 ml-2 align-content-center"><strong>CONSTRAINT:</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-1 pl-0">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/key-icon.png">
+                                            <p class="fontRed mb-0 ml-2 align-content-center"><strong>SOLUTION:</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightRed mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Riders should feel stress and time pressure throughout the process
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightRed mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            <strong>Unexpectedly strand</strong> the car in downtown Tempe; <strong>hire an actor to honk the car</strong> and swerve past during the flow
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightRed mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Riders should never be in any actual danger of a collision
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightRed mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Strand the car on a <strong>side street right off the main road</strong>; get the ambiance without the risk
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightRed mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Low-vision riders can’t interact with paper prototypes and aren’t based in Phoenix
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightRed mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Conduct an <strong>audio-based remote test with sound effects</strong> of cars driving and honking, with the flow read aloud
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div>
+                                <div class="solutionSlide2" data-toggle="modal" data-target="#modal4-2">
+                                    <img class="w-100 tall-image very-wide-image" src="Assets/Images/Project_WaymoInterruptions/dense-urban-in-field.png" alt="current state venn diagram" data-target="#carousel5-1" data-slide-to="0">
+                                </div>
+                            </div>
+                            <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We drove riders through Phoenix then intentionally triggered a stranding on a busy side street; we then talked through paper prototypes with riders</i></p>
+                        </div>
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal4-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel4-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoInterruptions/dense-urban-in-field.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoInterruptions/dense-urban-in-field.png" alt="hand-drawn dashboard mockup 1">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We drove riders through Phoenix then intentionally triggered a stranding on a busy side street; we then talked through paper prototypes with riders</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!--Test Dense Urban Strandings Insights -->
+                    <div class="row">
+                        <div class="col-10 offset-1 mt-5">
+                            <h5>
+                                <span class="highlightRed">
+                                    We learned...
+                                </span>
+                            </h5>
+                            <p class="mt-3 order-md-3">
+                                Our novel prototyping method immersed users and helped us capture reliable feedback, such as:
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 mt-3">
+                            <div class="row">
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Our riders <strong>prefer giving input</strong> on next steps because it allows them to <strong>integrate their ride-specific contextual needs</strong> (e.g., minimal effort, fastest ETA) into every situation
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Soliciting next steps is only effective if we <strong>provide all the information riders need to make a decision</strong> (e.g., steps in process, ETAs) and allow easy comparison
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Once riders <strong>decide what rescue flow they want to pursue, they no longer want optionality</strong>; instead, clearly lay out next steps and our progress in live time 
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        If we can present information quickly and accurately, then riders <strong>no longer want any humans on the line</strong> to support – that just adds stress and artificial time pressure to make a decision
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            
+
+            <!-- Test Railroad Tracks Stranding Flow -->
+            
+                <section id="section-process-4" class="section">
+                    <div class="row pt-5 pb-5 lightGreen">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="green titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/trainIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightgreen align-self-center">Test Railroad Tracks Stranding Flow</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I immersed riders in a fake stranding near tracks and tested two alternative rescue flows with them to determine if riders would prefer evacuating or getting driven off tracks in this stranding context.
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process4-1">
+                                        <button type="button" class="btn btn-green mt-3 metrophobic p-2">Usability Testing</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process4-1">
+                                        <button type="button" class="btn btn-green mt-3 metrophobic p-2">Accessibility Evaluation</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process4-2">
+                                        <button type="button" class="btn btn-green mt-3 metrophobic p-2">Participant Priming</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process4-2">
+                                        <button type="button" class="btn btn-green mt-3 metrophobic p-2">In-Field Immersion</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!-- Test Railroad Stranding Part 1-->
+                    <div id="process4-1" class="row processSectionGap">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-1"><strong>Usability Testing + Accessibility Evaluation</strong></p>
+                            <h5 class="prototype mt-1">
+                                <span class="highlightGreen">
+                                    How do we know if riders can be trusted to evacuate in time?
+                                </span>
+                            </h5>
+                            <p class="mt-5 order-md-3">
+                                Our design team had created two alternative flows that relied on different assumptions about riders being true:
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-5 pl-0">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/idea-bulb.png">
+                                            <p class="fontGreen mb-0 ml-2 align-content-center"><strong>FLOW:</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-1 pl-0">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/thinking-face.png">
+                                            <p class="fontGreen mb-0 ml-2 align-content-center"><strong>ASSUMPTION:</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightGreen mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Tell riders to evacuate ASAP
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightGreen mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Riders would be able to evacuate a Waymo vehicle in under 15 seconds if needed
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightGreen mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Tell riders to stay put as we drive them off tracks shortly
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightGreen mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Riders can’t evacuate quickly and it’s faster to restart our software and drive off the tracks
+                                        </p>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <p class="mt-5">
+                                    To test which assumption was true, we <span class="emphasis highlightGreen">tested each flow separately with both able-bodied and low-vision / low-hearing riders</span>, one after the other in a random order.
+                                    <br><br>
+                                    This helped us understand the <span class="emphasis highlightGreen">spectrum of reaction times and rider willingness</span> to both stay in the vehicle or evacuate suddenly, which ultimately shaped our final recommendations.
+                                </p>
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div>
+                                <div class="solutionSlide2" data-toggle="modal" data-target="#modal5-1">
+                                    <img class="w-100 tall-image very-wide-image" src="Assets/Images/Project_WaymoInterruptions/RRX-option-screens.png" alt="current state venn diagram" data-target="#carousel5-1" data-slide-to="0">
+                                </div>
+                            </div>
+                            <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We developed two flows during a stranding on railroad crossings – one telling riders to evacuate, the other telling them to stay put as we prepared to accelerate off the tracks</i></p>
+                        </div>
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal5-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel5-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoInterruptions/dense-urban-in-field.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoInterruptions/RRX-option-screens.png" alt="hand-drawn dashboard mockup 1">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We developed two flows during a stranding on railroad crossings – one telling riders to evacuate, the other telling them to stay put as we prepared to accelerate off the tracks</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Test Railroad Stranding Part 2 -->
+                    <div class="row mt-5">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-0"><strong>Participant Priming + In-Field Immersion</strong></p>
+                            <h5 id="process4-2" class="prototype mt-1">
+                                <span class="highlightGreen">
+                                    How can we safely simulate the urgency of stranding on train tracks?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                But findings from these tests would be <span class="emphasis highlightGreen">unreliable unless we could (safely) simulate the level of urgency</span> riders would feel when on train tracks. 
+                                <br><br>
+                                We integrated three components as part of a <span class="emphasis highlightGreen">fully immersive ride-along with riders</span> that included a fake stranding along their route:
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="green align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightGreen">Stranding near train tracks:</span> During our fake strandings, we stopped the car ~50 feet from train tracks to increase the feeling of danger without compromising rider safety
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="green align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightGreen">Digital stress test:</span> Before fake stranding, we administered an <a href="https://digitalstresstest.org/">online questionnaire</a> that increased rider stress safely (e.g., through timed math questions)
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="green align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightGreen">Immersive audio experience:</span> Once we began going through the flows, we played ambient sounds (e.g., train horns, gate bells) as riders went through the flow
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal5-2">
+                                <a href="Assets/Images/Project_WaymoInterruptions/RRX-stranding.png" target="_blank">
+                                    <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/RRX-stranding.png" alt="future state venn diagram" data-target="#carousel2-1" data-slide-to="1">
+                                </a>
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>To immerse riders in the context of a railroad stranding, we pretended to strand close to actual railroad tracks and timed our stranding with the train schedule</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal5-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel5-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoInterruptions/RRX-stranding.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoInterruptions/RRX-stranding.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>To immerse riders in the context of a railroad stranding, we pretended to strand close to actual railroad tracks and timed our stranding with the train schedule</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                    
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Test Railroad Flow Insights-->
+                    <div class="row processSectionGap">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <h5 class="prototype mt-5">
+                                <span class="highlightGreen">
+                                    We learned...
+                                </span>
+                            </h5>
+                        </div>
+
+                        <div class="col-10 offset-1 mt-3">
+                            <div class="row">
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Most riders exited the vehicle in under 15 seconds, but some couldn’t or spent too long corralling their belongings. It was <strong>unsafe to rely on riders to rescue themselves</strong>
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Riders <strong>complied when asked to stay inside the vehicle</strong>, but only if they were <strong>updated constantly on the vehicle status</strong> to reassure them we were not stalled
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Once they are in a safe position, <strong>riders need a human to check in on their well-being</strong> and reassure them, or their trust in Waymo is irreparably shattered
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<!--Solution Showcase -->
+        <section id="section-finalDesign" class="section">
+            <div class="row pt-5 pb-5 lightBlue">
+                <div class="col-10 col-md-4 offset-1">
+                    <div class="d-flex align-content-center">
+                        <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                            <img class="titleIcon" src="Assets/Images/Universal/final-design-Icon.svg" alt="icon of persona analysis phase">
+                        </div>
+                        <h2 class="prototype"><span class="highlightBlue align-self-center">Final Solution</span></h2>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 offset-md-0 col-md-6 d-flex align-content-center mt-3 mt-md-0">
+                    <h4 class="sectionCaption">
+                        We finalized <strong>two entirely new interruption flows</strong> – one for <strong>dense urban strandings</strong> where riders could collaborate on next steps, and one on <strong>railroad tracks</strong> where we got riders to safety ourselves ASAP.
+                    </h4>
+                </div>
+            </div>
+
+            <div id="finalDesign-mobile" class="section">
+                             
+                        <div class="row big-gap">
+                            <div class="col-10 col-md-4 offset-1 top">
+                                    <div>
+                                        <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Solicit Rider Input on Next Steps</span></h5>
+                                        <p class="mb-1">  
+                                            <strong>Provide riders with options</strong> on how they can continue their ride, and give them the information they need to make an informed decision (e.g., ETA, process steps)
+                                            <br><br>
+                                            <strong>Provide live-time progress updates</strong> once a rider selects an option to maintain trust in our rescue process and encourage future usage of Waymo
+                                        </p>
+                                        <br><br>
+                                    </div>
+                            </div>
+                                <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                                    <div>
+                                            <div data-toggle="modal" data-target="#modal6-2">
+                                                <a href="Assets/Images/Project_WaymoInterruptions/final-dense-urban-screens.png" target="_blank">
+                                                    <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/final-dense-urban-screens.png" alt="future state venn diagram" data-target="#carousel3-1" data-slide-to="1">
+                                                </a>
+                                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Top: Riders are provided on options for next steps once stranded; Bottom: After selecting, riders see step-by-step progress updates</i></p>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <hr class="inside-section">
+                        <div class="row big-gap">
+                            <div class="col-10 col-md-4 offset-1 top">
+                                    <div>
+                                        <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Accelerate Riders off Railroad Tracks</span></h5>
+                                        <p class="mb-1">  
+                                            <strong>Give riders the option to exit early</strong> when no train is detected to minimize the chances they’re subjected to the stressors of being on tracks with a train coming
+                                            <br><br>
+                                            <strong>Ask riders to stay in the car once a train is coming</strong> because riders may not have time to exit on their own quickly enough, and will obey our instructions if we act fast
+                                        </p>
+                                    </div>
+                            </div>
+                            <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                                <div>
+                                        <div data-toggle="modal" data-target="#modal6-2">
+                                            <a href="Assets/Images/Project_WaymoInterruptions/final-RRX-screens.png" target="_blank">
+                                                <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/final-RRX-screens.png" alt="future state venn diagram" data-target="#carousel3-1" data-slide-to="1">
+                                            </a>
+                                            <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Top: Riders are given the option to leave initially; Bottom: Once a train is detected, riders are asked to stay inside</i></p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="inside-section">
+                        <div class="row big-gap">
+                            <div class="col-10 col-md-4 offset-1 top">
+                                <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Reduce the Role of Rider Support</span></h5>
+                                <p class="mb-1">  
+                                    <strong>Replace Rider Support entirely for dense urban strandings</strong> because riders prefer having time, privacy, and information at their pace to decide how they want to proceed
+                                    <br><br>
+                                    <strong>Keep Rider Support for high-stress situation</strong> like checking in on rider well-being after a railroad tracks stranding, or as an option if our in-car display is confusing
+                                </p>
+                            </div>
+                            <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                                <div>
+                                        <div data-toggle="modal" data-target="#modal6-2">
+                                            <a href="Assets/Images/Project_WaymoInterruptions/final-RS-logic.png" target="_blank">
+                                                <img class="w-100" src="Assets/Images/Project_WaymoInterruptions/final-RS-logic.png" alt="future state venn diagram" data-target="#carousel3-1" data-slide-to="1">
+                                            </a>
+                                            <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Rider Support is no longer looped in by default unless riders are under extreme stress</i></p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+            
+            </div>
+        
+        </section>
+
+            <!-- Results & Final Thoughts -->
+            
+            <section id="section-process-5" class="section reflectionSection">
+                <!-- Title Section -->
+                <div class="row pt-5 pb-5 mb-4 lightBlue">
+                    <div class="col-10 col-md-4 offset-1">
+                        <div class="d-flex align-content-center">
+                            <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                <img class="titleIcon" src="Assets/Images/Universal/starIcon.svg" alt="icon of persona analysis phase">
+                            </div>
+                            <h2 class="prototype"><span class="highlightBlue align-self-center">Results & Final Thoughts</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                        <h4 class="sectionCaption">
+                            Through our rounds of usability testing, we finalized and launched two entirely new flows to support riders across a host of stranding situations.
+                        </h4>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">    
+                    <div class="col-10 col-md-5 offset-1 mb-2">
+                        <h5 id="process1-1" class="prototype mt-5">
+                            <span class="highlightBlue">
+                                Maintaining rider trust during strandings
+                            </span>
+                        </h5>
+                        <p class="mt-5">
+                            Our dense urban strandings flow <span class="emphasis highlightBlue">launched in summer 2023</span> and immediately helped <span class="emphasis highlightBlue">riders feel heard and prioritized</span> instead of being shoehorned into next steps that weren’t aligned with their needs.
+                            <br><br>
+                            The findings from our railroad stranding testing allowed us to <span class="emphasis highlightBlue">launch a finalized rescue flow in Q1 2023</span>, and gave Waymo leadership confidence to <span class="emphasis highlightBlue">increase our driving territory</span> to cross railroad tracks.
+                            
+                        </p>
+                    </div>
+                    <div class="col-sm-4 align-self-end offset-sm-1 mb-4">
+                        <div class="relative">
+                            <img class="quotation-start lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                            <h5 class="quote mb-1"><i>It's scary to be stuck in the road with nobody to help... but this new process makes me feel like Waymo has my back and is doing everything to get me going again. It makes me feel like Waymo really cares about my safety.</i>
+                            </h5>
+                            <h5 class="fontBlue mb-5">
+                                <a class="fontBlue" href= "https://www.fastcompany.com/3066586/the-year-dark-patterns-won" target= "_blank">Waymo Rider</a>
+                            </h5>
+                            <img class="quotation-end lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-10 col-md-5 offset-1 mb-4">
+                            <span class="emphasis2">Rider Benefits:</span>
+
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoInterruptions/Icon-rider-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Better integrate rider needs</strong> by allowing them to decide next steps that account for their ride-specific contextual preferences
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoInterruptions/Icon-rider-benefit-2.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Improve riders’ post-interruption impression</strong> of Waymo because of our improved handling of the situation
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoInterruptions/Icon-rider-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduce average rider ETA</strong> with dynamic options instead of defaulting to sending a humam to rescue and drive the car
+                                </p>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-10 col-md-5 offset-1 offset-md-0 mb-4">
+                        <div class="align-self-end">
+                        <span class="emphasis2">Waymo Benefits:</span>
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoInterruptions/Icon-Waymo-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Expand Waymo’s driving territory by 2x in Phoenix</strong> by de-risking routes that travel over railroad tracks
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoInterruptions/Icon-Waymo-benefit-2.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduce need for Waymo Roadside Assistance</strong> to rescue every stranded car by allowing riders to select alternative options
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoInterruptions/Icon-Waymo-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduce need for Rider Support</strong> by removing them from most stranding flows in favor of a display
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+            <!-- Bottom Navigation -->
+            <section id="section-bottomNav" class="row bottomNav">
+                <div class="d-flex justify-content-start col-4 invisible">
+                    <a href="black-box-theater.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="leftNavCircle lightYellow"></div>
+                        <img class="leftNavPic" src="Assets/Images/Home/tileBlackBoxTheater.png" alt="Ghost Hunters">    
+                        <h5 class="bottomNavText text-left prototype hoverWord" data-words="Prev|Black Box Theater">Prev</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-center col-4 anchor">
+                    <a href="#section-projectHeader" class="backTop align-self-center">
+                        <div class="backTopCircle blue d-flex justify-content-center align-content-center">
+                            <img class="backTopArrow align-self-center" src="Assets/Images/Universal/backTopArrow.svg" alt="back to top arrow">
+                        </div>
+                        <h5 class="prototype fontBlue text-center pt-2 backTopText">Back to Top</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-end col-4">
+                    <a href="waymo-rider-metrics.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="rightNavCircle lightYellow"></div>
+                        <img class="rightNavPic mb-3" src="Assets/Images/Home/tileWaymoRiderMetrics.png" alt="Rider Metrics"> 
+                        <h4 class="bottomNavText text-right prototype hoverWord" data-words="Next|Rider Experience Metrics">Next</h4>
+                    </a>
+                </div>
+                    
+                
+                
+            </section>
+
+        </div>
+        
+        <script src="Assets/Libraries/slick/slick.min.js"></script>
+        <script src="Assets/js/type.js"></script>
+        <script src="Assets/Libraries/aos/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        </script>
+    </body>
+    
+</html>

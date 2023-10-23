@@ -13,7 +13,7 @@ Color Formatting
 */
 
 .blue {
-    background-color: hsl(229, 57%, 64%);
+    background-color: #6f82d8;
 }
 
 .green {
@@ -287,6 +287,10 @@ Font Families / Features
 
 .faded {
     opacity: 0;
+}
+
+.hidden {
+    display: none;
 }
 
 /* 
@@ -1281,6 +1285,43 @@ Button Formatting
 
 /* 
 --------------------------
+Password
+--------------------------
+*/
+.password {
+    box-sizing: content-box !important;
+    border-color: rgb(111, 130, 216) !important;
+    border-style: solid;
+    color: #fff;
+    font-weight: bold;
+    background-color: white;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 30px;
+    width: 120px;
+  }
+
+  @media (max-width: 768px) {
+    .password {
+        width: 29vw;
+    }
+}
+
+    @media (min-width: 769px) {
+        .password {
+            width: 200px;
+        }
+    }
+/* 
+--------------------------
 Pink Button
 --------------------------
 */
@@ -1757,10 +1798,10 @@ Portfolio Tile Images
 #projectSix > .tileImage {
     background-color: #FFFBCC;
     padding-bottom: 100%;
-    background-image: url(../Images/Home/tileAffinity.png);
+    background-image: url(../Images/Home/tileWaymoRiderMetrics.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 80%;
 }
 
 #projectOneSM > .tileImage {
@@ -1806,20 +1847,20 @@ Portfolio Tile Images
 #projectFiveSM > .tileImage {
     background-color: #E7FEF2;
     padding-bottom: 25%;
-    background-image: url(../Images/Home/tileGroGetters.png);
+    background-image: url(../Images/Home/tileWaymoInterruptions.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 80%;
+    background-size: auto 100%;
     box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.15);
 }
 
 #projectSixSM > .tileImage {
     background-color: #FFFBCC;
     padding-bottom: 25%;
-    background-image: url(../Images/Home/tileAffinity.png);
+    background-image: url(../Images/Home/tileWaymoRiderMetrics.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 80%;
     box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -1980,9 +2021,9 @@ Hovering Feature on Project Tiles
     right: -110%;
 }
 
-#projectFourSM:hover .heartRight {
+#projectFourSM:hover .heartLeft {
     transform: rotate(0deg);
-    left: -110%;
+    right: -110%;
 }
 
 #projectFiveSM:hover .heartLeft {
@@ -1990,9 +2031,9 @@ Hovering Feature on Project Tiles
     right: -110%;
 }
 
-#projectSixSM:hover .heartLeft {
+#projectSixSM:hover .heartRight {
     transform: rotate(0deg);
-    right: -110%;
+    left: -110%;
 }
 
 /* LARGE TILE FORMATTING */
@@ -2036,7 +2077,7 @@ Hovering Feature on Project Tiles
 }
 
 #projectFourSM:hover .tileTextContainer {
-    background-position: 75%;
+    background-position: -63%;
 }
 
 #projectFiveSM:hover .tileTextContainer {
@@ -2044,7 +2085,7 @@ Hovering Feature on Project Tiles
 }
 
 #projectSixSM:hover .tileTextContainer {
-    background-position: -63%;
+    background-position: 75%;
 }
 
 
@@ -2218,9 +2259,9 @@ Adjustments to Tiles for SMALL SCREEN SIZE
         right: 0 !important;
     }
 
-    #projectFourSM:hover .heartRight {
+    #projectFourSM:hover .heartLeft {
         transform: rotate(0deg) !important;
-        left: 0 !important;
+        right: 0 !important;
     }
 
     #projectFiveSM:hover .heartLeft {
@@ -2228,9 +2269,9 @@ Adjustments to Tiles for SMALL SCREEN SIZE
         right: 0 !important;
     }
 
-    #projectSixSM:hover .heartLeft {
+    #projectSixSM:hover .heartRight {
         transform: rotate(0deg) !important;
-        right: 0 !important;
+        left: 0 !important;
     }
 
     /* Cover tile with color feature */
@@ -2554,7 +2595,7 @@ About Me Page Circle Hover Responses
 
     .meCircleThree::after {
         content: "";
-        background-image: url('../Images/Me/trivia_WildestDreams.webp');
+        background-image: url('../Images/Me/trivia_MelodicBlue.webp');
         background-size: cover;
         position: absolute;
         top: 0px;
@@ -2580,7 +2621,7 @@ About Me Page Circle Hover Responses
 
     .meCircleFour::after {
         content: "";
-        background-image: url('../Images/Me/trivia_You.jpg');
+        background-image: url('../Images/Me/trivia_PeakyBlinders.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -2607,7 +2648,7 @@ About Me Page Circle Hover Responses
 
     .meCircleFive::after {
         content: "";
-        background-image: url('../Images/Me/trivia_AmongUs.jpg');
+        background-image: url('../Images/Me/trivia_SM2.webp');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -2782,7 +2823,7 @@ Responsive Page Changes
 
     #triviaListening:after {
         content: "";
-        background-image: url('../Images/Me/trivia_WildestDreams.webp');
+        background-image: url('../Images/Me/trivia_MelodicBlue.webp');
         background-size: cover;
         position: absolute;
         bottom: 0;
@@ -2795,7 +2836,7 @@ Responsive Page Changes
 
     #triviaWatching:after {
         content: "";
-        background-image: url('../Images/Me/trivia_You.jpg');
+        background-image: url('../Images/Me/trivia_PeakyBlinders.jpeg');
         background-size: cover;
         position: absolute;
         top: 0;
@@ -2822,7 +2863,7 @@ Responsive Page Changes
 
     #triviaGaming:after {
         content: "";
-        background-image: url('../Images/Me/trivia_AmongUs.jpg');
+        background-image: url('../Images/Me/trivia_SM2.webp');
         background-size: cover;
         position: absolute;
         bottom: 0;
@@ -2954,12 +2995,12 @@ Page Header
 }
 
 .P3headerPic {
-    width: 80%;
+    width: 110%;
     height: auto;
     z-index: 100;
-    margin-left: 5%;
-    margin-top: 0%;
-    margin-bottom: 15%;
+    margin-left: -10%;
+    margin-top: -10%;
+    margin-bottom: 0%;
 }
 
 .P4headerPic {
@@ -2981,11 +3022,11 @@ Page Header
 }
 
 .P6headerPic {
-    width: 90%;
+    width: 100%;
     height: auto;
     z-index: 100;
     margin-left: -10%;
-    margin-top: -15%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -3021,14 +3062,14 @@ Page Header
     }
 
     .P3headerPic {
-        width: 80%;
+        width: 100%;
         height: auto;
         z-index: 100;
-        margin-left: 4%;
+        margin-left: -10%;
         margin-right: auto;
         display: block;
-        margin-top: 20%;
-        margin-bottom: 28%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     .P4headerPic {
@@ -3053,13 +3094,13 @@ Page Header
     }
 
     .P6headerPic {
-        width: 90%;
+        width: 100%;
         height: auto;
         z-index: 100;
         margin-left: -1%;
         display: block;
-        margin-top: 6%;
-        margin-bottom: 10%;
+        margin-top: 20%;
+        margin-bottom: 20%;
     }
 }
 

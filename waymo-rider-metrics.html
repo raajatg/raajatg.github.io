@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Measuring Rider Experiences</title>
+        <link rel="icon" href="Assets/Images/Universal/circlesIcon.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/qui2aik.css">
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Assets/Libraries/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="Assets/Libraries/Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Assets/Libraries/aos/aos.css">
+        <link rel="stylesheet" href="Assets/css/animations.css">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="Assets/Libraries/Bootstrap/js/bootstrap.js"></script>
+        
+        <script src="Assets/js/core.js"></script>
+        <script src="Assets/js/main.js"></script>
+    </head>
+    <body>
+        <!--Dot Navigation-->
+        <div id="dot-nav" class="position-fixed">
+            <ul>
+                <li class="awesome-tooltip blueDot" title="Solution Overview"><a href="#section-solutionOverview"></a></li>
+                <li class="awesome-tooltip greenDot" title="Project Timeline"><a href="#section-projectBackground"></a></li>
+                <li class="awesome-tooltip purpleDot" title="Moving Past Star Ratings"><a href="#section-process-1"></a></li>
+                <li class="awesome-tooltip pinkDot" title="Understanding Rider Experience Influencers"><a href="#section-process-2"></a></li>
+                <li class="awesome-tooltip redDot" title="Translating Experiences to Metrics"><a href="#section-process-3"></a></li>
+                <li class="awesome-tooltip blueDot" title="Final Solution"><a href="#section-finalDesign"></a></li>
+                <li class="awesome-tooltip blueDot" title="Results & Final Thoughts"><a href="#section-process-5"></a></li>
+            </ul>
+        </div>
+
+        <!--Navbar-->
+        <nav class="navbar fixed-top header mar-bot">
+            <!-- Navbar brand -->
+            <a class="navbar-brand name hoverWordDark" href="./">RAAJAT GUPTA</a>
+                <!-- Collapsible content -->
+                <div class="ml-auto">
+                    <!-- Links -->
+                    <div class="flex-row ml-auto">
+                        <a class="header-text px-2 hoverWordDark" href="about.html">ME</a>
+                        <a class="header-text px-2 hoverWordDark" href="https://drive.google.com/file/d/1yX9Q-NzGBHg8DKY7EifKNhOjF0Ut3gfn/view?usp=sharing" target="_blank">RESUME</a>
+                    </div>
+                </div>
+        </nav>
+        <!--/.Navbar-->
+        
+        <div class="vh-100 container-fluid projectContainer text-left pt-5">
+            
+            <!--Project Page Header-->
+                <div id="section-projectHeader" class="row projectHeader">
+                    <div class="projectHeaderPic align-self-center col-sm-5">
+                        <div class="size2Circles PPFixedcircleTwo lightRed"></div>
+                        <div class="size2Circles PPFixedcircleThree lightYellow"></div>
+                        <div class="size2Circles PPFixedcircleOne lightBlue"></div>
+                        <img class="P6headerPic" src="Assets/Images/Home/tileWaymoRiderMetrics.png" alt="Header picture of Adidas dashboard">
+                    </div>
+                    
+                    <div class="projectHeaderSummary col-10 col-sm-5 order-md-1 pt-2">
+                        <h1 class="prototype case-study-title">Measuring Rider Experiences</h1>
+                        <h4 class="fontGrey subheader">UXR Project at Waymo</h4>
+                        <p class="prototype fontDarkYellow subtitle"><strong>April 2023 - May 2023</strong></p>
+                        <h5 class="case-study-subtitle">
+                            I designed a system that combines a set of quantitative driving metrics with an unintrusive rider feedback mechanism to find actionable opportunities to improve the end-to-end rider experience in Waymo vehicles.
+                        </h5>
+                        <div class="anchor">
+                            <a href="#section-finalDesign" target="_blank">
+                                <button type="button" class="btn btn-yellow mt-3 metrophobic p-3">Jump to Final Solution →</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <!--Solution Overview -->
+                <section id="section-solutionOverview" class="section solutionOverview">
+                    <div class="row">
+                        <div class="col-10 col-md-5 offset-1 mb-4">
+                           <h5 class="prototype"><span class="highlightYellow">Research Goal</span></h5>
+                            <p>
+                                <strong>What if Waymo riders’ end-to-end ride experiences could be perfectly understood, and turned into actionable recommendations for improvement?</strong>
+                                <br><br>
+                                Despite Waymo requesting post-trip feedback, most riders either don’t complete the form, or give a 5-star rating. Without good signal, Waymo can’t easily identify how to improve the driving experience.
+                            </p>
+
+                            <h5 class="prototype mt-5"><span class="highlightYellow">Solution Benefits</span></h5>
+                            <p>Our new framework for capturing the rider experience <strong>accurately tracks riders’ overall experience</strong> from a qualitative and quantitative lens:
+                            <ol class="pl-3">
+                                <li><p>It <strong>minimizes riders’ effort</strong> needed to give actionable feedback while improving feedback actionability</p></li>
+                                <li><p>It <strong>improves signal quality</strong> by capturing feedback in-context so riders don’t need to think back to their experience quality</p></li>
+                                <li><p>It provides Waymo’s Product Managers <strong>far clearer, constantly updated hillclimbing metrics</strong> to track progress against</p></li>
+                            </ol>
+                        </div>
+                        <div class="col-10 col-md-4 offset-1 mt-5 mt-md-0">
+                            <h5 class="prototype"><span class="highlightYellow">My Role</span></h5>
+                                <p class="mt-2 mb-0"><strong>UX Research Lead</strong></p>
+                                <p class="smaller-text mt-2 mb-0">I investigated issues with the existing rider experience measurement system and developed a research approach to inform a redesigned system.</p>
+                                <p class="smaller-text mt-2 mb-0">I uncovered findings and proposed a new system, then socialized and refined it in collaboration with product teams across the organization.</p>
+                            
+                                <h5 class="prototype mt-5"><span class="highlightYellow">Organization</span></h5>
+                                <p class="smaller-text mt-2 mb-0">Waymo LLC</p>
+                            
+                                <h5 class="prototype mt-5"><span class="highlightYellow hoverWord" data-words="Collaborators|Friends">Collaborators</span></h5>
+                                    <a href="https://www.linkedin.com/in/meganneese/" target="_blank"><p class="smaller-text mt-2 mb-0">Megan Neese</p></a>
+                                    <a href="https://www.linkedin.com/in/taylorbixby/" target="_blank"><p class="smaller-text mt-2 mb-0">Taylor Bixby</p></a>
+                                    <a href="https://www.linkedin.com/in/rita-denny-a9393a5/" target="_blank"><p class="smaller-text mt-2 mb-0">Rita Denny</p></a>
+                                    <a href="https://www.linkedin.com/in/michael-powell-7041812/" target="_blank"><p class="smaller-text mt-2 mb-0">Michael Powell</p></a>
+                        </div>
+                    </div>
+                </section>
+
+         <!--Project Background-->    
+         <section id="section-projectBackground" class="section">
+            <!-- Title Section -->
+            <div class="row pt-5 pb-5 mb-4 lightGreen">
+                <div class="col-10 col-md-4 offset-1">
+                    <div class="d-flex align-content-center">
+                        <div class="green titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                            <img class="titleIcon" src="Assets/Images/Universal/timelineIcon.svg" alt="icon of persona analysis phase">
+                        </div>
+                        <h2 class="prototype"><span class="highlightGreen align-self-center">Project Timeline</span></h2>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                    <h4 class="sectionCaption">
+                        I <strong>identified gaps</strong> in the current rider experience measurement system, then used a <strong>mixed-methods approach</strong> to identify which metrics really mattered to riders. I <strong>translated that into a go-forward system</strong> with Waymo’s PMs.
+                    </h4>
+                </div>
+            </div>
+            <!--Process for Desktop-->
+            <div class="col-10 offset-sm-1 mt-5 processLong">
+                <div class="d-flex justify-content-between">
+                    <span class="processLine"></span>
+                    <div class="anchor">
+                        <a href="#section-process-1">
+                        <div class="purple iconCircles d-flex justify-content-center align-content-center">
+                                <img class="icon" src="Assets/Images/Universal/rating-Icon.svg" alt="icon of understanding context phase">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="anchor">
+                        <a href="#section-process-2">
+                            <div class="pink iconCircles d-flex justify-content-center align-content-center">
+                                <img class="icon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of narrowing in on solution">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="anchor">
+                        <a href="#section-process-3">
+                            <div class="red iconCircles d-flex justify-content-center align-content-center">
+                                <img class="icon" src="Assets/Images/Universal/MidFi-Icon.svg" alt="icon of users' ties to theater">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="anchor">
+                        <a href="#section-process-4">
+                            <div class="blue iconCircles d-flex justify-content-center align-content-center">
+                                <img class="icon" src="Assets/Images/Universal/starIcon.svg" alt="icon of final thoughts">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="anchor">
+                        <a href="#section-process-1"><p class="mt-1 iconCaption">Moving Past Star Ratings</p></a>
+                    </div>
+                    <div class="anchor">
+                        <a href="#section-process-2"><p class="mt-1 iconCaption">Understanding Rider Experience Influencers</p></a>
+                    </div>
+                    <div class="anchor">
+                        <a href="#section-process-3"><p class="mt-1 iconCaption">Translating Experiences to Metrics</p></a>
+                    </div>
+                    <div class="anchor">
+                        <a href="#section-process-5"><p class="mt-1 iconCaption">Results & Final Thoughts</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Process for Mobile-->
+            <div class="col-10 offset-1 col-sm-9 offset-sm-1 processWinding mt-5">
+                <div class="d-flex justify-content-between">
+                    <div class="anchor">
+                        <a href="#section-process-1">
+                            <div class="purple iconCirclesWinding d-flex justify-content-center align-content-center">
+                                <span class="processLine1"></span>
+                                <img class="iconWinding" src="Assets/Images/Universal/rating-Icon.svg" alt="icon of understanding context phase">
+                            </div>
+                            <p class="mt-1 iconCaptionWinding">Moving Past Star Ratings</p>
+                        </a>
+                    </div>    
+                    <div class="anchor">
+                        <a href="#section-process-2">
+                            <div class="pink iconCirclesWinding d-flex justify-content-center align-content-center">
+                                <div class="verticalProcessLine"></div>
+                                <img class="iconWinding" src="Assets/Images/Universal/contextIcon.svg" alt="icon of investigating adjacent offerings phase">
+                            </div>
+                            <p class="mt-1 iconCaptionWinding">Understanding Rider Experience Influencers</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="anchor">
+                        <a href="#section-process-5">
+                            <div class="blue iconCirclesWinding d-flex justify-content-center align-content-center">
+                                <span class="processLine2"></span>
+                                <img class="iconWinding" src="Assets/Images/Universal/starIcon.svg" alt="icon of examining users' ties to theater">
+                            </div>
+                            <p class="mt-1 iconCaptionWinding">Results & Final Thoughts</p>
+                        </a>
+                    </div>
+                    <div class="anchor">
+                        <a href="#section-process-3">
+                            <div class="red iconCirclesWinding d-flex justify-content-center align-content-center">
+                                <img class="iconWinding" src="Assets/Images/Universal/MidFi-Icon.svg" alt="icon of exploring initial ideas">
+                            </div>
+                            <p class="mt-1 iconCaptionWinding">Translating Experiences to Metrics</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+
+            <!--Moving Past Star Ratings-->
+                <section id="section-process-1" class="section">
+                    <div class="row pt-5 pb-5 lightPurple">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="purple titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPurple align-self-center">Moving Past Star Ratings</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I investigated the <strong>shortcomings of our existing post-trip feedback system</strong> (asking riders to provide a 5-star rating) and leverage literature reviews for inspiration on a better path forward.
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process1-1">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Literature review</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process1-2">
+                                        <button type="button" class="btn btn-purple mt-3 metrophobic p-2">Quantitative Data Analysis</button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!--Moving Past Star Ratings Part 1 -->
+                    <div id="process1-1" class="row processSectionGap">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-1"><strong>Literature Review</strong></p>
+                            <h5 id="process1-1" class="prototype mt-1">
+                                <span class="highlightPurple">
+                                    How effective are traditional 5-star rating systems?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Our 5-star rating system had little to <span class="emphasis highlightPurple">no correlation to rider usage rate, churn, or our internal ride quality metrics</span>. But if they were ineffective, was there a better alternative?
+                                <br><br>
+                                A literature review of rating systems helped create some clarity:
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightPurple">Emotions over Stars:</span> Emotions (with explicit labels) are far easier for people to relate to than abstract stars and improve consistency in ratings across users
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-3">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlight Purple">A Single Rating is too Noisy:</span> An overarching score doesn’t provide nuance on where to improve on a service offering; we need scores for specific areas
+                                    </p>
+                                </div>
+                                <div class="d-flex align-content-center mt-3">
+                                    <div class="purple align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">3</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlight Purple">Find the “Acceptability Line”:</span> Although a bipolar scale provides granularity, we need to understand what score is considered an acceptable experience across riders
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div>
+                                <div class="solutionSlide2" data-toggle="modal" data-target="#moda2-1">
+                                    <img class="w-100 tall-image very-wide-image" src="Assets/Images/Project_WaymoRiderMetrics/current-post-trip-feedback.webp" alt="current state venn diagram" data-target="#carousel5-2" data-slide-to="0">
+                                </div>
+                            </div>
+                            <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Waymo’s 5-star rating system as it was presented at the start of this project – it provided noisy and oftentimes misleading signal</i></p>
+                        </div>
+                    </div>
+
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal2-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel2-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoRiderMetrics/current-post-trip-feedback.webp" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoRiderMetrics/current-post-trip-feedback.webp" alt="hand-drawn dashboard mockup 1">
+                                        <p class=" pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>Waymo’s 5-star rating system as it was presented at the start of this project – it provided noisy and oftentimes misleading signal</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!--Moving Past Star Ratings Part 2-->
+                    <div id="process1-2" class="row processSectionGap">    
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-0"><strong>Quantitative Data Analysis</strong></p> 
+                            <h5 id="process1-1" class="prototype mt-1">
+                                <span class="highlightPurple">
+                                    How should we break down the rider experience?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Instead of a singular rating system, we needed to <span class="emphasis highlightPurple">separate the ride experience into its salient components</span> from a rider perspective, which we did by analyzing and <span class="emphasis highlightPurple">clustering open-text app feedback</span>.
+                                <br><br>
+                                We arrived at six buckets, which we dubbed the “rider experience outcomes”:
+                                <br><br>
+                                <div class="relative">
+                                    <div class="d-flex align-content-center mt-3 blue lightPurple card">
+                                        <div class="card-body d-flex p-2">
+                                            <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-availability.webp" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                <strong>Availability:</strong> Can you easily hail a car when you need one?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-content-center mt-3 blue lightPurple card">
+                                        <div class="card-body d-flex p-2">
+                                            <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-coverage.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                <strong>Coverage:</strong> Does our service cover the places you need to go?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-content-center mt-3 blue lightPurple card">
+                                        <div class="card-body d-flex p-2">
+                                            <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-PUDOs.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                <strong>Pickups & Dropoffs (PUDOs):</strong> How well did we execute the pickup / dropoff?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-content-center mt-3 blue lightPurple card">
+                                        <div class="card-body d-flex p-2">
+                                            <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-drivingexp.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                <strong>Driving Experience:</strong> Is the driving smooth, pleasant and considerate of road rules?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-content-center mt-3 blue lightPurple card">
+                                        <div class="card-body d-flex p-2">
+                                            <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-routing.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                <strong>Routing:</strong> How straightforward is the path the car takes from origin to destination?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-content-center mt-3 blue lightPurple card">
+                                        <div class="card-body d-flex p-2">
+                                            <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                                <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/icon-interruptions.png" alt="icon of persona analysis phase">
+                                            </div>
+                                            <p class="align-self-center mt-1 mb-1">
+                                                <strong>Interruptions:</strong> How well do we respond to interruptions in the ride experience?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div class="relative">
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/problemPurple.svg" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontPurple mb-0"><strong>ISSUE:</strong></p>
+                                        We needed to identify what the major components were of Waymo riders’ experience, and shift away from a single overall rating
+                                    </i>
+                                    </h3>
+                                </div>
+                                <br><br>
+                                <div class="d-xl-flex">
+                                    <img class="sideIcons align-self-start mb-2 mr-3" src="Assets/Images/Universal/ideaPurple.png" alt="quotation mark end">
+                                    <h3 class="quote mb-1"><i>
+                                        <p class="fontPurple mb-0"><strong>IDEA:</strong></p>
+                                        I analyzed thousands of open-text app feedback comments and clustered them into six buckets, which we dubbed the “rider experience outcomes”
+                                    </i>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            
+
+            <!--Understanding Rider Experience Influencers -->
+            
+                <section id="section-process-2" class="section">
+                    <div class="row pt-5 pb-5 lightPink">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="pink titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/contextIcon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightPink align-self-center">Understanding Rider Experience Influencers</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I led <strong>40+ in-field sessions and 80+ rides</strong> with Waymo riders to capture which <strong>factors mattered most for each of our six rider experience outcomes</strong>
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process2-1">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Survey Design</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process2-1">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Ride-Alongs</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process2-2">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">Contextual Inquiries</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process2-2">
+                                        <button type="button" class="btn btn-pink mt-3 metrophobic p-2">In-Depth Interviews</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!--Understanding Rider Experience Influencers Part 1 -->
+                    <div id="process2-1" class="row mt-5">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-1"><strong>Survey Design + Ride-Alongs</strong></p>
+                            <h5 class="prototype mt-1">
+                                <span class="highlightPink">
+                                    What factors most influence if a bucket is “acceptable”?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Even though we had our buckets, we <span class="emphasis highlightPink">didn’t know how to measure if a rider’s experience was acceptable</span> or not for that bucket, or what factors were most influential in their decision.
+                                <br><br>
+                                To address these gaps, I <span class="emphasis highlightPink">developed a survey to administer to riders in-situ</span> while going on Waymo rides with them. It helped address some major gaps:
+                                <div class="row mt-5">
+                                    <div class="col-5 pl-0">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/question-mark.png">
+                                            <p class="fontPink mb-0 ml-2 align-content-center"><strong>QUESTION:</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 offset-1 pl-0">
+                                        <div class="d-flex">
+                                            <img src="Assets/Images/Universal/idea-bulb.png">
+                                            <p class="fontPink mb-0 ml-2 align-content-center"><strong>IDEA:</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightPink mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Do riders understand a <strong>bi-polar emotional scale</strong> better than star ratings?
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightPink mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            <strong>Administer the scale in live time</strong> as riders go on Waymo rides, and ask them about their interpretation of the scale
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightPink mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            What score on a scale corresponds to an <strong>acceptable service delivery?</strong>
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightPink mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Ask riders to <strong>provide an “acceptable / unacceptable” rating for each bucket</strong> and calculate the relationship to the scale 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row flex align-content-center">
+                                    <div class="col-5 card lightPink mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            What <strong>factors are most influential</strong> in riders’ scoring decisions across buckets?
+                                        </p>
+                                    </div>
+                                   
+                                    <div class="col-6 offset-1 card lightPink mt-3 d-flex justify-content-center p-1">
+                                        <p class="m-1 smaller-text">
+                                            Start with <strong>hypotheses from open-ended feedback</strong> and add these as double-clicks for when riders are dissatisfied with a bucket; measure the frequency of each option’s selection
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div data-toggle="modal" data-target="#modal3-1">
+                                <a href="Assets/Images/Project_WaymoRiderMetrics/in-field-survey.png" target="_blank">
+                                    <img class="w-100" src="Assets/Images/Project_WaymoRiderMetrics/in-field-survey.png" alt="future state venn diagram" data-target="#carousel3-1" data-slide-to="1">
+                                </a>
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>We rode along with 40+ riders across 80+ rides and completed a survey (preview above) in live time with them to get a reliable measure of their experience which we could build off of</i></p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal3-1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel3-1" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoRiderMetrics/in-field-survey.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoRiderMetrics/in-field-survey.png" alt="hand-drawn dashboard mockup 1">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>We rode along with 40+ riders across 80+ rides and completed a survey (preview above) in live time with them to get a reliable measure of their experience which we could build off of</i></p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Understanding Rider Experience Influencers Part 2 -->
+                    <div id="process2-2" class="row mt-5">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-1"><strong>Contextual Inquiry + In-Depth Interviews</strong></p>
+                            <h5 class="prototype mt-1">
+                                <span class="highlightPink">
+                                    What is the “perfect experience” to benchmark against?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Although our survey was helpful in validating a bi-polar emotional scale and calibrating it to an acceptability threshold, it <span class="emphasis highlightPink">didn’t help us understand how to improve.</span>
+                                <br><br>
+                                Instead, we accompanied the survey with <span class="emphasis highlightPink">in-depth conversations with riders</span> that helped us accomplish two main goals:
+                                <div class="d-flex align-content-center mt-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">1</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightPink">Capture all influencing factors:</span>s We talked to riders about the rationale for all of their scores, and uncovered factors that barely showed up in open-text feedback but were integral to building a good experience
+                                    </p>
+                                </div>
+                                <div class="d-flex mt-3 align-content-center mb-4">
+                                    <div class="pink align-self-center d-flex justify-content-center align-content-center numberCircles mr-3">
+                                       <h4 class="mb-0 numbering prototype whiteText">2</h4>
+                                    </div>
+                                    <p class="align-self-center mt-1 mb-1">
+                                        <span class="emphasis highlightPink">Understand the “perfect experience”:</span> We also deep-dove not just into what was a bad experience, but what would make an experience good – this helped shape benchmarks for teams to hillclimb against
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center" data-toggle="modal" data-target="#modal3-2">
+                            <img class="w-100 tall-image" src="Assets/Images/Project_WaymoRiderMetrics/ride-alongs.png" alt="hand-drawn dashboard mockup 1" data-target="#carousel3-2" data-slide-to="0">
+                            <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We supplemented our survey with in-depth conversations with riders that taught us what the elements of a “perfect experience” were for each of our buckets</i></p>
+                        </div>
+                    </div>
+
+                    <!-- Modal markup -->
+                    
+                    <!--Change Modal Name! -->
+                    <div class="modal fade" id="modal3-2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                            <!-- Carousel markup -->
+                            <!--Change Carousel Name! -->  
+                            <div id="carousel3-2" class="carousel slide" data-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="Assets/Images/Project_WaymoRiderMetrics/ride-alongs.png" target="_blank">
+                                        <img class="w-100 d-block" src="Assets/Images/Project_WaymoRiderMetrics/ride-alongs.png" alt="first iteration dashboard tabs">
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption blackText"><i>We supplemented our survey with in-depth conversations with riders that taught us what the elements of a “perfect experience” were for each of our buckets</i></p>
+                                    </a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--Insights -->
+                    <div id="process2-3" class="row">
+                        <div class="col-10 offset-1 mt-5">
+                            <h5>
+                                <span class="highlightPink">
+                                    We learned...
+                                </span>
+                            </h5>
+                            <p class="mt-3 order-md-3">
+                                We uncovered a wealth of information on what factors influenced which buckets, and the relative weighting of these factors. Beyond that:
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1">
+                            <div class="row">
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Riders were <strong>consistent with how they interpreted</strong> the bi-polar emotional scale, and found it far <strong>less confusing than the star rating system</strong>
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Waymo consistently delivered a worse experience across some buckets vs. others – <strong>PUDOs and routing surfaced as the two major issue</strong> areas
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Riders’ definition of an <strong>“acceptable” score varied significantly between buckets</strong> and depended on that bucket’s impact on their safety (e.g., driving experience needed to be near-perfect to be acceptable)
+                                    </p>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                    <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                    <p class="ml-2 align-self-center">
+                                        Riders were far <strong>more receptive to providing feedback when in the car</strong> than once they were outside and busy with the rest of their lives
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!--Translating Experiences to Metrics-->
+            
+                <section id="section-process-3" class="section">
+                    <div class="row pt-5 pb-5 lightRed">
+                        <div class="col-10 col-md-4 offset-1">
+                            <div class="d-flex align-content-center">
+                                <div class="red titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Universal/MidFi-Icon.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <h2 class="prototype"><span class="highlightRed align-self-center">Translating Experiences to Metrics</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-5 mt-3 mt-md-0">
+                            <h4 class="sectionCaption">
+                                I <strong>co-developed a rollup metric</strong> for each of the six rider experience outcomes, and developed a low-intensity, high-signal rider feedback system to replace post-trip feedback
+                            </h4>
+                            <div>
+                                <span class="anchor">
+                                    <a href="#process3-1">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Cross-Functional Collaboration</button>
+                                    </a>
+                                </span>
+
+                                <span class="anchor">
+                                    <a href="#process3-1">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Brainstorming Sessions</button>
+                                    </a>
+                                </span>
+                                
+                                <span class="anchor">
+                                    <a href="#process3-2">
+                                        <button type="button" class="btn btn-red mt-3 metrophobic p-2">Survey Design</button>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inside-section">
+
+                    <!--Translating Experiences to Metrics Part 1 -->
+                    <div id="process3-1" class="row mt-5">
+                        <div class="col-10 col-md-5 offset-1 mb-2">
+                            <p class="tileMethods mt-5 mb-0"><strong>Cross-Functional Collaboration + Brainstorming Sessions</strong></p>
+                            <h5 class="prototype mt-1">
+                                <span class="highlightRed">
+                                    How can we translate subjective rider feedback to product-friendly metrics?
+                                </span>
+                            </h5>
+                            <p class="mt-5">
+                                Although our study findings were helpful, we needed a plan of action on how they could be <span class="emphasis highlightRed">embedded across product and engineering to drive meaningful change</span> in our self-driving software capabilities.
+                                <br><br>
+                                Over the course of several collaboration and brainstorming session, I <span class="emphasis highlightRed">worked with the six product manager leads for each rider experience outcome</span> to co-develop a single rollup metric that they could hillclimb against.
+
+                            </p>
+                        </div>
+
+                        <div class="col-10 offset-1 offset-md-0 col-md-5 mb-2 align-self-center order-md-2">
+                            <div class="relative">
+                                <div class="d-flex align-content-center mt-5 blue lightRed card">
+                                    <div class="card-body d-flex p-2">
+                                        <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                            <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-metric.png" alt="icon of persona analysis phase">
+                                        </div>
+                                        <p class="align-self-center mt-1 mb-1">
+                                            <strong>Single rollup metric:</strong> In response to PM feedback, we co-developed a single metric for each bucket (% of rides with an acceptable bucket experience) to streamline progress tracking
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-content-center mt-3 blue lightRed card">
+                                    <div class="card-body d-flex p-2">
+                                        <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                            <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-weightings.png" alt="icon of persona analysis phase">
+                                        </div>
+                                        <p class="align-self-center mt-1 mb-1">
+                                            <strong>Sub-metrics with weightings:</strong> Each rollup metric was composed of weighted sub-metrics, with sub-metrics and weightings based on how many riders cited that factor as influencing overall bucket experience
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-content-center mt-3 blue lightRed card">
+                                    <div class="card-body d-flex p-2">
+                                        <div class="d-flex justify-content-center align-content-center align-self-center mr-3 mt-1">
+                                            <img class="cardIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-feedback.png" alt="icon of persona analysis phase">
+                                        </div>
+                                        <p class="align-self-center mt-1 mb-1">
+                                            <strong>Benchmark against rider feedback:</strong> We co-developed a “perfect” score for each metric based on what riders told us was a perfect experience for each factor, giving us an easy mark to hillclimb against
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   <!--Translating Experiences to Metrics Part 2 -->
+                   <div id="process3-2" class="row mt-5">
+                    <div class="col-10 col-md-5 offset-1 mb-2">
+                        <p class="tileMethods mt-5 mb-1"><strong>Survey Design</strong></p>
+                        <h5 class="prototype mt-1">
+                            <span class="highlightRed">
+                                How can we continue to track rider feedback accurately and unintrusively?
+                            </span>
+                        </h5>
+                        <p class="mt-5">
+                            Even with a set of metrics to hillclimb against, our <span class="emphasis highlightRed">PMs needed to continue to calibrate and check that metric signals were aligned</span> with rider experiences. 
+                            <br><br>
+                            I proposed a new solution for an in-car survey mechanism:
+                            <div class="row mt-5">
+                                <div class="col-5 pl-0">
+                                    <div class="d-flex">
+                                        <img src="Assets/Images/Universal/thinking-face.png">
+                                        <p class="fontRed mb-0 ml-2 align-content-center"><strong>CONSTRAINT:</strong></p>
+                                    </div>
+                                </div>
+                                <div class="col-6 offset-1 pl-0">
+                                    <div class="d-flex">
+                                        <img src="Assets/Images/Universal/idea-bulb.png">
+                                        <p class="fontRed mb-0 ml-2 align-content-center"><strong>IDEA:</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row flex align-content-center">
+                                <div class="col-5 card lightRed mt-3 d-flex justify-content-center p-1">
+                                    <p class="m-1 smaller-text">
+                                        <strong>PMs needed constant feedback</strong> on rider sentiment for each bucket
+                                    </p>
+                                </div>
+                               
+                                <div class="col-6 offset-1 card lightRed mt-3 d-flex justify-content-center p-1">
+                                    <p class="m-1 smaller-text">
+                                        Switch to soliciting trip feedback on a bi-polar emotional <strong>scale for each bucket</strong> (instead of overall)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row flex align-content-center">
+                                <div class="col-5 card lightRed mt-3 d-flex justify-content-center p-1">
+                                    <p class="m-1 smaller-text">
+                                        <strong>Riders dislike providing feedback constantly</strong>, and at the end of trips
+                                    </p>
+                                </div>
+                               
+                                <div class="col-6 offset-1 card lightRed mt-3 d-flex justify-content-center p-1">
+                                    <p class="m-1 smaller-text">
+                                        Ask for feedback <strong>on the in-car display, at most once every three rides</strong> to reduce rider survey fatigue
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row flex align-content-center">
+                                <div class="col-5 card lightRed mt-3 d-flex justify-content-center p-1">
+                                    <p class="m-1 smaller-text">
+                                        Feedback reliability drops as <strong>more time passes</strong>
+                                    </p>
+                                </div>
+                               
+                                <div class="col-6 offset-1 card lightRed mt-3 d-flex justify-content-center p-1">
+                                    <p class="m-1 smaller-text">
+                                        Ask for feedback <strong>immediately after a relevant event occurs</strong> to reduce issues with poor recollection
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </p>
+                    </div>
+
+                    <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                        <div data-toggle="modal" data-target="#modal4-2">
+                            <a href="Assets/Images/Project_WaymoRiderMetrics/in-context-feedback.png" target="_blank">
+                                <img class="w-100" src="Assets/Images/Project_WaymoRiderMetrics/in-context-feedback.png" alt="future state venn diagram" data-target="#carousel4-2" data-slide-to="1">
+                            </a>
+                            <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>We developed a brand-new method for collecting feedback on an ad-hoc basis tied directly to the context of rider experiences; less intrusive, more accurate, and constantly running </i></p>
+                        </div>
+                    </div>
+                </div>
+               
+                <!--Change Modal Name! -->
+                <div class="modal fade" id="modal4-2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        
+                        <!-- Carousel markup -->
+                        <!--Change Carousel Name! -->  
+                        <div id="carousel4-2" class="carousel slide" data-ride="carousel">
+                            
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="Assets/Images/Project_WaymoRiderMetrics/in-context-feedback.png" target="_blank">
+                                    <img class="w-100 d-block" src="Assets/Images/Project_WaymoRiderMetrics/in-context-feedback.png" alt="hand-drawn dashboard mockup 1">
+                                </a>
+                                <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>We developed a brand-new method for collecting feedback on an ad-hoc basis tied directly to the context of rider experiences; less intrusive, more accurate, and constantly running </i></p>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary metrophobic" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!--Insights -->
+                <div id="process3-3" class="row">
+                    <div class="col-10 offset-1 mt-5">
+                        <h5>
+                            <span class="highlightRed">
+                                We learned...
+                            </span>
+                        </h5>
+                        <p class="mt-3 order-md-3">
+                            We conducted initial testing feedback mechanism system by launching it to a subset of riders:
+                        </p>
+                    </div>
+
+                    <div class="col-10 offset-1">
+                        <div class="row">
+                            <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                <p class="ml-2 align-self-center">
+                                    Riders’ <strong>completion percentage jumped from under 10% to over 80%</strong> by switching from post-trip to in-ride
+                                </p>
+                            </div>
+                            <div class="col-11 col-md-10 col-lg-5 offset-lg-1 pl-0 d-flex mb-3 mb-lg-1">
+                                <img class="insightFaces" src="Assets/Images/Universal/frowny-face.png" alt="icon of understanding context phase">
+                                <p class="ml-2 align-self-center">
+                                    Instead of collecting feedback once every X rides, riders felt it would be <strong>better to ask a question once every X in-car minutes</strong>, to prevent feedback after a few very short rides
+                                </p>
+                            </div>
+                            <div class="col-11 col-md-10 col-lg-5 pl-0 d-flex mb-3 mb-lg-1">
+                                <img class="insightFaces" src="Assets/Images/Universal/smiley-face.png" alt="icon of understanding context phase">
+                                <p class="ml-2 align-self-center">
+                                    Our <strong>initial weights for metrics were (mostly) accurate</strong>, and gave us further confidence in the efficacy of this system when scaled
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+            <!--Solution Showcase -->
+        <section id="section-finalDesign" class="section">
+            <div class="row pt-5 pb-5 lightBlue">
+                <div class="col-10 col-md-4 offset-1">
+                    <div class="d-flex align-content-center">
+                        <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                            <img class="titleIcon" src="Assets/Images/Universal/final-design-Icon.svg" alt="icon of persona analysis phase">
+                        </div>
+                        <h2 class="prototype"><span class="highlightBlue align-self-center">Final Solution</span></h2>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 offset-md-0 col-md-6 d-flex align-content-center mt-3 mt-md-0">
+                    <h4 class="sectionCaption">
+                        The final rider experience measurement system (dubbed the Service Quality Framework) <strong>combines rider feedback inputs with constant measurements of driving quality</strong> to drive service improvements
+                    </h4>
+                </div>
+            </div>
+
+            <div id="finalDesign-mobile" class="section">
+                             
+                <div class="row big-gap">
+                    <div class="col-10 col-md-4 offset-1 top">
+                            <div>
+                                <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Capture Contextual Rider Feedback</span></h5>
+                                <p class="mb-1">  
+                                    <strong>Capture rider feedback in the moment</strong> by asking about ride experience elements live (e.g., ask about how a pickup was immediately after a rider boards)
+                                    <br><br>
+                                    <strong>Use an emotion-based bi-polar scale</strong> with clear labeling so scores are easier for riders to interpret, and so provide less noisy signal
+                                </p>
+                                <br><br>
+                            </div>
+                    </div>
+                        <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                            <div>
+                                    <div data-toggle="modal" data-target="#modal5-1">
+                                        <a href="Assets/Images/Project_WaymoRiderMetrics/all-feedback-moments.png" target="_blank">
+                                            <img class="w-100" src="Assets/Images/Project_WaymoRiderMetrics/all-feedback-moments.png" alt="future state venn diagram" data-target="#carousel5-1" data-slide-to="1">
+                                        </a>
+                                        <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Our new system can ask about up to 11 topics through the in-car display, but limits itself to asking a question once every 60 ride minutes.</i></p>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+
+                <hr class="inside-section">
+                <div class="row big-gap">
+                    <div class="col-10 col-md-4 offset-1 top">
+                            <div>
+                                <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Deep-Dive into Areas of Improvement</span></h5>
+                                <p class="mb-1">  
+                                    <strong>Capture the factors that drive a poor experience</strong> whenever users provide a non-perfect score through an easy multiple choice selection, informed by past research
+                                    <br><br>
+                                    <strong>Allow riders to provide detailed feedback</strong> with an accompanying page on the app to provide detailed, open-ended feedback as needed
+                                </p>
+                            </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                        <div>
+                                <div data-toggle="modal" data-target="#modal5-2">
+                                    <a href="Assets/Images/Project_WaymoRiderMetrics/double-click-feedback.png" target="_blank">
+                                        <img class="w-100" src="Assets/Images/Project_WaymoRiderMetrics/double-click-feedback.png" alt="future state venn diagram" data-target="#carousel5-2" data-slide-to="1">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Illustrative view of the in-car display. Top: Question about pickup experience; Bottom: Opportunity for additional feedback if experience was subpar.</i></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="inside-section">
+                <div class="row big-gap">
+                    <div class="col-10 col-md-4 offset-1 top">
+                        <h5 class="prototype mt-3 mb-4"><span class="highlightBlue">Track Changes through an Internal Dashboard</span></h5>
+                        <p class="mb-1">  
+                            <strong>Identify the largest gaps in rider experience</strong> across all six rider experience outcomes to identify which buckets need more attention as Waymo’s driving capabilities evolve 
+                            <br><br>
+                            <strong>Validate metric accuracy</strong> by identifying how often riders and our internal metrics both flagged a factor as being unacceptable, thereby improving metric accuracy
+                        </p>
+                    </div>
+                    <div class="col-10 offset-1 offset-md-0 ml-md-5 col-md-5 mb-4 align-self-center">
+                        <div>
+                                <div data-toggle="modal" data-target="#modal5-3">
+                                    <a href="Assets/Images/Project_WaymoRiderMetrics/illustrative-dashboar.png" target="_blank">
+                                        <img class="w-100" src="Assets/Images/Project_WaymoRiderMetrics/illustrative-dashboar.png" alt="future state venn diagram" data-target="#carousel5-3" data-slide-to="1">
+                                    </a>
+                                    <p class="pt-2 col-sm-10 offset-sm-1 slideshowCaption"><i>Our internal dashboard tracks our metric performance across buckets, and will compare it to rider assessments of each bucket to identify gaps.</i></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+            <!-- Results & Final Thoughts -->
+            
+            <section id="section-process-5" class="section reflectionSection">
+                <!-- Title Section -->
+                <div class="row pt-5 pb-5 mb-4 lightBlue">
+                    <div class="col-10 col-md-4 offset-1">
+                        <div class="d-flex align-content-center">
+                            <div class="blue titleIconCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                <img class="titleIcon" src="Assets/Images/Universal/starIcon.svg" alt="icon of persona analysis phase">
+                            </div>
+                            <h2 class="prototype"><span class="highlightBlue align-self-center">Results & Final Thoughts</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 d-flex align-content-center mt-3 mt-md-0">
+                        <h4 class="sectionCaption">
+                            Our new <strong>metrics system launched in mid-2023</strong> and our new rider feedback collection system is expected to launch shortly.
+                        </h4>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">    
+                    <div class="col-10 col-md-5 offset-1 mb-2">
+                        <h5 id="process1-1" class="prototype mt-5">
+                            <span class="highlightBlue">
+                                A better pulse on rider feedback
+                            </span>
+                        </h5>
+                        <p class="mt-5">
+                            Waymo <span class="emphasis highlightBlue">reorganized its product teams to be in line with the six rider experience outcomes</span> defined in the new Service Quality Framework, with each team responsible for one of the metric we co-developed. These metrics are now being used to <span class="emphasis highlightBlue">hillclimb against and improve the Waymo Driver</span>.
+                            <br><br>
+                            Designs for the <span class="emphasis highlightBlue">new rider feedback system are still being finalized</span>, with the expectation of launching the new system shortly after. 
+                        </p>
+                    </div>
+                    <div class="col-sm-4 align-self-end offset-sm-1 mb-4">
+                        <div class="relative">
+                            <img class="quotation-start lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark start">
+                            <h5 class="quote mb-1"><i>I've been riding with Waymo for over 2 years now and even though it's been getting better, I don't know how much my feedback has really helped... this rating actually seems like it's doing something with all the feedback I give.</i>
+                            </h5>
+                            <h5 class="fontBlue mb-5">
+                                <a class="fontBlue" href= "https://www.fastcompany.com/3066586/the-year-dark-patterns-won" target= "_blank">Waymo Rider</a>
+                            </h5>
+                            <img class="quotation-end lightBlueFilter" src="Assets/Images/Universal/quotationMark.svg" alt="quotation mark end">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-10 col-md-5 offset-1 mb-4">
+                            <span class="emphasis2">Rider Benefits:</span>
+
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-rider-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduces pains of rider feedback solicitation</strong> by removing the post-trip feedback feature and need to use the app at all post-hail
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-rider-benefit-2.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduces rider cognitive load</strong> by collecting feedback immediately after an experience instead of at the end of a ride
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-rider-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Intakes more detail from rider when they want</strong> with double-clicks into factors impacting overall bucket scores
+                                </p>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-10 col-md-5 offset-1 offset-md-0 mb-4">
+                        <div class="align-self-end">
+                        <span class="emphasis2">Waymo Benefits:</span>
+                            <div class="d-flex align-content-center mt-4">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-waymo-benefit-1.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Increased product team clarity</strong> by switching from an opaque overall metric to actionable metrics tied to specific rider experience outcomes
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-waymo-benefit-2.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Increased metric accuracy</strong> with clear processes for comparing metric signals to riders’ subjective experiences
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4 align-content-center">
+                                <div class="blue numberCircles d-flex justify-content-center align-content-center align-self-center mr-3">
+                                    <img class="titleIcon" src="Assets/Images/Project_WaymoRiderMetrics/Icon-waymo-benefit-3.svg" alt="icon of persona analysis phase">
+                                </div>
+                                <p class="align-self-center mt-1 mb-1">
+                                    <strong>Reduced need for feedback triagers</strong> with a shift from open-ended feedback to structured, bucketed feedback
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+            <!-- Bottom Navigation -->
+            <section id="section-bottomNav" class="row bottomNav">
+                <div class="d-flex justify-content-start col-4">
+                    <a href="waymo-interruptions.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="leftNavCircle lightGreen"></div>
+                        <img class="leftNavPic" src="Assets/Images/Home/tileWaymoInterruptions.png" alt="Interruptions">    
+                        <h5 class="bottomNavText text-left prototype hoverWord" data-words="Prev|Redesigning Ride Interruptions">Prev</h5>
+                    </a>
+                </div>
+
+
+                <div class="d-flex justify-content-center col-4 anchor">
+                    <a href="#section-projectHeader" class="backTop align-self-center">
+                        <div class="backTopCircle blue d-flex justify-content-center align-content-center">
+                            <img class="backTopArrow align-self-center" src="Assets/Images/Universal/backTopArrow.svg" alt="back to top arrow">
+                        </div>
+                        <h5 class="prototype fontBlue text-center pt-2 backTopText">Back to Top</h5>
+                    </a>
+                </div>
+
+                <div class="d-flex justify-content-end col-4">
+                    <a href="proactive-home-dj.html" class="d-flex align-self-center bottomNavContainer">
+                        <div class="rightNavCircle lightBlue"></div>
+                        <img class="rightNavPic mb-3" src="Assets/Images/Home/tileMIH.png" alt="Proactive DJ"> 
+                        <h4 class="bottomNavText text-right prototype hoverWord" data-words="Next|Proactive Home DJ">Next</h4>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+        
+        <script src="Assets/Libraries/slick/slick.min.js"></script>
+        <script src="Assets/js/type.js"></script>
+        <script src="Assets/Libraries/aos/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        </script>
+    </body>
+    
+</html>
