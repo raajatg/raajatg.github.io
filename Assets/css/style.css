@@ -1931,7 +1931,7 @@ Portfolio Tile Text
 }
 
 #projectThreeSM > .tileTextContainer {
-    background: linear-gradient(to right, white 50%, #EEE1FF 50%, #EEE1FF);
+    background: linear-gradient(to right, white 47%, #EEE1FF 47%, #EEE1FF);
     padding-left: 5vw;
     background-size: 250%;
 }
@@ -2016,9 +2016,9 @@ Hovering Feature on Project Tiles
     left: -110%;
 }
 
-#projectThreeSM:hover .heartLeft {
+#projectThreeSM:hover .heartRight {
     transform: rotate(0deg);
-    right: -110%;
+    left: -110%;
 }
 
 #projectFourSM:hover .heartLeft {
@@ -2073,7 +2073,7 @@ Hovering Feature on Project Tiles
 }
 
 #projectThreeSM:hover .tileTextContainer {
-    background-position: -63%;
+    background-position: 75%;
 }
 
 #projectFourSM:hover .tileTextContainer {
@@ -2254,9 +2254,9 @@ Adjustments to Tiles for SMALL SCREEN SIZE
         left: 0 !important;
     }
 
-    #projectThreeSM:hover .heartLeft {
+    #projectThreeSM:hover .heartRight {
         transform: rotate(0deg) !important;
-        right: 0 !important;
+        left: 0 !important;
     }
 
     #projectFourSM:hover .heartLeft {
