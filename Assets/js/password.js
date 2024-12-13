@@ -14,7 +14,7 @@ if (!submit) {
 const handleSubmit = () => {
     const password = input.value
 
-    if (password === 'userconnection') {
+    if (password === 'rgtheuxr') {
         console.log('Correct password.')
         const target = new URL(window.location.href).searchParams.get('returnTo')
 
@@ -23,9 +23,9 @@ const handleSubmit = () => {
         }
 
         if (target === 'wi') {
-            window.location.href = 'waymo-interruptions.html'
+            window.location.href = 'waymo-interruptions-project.html'
         } else if (target === 'wrm') {
-            window.location.href = 'waymo-rider-metrics.html'
+            window.location.href = 'waymo-rider-metrics-project.html'
         } else {
             return console.error('Unsupported target')
         }
